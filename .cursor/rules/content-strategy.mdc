@@ -1,0 +1,262 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+# Content Strategy and Maintenance Guidelines
+
+## Content Strategy Overview
+
+The WINET Lab website serves as the primary digital presence for the laboratory, providing comprehensive information about research, team members, seminars, and laboratory activities. Content management follows a structured approach to ensure consistency, accuracy, and engagement.
+
+### Primary Content Categories
+
+#### Research and Academic Content
+- **Research Areas**: Detailed descriptions of laboratory focus areas from [data/research.json](mdc:data/research.json)
+- **Publications**: Academic papers, conference proceedings, and research outputs
+- **Project Documentation**: Ongoing and completed research projects
+- **Collaboration Information**: Partner institutions and joint research initiatives
+
+#### Team and Personnel Content
+- **Faculty Profiles**: Comprehensive profiles following [team-data-management.mdc](mdc:.cursor/rules/team-data-management.mdc) guidelines
+- **Student Information**: PhD, postdoc, and visiting scholar profiles
+- **Alumni Network**: Former members with achievement tracking
+- **Recruitment Materials**: Open positions and application information
+
+#### Events and Seminars
+- **Seminar Series**: Following [seminar-management.mdc](mdc:.cursor/rules/seminar-management.mdc) standards
+- **Workshop Documentation**: Specialized events and training sessions
+- **Conference Participation**: Laboratory presence at academic conferences
+- **Industry Engagement**: Corporate partnerships and technology transfer activities
+
+#### News and Updates
+- **Laboratory News**: Achievements, awards, and milestones
+- **Student Achievements**: Graduations, publications, and recognitions
+- **Funding Announcements**: Grant awards and research funding
+- **Media Coverage**: Press releases and external coverage
+
+## Content Creation Workflows
+
+### New Content Development
+
+#### Research Area Updates
+1. **Content Planning**
+   - Identify new research directions and funding areas
+   - Collaborate with faculty to define scope and impact
+   - Align with laboratory strategic priorities
+   - Review competitive landscape and positioning
+
+2. **Content Creation**
+   - Draft comprehensive descriptions with technical depth
+   - Include practical applications and societal impact
+   - Incorporate relevant keywords for discoverability
+   - Add supporting visuals and diagrams when helpful
+
+3. **Review and Approval**
+   - Technical review by relevant faculty members
+   - Editorial review for clarity and accessibility
+   - Legal review for intellectual property considerations
+   - Final approval by laboratory leadership
+
+#### Team Member Content
+1. **Information Gathering**
+   - Collect standardized information using established templates
+   - Obtain high-quality professional photographs
+   - Verify institutional affiliations and contact information
+   - Gather research interests and publication highlights
+
+2. **Profile Development**
+   - Follow YAML schema requirements from [team-data-management.mdc](mdc:.cursor/rules/team-data-management.mdc)
+   - Write engaging biographies that highlight expertise
+   - Include collaboration opportunities and contact methods
+   - Ensure consistency with laboratory branding and tone
+
+3. **Integration and Testing**
+   - Add profiles to appropriate directory structure
+   - Test dynamic loading and display functionality
+   - Verify all links and contact information
+   - Ensure mobile responsiveness and accessibility
+
+### Content Updates and Maintenance
+
+#### Regular Review Schedule
+- **Weekly**: News items, seminar announcements, and urgent updates
+- **Monthly**: Team member information, publication lists, and project status
+- **Quarterly**: Research area descriptions, strategic priorities, and partnerships
+- **Annually**: Complete content audit, archive management, and strategy review
+
+#### Update Prioritization
+1. **Critical Updates**: Security issues, contact information, emergency announcements
+2. **High Priority**: New team members, major research announcements, funding news
+3. **Medium Priority**: Publication updates, seminar materials, project documentation
+4. **Low Priority**: Minor text improvements, image optimization, archival organization
+
+## Editorial Standards and Guidelines
+
+### Writing Style and Tone
+- **Academic Professional**: Maintain scholarly credibility while ensuring accessibility
+- **Inclusive Language**: Use gender-neutral and culturally sensitive terminology
+- **Active Voice**: Prefer active voice for clarity and engagement
+- **Conciseness**: Balance comprehensive information with readability
+- **Technical Accuracy**: Ensure all technical content is precise and current
+
+### Content Structure Standards
+```markdown
+# Page/Section Title (H1)
+[Brief introduction paragraph establishing context and purpose]
+
+## Main Section (H2)
+[Substantive content with clear organization]
+
+### Subsection (H3)
+[Detailed information with supporting evidence]
+
+#### Specific Topics (H4)
+[Granular details and technical specifications]
+```
+
+### Language and Terminology
+- **Consistency**: Use standardized terminology throughout the website
+- **Accessibility**: Define technical terms and acronyms on first use
+- **International Audience**: Consider non-native English speakers in word choice
+- **SEO Optimization**: Include relevant keywords naturally in content
+- **Institutional Voice**: Maintain consistency with university communication standards
+
+## SEO and Content Optimization
+
+### Search Engine Optimization Strategy
+- **Keyword Research**: Identify relevant academic and technical keywords
+- **Content Optimization**: Natural keyword integration without stuffing
+- **Meta Information**: Comprehensive title tags and descriptions
+- **Internal Linking**: Strategic cross-references between related content
+- **External Authority**: Link to reputable academic and institutional sources
+
+### Technical SEO Implementation
+```html
+<!-- Page-specific meta tags -->
+<meta name="description" content="Specific, compelling description under 160 characters">
+<meta name="keywords" content="research, wireless networking, smart cities, IoT">
+<meta name="author" content="WINET Lab, City University of Hong Kong">
+
+<!-- Open Graph for social sharing -->
+<meta property="og:title" content="Page Title | JC STEM Lab of Smart City">
+<meta property="og:description" content="Page description for social media">
+<meta property="og:image" content="https://domain.com/image.jpg">
+<meta property="og:url" content="https://domain.com/page-url">
+
+<!-- Academic meta tags -->
+<meta name="citation_title" content="Research Paper Title">
+<meta name="citation_author" content="Author Name">
+<meta name="citation_publication_date" content="2024/01/15">
+```
+
+### Content Performance Metrics
+- **Page Views**: Track popular content and research areas
+- **Engagement Time**: Monitor user interaction with different content types
+- **Search Rankings**: Position for relevant academic and technical keywords
+- **Referral Traffic**: Sources bringing visitors to laboratory content
+- **Conversion Goals**: Contact form submissions, seminar registrations, collaboration inquiries
+
+## Accessibility and Inclusive Design
+
+### Content Accessibility Requirements
+- **Alt Text**: Descriptive alternative text for all images and graphics
+- **Heading Structure**: Logical hierarchy for screen reader navigation
+- **Link Context**: Descriptive link text beyond "click here" or "read more"
+- **Color Independence**: Information not conveyed through color alone
+- **Plain Language**: Clear, straightforward communication for diverse audiences
+
+### Multilingual Considerations
+- **Primary Language**: English as the main communication language
+- **Technical Terms**: Provide definitions for specialized vocabulary
+- **Cultural Sensitivity**: Awareness of international academic conventions
+- **Translation Ready**: Structure content for potential future localization
+
+## Version Control and Change Management
+
+### Content Versioning Strategy
+```bash
+# Content change documentation
+git commit -m "content(team): add new PhD student profile
+
+- Added PhD25_GuoYu with complete profile information
+- Updated team organization structure
+- Verified all contact information and links"
+```
+
+### Change Approval Process
+1. **Author**: Content creator develops initial draft
+2. **Subject Matter Expert**: Technical review by relevant faculty
+3. **Editor**: Style, grammar, and consistency review
+4. **Administrator**: Final approval and publication authorization
+
+### Backup and Recovery
+- **Regular Backups**: Automated daily backups of all content
+- **Version History**: Git-based tracking of all content changes
+- **Rollback Procedures**: Quick restoration for critical content issues
+- **Archive Management**: Long-term preservation of historical content
+
+## Analytics and Performance Monitoring
+
+### Content Analytics Framework
+```javascript
+// Track content engagement
+function trackContentEngagement(contentType, action, details) {
+    // Analytics implementation
+    gtag('event', action, {
+        'content_type': contentType,
+        'content_id': details.id,
+        'content_title': details.title,
+        'engagement_time': details.time
+    });
+}
+
+// Monitor research area interest
+function trackResearchInterest(researchArea) {
+    trackContentEngagement('research', 'view_details', {
+        id: researchArea.id,
+        title: researchArea.name,
+        category: 'research_area'
+    });
+}
+```
+
+### Performance Optimization
+- **Image Optimization**: Compress and optimize all media files
+- **Content Delivery**: Leverage CDN for static assets when possible
+- **Caching Strategy**: Implement appropriate cache headers for content types
+- **Load Time Monitoring**: Regular performance audits and optimization
+
+## Crisis Communication and Updates
+
+### Emergency Content Updates
+- **Rapid Response**: Procedures for urgent announcements and corrections
+- **Authority Chain**: Clear decision-making hierarchy for emergency content
+- **Communication Channels**: Multiple distribution methods for critical information
+- **Verification Process**: Fact-checking and approval even under time pressure
+
+### Content Corrections and Retractions
+- **Error Identification**: Process for reporting and verifying content issues
+- **Correction Procedures**: Standardized methods for updating incorrect information
+- **Transparency**: Clear indication of corrections and update timestamps
+- **Archive Integrity**: Maintain historical accuracy while making necessary corrections
+
+## Future Content Strategy
+
+### Technology Integration
+- **Interactive Elements**: Enhanced user engagement through dynamic content
+- **Multimedia Expansion**: Video content, podcasts, and interactive demonstrations
+- **AI-Assisted Content**: Potential for automated content generation and optimization
+- **Personalization**: Tailored content experiences for different user types
+
+### Content Expansion Areas
+- **Research Impact**: Detailed case studies of laboratory research applications
+- **Student Experience**: Enhanced documentation of educational programs
+- **Industry Partnerships**: Comprehensive partnership and collaboration showcases
+- **Alumni Network**: Expanded tracking and celebration of former member achievements
+
+### Continuous Improvement
+- **User Feedback**: Regular collection and integration of user experience feedback
+- **Content Audits**: Systematic review and optimization of existing content
+- **Technology Updates**: Adoption of new tools and platforms for content management
+- **Strategic Alignment**: Regular review of content strategy with laboratory goals

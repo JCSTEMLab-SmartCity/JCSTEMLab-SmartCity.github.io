@@ -5,31 +5,228 @@ alwaysApply: true
 ---
 # Team Data Management Guidelines
 
-## Directory Structure
-Team member data is organized in the `/data/people` directory with the following categories:
-- Faculty members (prefix: `Faculty_`)
-- PhD students (prefix: `PhD`)
-- Postdoctoral researchers (prefix: `PD_`)
-- Visitors (prefix: `Visitor`)
-- Former members (prefix: `Former`)
+## Directory Structure and Naming Conventions
 
-## Adding New Team Members
-1. Create a new directory under `/data/people` with the appropriate prefix
-2. Follow the naming convention: `[Category]_[Name]` (e.g., `PhD24_LiuLijie`)
-3. Include required files in the member's directory:
-   - Profile information
-   - Publications
-   - Research interests
-   - Profile photo
+Team member data is organized in the `/data/people` directory using a hierarchical categorization system:
 
-## Updating Member Information
-- Keep member information up-to-date in their respective directories
-- Follow the year-based prefixing system (e.g., PhD23_, PhD24_)
-- Maintain consistent formatting across all member profiles
-- When a member's status changes, move their directory to the appropriate category
+### Category Prefixes
+- **Faculty members**: `Faculty_[Name]` (e.g., `Faculty_ChenXianhao`)
+- **PhD students**: `PhD[YY]_[Name]` (e.g., `PhD24_LiuLijie`, `PhD23_FangZhengru`)
+- **Postdoctoral researchers**: `PD[YY]_[Name]` (e.g., `PD24_LiuZhaofeng`, `PD23_Caohangcheng`)
+- **Visiting scholars**: `Visitor[YY]_[Name]` (e.g., `Visitor24_LiuYaxuan`, `Visitor23_JiYun`)
+- **Former members**: `Former[Type]_[Name]` (e.g., `FormerPhD_ChenXianhao`, `FormerPD_WangJie`)
 
-## Data Format Standards
-- Use consistent file naming across all member directories
-- Maintain uniform data structure for all member profiles
-- Follow the established categorization system for different types of members
-- Keep historical data organized in the appropriate Former_ categories
+### Year-Based Numbering System
+- Use 2-digit year format for categorization (23, 24, 25, etc.)
+- Year typically represents the joining year or graduation year
+- Maintain consistency within each category
+
+## Required File Structure
+
+Each team member directory must contain:
+
+### Essential Files
+1. **`_index.md`**: Main profile file with YAML front-matter and Markdown content
+2. **`avatar.png`**: Profile photo (recommended: 400x400px minimum, square aspect ratio)
+
+### Optional Files
+- **`cv.pdf`**: Curriculum vitae
+- **Publications folder**: Individual publication files
+- **Additional media**: Research images, presentation slides
+
+## YAML Front-Matter Schema
+
+The `_index.md` file must follow this structure:
+
+```yaml
+---
+# Display name (required)
+title: Prof./Dr./Mr./Ms. [Full Name]
+
+# Full name components for SEO (required)
+first_name: [First Name]
+last_name: [Last Name]
+
+# System field (do not modify)
+authors:
+superuser: false
+
+# Role and affiliation (required)
+role: <b>[Position] <br> [Department], <br> [Institution], [Location]</b>
+
+# Organizations/Affiliations (required)
+organizations:
+  - name: [Institution Name]
+    url: [Institution URL]
+  - name: Homepage  # Optional - comment out if no personal website
+    url: [Personal Website URL]
+
+# Social media and contact links (optional)
+social:
+  - icon: envelope  # Email
+    icon_pack: fas
+    link: 'mailto:[email@domain.com]'
+  - icon: google-scholar  # Google Scholar
+    icon_pack: ai
+    link: [Google Scholar URL]
+  - icon: house-user  # Personal homepage
+    icon_pack: fas
+    link: [Personal Website URL]
+  - icon: github  # GitHub (optional)
+    icon_pack: fab
+    link: [GitHub URL]
+  - icon: cv  # CV file (optional)
+    icon_pack: ai
+    link: files/cv.pdf
+
+# Research interests (required)
+interests:
+  - [Research Area 1]
+  - [Research Area 2]
+  - [Research Area 3]
+  - [Research Area 4]
+
+# Education background (required)
+education:
+  courses:
+    - course: [Degree] in [Field]
+      institution: [University Name], [Location]
+      year: [Start Year] - [End Year]
+    - course: [Degree] in [Field]
+      institution: [University Name], [Location]
+      year: [Start Year] - [End Year]
+
+# User group classification (required - select one)
+user_groups:
+  # - Principal Investigators
+  # - Researchers
+  # - PhDs
+  # - Visitors
+  # - Alumnis
+  # - Postdoctors
+  - Faculty  # Uncomment appropriate category
+  # - Graduated PhD Students
+---
+```
+
+## Biography Content Guidelines
+
+After the YAML front-matter, include a biography section:
+
+```markdown
+# Biography
+
+[Write a comprehensive biography in paragraph format]
+- Use present tense for current positions
+- Include educational background and career progression
+- Mention key research achievements and awards
+- Include collaboration information and lab affiliations
+- End with contact information for prospective students/collaborators
+```
+
+### Biography Best Practices
+- **Length**: 150-300 words for optimal readability
+- **Tone**: Professional and academic
+- **Structure**: Education → Career → Research → Current focus
+- **Links**: Include relevant hyperlinks to institutions and collaborators
+- **Updates**: Regular review and updates for accuracy
+
+## Content Management Workflow
+
+### Adding New Team Members
+
+1. **Directory Creation**
+   ```bash
+   mkdir "/data/people/[Category][Year]_[Name]"
+   ```
+
+2. **File Setup**
+   - Create `_index.md` with proper YAML front-matter
+   - Add `avatar.png` (optimize for web: <500KB, square format)
+   - Optional: Add CV and additional materials
+
+3. **Content Population**
+   - Fill out all required YAML fields
+   - Write comprehensive biography
+   - Verify all links and contact information
+   - Ensure consistent formatting
+
+### Updating Existing Members
+
+1. **Status Changes**
+   - PhD graduation: Move from `PhD[YY]_` to `FormerPhD_`
+   - Postdoc completion: Move from `PD[YY]_` to `FormerPD_`
+   - Faculty departure: Move from `Faculty_` to `FormerFaculty_`
+
+2. **Information Updates**
+   - Regular review of contact information
+   - Update research interests and affiliations
+   - Refresh biography content
+   - Update profile photos as needed
+
+3. **Archive Management**
+   - Maintain Former_ categories for historical records
+   - Preserve important achievements and contributions
+   - Update status in user_groups classification
+
+## Data Quality Standards
+
+### Image Requirements
+- **Format**: PNG preferred for avatar images
+- **Size**: Minimum 400x400px, maximum 1000x1000px
+- **Aspect Ratio**: Square (1:1) for consistency
+- **File Size**: Optimize to <500KB for web performance
+- **Background**: Professional, preferably solid background
+
+### Content Standards
+- **Accuracy**: Verify all institutional affiliations and contact information
+- **Consistency**: Use standardized formatting across all profiles
+- **Completeness**: Ensure all required fields are populated
+- **Language**: Professional English, checked for grammar and spelling
+- **Updates**: Regular maintenance schedule (quarterly review recommended)
+
+### Technical Validation
+- **YAML Syntax**: Validate front-matter structure
+- **Link Verification**: Check all external links for accessibility
+- **File Paths**: Ensure correct relative path references
+- **Encoding**: Use UTF-8 encoding for all text files
+
+## Integration with Website Systems
+
+### Automatic Processing
+- Team member data is automatically loaded by [js/team-loader.js](mdc:js/team-loader.js)
+- Profile information populates the team section dynamically
+- User group classifications determine display categorization
+- Social media links generate contact buttons automatically
+
+### Display Organization
+- Faculty members appear first in team listings
+- PhD students organized by year (most recent first)
+- Postdocs and visitors listed by category
+- Former members maintained in separate archive sections
+
+### Search and Filtering
+- Research interests enable keyword searching
+- User groups allow category filtering
+- Name fields support alphabetical sorting
+- Institution data enables affiliation grouping
+
+## Maintenance and Backup
+
+### Regular Maintenance Tasks
+- **Monthly**: Verify contact information accuracy
+- **Quarterly**: Review and update research interests
+- **Annually**: Complete profile review and photo updates
+- **As needed**: Status changes and new member additions
+
+### Backup Procedures
+- Version control all changes through Git
+- Maintain backup copies of profile images
+- Document all directory moves and reorganizations
+- Preserve historical data in Former_ categories
+
+### Quality Assurance
+- Peer review process for new member additions
+- Standardized template compliance checking
+- Regular link validation and testing
+- Consistent naming convention enforcement

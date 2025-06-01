@@ -5,29 +5,252 @@ alwaysApply: true
 ---
 # Seminar Data Management Guidelines
 
-## Directory Structure
-Seminar data is stored in the `/data/seminar` directory, organized by date and presenter.
+## Directory Structure and Organization
 
-## Naming Convention
-- Use the format: `YY-MM-DD-PresenterName`
-- Example: `24-05-13-LiuJianqing`
+Seminar content is systematically organized in the `/data/seminar` directory using a date-based hierarchical structure for optimal chronological organization and easy retrieval.
 
-## Required Content
-Each seminar directory should contain:
-1. Presentation materials (slides, documents)
-2. Abstract or summary
-3. Speaker information
-4. Date and time details
-5. Any additional resources or references
+### Naming Convention Standards
+- **Format**: `YY-MM-DD-[SpeakerName]`
+- **Examples**: 
+  - `24-05-13-LiuJianqing` (Internal speaker)
+  - `24-03-15-WeiHuaZhuang` (External speaker)
+  - `23-11-22-RobertoRiggio` (International speaker)
 
-## Organization Guidelines
-- Keep all seminar materials in their respective dated directories
-- Maintain a consistent structure across all seminar entries
-- Include both internal and external speaker presentations
-- Archive older seminars while maintaining accessibility
+### Directory Naming Best Practices
+- Use **2-digit year** format (24, 25, etc.)
+- **Zero-pad** single-digit months and days (05, not 5)
+- **Speaker names** should be concatenated without spaces or special characters
+- For speakers with common names, add institution identifier if needed
+- Maintain consistent capitalization (PascalCase recommended)
 
-## Best Practices
-- Update the seminar section promptly after each presentation
-- Ensure all materials are properly dated and attributed
-- Maintain a consistent format for all seminar documentation
-- Include any relevant links or references to related research
+## Required File Structure
+
+Each seminar directory must contain the following essential files:
+
+### Core Files (Required)
+1. **`index.md`**: Primary seminar content with YAML front-matter and Markdown body
+2. **`index.html`**: Generated or custom HTML version for web display
+3. **`featured.jpg`**: Speaker photo or event image (recommended: 800x600px minimum)
+
+### Optional Supporting Files
+- **Presentation slides**: `slides.pdf`, `presentation.pptx`
+- **Additional media**: Photos, videos, supplementary materials
+- **Abstracts**: Extended abstracts or paper drafts
+- **Resources**: Related papers, code repositories, datasets
+
+## YAML Front-Matter Schema
+
+The `index.md` file must follow this standardized structure:
+
+```yaml
+---
+# Seminar title with date (required)
+title: [Presentation Title] @YYYY.M.D
+
+# Date in ISO format (required)
+date: YYYY-MM-DD
+
+# Optional fields for enhanced functionality
+time: "HH:MM - HH:MM"  # Seminar time range
+location: "Room Number, Building Name"  # Physical location
+mode: "Hybrid"  # Options: "In-person", "Online", "Hybrid"
+recording_available: true  # Boolean for recorded sessions
+
+# Speaker information (recommended)
+speaker:
+  name: "Prof./Dr. [Full Name]"
+  title: "[Position]"
+  institution: "[University/Organization Name]"
+  country: "[Country]"
+  website: "[Speaker's Homepage URL]"
+  email: "[Contact Email]"
+
+# Categorization (optional)
+tags:
+  - "Research Area"
+  - "Technology Domain"
+  - "Seminar Series"
+
+# Event type classification (optional)
+event_type: "Research Seminar"  # Options: "Research Seminar", "Industry Talk", "Workshop", "Defense"
+---
+```
+
+## Content Structure Guidelines
+
+### Speaker Introduction Section
+```markdown
+Speaker: **[Title] [Full Name]**.
+[Position], [Department], [Institution], [Country]
+<!--more-->
+```
+
+### Abstract Section
+```markdown
+## Abstract 
+
+[Comprehensive abstract of 150-300 words]
+- Include research motivation and context
+- Describe methodology and key findings
+- Highlight practical applications and implications
+- Mention collaboration opportunities if applicable
+```
+
+### Biography Section
+```markdown
+## Biography
+
+[Speaker biography of 100-200 words]
+- Educational background and career progression
+- Key research areas and achievements
+- Notable publications and awards
+- Current research focus and future directions
+```
+
+### Optional Sections
+```markdown
+## Key Topics Covered
+- [Topic 1]
+- [Topic 2]
+- [Topic 3]
+
+## References and Resources
+- [Paper 1]: [URL]
+- [Code Repository]: [GitHub URL]
+- [Related Project]: [Website URL]
+
+## Q&A Highlights
+[Post-seminar: Add notable questions and answers]
+```
+
+## Content Quality Standards
+
+### Abstract Requirements
+- **Length**: 150-300 words for optimal readability
+- **Structure**: Context → Problem → Approach → Results → Impact
+- **Language**: Clear, accessible to interdisciplinary audience
+- **Keywords**: Include relevant technical terms for searchability
+- **Novelty**: Highlight unique contributions and innovations
+
+### Biography Standards
+- **Focus**: Professional achievements and research expertise
+- **Relevance**: Emphasize areas related to lab's research interests
+- **Currency**: Use recent achievements and current positions
+- **Accessibility**: Avoid excessive jargon, explain specialized terms
+- **Contact**: Include collaboration opportunities where appropriate
+
+### Image and Media Guidelines
+- **Featured Image**: Professional headshot or event photo
+- **Format**: JPEG for photos, PNG for graphics with transparency
+- **Resolution**: Minimum 800x600px for featured images
+- **File Size**: Optimize for web (<1MB recommended)
+- **Alt Text**: Include descriptive alt text for accessibility
+
+## Content Creation Workflow
+
+### Pre-Seminar Preparation
+
+1. **Directory Setup**
+   ```bash
+   mkdir "/data/seminar/YY-MM-DD-[SpeakerName]"
+   cd "/data/seminar/YY-MM-DD-[SpeakerName]"
+   ```
+
+2. **Initial Content Creation**
+   - Request speaker bio and abstract in advance
+   - Obtain high-quality speaker photo
+   - Create initial `index.md` with confirmed details
+   - Set up placeholder files for slides and materials
+
+3. **Content Review Process**
+   - Verify all speaker information accuracy
+   - Proofread abstract and biography
+   - Confirm seminar logistics (time, location, format)
+   - Test any technical requirements (video links, slides)
+
+### Post-Seminar Updates
+
+1. **Material Collection**
+   - Upload presentation slides (with speaker permission)
+   - Add photos from the event
+   - Include any supplementary materials shared
+   - Update with recording links if available
+
+2. **Content Enhancement**
+   - Add Q&A highlights from the session
+   - Include participant feedback if notable
+   - Update references with any mentioned resources
+   - Add follow-up contact information if provided
+
+3. **Quality Assurance**
+   - Verify all links are functional
+   - Ensure proper image optimization
+   - Validate YAML front-matter syntax
+   - Check for consistent formatting
+
+## Archive Organization
+
+### Chronological Categorization
+- **Current Year**: Active seminars with full details
+- **Previous Years**: Archived seminars with preserved content
+- **Special Series**: Workshops, defense presentations, industry talks
+
+### Metadata Management
+- Maintain consistent tagging for research areas
+- Track seminar series and recurring themes
+- Document collaboration outcomes and follow-ups
+- Preserve historical context and significance
+
+## Integration with Website Systems
+
+### Automatic Processing
+- Seminar listings are dynamically generated from directory structure
+- Date-based sorting enables chronological display
+- Featured images create visual seminar galleries
+- YAML metadata enables filtering and search functionality
+
+### Cross-Reference Capabilities
+- Link seminars to related team member research
+- Connect to relevant publications and projects
+- Reference related laboratory activities
+- Integrate with news and announcement systems
+
+## SEO and Discoverability
+
+### Search Optimization
+- Include relevant keywords in titles and abstracts
+- Use descriptive filenames for all media
+- Implement proper heading hierarchy (H1, H2, H3)
+- Add meta descriptions through YAML front-matter
+
+### External Visibility
+- Format content for academic search engines
+- Include speaker institutional affiliations
+- Reference related research publications
+- Maintain consistent URL structure for citations
+
+## Maintenance and Quality Control
+
+### Regular Review Schedule
+- **Monthly**: Verify current seminar information
+- **Quarterly**: Review and update speaker contact information
+- **Annually**: Archive old seminars and update categorization
+- **As needed**: Fix broken links and update references
+
+### Backup and Preservation
+- Version control all content changes through Git
+- Maintain backup copies of presentation materials
+- Preserve speaker permissions and usage rights
+- Document any content removal or modification requests
+
+### Accessibility Compliance
+- Provide alt text for all images
+- Ensure proper heading structure for screen readers
+- Include transcripts for video content when available
+- Test content with accessibility validation tools
+
+### Analytics and Improvement
+- Track seminar page views and engagement
+- Monitor download statistics for materials
+- Collect feedback on content organization
+- Implement improvements based on user behavior data

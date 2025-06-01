@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Connected and Autonomous Driving (CAD) - JC STEM Lab</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .research-details-container {
+            margin: 40px 0;
+            max-width: 900px;
+        }
+        
+        .research-header {
+            text-align: center;
+            padding: 60px 30px;
+            background: linear-gradient(135deg, var(--primary-color), #3a7bd5);
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 50px;
+        }
+        
+        .research-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .research-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .research-section {
+            margin-bottom: 50px;
+        }
+        
+        .research-section h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+        
+        .research-section h2 i {
+            margin-right: 12px;
+            font-size: 1.5rem;
+        }
+        
+        .research-subsection {
+            margin-bottom: 40px;
+        }
+        
+        .research-subsection h3 {
+            color: #333;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .research-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .research-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .research-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            margin: 20px 0;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 12px 24px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-home i {
+            margin-right: 10px;
+        }
+        
+        .back-to-home:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateX(-5px);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .research-header {
+                padding: 40px 20px;
+            }
+            
+            .research-header h1 {
+                font-size: 2rem;
+            }
+            
+            .research-details-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="../index.html#about">Home</a></li>
+                <li><a href="../index.html#research" class="active">Research</a></li>
+                <li><a href="../index.html#team">Team</a></li>
+                <li><a href="../index.html#latest-news">News</a></li>
+                <li><a href="../index.html#seminar">Seminars</a></li>
+                <li><a href="../index.html#publications">Publications</a></li>
+            </ul>
+            <div class="nav-logo">
+                <img src="../assets/logo.png" alt="JC STEM Lab Logo">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <a href="../index.html#research" class="back-to-home">
+                    <i class="fas fa-arrow-left"></i> Back to Research Areas
+                </a>
+                
+                <div class="research-header">
+                    <h1><i class="fas fa-car"></i> Connected and Autonomous Driving (CAD)</h1>
+                    <p>Advancing the future of transportation through intelligent vehicular systems, collaborative perception, and maritime applications. Our research focuses on creating safer, more efficient autonomous transportation networks.</p>
+                </div>
+                
+                <div class="research-details-container">
+                    
+                    <div class="research-section">
+                        <h2><i class="fas fa-brain"></i> Vehicular Perception, Learning and Computing</h2>
+                        
+                        <div class="research-subsection">
+                            <h3>Collaborative Perception & Learning</h3>
+                            <ul class="research-list">
+                                <li>Multi-agent collaborative perception to overcome occlusion and limited sensing in autonomous driving.</li>
+                                <li>Security challenges in collaborative perception, including adversarial attacks and defense mechanisms.</li>
+                                <li>Use of large language/vision models for multi-agent reasoning and decision-making.</li>
+                                <li>Automated fine-tuning of perception models for connected and autonomous vehicles/robots using pseudo labels generated from improved prediction confidence as agents approach objects.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="research-subsection">
+                            <h3>RIS-aided Communications and Computing</h3>
+                            <ul class="research-list">
+                                <li>Enhancing vehicular data transmission rates using reflecting surfaces and optimizing wireless channels for moving vehicles.</li>
+                                <li>Task-oriented semantic communications for CAD.</li>
+                                <li>Height-adjustable RIS-assisted V2I communications.</li>
+                                <li>Multi-hop RIS communications and computing.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="research-subsection">
+                            <h3>Vehicular Edge Computing and Computing Power Networks</h3>
+                            <ul class="research-list">
+                                <li>UAV-enabled dynamic computing power networks for mission critical task computation.</li>
+                                <li>How to leverage mobile things to build computing power networks.</li>
+                                <li>Crowdsensing-enhanced federated learning: vehicles act as both data collectors and FL clients, enabling region-specific model training and improved perception quality.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                    <div class="research-section">
+                        <h2><i class="fas fa-ship"></i> Maritime Perception, Communications, and Computing</h2>
+                        
+                        <div class="research-subsection">
+                            <h3>Maritime Perception and Control</h3>
+                            <ul class="research-list">
+                                <li>Maritime perception dataset construction and model building.</li>
+                                <li>AI and computer vision for intelligent maritime transportation, focusing on perception in challenging waterway scenarios and generative AI for data scarcity.</li>
+                                <li>Maritime navigation, collision avoidance, and control.</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="research-subsection">
+                            <h3>Smart Ports</h3>
+                            <ul class="research-list">
+                                <li>Vision-based smart docking.</li>
+                                <li>UAV-assisted cargo inspection and docking.</li>
+                            </ul>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JC STEM Lab of Smart City, City University of Hong Kong. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 

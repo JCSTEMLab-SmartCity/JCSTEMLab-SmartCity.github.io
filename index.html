@@ -124,14 +124,23 @@
                     .then(data => {
                         const container = document.getElementById('research-areas-container');
                         
+                        // Define page mapping for each research category
+                        const pageMapping = {
+                            "Connected and Autonomous Driving (CAD)": "pages/research-connected-autonomous-driving.html",
+                            "Health, Safety, and Human Sensing": "pages/research-health-safety-sensing.html",
+                            "Integrated Design of Smart City and Low Altitude Economy (LAE)": "pages/research-smart-city-low-altitude-economy.html",
+                            "Wireless Communication and Networking": "pages/research-wireless-communication-networking.html",
+                            "Artificial Intelligence Security and Data Privacy": "pages/research-ai-security-data-privacy.html"
+                        };
+                        
                         // Process each main research category (一级方向)
                         Object.entries(data).forEach(([category, subcategories]) => {
                             // Select appropriate icon for main category
                             let icon = 'fas fa-flask';
                             if (category === "Connected and Autonomous Driving (CAD)") {
-                                icon = 'fas fa-car-alt';
+                                icon = 'fas fa-car';
                             } else if (category === "Integrated Design of Smart City and Low Altitude Economy (LAE)") {
-                                icon = 'fas fa-drone-alt';
+                                icon = 'fas fa-helicopter';
                             } else if (category.includes("Transportation") || category.includes("Vehicle")) {
                                 icon = 'fas fa-car';
                             } else if (category.includes("Health")) {
@@ -146,28 +155,20 @@
                                 icon = 'fas fa-city';
                             }
                             
-                            // Font Awesome 6 has different drone icon options
-                            if (category === "Integrated Design of Smart City and Low Altitude Economy (LAE)") {
-                                icon = 'fas fa-drone';
-                                // Fallbacks if the specific drone icon isn't available
-                                if (!document.querySelector(`.${icon}`)) {
-                                    icon = 'fas fa-helicopter';
-                                }
-                                if (!document.querySelector(`.${icon}`)) {
-                                    icon = 'fas fa-plane';
-                                }
-                            }
-                            
                             const researchArea = document.createElement('div');
                             researchArea.className = 'research-area';
                             researchArea.setAttribute('data-category', encodeURIComponent(category));
                             
                             researchArea.innerHTML = `
-                                <i class="${icon}"></i>
-                                <h3>${category}</h3>
-                                <ul class="research-list">
-                                    ${Object.keys(subcategories).map(subcategory => `<li><strong>${subcategory}</strong></li>`).join('')}
-                                </ul>
+                                <div class="research-area-header">
+                                    <i class="${icon}"></i>
+                                    <h3>${category}</h3>
+                                </div>
+                                <div class="research-area-body">
+                                    <ul class="research-list">
+                                        ${Object.keys(subcategories).map(subcategory => `<li><strong>${subcategory}</strong></li>`).join('')}
+                                    </ul>
+                                </div>
                                 <div class="research-overlay">
                                     <span>View Details</span>
                                 </div>
@@ -175,12 +176,16 @@
                             
                             container.appendChild(researchArea);
                             
-                            // Add click event to the entire area
+                            // Add click event to navigate to static page
                             researchArea.addEventListener('click', function() {
-                                // Store selected category in localStorage for the details page
+                                const targetPage = pageMapping[category];
+                                if (targetPage) {
+                                    window.location.href = targetPage;
+                                } else {
+                                    // Fallback to old dynamic page if mapping not found
                                 localStorage.setItem('selectedResearchCategory', this.dataset.category);
-                                // Navigate to details page
                                 window.location.href = 'pages/research-details.html';
+                                }
                             });
                         });
                     })
@@ -189,22 +194,112 @@
         </script>
         
         <style>
+            .research-areas {
+                display: grid;
+                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+                gap: 20px;
+                margin-top: 30px;
+                padding: 0 20px;
+            }
+            
             .research-area {
-                flex: 1 0 45%;
-                margin: 15px;
-                border-radius: 8px;
-                box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-                background: rgba(189, 56, 75, 0.05);
-                overflow: hidden;
-                transition: transform 0.3s ease, box-shadow 0.3s ease;
                 position: relative;
+                background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
+                border-radius: 16px;
+                padding: 0;
+                border: 1px solid rgba(0, 0, 0, 0.06);
+                transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
                 cursor: pointer;
-                padding: 20px;
+                overflow: hidden;
+                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
             }
             
             .research-area:hover {
-                transform: translateY(-5px);
-                box-shadow: 0 12px 24px rgba(0,0,0,0.15);
+                transform: translateY(-8px) scale(1.01);
+                box-shadow: 0 20px 40px rgba(189, 56, 75, 0.12);
+                border-color: rgba(189, 56, 75, 0.3);
+            }
+            
+            /* Removed gradient top bar hover effect
+            .research-area::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 4px;
+                background: linear-gradient(90deg, var(--primary-color), #3498db, #9b59b6);
+                transform: scaleX(0);
+                transform-origin: left;
+                transition: transform 0.4s ease;
+            }
+            
+            .research-area:hover::before {
+                transform: scaleX(1);
+            }
+            */
+            
+            .research-area-header {
+                padding: 20px 20px 15px 20px;
+                background: white;
+                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+            }
+            
+            .research-area i {
+                font-size: 2rem;
+                color: var(--primary-color);
+                margin-bottom: 12px;
+                display: block;
+                text-shadow: 0 2px 4px rgba(189, 56, 75, 0.1);
+            }
+            
+            .research-area h3 {
+                font-size: 1.25rem;
+                font-weight: 700;
+                color: #2c3e50;
+                margin: 0;
+                line-height: 1.3;
+                letter-spacing: -0.3px;
+            }
+            
+            .research-area-body {
+                padding: 15px 20px 20px 20px;
+                background: linear-gradient(135deg, #fafbfc 0%, #ffffff 100%);
+            }
+            
+            .research-area .research-list {
+                list-style: none;
+                padding: 0;
+                margin: 0;
+            }
+            
+            .research-area .research-list li {
+                position: relative;
+                padding: 8px 0 8px 20px;
+                color: #5a6c7d;
+                font-size: 0.9rem;
+                line-height: 1.4;
+                border-left: 3px solid transparent;
+                transition: all 0.3s ease;
+                margin-bottom: 6px;
+                border-radius: 0 6px 6px 0;
+            }
+            
+            .research-area .research-list li::before {
+                content: "●";
+                position: absolute;
+                left: 0;
+                color: var(--primary-color);
+                font-weight: 700;
+                font-size: 1rem;
+                opacity: 0.8;
+            }
+            
+            .research-area .research-list li strong {
+                color: #34495e;
+                font-weight: 600;
+                display: block;
+                margin-bottom: 1px;
             }
             
             .research-overlay {
@@ -212,28 +307,105 @@
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background: var(--primary-color);
+                background: linear-gradient(135deg, var(--primary-color) 0%, #c0392b 100%);
                 color: white;
-                padding: 10px;
+                padding: 12px 20px;
                 text-align: center;
                 opacity: 0;
-                transition: opacity 0.3s ease;
+                transform: translateY(100%);
+                transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                font-weight: 600;
+                font-size: 0.85rem;
+                letter-spacing: 0.5px;
+                text-transform: uppercase;
             }
             
             .research-area:hover .research-overlay {
                 opacity: 1;
+                transform: translateY(0);
             }
             
-            @media (max-width: 768px) {
-                .research-area {
-                    flex: 1 0 100%;
+            .research-overlay::before {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                height: 1px;
+                background: rgba(255, 255, 255, 0.4);
+            }
+            
+            /* Card animation on load */
+            @keyframes cardFadeIn {
+                from {
+                    opacity: 0;
+                    transform: translateY(20px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateY(0);
                 }
             }
             
-            .research-areas {
-                display: flex;
-                flex-wrap: wrap;
-                justify-content: center;
+            .research-area {
+                animation: cardFadeIn 0.5s ease forwards;
+            }
+            
+            .research-area:nth-child(1) { animation-delay: 0.1s; }
+            .research-area:nth-child(2) { animation-delay: 0.15s; }
+            .research-area:nth-child(3) { animation-delay: 0.2s; }
+            .research-area:nth-child(4) { animation-delay: 0.25s; }
+            .research-area:nth-child(5) { animation-delay: 0.3s; }
+            
+            /* Responsive design */
+            @media (max-width: 768px) {
+                .research-areas {
+                    grid-template-columns: 1fr;
+                    gap: 15px;
+                    padding: 0 15px;
+                }
+                
+                .research-area-header {
+                    padding: 18px 18px 12px 18px;
+                }
+                
+                .research-area-body {
+                    padding: 12px 18px 18px 18px;
+                }
+                
+                .research-area h3 {
+                    font-size: 1.2rem;
+                }
+                
+                .research-area i {
+                    font-size: 1.8rem;
+                    margin-bottom: 10px;
+                }
+            }
+            
+            @media (max-width: 480px) {
+                .research-area-header {
+                    padding: 15px 15px 10px 15px;
+                }
+                
+                .research-area-body {
+                    padding: 10px 15px 15px 15px;
+                }
+                
+                .research-area h3 {
+                    font-size: 1.1rem;
+                }
+                
+                .research-area i {
+                    font-size: 1.6rem;
+                    margin-bottom: 8px;
+                }
+                
+                .research-area .research-list li {
+                    padding: 6px 0 6px 18px;
+                    font-size: 0.85rem;
+                    margin-bottom: 4px;
+                }
             }
         </style>
 
