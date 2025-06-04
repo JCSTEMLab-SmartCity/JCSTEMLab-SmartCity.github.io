@@ -1141,49 +1141,6 @@
           "name": "Current PhD Students",
           "members": [
             {
-              "id": "zhuguangyu",
-              "title": "Mr. ZHU, Guangyu",
-              "role": [
-                {
-                  "text": "PhD Student @ University of Florida",
-                  "highlighted": true
-                },
-                {
-                  "text": "BSc @ Xidian University",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/people/ZhuGuangyu/avatar.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:gzhu@ufl.edu",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                }
-              ],
-              "interests": [
-                "Machine Learning",
-                "Wireless Networks",
-                "Edge Computing"
-              ],
-              "biography": "\n\n\nGuangyu Zhu received his B.Eng. degree from Xidian University, Xi'an, China, in 2019. Since 2019, he has been pursuing a Ph.D degree with the Department of Electrical and Computer Engineering, University of Florida, Gainesville, supervised by Prof. FANG. Yuguang. His research interests include machine learning, wireless networks, and edge computing",
-              "education": [
-                {
-                  "degree": "PhD in Electrical and Computer Engineering",
-                  "institution": "University of Florida, Gainesville, USA",
-                  "year": "2019 - Now"
-                },
-                {
-                  "degree": "BSc in Electronic Engineering",
-                  "institution": "Xidian University, Xi'an, China",
-                  "year": "2015 - 2019"
-                }
-              ],
-              "detailPage": "data/people/ZhuGuangyu/index.html",
-              "last_name": "1zhu"
-            },
-            {
               "id": "phd23-fangzhengru",
               "title": "Mr. FANG, Zhengru",
               "role": [
@@ -2048,7 +2005,7 @@
               "title": "Mr. QIAN, Xinyuan",
               "role": [
                 {
-                  "text": "PhD Student @ UESTC",
+                  "text": "Postdoc (博新計劃) @ UESTC",
                   "highlighted": true
                 },
                 {
@@ -2208,6 +2165,49 @@
         {
           "name": "Graduated PhD Students",
           "members": [
+            {
+              "id": "zhuguangyu",
+              "title": "Mr. ZHU, Guangyu",
+              "role": [
+                {
+                  "text": "PhD Student @ University of Florida",
+                  "highlighted": true
+                },
+                {
+                  "text": "BSc @ Xidian University",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/ZhuGuangyu/avatar.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:gzhu@ufl.edu",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                }
+              ],
+              "interests": [
+                "Machine Learning",
+                "Wireless Networks",
+                "Edge Computing"
+              ],
+              "biography": "\n\n\nGuangyu Zhu received his B.Eng. degree from Xidian University, Xi'an, China, in 2019. Since 2019, he has been pursuing a Ph.D degree with the Department of Electrical and Computer Engineering, University of Florida, Gainesville, supervised by Prof. FANG. Yuguang. His research interests include machine learning, wireless networks, and edge computing",
+              "education": [
+                {
+                  "degree": "PhD in Electrical and Computer Engineering",
+                  "institution": "University of Florida, Gainesville, USA",
+                  "year": "2019 - Now"
+                },
+                {
+                  "degree": "BSc in Electronic Engineering",
+                  "institution": "Xidian University, Xi'an, China",
+                  "year": "2015 - 2019"
+                }
+              ],
+              "detailPage": "data/people/ZhuGuangyu/index.html",
+              "last_name": "1zhu"
+            },
             {
               "id": "huyaodan",
               "title": "Dr. HU, Yaodan",
