@@ -645,7 +645,6 @@ nav .container {
     color: var(--primary-color);
     text-decoration: none;
     font-weight: 600;
-    margin-left: 5px;
 }
 
 .news-content a:hover {
