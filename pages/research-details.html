@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Details - JC STEM Lab</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .research-details-container {
+            margin: 40px 0;
+            max-width: 900px;
+        }
+        
+        .research-header {
+            text-align: center;
+            padding: 60px 30px;
+            background: linear-gradient(135deg, var(--primary-color), #3a7bd5);
+            color: white;
+            border-radius: 12px;
+            margin-bottom: 50px;
+        }
+        
+        .research-header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .research-header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+            line-height: 1.6;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        
+        .research-subcategory {
+            margin-bottom: 50px;
+        }
+        
+        .research-subcategory h2 {
+            color: var(--primary-color);
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+        }
+        
+        .research-subcategory h2 i {
+            margin-right: 12px;
+            font-size: 1.5rem;
+        }
+        
+        .research-topic {
+            margin-bottom: 40px;
+        }
+        
+        .research-topic h3 {
+            color: #333;
+            font-size: 1.4rem;
+            margin-bottom: 20px;
+            font-weight: 600;
+        }
+        
+        .research-list {
+            list-style: none;
+            padding: 0;
+        }
+        
+        .research-list li {
+            margin-bottom: 12px;
+            padding-left: 20px;
+            position: relative;
+            line-height: 1.6;
+            color: #555;
+        }
+        
+        .research-list li::before {
+            content: "▸";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-weight: bold;
+        }
+        
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            margin: 20px 0;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 12px 24px;
+            background: #f8f9fa;
+            border-radius: 8px;
+            transition: all 0.3s ease;
+        }
+        
+        .back-to-home i {
+            margin-right: 10px;
+        }
+        
+        .back-to-home:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateX(-5px);
+        }
+        
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .research-header {
+                padding: 40px 20px;
+            }
+            
+            .research-header h1 {
+                font-size: 2rem;
+            }
+            
+            .research-details-container {
+                margin: 20px 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="../index.html#about">Home</a></li>
+                <li><a href="../index.html#research" class="active">Research</a></li>
+                <li><a href="../index.html#team">Team</a></li>
+                <li><a href="../index.html#latest-news">News</a></li>
+                <li><a href="../index.html#seminar">Seminars</a></li>
+                <li><a href="../index.html#publications">Publications</a></li>
+            </ul>
+            <div class="nav-logo">
+                <img src="../assets/logo.png" alt="JC STEM Lab Logo">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <a href="../index.html#research" class="back-to-home">
+                    <i class="fas fa-arrow-left"></i> Back to Research Areas
+                </a>
+                
+                <div id="research-content">
+                    <!-- Dynamic content will be loaded here -->
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JC STEM Lab of Smart City, City University of Hong Kong. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Load research data and display based on URL parameter
+        async function loadResearchDetails() {
+            const urlParams = new URLSearchParams(window.location.search);
+            const category = urlParams.get('category');
+            
+            try {
+                const response = await fetch('../data/research.json');
+                const data = await response.json();
+                
+                if (category && data[category]) {
+                    displayResearchCategory(category, data[category]);
+                } else {
+                    // Redirect to research section if no valid category
+                    window.location.href = '../index.html#research';
+                }
+            } catch (error) {
+                console.error('Error loading research data:', error);
+                window.location.href = '../index.html#research';
+            }
+        }
+        
+        function displayResearchCategory(categoryName, categoryData) {
+            const contentDiv = document.getElementById('research-content');
+            
+            // Create header
+            const header = document.createElement('div');
+            header.className = 'research-header';
+            header.innerHTML = `
+                <h1><i class="fas fa-flask"></i> ${categoryName}</h1>
+                <p>Explore our cutting-edge research in ${categoryName.toLowerCase()}</p>
+            `;
+            
+            // Create details container
+            const detailsContainer = document.createElement('div');
+            detailsContainer.className = 'research-details-container';
+            
+            // Process subcategories
+            for (const [subcategoryName, subcategoryData] of Object.entries(categoryData)) {
+                const subcategoryDiv = document.createElement('div');
+                subcategoryDiv.className = 'research-subcategory';
+                
+                const subcategoryTitle = document.createElement('h2');
+                subcategoryTitle.innerHTML = `<i class="fas fa-cog"></i> ${subcategoryName}`;
+                subcategoryDiv.appendChild(subcategoryTitle);
+                
+                // Process topics
+                if (typeof subcategoryData === 'object' && subcategoryData !== null) {
+                    for (const [topicName, topicData] of Object.entries(subcategoryData)) {
+                        const topicDiv = document.createElement('div');
+                        topicDiv.className = 'research-topic';
+                        
+                        const topicTitle = document.createElement('h3');
+                        topicTitle.textContent = topicName;
+                        topicDiv.appendChild(topicTitle);
+                        
+                        if (topicData.description) {
+                            const descriptionList = document.createElement('ul');
+                            descriptionList.className = 'research-list';
+                            
+                            const descriptions = Array.isArray(topicData.description) 
+                                ? topicData.description 
+                                : [topicData.description];
+                            
+                            descriptions.forEach(desc => {
+                                const listItem = document.createElement('li');
+                                listItem.textContent = desc;
+                                descriptionList.appendChild(listItem);
+                            });
+                            
+                            topicDiv.appendChild(descriptionList);
+                        }
+                        
+                        subcategoryDiv.appendChild(topicDiv);
+                    }
+                }
+                
+                detailsContainer.appendChild(subcategoryDiv);
+            }
+            
+            contentDiv.appendChild(header);
+            contentDiv.appendChild(detailsContainer);
+            
+            // Update page title
+            document.title = `${categoryName} - JC STEM Lab`;
+        }
+        
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', loadResearchDetails);
+    </script>
+</body>
+</html> 

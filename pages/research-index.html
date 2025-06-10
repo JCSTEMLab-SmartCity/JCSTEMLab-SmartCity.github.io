@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research Areas Index - JC STEM Lab</title>
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .research-index-container {
+            margin: 40px 0;
+        }
+        
+        .research-index-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+        
+        .research-index-header h1 {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .research-index-header p {
+            font-size: 1.1rem;
+            color: #666;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        
+        .research-areas-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 30px;
+            margin: 40px 0;
+        }
+        
+        .research-area-card {
+            background: white;
+            border-radius: 12px;
+            padding: 30px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+            text-align: center;
+            border-left: 5px solid var(--primary-color);
+        }
+        
+        .research-area-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+        
+        .research-area-card i {
+            font-size: 3rem;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+        }
+        
+        .research-area-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 15px;
+            color: #333;
+        }
+        
+        .research-area-card p {
+            color: #666;
+            margin-bottom: 20px;
+            line-height: 1.6;
+        }
+        
+        .research-area-card a {
+            display: inline-flex;
+            align-items: center;
+            padding: 12px 24px;
+            background: var(--primary-color);
+            color: white;
+            text-decoration: none;
+            border-radius: 6px;
+            font-weight: 500;
+            transition: background 0.3s ease;
+        }
+        
+        .research-area-card a:hover {
+            background: #a02d42;
+        }
+        
+        .research-area-card a i {
+            margin-left: 8px;
+            font-size: 1rem;
+        }
+        
+        .back-to-home {
+            display: inline-flex;
+            align-items: center;
+            margin: 20px 0;
+            color: var(--primary-color);
+            text-decoration: none;
+            font-weight: 500;
+            padding: 12px 24px;
+            background: var(--background-color);
+            border-radius: 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        }
+        
+        .back-to-home i {
+            margin-right: 10px;
+        }
+        
+        .back-to-home:hover {
+            background: var(--primary-color);
+            color: white;
+            transform: translateX(-5px);
+        }
+        
+        /* Color variations for different cards */
+        .card-cad { border-left-color: #3498db; }
+        .card-cad i { color: #3498db; }
+        .card-cad a { background: #3498db; }
+        .card-cad a:hover { background: #2980b9; }
+        
+        .card-health { border-left-color: #e74c3c; }
+        .card-health i { color: #e74c3c; }
+        .card-health a { background: #e74c3c; }
+        .card-health a:hover { background: #c0392b; }
+        
+        .card-smart-city { border-left-color: #9b59b6; }
+        .card-smart-city i { color: #9b59b6; }
+        .card-smart-city a { background: #9b59b6; }
+        .card-smart-city a:hover { background: #8e44ad; }
+        
+        .card-wireless { border-left-color: #27ae60; }
+        .card-wireless i { color: #27ae60; }
+        .card-wireless a { background: #27ae60; }
+        .card-wireless a:hover { background: #229954; }
+        
+        .card-ai { border-left-color: #f39c12; }
+        .card-ai i { color: #f39c12; }
+        .card-ai a { background: #f39c12; }
+        .card-ai a:hover { background: #e67e22; }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="../index.html#about">Home</a></li>
+                <li><a href="../index.html#research" class="active">Research</a></li>
+                <li><a href="../index.html#team">Team</a></li>
+                <li><a href="../index.html#latest-news">News</a></li>
+                <li><a href="../index.html#seminar">Seminars</a></li>
+                <li><a href="../index.html#publications">Publications</a></li>
+            </ul>
+            <div class="nav-logo">
+                <img src="../assets/logo.png" alt="JC STEM Lab Logo">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <section class="section">
+            <div class="container">
+                <a href="../index.html#research" class="back-to-home">
+                    <i class="fas fa-arrow-left"></i> Back to Home
+                </a>
+                
+                <div class="research-index-header">
+                    <h1><i class="fas fa-microscope"></i> Research Areas</h1>
+                    <p>Explore our cutting-edge research initiatives across multiple domains in smart city technologies, IoT, and wireless communications.</p>
+                </div>
+                
+                <div class="research-areas-grid">
+                    
+                    <div class="research-area-card card-cad">
+                        <i class="fas fa-car"></i>
+                        <h3>Connected and Autonomous Driving (CAD)</h3>
+                        <p>Advancing transportation through intelligent vehicular systems, collaborative perception, and maritime applications.</p>
+                        <a href="research-connected-autonomous-driving.html">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="research-area-card card-health">
+                        <i class="fas fa-heartbeat"></i>
+                        <h3>Health, Safety, and Human Sensing</h3>
+                        <p>Developing advanced sensing technologies for health monitoring, safety enhancement, and human behavior analysis.</p>
+                        <a href="research-health-safety-sensing.html">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="research-area-card card-smart-city">
+                        <i class="fas fa-drone"></i>
+                        <h3>Smart City and Low Altitude Economy</h3>
+                        <p>Exploring the synergy between smart city infrastructure and low altitude economy operations.</p>
+                        <a href="research-smart-city-low-altitude-economy.html">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="research-area-card card-wireless">
+                        <i class="fas fa-signal"></i>
+                        <h3>Wireless Communication and Networking</h3>
+                        <p>Advancing wireless communication technologies for next-generation networks and smart city ecosystems.</p>
+                        <a href="research-wireless-communication-networking.html">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                    <div class="research-area-card card-ai">
+                        <i class="fas fa-user-secret"></i>
+                        <h3>AI Security and Data Privacy</h3>
+                        <p>Protecting AI models and securing data transactions through robust security mechanisms and privacy-preserving technologies.</p>
+                        <a href="research-ai-security-data-privacy.html">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 JC STEM Lab of Smart City, City University of Hong Kong. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html> 
