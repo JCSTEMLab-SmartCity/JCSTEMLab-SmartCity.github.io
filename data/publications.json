@@ -1,5 +1,27 @@
 [
   {
+    "title": "R-ACP: Real-Time Adaptive Collaborative Perception Leveraging Robust Task-Oriented Communications",
+    "authors": "Zhengru Fang, Jingjing Wang, Yanan Ma, Yihang Tao, Xianhao Chen, Yuguang Fang",
+    "venue": "IEEE Journal on Selected Areas in Communications",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "JSAC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2410.04168"
+      },
+      {
+        "text": "Code",
+        "class": "code-tag",
+        "link": "https://github.com/fangzr/R-ACP/"
+      }
+    ]
+  },
+  {
     "title": "AgentsCoMerge: Large Language Model Empowered Collaborative Decision Making for Multi-Lane Merging",
     "authors": "Senkang Hu, Zhengru Fang, Zihan Fang, Yiqin Deng, Xianhao Chen, Yuguang Fang, Sam Kwong",
     "venue": "IEEE Transactions on Mobile Computing",
