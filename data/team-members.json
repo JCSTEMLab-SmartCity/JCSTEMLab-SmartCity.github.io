@@ -1884,53 +1884,7 @@
           "name": "Visiting Students",
           "members": [
 
-            {
-              "id": "visitor24-liuyaxuan",
-              "title": "Ms. LIU, Yaxuan",
-              "role": [
-                {
-                  "text": "Visiting Student @ CityUHK",
-                  "highlighted": true
-                },
-                {
-                  "text": "PhD student @ Nanjing University of Posts and Telecommunications (NJUPT)",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/people/Visitor24_LiuYaxuan/avatar.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:2021010103@njupt.edu.cn",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                }
-              ],
-              "interests": [
-                "Wireless Networks",
-                "Internet of Things"
-              ],
-              "biography": "\n\n\nYaxuan Liu is currently pursuing the Ph.D. degree with Nanjing University of Posts and Telecommunications (NJUPT), Nanjing, China. Her research interests include wireless communications and the Internet of Things.",
-              "education": [
-                {
-                  "degree": "PhD in Wireless Communications",
-                  "institution": "Nanjing University of Posts and Telecommunications",
-                  "year": "2021 - Now"
-                },
-                {
-                  "degree": "MEng in Wireless Communications",
-                  "institution": "Nanjing University of Posts and Telecommunications",
-                  "year": "2020 - 2021"
-                },
-                {
-                  "degree": "BSc in Internet of Things",
-                  "institution": "Jiangsu Second Normal University",
-                  "year": "2016 - 2020"
-                }
-              ],
-              "detailPage": "data/people/Visitor24_LiuYaxuan/index.html",
-              "last_name": "r"
-            }
+
           ]
         }
       ]
@@ -2000,6 +1954,53 @@
         {
           "name": "Former Visiting Students",
           "members": [
+            {
+              "id": "visitor24-liuyaxuan",
+              "title": "Dr. LIU, Yaxuan",
+              "role": [
+                {
+                  "text": "Associate Professor @ Jiangsu Second Normal University",
+                  "highlighted": true
+                },
+                {
+                  "text": "Visiting Student @ CityUHK (2025.2 - 2025.6)",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/Visitor24_LiuYaxuan/avatar.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:2021010103@njupt.edu.cn",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                }
+              ],
+              "interests": [
+                "Wireless Networks",
+                "Internet of Things"
+              ],
+              "biography": "\n\n\nYaxuan Liu is currently pursuing the Ph.D. degree with Nanjing University of Posts and Telecommunications (NJUPT), Nanjing, China. Her research interests include wireless communications and the Internet of Things.",
+              "education": [
+                {
+                  "degree": "PhD in Wireless Communications",
+                  "institution": "Nanjing University of Posts and Telecommunications",
+                  "year": "2021 - Now"
+                },
+                {
+                  "degree": "MEng in Wireless Communications",
+                  "institution": "Nanjing University of Posts and Telecommunications",
+                  "year": "2020 - 2021"
+                },
+                {
+                  "degree": "BSc in Internet of Things",
+                  "institution": "Jiangsu Second Normal University",
+                  "year": "2016 - 2020"
+                }
+              ],
+              "detailPage": "data/people/Visitor24_LiuYaxuan/index.html",
+              "last_name": "r"
+            },
             {
               "id": "visitor23-qianxinyuan",
               "title": "Dr. QIAN, Xinyuan",
