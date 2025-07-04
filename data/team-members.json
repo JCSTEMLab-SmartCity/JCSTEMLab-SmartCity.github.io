@@ -1500,58 +1500,6 @@
               "last_name": "23renqianyao"
             },
             {
-              "id": "phd23-yangliyan",
-              "title": "Ms. YANG, Liyan",
-              "role": [
-                {
-                  "text": "PhD Student",
-                  "highlighted": true
-                },
-                {
-                  "text": "MSc @ Southeast University",
-                  "highlighted": false
-                },
-                {
-                  "text": "BSc @ Xidian University",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/people/PhD23_YangLiyan/avatar.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "yangliyanyan@gmail.com",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                }
-              ],
-              "interests": [
-                "Crowdsourcing",
-                "Auction Design",
-                "Game Theory"
-              ],
-              "biography": "\n\n Liyan Yang received the B.Sc. degree in information security in 2020, from Xidian University, China. In 2023 she received the M.Eng. in cyber security, from Southeast University, China. She is currently pursuing the PhD degree in the department of computer science at City University of Hong Kong.",
-              "education": [
-                {
-                  "degree": "PhD in Computer Science",
-                  "institution": "City University of Hong Kong",
-                  "year": "2023 - Now"
-                },
-                {
-                  "degree": "MEng in Cyber Science",
-                  "institution": "Southeast University",
-                  "year": "2020 - 2023"
-                },
-                {
-                  "degree": "BSc in Information Security",
-                  "institution": "Xidian University",
-                  "year": "2016 - 2020"
-                }
-              ],
-              "detailPage": "data/people/PhD23_YangLiyan/index.html",
-              "last_name": "23yangliyan"
-            },
-            {
               "id": "phd24-anhaonan",
               "title": "Mr. AN, Haonan",
               "role": [
