@@ -1875,7 +1875,8 @@ footer {
     display: block;
 }
 
-.mySlides img {
+.mySlides img,
+.mySlides video {
     width: 100%;
     height: 100%;
     object-fit: cover;
@@ -1885,6 +1886,37 @@ footer {
     left: 0;
     right: 0;
     bottom: 0;
+}
+
+.clickable-video {
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+.clickable-video:hover {
+    transform: scale(1.02);
+}
+
+/* 为视频添加播放图标覆盖层 */
+.video-slide::after {
+    content: '\f04b';
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4rem;
+    color: rgba(255, 255, 255, 0.8);
+    z-index: 2;
+    pointer-events: none;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.5);
+}
+
+.video-slide:hover::after {
+    opacity: 1;
 }
 
 @keyframes fade {

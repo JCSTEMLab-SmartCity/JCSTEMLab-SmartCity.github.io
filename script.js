@@ -22,6 +22,12 @@ function showSlides(n) {
         slides[i].style.display = "none";
         // Reset animation by removing and re-adding the active class
         slides[i].classList.remove("active");
+        
+        // 暂停视频播放
+        const video = slides[i].querySelector('video');
+        if (video) {
+            video.pause();
+        }
     }
     
     // 移除所有导航点的激活类
@@ -35,6 +41,30 @@ function showSlides(n) {
     setTimeout(() => {
         slides[slideIndex-1].classList.add("active");
     }, 10);
+    
+    // 播放当前幻灯片的视频
+    const currentVideo = slides[slideIndex-1].querySelector('video');
+    if (currentVideo) {
+        currentVideo.play().catch(e => {
+            // 处理自动播放失败的情况
+            console.log('Video autoplay failed:', e);
+        });
+        
+        // 移除之前的事件监听器（如果存在）
+        if (currentVideo.videoEndHandler) {
+            currentVideo.removeEventListener('ended', currentVideo.videoEndHandler);
+        }
+        
+        // 添加新的视频结束事件监听器
+        currentVideo.videoEndHandler = function() {
+            // 视频播放完成后自动跳到下一张幻灯片
+            setTimeout(() => {
+                plusSlides(1);
+            }, 1000); // 延迟1秒后跳转
+        };
+        
+        currentVideo.addEventListener('ended', currentVideo.videoEndHandler);
+    }
     
     dots[slideIndex-1].className += " active-dot";
 }
@@ -58,8 +88,16 @@ function autoSlide() {
 function resetAutoSlide() {
     // 清除现有计时器
     clearInterval(slideInterval);
-    // 设置新的计时器，每5秒切换一次
-    slideInterval = setInterval(autoSlide, 5000);
+    
+    // 检查当前幻灯片是否包含视频
+    const slides = document.getElementsByClassName("mySlides");
+    const currentSlide = slides[slideIndex-1];
+    const hasVideo = currentSlide && currentSlide.querySelector('video');
+    
+    // 如果当前幻灯片没有视频，则设置自动切换
+    if (!hasVideo) {
+        slideInterval = setInterval(autoSlide, 5000);
+    }
 }
 
 // 初始化幻灯片
@@ -78,6 +116,29 @@ function initSlideshow() {
             resetAutoSlide();
         });
     }
+    
+    // 添加视频点击事件
+    const clickableVideos = document.querySelectorAll('.clickable-video');
+    clickableVideos.forEach(video => {
+        video.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            
+            // 跳转到视频播放页面
+            window.location.href = 'pages/video-player.html';
+        });
+        
+        // 添加鼠标悬停效果
+        video.addEventListener('mouseenter', function() {
+            this.style.cursor = 'pointer';
+            this.style.transform = 'scale(1.02)';
+            this.style.transition = 'transform 0.3s ease';
+        });
+        
+        video.addEventListener('mouseleave', function() {
+            this.style.transform = 'scale(1)';
+        });
+    });
     
     // 添加触摸滑动支持
     let touchStartX = 0;
