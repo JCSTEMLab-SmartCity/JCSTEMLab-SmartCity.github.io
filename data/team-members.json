@@ -2119,8 +2119,12 @@
               "title": "Dr. ZHU, Guangyu",
               "role": [
                 {
-                  "text": "PhD Student @ University of Florida",
+                  "text": "Senior Researcher @ Huawei 2012 Lab",
                   "highlighted": true
+                },
+                {
+                  "text": "PhD Student @ University of Florida",
+                  "highlighted": false
                 },
                 {
                   "text": "BSc @ Xidian University",
