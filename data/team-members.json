@@ -1076,6 +1076,8 @@
               "detailPage": "data/people/PD24_YiqinDeng/index.html",
               "last_name": "abt"
             },
+
+            
             
             {
               "id": "pd24-liuzhaofeng",
@@ -1134,7 +1136,64 @@
               ],
               "detailPage": "data/people/PD24_LiuZhaofeng/index.html",
               "last_name": "b"
+            },
+            {
+              "id": "pd24-wangqianru",
+              "title": "Dr. WANG, Qianru",
+              "role": [
+                {
+                  "text": "Postdoctor @ CityUHK",
+                  "highlighted": true
+                },
+                {
+                  "text": "Hong Kong Scholars (香江学者)",
+                  "highlighted": false
+                },
+                {
+                  "text": "PhD & MSc & BSc @ Northwestern Polytechnical University",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/wang-qianru.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:wangqianru1994@163.com",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=aOxb8dgAAAAJ&hl=en",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Mobile/Edge Computing",
+                "Federated Learning",
+                "Spatial-temporal data mining"
+              ],
+              "biography": "Qianru Wang received Bachelor, Master, and Phd degrees from Northwestern Polytechnical University in 2016, 2018, and 2022 respectively. I also had an exchange and visiting experience at Arizona State University from November 2019 to April 2021. She was selected to Hong Kong Scholars Program in 2024 and she is currently a Postdoc at City University of Hong Kong. Her main research interests include urban computing, spatiotemporal data mining, and cloud-edge-end data fusion. Relevant research results have been published in high-level journals and conferences such as UbiComp, CSCW, ICDE, IoT-J, TKDD, and ECML/PKDD.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science",
+                  "institution": "Northwestern Polytechnical University",
+                  "year": "2018 - 2022"
+                },
+                {
+                  "degree": "MSc in Computer Science",
+                  "institution": "Northwestern Polytechnical University",
+                  "year": "2016 - 2018"
+                },
+                {
+                  "degree": "BSc in Computer Science",
+                  "institution": "Northwestern Polytechnical University",
+                  "year": "2012 - 2016"
+                }
+              ]
             }
+
           ]
         },
         {
@@ -1145,7 +1204,7 @@
               "title": "Mr. FANG, Zhengru",
               "role": [
                 {
-                  "text": "PhD Student",
+                  "text": "PhD Student (HKPFS)",
                   "highlighted": true
                 },
                 {
@@ -1338,7 +1397,7 @@
                   "highlighted": true
                 },
                 {
-                  "text": "BSc @ Beijing Institute of Technology",
+                  "text": "BEng @ Beijing Institute of Technology",
                   "highlighted": false
                 }
               ],
@@ -1384,7 +1443,7 @@
                   "year": "2023 - Now"
                 },
                 {
-                  "degree": "BSc in Electronic and Information Engineering",
+                  "degree": "BEng in Electronic and Information Engineering",
                   "institution": "Beijing Institute of Technology, Beijing, China",
                   "year": "2018 - 2022"
                 }
@@ -1802,10 +1861,10 @@
                   "title": "Email"
                 },
                 {
-                  "type": "cv",
-                  "url": "../data/people/PhD26_GaoJunhui/cv.pdf",
-                  "icon": "fas fa-file-pdf",
-                  "title": "CV"
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=kqo8nkMAAAAJ&hl=zh-CN&oi=ao",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
                 }
               ],
               "interests": [
