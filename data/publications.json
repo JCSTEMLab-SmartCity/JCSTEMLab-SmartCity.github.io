@@ -1,5 +1,62 @@
 [
   {
+    "title": "Task-Aware Parameter-Efficient Fine-Tuning of Large Pre-Trained Models at the Edge",
+    "authors": "Senkang Hu, Yanan Ma, Yihang Tao, Zhengru Fang, Zihan Fang, Yiqin Deng, Sam Kwong, Yuguang Fang",
+    "venue": "IEEE Global Communications Conference, Taipei, Taiwan, December 2025.",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "GLOBECOM'25",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2504.03718"
+      }
+    ]
+  },
+  {
+    "title": "UAV-enabled Computing Power Networks: Task Completion Probability Analysis",
+    "authors": "Yiqin Deng, Zhengru Fang, Senkang Hu, Yanan Ma, Haixia Zhang, and Yuguang Fang",
+    "venue": "IEEE Global Communications Conference, Taipei, Taiwan, December 2025.",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "GLOBECOM'25",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "#"
+      }
+    ]
+  },
+
+  {
+    "title": "Task-Oriented Communications for Visual Navigation with Edge-Aerial Collaboration",
+    "authors": "Zhengru Fang, Zhenghao Liu, Jingjing Wang, Senkang Hu, Yu Guo, Yiqin Deng, and Yuguang Fang",
+    "venue": "IEEE Global Communications Conference, Taipei, Taiwan, December 2025.",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "GLOBECOM'25",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2504.18317"
+      },
+      {
+        "text": "Code",
+        "class": "code-tag",
+        "link": "https://github.com/fangzr/TOC-Edge-Aerial"
+      }
+    ]
+  }, 
+  {
     "title": "R-ACP: Real-Time Adaptive Collaborative Perception Leveraging Robust Task-Oriented Communications",
     "authors": "Zhengru Fang, Jingjing Wang, Yanan Ma, Yihang Tao, Xianhao Chen, Yuguang Fang",
     "venue": "IEEE Journal on Selected Areas in Communications",
