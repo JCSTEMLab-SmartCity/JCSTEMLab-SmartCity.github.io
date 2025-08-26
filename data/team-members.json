@@ -1563,7 +1563,7 @@
               "title": "Mr. AN, Haonan",
               "role": [
                 {
-                  "text": "PhD Student",
+                  "text": "PhD Student @ 24 Fall",
                   "highlighted": true
                 },
                 {
@@ -1838,6 +1838,66 @@
               ],
               "detailPage": "data/people/PhD25_GuoYu/index.html",
               "last_name": "25guoyu"
+            },
+
+            {
+              "id": "phd25-huangqingxiao",
+              "title": "Mr. HUANG, Qingxiao",
+              "role": [
+                {
+                  "text": "PhD Student @ 25 Fall",
+                  "highlighted": true
+                },
+                {
+                  "text": "MSc @ University of Science and Technology of China",
+                  "highlighted": false
+                },
+                {
+                  "text": "BSc @ Xidian University",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/HuangQingxiao.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:qx.huang@my.cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?hl=zh-CN&user=7lqItBkAAAAJ",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Wireless Communication",
+                "Reconfigurable Intelligent Surface (RIS)",
+                "Holographic MIMO",
+                "Near-field communication"
+              ],
+              "biography": "Qingxiao Huang is currently working toward the Ph.D. degree with the Department of Computer Science at City University of Hong Kong, under the supervision of Prof. Yuguang “Michael” Fang. Before that, he received his B.S. degree in Communication Engineering from Xidian Univesity, China, in 2022 and received his M.S. degree in Information and Communication Engineering at University of Electronic Science and Technology of China (UESTC), in 2025. During the master study, he was supervised by Prof. Jie Hu and worked closely with Prof. Kun Yang in Data and Energy Integrated Network Laboratory. His research interests include Wireless Communication, Intelligent Reflect Surface, Holographic MIMO and Near-field Communication. He has received several honors and awards, including the National Graduate Scholarship (2024), the Outstanding Master's Thesis Award of UESTC and the Outstanding Graduate of Sichuan Province. Qingxiao is glad to communicate and collaborate with talents from all over the world. Feel free to drop him an email if you are interested in his research!",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science",
+                  "institution": "City University of Hong Kong",
+                  "year": "2025.9 - Now"
+                },
+                {
+                  "degree": "MSc in Information and Communication Engineering",
+                  "institution": "University of Electronic Science and Technology of China",
+                  "year": "2022-2025"
+                },
+                {
+                  "degree": "BSc in Communication Engineering",
+                  "institution": "Xidian University",
+                  "year": "2018-2022"
+                }
+              ],
+              "detailPage": "data/people/PhD25_GaoJunhui/index.html",
+              "last_name": "gaojunhui"
             },
             {
               "id": "phd26-gaojunhui",
