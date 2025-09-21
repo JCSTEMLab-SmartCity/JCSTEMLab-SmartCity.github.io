@@ -652,22 +652,118 @@
                 fetch('data/publications.json')
                     .then(response => response.json())
                     .then(publications => {
-                        // Get unique years from publications
-                        const years = [...new Set(publications.map(pub => pub.year))].sort((a, b) => b - a);
-                        
-                        // Create containers for each year
+                        // Filter publications for current year only
+                        const currentYear = new Date().getFullYear().toString();
+                        const currentYearPublications = publications.filter(pub => pub.year === currentYear);
+
+                        // Create container for current year only
                         const container = document.getElementById('publications-container');
-                        years.forEach(year => {
+                        if (currentYearPublications.length > 0) {
                             const yearSection = document.createElement('div');
                             yearSection.innerHTML = `
-                                <h3 class="year-divider">Accepted Papers in ${year}</h3>
-                                <div class="publications-list" id="publications-${year}"></div>
+                                <h3 class="year-divider">Accepted Papers in ${currentYear}</h3>
+                                <div class="publications-list" id="publications-${currentYear}"></div>
                             `;
                             container.appendChild(yearSection);
-                        });
+
+                            // Render the publications
+                            const publicationsList = document.getElementById(`publications-${currentYear}`);
+                            renderPublications(currentYearPublications, publicationsList);
+                        } else {
+                            container.innerHTML = '<p class="no-publications">No publications available for the current year.</p>';
+                        }
                     })
                     .catch(error => console.error('Error:', error));
             });
+
+            function renderPublications(publications, container) {
+                // Counter for auto-numbering publications
+                let counter = 1;
+
+                publications.forEach(pub => {
+                    const pubElement = document.createElement('div');
+                    const classes = ['publication', pub.type];
+                    if (pub.isFirstAuthor) classes.push('first-author');
+                    pubElement.className = classes.join(' ');
+                    pubElement.dataset.year = pub.year || "2024";
+
+                    // Create venue/type label for left side
+                    const venueElement = document.createElement('div');
+                    venueElement.className = 'pub-venue-label';
+
+                    // Determine what text to show in the left column
+                    let venueText = '';
+                    if (pub.type === 'preprint') {
+                        venueText = 'Preprint';
+                    } else if (pub.venue) {
+                        // Extract short venue name from the venue string or tags
+                        const venueTag = pub.tags.find(tag => tag.class === 'venue-tag');
+                        venueText = venueTag ? venueTag.text : pub.venue.split(',')[0].split(' ').pop();
+                    }
+
+                    // Create publication number
+                    const numberElement = document.createElement('span');
+                    numberElement.className = 'pub-number';
+                    numberElement.textContent = counter++;
+
+                    venueElement.appendChild(numberElement);
+
+                    // Add venue text below the number
+                    const venueTextElement = document.createElement('span');
+                    venueTextElement.className = 'venue-text';
+                    venueTextElement.textContent = venueText;
+                    venueElement.appendChild(venueTextElement);
+
+                    // Create publication content container
+                    const contentElement = document.createElement('div');
+                    contentElement.className = 'pub-content';
+
+                    // Add title
+                    const titleElement = document.createElement('h3');
+                    titleElement.textContent = pub.title;
+                    contentElement.appendChild(titleElement);
+
+                    // Add authors
+                    const authorsElement = document.createElement('p');
+                    authorsElement.className = 'authors';
+                    authorsElement.innerHTML = pub.authors;
+                    contentElement.appendChild(authorsElement);
+
+                    // Add full venue if it exists (for accepted papers)
+                    if (pub.venue) {
+                        const fullVenueElement = document.createElement('p');
+                        fullVenueElement.className = 'venue';
+                        fullVenueElement.textContent = pub.venue;
+                        contentElement.appendChild(fullVenueElement);
+                    }
+
+                    // Add tags
+                    if (pub.tags && pub.tags.length > 0) {
+                        const tagsElement = document.createElement('div');
+                        tagsElement.className = 'pub-tags';
+
+                        pub.tags.forEach(tag => {
+                            const tagElement = document.createElement('a');
+                            tagElement.className = `tag ${tag.class}`;
+                            tagElement.textContent = tag.text;
+                            if (tag.link) {
+                                tagElement.href = tag.link;
+                                tagElement.target = '_blank';
+                            }
+                            tagsElement.appendChild(tagElement);
+                        });
+
+                        contentElement.appendChild(tagsElement);
+                    }
+
+                    // Assemble the publication element
+                    pubElement.appendChild(venueElement);
+                    pubElement.appendChild(contentElement);
+
+                    // Add to container
+                    container.appendChild(pubElement);
+                });
+            }
         </script>
 
         <!-- <section id="location" class="section">

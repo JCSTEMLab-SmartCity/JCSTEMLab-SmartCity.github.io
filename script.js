@@ -338,12 +338,13 @@ function loadPublications() {
                 return parseInt(b.year) - parseInt(a.year);
             });
 
-            // Get the 8 most recent publications
-            const recentPublications = publications.slice(0, 8);
+            // Filter publications for current year only (2025)
+            const currentYear = new Date().getFullYear().toString();
+            const currentYearPublications = publications.filter(pub => pub.year === currentYear);
 
-            // Group the recent publications by year
+            // Group the current year publications by year
             const pubsByYear = {};
-            recentPublications.forEach(pub => {
+            currentYearPublications.forEach(pub => {
                 if (!pubsByYear[pub.year]) {
                     pubsByYear[pub.year] = [];
                 }
