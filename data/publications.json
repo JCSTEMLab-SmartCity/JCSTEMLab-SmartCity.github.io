@@ -1,5 +1,39 @@
 [
   {
+    "title": "Neptune-X: Active X-to-Maritime Generation for Universal Maritime Object Detection",
+    "authors": "Yu Guo, Shengfeng He, Yuxu Lu, Haonan An, Yihang Tao, Huilin Zhu, Jingxian Liu, Yuguang Fang",
+    "venue": "The 39th Annual Conference on Neural Information Processing Systems, San Diego, USA, December 2025.",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "NeurIPS'25 (Spotlight)",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "#"
+      }
+    ]
+  },
+  {
+    "title": "Distribution-Aligned Decoding for Efficient LLM Task Adaptation",
+    "authors": "Senkang Hu, Xudong Han, Jinqi Jiang, Yihang Tao, Zihan Fang, Yong Dai, Sam Tak Wu Kwong, Yuguang Fang",
+    "venue": "The 39th Annual Conference on Neural Information Processing Systems, San Diego, USA, December 2025.",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "NeurIPS'25",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "#"
+      }
+    ]
+  },
+  {
     "title": "Task-Aware Parameter-Efficient Fine-Tuning of Large Pre-Trained Models at the Edge",
     "authors": "Senkang Hu, Yanan Ma, Yihang Tao, Zhengru Fang, Zihan Fang, Yiqin Deng, Sam Kwong, Yuguang Fang",
     "venue": "IEEE Global Communications Conference, Taipei, Taiwan, December 2025.",
