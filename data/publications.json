@@ -29,7 +29,29 @@
       {
         "text": "PDF",
         "class": "code-tag",
-        "link": "#"
+        "link": "https://arxiv.org/abs/2509.15888"
+      }
+    ]
+  },
+  {
+    "title": "The Fluorescent Veil: A Stealthy and Effective Physical Adversarial Patch Against Traffic Sign Recognition",
+    "authors": "Shuai Yuan, Xingshuo Han, Hongwei Li, Guowen Xu, Wenbo Jiang, Tao Ni, Qingchuan Zhao, Yuguang Fang",
+    "venue": "The 39th Annual Conference on Neural Information Processing Systems, San Diego, USA, December 2025.",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "NeurIPS'25",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2409.12394"
+      },
+      {
+        "text": "Project",
+        "class": "code-tag",
+        "link": "https://sites.google.com/view/fipatch-attack/home"
       }
     ]
   },
