@@ -1895,16 +1895,19 @@
                   "institution": "Xidian University",
                   "year": "2018-2022"
                 }
-              ],
-              "detailPage": "data/people/PhD25_GaoJunhui/index.html",
-              "last_name": "gaojunhui"
-            },
+              ]
+            }
+          ]
+        },
+        {
+          "name": "Research Assistant",
+          "members": [
             {
               "id": "phd26-gaojunhui",
               "title": "Mr. GAO, Junhui",
               "role": [
                 {
-                  "text": "PhD Student @ 26 Spring",
+                  "text": "Research Assistant (2025.5 - Now)",
                   "highlighted": true
                 },
                 {
@@ -1944,7 +1947,51 @@
               ],
               "detailPage": "data/people/PhD25_GaoJunhui/index.html",
               "last_name": "gaojunhui"
+            },
+            {
+              "id": "ra26-jincan",
+              "title": "Mr. JIN, Can",
+              "role": [
+                {
+                  "text": "Research Assistant (2025.10 - Now)",
+                  "highlighted": true
+                },
+                {
+                  "text": "BSc & MSc @ Dalian University of Technology",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/JinCan.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:74764629@qq.com",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                }
+              ],
+              "interests": [
+                "Wireless Sensing",
+                "Machine Learning",
+                "Wireless AI", 
+                "Internet of Things",
+                "Smart and Connected Health"
+              ],
+              "biography": "Can Jin received a BSc degree in Electronic Information Engineering from Dalian University of Technology, Liaoning, China in 2022, an MSc degree in the new generation of electronic information technology from Dalian University of Technology in 2025. He is currently pursuing a PhD degree in Computer Science at City University of Hong Kong, focusing on research areas including wireless sensing and smart health care.",
+              "education": [
+                {
+                  "degree": "MSc in the New Generation of E··lectronic Information Technology",
+                  "institution": "Dalian University of Technology",
+                  "year": "2022-2025"
+                },
+                {
+                  "degree": "BSc in Electronic Information Engineering",
+                  "institution": "Dalian University of Technology",
+                  "year": "2018-2022"
+                }
+              ]
             }
+            
           ]
         },
         {
