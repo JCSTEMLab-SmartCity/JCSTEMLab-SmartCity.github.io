@@ -1,4 +1,6 @@
 [
+  
+  
   {
     "title": "Neptune-X: Active X-to-Maritime Generation for Universal Maritime Object Detection",
     "authors": "Yu Guo, Shengfeng He, Yuxu Lu, Haonan An, Yihang Tao, Huilin Zhu, Jingxian Liu, Yuguang Fang",
@@ -52,6 +54,23 @@
         "text": "Project",
         "class": "code-tag",
         "link": "https://sites.google.com/view/fipatch-attack/home"
+      }
+    ]
+  },
+  {
+    "title": "Leverage the Duty Ratio of Frequency-Shift Wave to Design a Novel Amplitude Modulation for Backscatter Communications",
+    "authors": "Longzhi Yuan, Hangcheng Cao, Yanan Ma, Wei Gong, Yuguang Fang",
+    "venue": "IEEE Transactions on Mobile Computing",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "TMC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/abstract/document/11141553"
       }
     ]
   },
@@ -472,4 +491,4 @@
       }
     ]
   }
-] 
+]
