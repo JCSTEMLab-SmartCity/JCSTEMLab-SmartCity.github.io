@@ -1,5 +1,21 @@
 [
-  
+  {
+    "title": "Circular Holographic MIMO Beamforming for Integrated Data and Energy Multicast Systems",
+    "authors": "Qingxiao Huang, Yizhe Zhao, Jie Hu, Kun Yang, Yuguang Fang",
+    "venue": "IEEE Transactions on Mobile Computing",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "TMC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2507.05057"
+      }
+    ]
+  },
   
   {
     "title": "Neptune-X: Active X-to-Maritime Generation for Universal Maritime Object Detection",
