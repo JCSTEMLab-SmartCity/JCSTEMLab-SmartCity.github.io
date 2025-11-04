@@ -1,5 +1,22 @@
 [
   {
+    "title": "Sub-Symbol Backscatter Using CCK Signal in WiFi",
+    "authors": "Longzhi Yuan, Hangcheng Cao, Wei Gong, Yuguang Fang",
+    "venue": "IEEE/ACM Transactions on Networking",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "ToN",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/abstract/document/11215687"
+      }
+    ]
+  },
+  {
     "title": "Circular Holographic MIMO Beamforming for Integrated Data and Energy Multicast Systems",
     "authors": "Qingxiao Huang, Yizhe Zhao, Jie Hu, Kun Yang, Yuguang Fang",
     "venue": "IEEE Transactions on Mobile Computing",
