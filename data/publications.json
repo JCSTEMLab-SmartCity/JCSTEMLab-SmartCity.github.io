@@ -1,5 +1,22 @@
 [
   {
+    "title": "Removing Box-Free Watermarks for Image-to-Image Models via Query-Based Reverse Engineering",
+    "authors": "Haonan An, Guang Hua, Hangcheng Cao, Zhengru Fang, Guowen Xu, Susanto Rahardja, Yuguang Fang",
+    "venue": "The 40th AAAI Conference on Artificial Intelligence",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "AAAI'26",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2507.18034"
+      }
+    ]
+  },
+  {
     "title": "Sub-Symbol Backscatter Using CCK Signal in WiFi",
     "authors": "Longzhi Yuan, Hangcheng Cao, Wei Gong, Yuguang Fang",
     "venue": "IEEE/ACM Transactions on Networking",
