@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Accelerator-Centric Edge AI Architectures for Low-Power and Personalized Wearables</title>
     <link rel="stylesheet" href="../../../styles.css">
     <style>
@@ -19,20 +20,13 @@
         .seminar-header {
             margin-bottom: 30px;
         }
-        .seminar-date {
-            color: #fff;
-            margin-bottom: 10px;
-            background-color: var(--primary-color);
-            display: inline-block;
-            padding: 5px 12px;
-            border-radius: 4px;
-        }
         .seminar-speaker-info {
-            background-color: var(--primary-light);
-            border-left: 4px solid var(--primary-color);
-            padding: 15px;
+            background: linear-gradient(145deg, rgba(189, 56, 75, 0.05) 0%, rgba(189, 56, 75, 0.1) 100%);
+            padding: 18px 20px;
             margin-bottom: 20px;
-            border-radius: 0 4px 4px 0;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+            text-align: left;
         }
         .seminar-speaker-title {
             font-weight: bold;
@@ -44,6 +38,7 @@
             font-weight: bold;
             font-size: 18px;
             color: #333;
+            margin-bottom: 5px;
         }
         .seminar-section {
             margin-bottom: 30px;
@@ -68,32 +63,26 @@
         .seminar-gallery img {
             width: 100%;
             height: auto;
-            border-radius: 5px;
+            border-radius: 20px;
             transition: transform 0.3s ease;
         }
         .seminar-gallery img:hover {
             transform: scale(1.02);
         }
-        .back-link {
-            display: inline-block;
+        .back-to-home {
+            text-align: center;
             margin-top: 30px;
-            color: var(--primary-color);
-            text-decoration: none;
-        }
-        .back-link:hover {
-            text-decoration: underline;
         }
     </style>
 </head>
 <body>
     <div class="seminar-container">
         <div class="seminar-header">
-            <div class="seminar-date">December 3, 2024</div>
             <h1>Accelerator-Centric Edge AI Architectures for Low-Power and Personalized Wearables</h1>
             <div class="seminar-speaker-info">
                 <div class="seminar-speaker-title">Speaker:</div>
                 <div class="seminar-speaker-name">Prof. David Atienza</div>
-                <div class="seminar-speaker-affiliation">Professor of Electrical and Computer Engineering, Associate Vice President of Research Centers and Platforms, EPFL, Switzerland</div>
+                <div class="seminar-speaker-affiliation">Professor of Electrical and Computer Engineering, Associate Vice President of Research Centers and Platforms, EPFL, Switzerland<br>December 3, 2024</div>
             </div>
         </div>
 
@@ -117,7 +106,9 @@
             </div>
         </div>
 
-        <a href="../../../index.html#seminar" class="back-link">← Back to all seminars</a>
+        <div class="back-to-home">
+            <a href="../../../index.html#seminar" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to all seminars</a>
+        </div>
     </div>
 </body>
 </html> 

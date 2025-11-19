@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Quantum Communications, Applications and Challenges</title>
     <link rel="stylesheet" href="../../../styles.css">
     <style>
@@ -19,20 +20,12 @@
         .seminar-header {
             margin-bottom: 30px;
         }
-        .seminar-date {
-            color: #fff;
-            margin-bottom: 10px;
-            background-color: var(--primary-color);
-            display: inline-block;
-            padding: 5px 12px;
-            border-radius: 4px;
-        }
-        .seminar-speaker-info {
-            background-color: var(--primary-light);
-            border-left: 4px solid var(--primary-color);
-            padding: 15px;
+            .seminar-speaker-info {
+            background: linear-gradient(145deg, rgba(189, 56, 75, 0.05) 0%, rgba(189, 56, 75, 0.1) 100%);
+            padding: 18px 20px;
             margin-bottom: 20px;
-            border-radius: 0 4px 4px 0;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
         }
         .seminar-speaker-title {
             font-weight: bold;
@@ -59,26 +52,29 @@
             line-height: 1.6;
             color: #333;
         }
-        .back-link {
-            display: inline-block;
+        .back-to-home {
+            text-align: center;
             margin-top: 30px;
-            color: var(--primary-color);
-            text-decoration: none;
         }
         .back-link:hover {
-            text-decoration: underline;
+            text-decoration: none;
+            background: linear-gradient(145deg, rgba(189, 56, 75, 1) 0%, rgba(189, 56, 75, 0.9) 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(189, 56, 75, 0.3);
+        }
+        .seminar-header h1 {
+            margin-bottom: 30px;
         }
     </style>
 </head>
 <body>
     <div class="seminar-container">
         <div class="seminar-header">
-            <div class="seminar-date">Jul. 29, 2025</div>
             <h1>6G Empowered Intelligent High-Speed Railway</h1>
             <div class="seminar-speaker-info">
                 <div class="seminar-speaker-title">Speaker:</div>
                 <div class="seminar-speaker-name">Prof. Bo Ai</div>
-                <div class="seminar-speaker-affiliation">Professor, School of Electronic and Information Engineering, Beijing Jiaotong University, Beijing, China</div>
+                <div class="seminar-speaker-affiliation">Professor, School of Electronic and Information Engineering, Beijing Jiaotong University, Beijing, China<br>Jul. 29, 2025</div>
             </div>
         </div>
 
@@ -94,7 +90,7 @@
             <p>Prof. Bo Ai is the Fellow of Chinese Institute of Electronics, Fellow of China Institute of Communications, Chair of IEEE BTS Xi'an Branch, Vice Chair of IEEE VTS Beijing Branch, IEEE VTS distinguished lecturer, am expert of the 5G Industry Expert Group of the China Mobile Group Technical Advisory Committee，and expert of the 6G Group in China.</p>
         </div>
 
-        <a href="../../../index.html#seminar" class="back-link">← Back to all seminars</a>
+        <div style="text-align: center;"><div class="back-to-home"><a href="../../../index.html#seminar" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to all seminars</a></div></div>
     </div>
 </body>
 </html> 

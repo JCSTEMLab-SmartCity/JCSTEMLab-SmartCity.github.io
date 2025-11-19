@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <title>Data-Driven Anomaly Detection & Prediction for IoT</title>
     <link rel="stylesheet" href="../../../styles.css">
     <style>
@@ -19,20 +20,12 @@
         .seminar-header {
             margin-bottom: 30px;
         }
-        .seminar-date {
-            color: #fff;
-            margin-bottom: 10px;
-            background-color: var(--primary-color);
-            display: inline-block;
-            padding: 5px 12px;
-            border-radius: 4px;
-        }
-        .seminar-speaker-info {
-            background-color: var(--primary-light);
-            border-left: 4px solid var(--primary-color);
-            padding: 15px;
+              .seminar-speaker-info {
+            background: linear-gradient(145deg, rgba(189, 56, 75, 0.05) 0%, rgba(189, 56, 75, 0.1) 100%);
+            padding: 18px 20px;
             margin-bottom: 20px;
-            border-radius: 0 4px 4px 0;
+            border-radius: 20px;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
         }
         .seminar-speaker-title {
             font-weight: bold;
@@ -64,28 +57,31 @@
             height: auto;
             display: block;
             margin: 20px auto;
-            border-radius: 5px;
+            border-radius: 20px;
         }
-        .back-link {
-            display: inline-block;
+        .back-to-home {
+            text-align: center;
             margin-top: 30px;
-            color: var(--primary-color);
-            text-decoration: none;
         }
         .back-link:hover {
-            text-decoration: underline;
+            text-decoration: none;
+            background: linear-gradient(145deg, rgba(189, 56, 75, 1) 0%, rgba(189, 56, 75, 0.9) 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(189, 56, 75, 0.3);
+        }
+        .seminar-header h1 {
+            margin-bottom: 30px;
         }
     </style>
 </head>
 <body>
     <div class="seminar-container">
         <div class="seminar-header">
-            <div class="seminar-date">May 3, 2023</div>
             <h1>Data-Driven Anomaly Detection & Prediction for IoT</h1>
             <div class="seminar-speaker-info">
                 <div class="seminar-speaker-title">Speaker:</div>
                 <div class="seminar-speaker-name">Prof. Phone Lin</div>
-                <div class="seminar-speaker-affiliation">IEEE Fellow and IEEE VTS Distinguished Speaker, Distinguished Professor, Department of Computer Science and Information Engineering, National Taiwan University</div>
+                <div class="seminar-speaker-affiliation">IEEE Fellow and IEEE VTS Distinguished Speaker, Distinguished Professor, Department of Computer Science and Information Engineering, National Taiwan University<br>March 13, 2023</div>
             </div>
         </div>
 
@@ -100,7 +96,7 @@
             <p>Phone Lin received his B.S. and Ph.D. degrees in Computer Science and Information Engineering from National Chiao Tung University, Hsinchu, Taiwan, in 1996 and 2001, respectively. He is currently a Distinguished Professor at National Taiwan University, where he holds a professorship within the Department of Computer Science and Information Engineering, Graduate Institute of Networking and Multimedia, and Internet of Things Research Center, College of EECS, and Graduate Institute of Medical Device and Imaging, College of Medicine. He served as the Chair of IEEE Vehicular Technology Society Taipei Chapter from 2014 to 2015. He serves on the editorial boards of several journals, such as the IEEE Wireless Communications and the IEEE Internet of Things Journal. In recognition of his research contributions, he has received numerous awards, such as the Outstanding Research Award from the Ministry of Science and Technology, Taiwan, in 2016, and the Best Young Researcher of IEEE ComSoc Asia-Pacific Young Researcher Award in 2007. He is a Fellow of IEEE.</p>
         </div>
 
-        <a href="../../../index.html#seminar" class="back-link">← Back to all seminars</a>
+        <div style="text-align: center;"><div class="back-to-home"><a href="../../../index.html#seminar" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to all seminars</a></div></div>
     </div>
 </body>
 </html> 
