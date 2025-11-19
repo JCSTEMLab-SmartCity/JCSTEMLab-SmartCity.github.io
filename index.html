@@ -210,218 +210,359 @@
         <style>
             .research-areas {
                 display: grid;
-                grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-                gap: 20px;
+                grid-template-columns: repeat(auto-fit, minmax(340px, 1fr));
+                gap: 25px;
                 margin-top: 30px;
                 padding: 0 20px;
             }
-            
+
             .research-area {
                 position: relative;
-                background: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
-                border-radius: 16px;
+                background: linear-gradient(145deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
+                border-radius: 20px;
                 padding: 0;
-                border: 1px solid rgba(0, 0, 0, 0.06);
-                transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+                border: 2px solid rgba(189, 56, 75, 0.08);
+                transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
                 cursor: pointer;
                 overflow: hidden;
-                box-shadow: 0 3px 15px rgba(0, 0, 0, 0.06);
+                box-shadow:
+                    0 8px 32px rgba(189, 56, 75, 0.08),
+                    0 4px 16px rgba(0, 0, 0, 0.04),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+                transform: translateZ(0);
+                backdrop-filter: blur(10px);
             }
-            
-            .research-area:hover {
-                transform: translateY(-8px) scale(1.01);
-                box-shadow: 0 20px 40px rgba(189, 56, 75, 0.12);
-                border-color: rgba(189, 56, 75, 0.3);
-            }
-            
-            /* Removed gradient top bar hover effect
+
             .research-area::before {
                 content: '';
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
-                height: 4px;
-                background: linear-gradient(90deg, var(--primary-color), #3498db, #9b59b6);
+                height: 3px;
+                background: linear-gradient(90deg, #BD384B 0%, #E74C3C 25%, #3498DB 75%, #9B59B6 100%);
                 transform: scaleX(0);
-                transform-origin: left;
-                transition: transform 0.4s ease;
+                transform-origin: center;
+                transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
             }
-            
+
+            .research-area:hover {
+                transform: translateY(-12px) scale(1.02);
+                box-shadow:
+                    0 20px 50px rgba(189, 56, 75, 0.18),
+                    0 10px 25px rgba(0, 0, 0, 0.08),
+                    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+                border-color: rgba(189, 56, 75, 0.25);
+            }
+
             .research-area:hover::before {
                 transform: scaleX(1);
             }
-            */
-            
+
+            .research-area::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background: linear-gradient(135deg, rgba(189, 56, 75, 0.03) 0%, rgba(52, 152, 219, 0.03) 100%);
+                opacity: 0;
+                transition: opacity 0.4s ease;
+                pointer-events: none;
+            }
+
+            .research-area:hover::after {
+                opacity: 1;
+            }
+
             .research-area-header {
-                padding: 20px 20px 15px 20px;
-                background: white;
-                border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+                padding: 28px 25px 20px 25px;
+                background: linear-gradient(145deg, #ffffff 0%, #f9fafb 100%);
+                border-bottom: 1px solid rgba(189, 56, 75, 0.06);
+                position: relative;
+                overflow: hidden;
             }
-            
+
+            .research-area-header::before {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: -20px;
+                width: 60px;
+                height: 60px;
+                background: linear-gradient(135deg, rgba(189, 56, 75, 0.1) 0%, rgba(52, 152, 219, 0.1) 100%);
+                border-radius: 50%;
+                transform: translateY(-50%);
+                transition: all 0.4s ease;
+                opacity: 0.3;
+            }
+
+            .research-area:hover .research-area-header::before {
+                right: -10px;
+                opacity: 0.6;
+            }
+
             .research-area i {
-                font-size: 2rem;
-                color: var(--primary-color);
-                margin-bottom: 12px;
+                font-size: 2.2rem;
+                background: linear-gradient(135deg, var(--primary-color) 0%, #E74C3C 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
+                margin-bottom: 16px;
                 display: block;
-                text-shadow: 0 2px 4px rgba(189, 56, 75, 0.1);
+                text-shadow: 0 4px 12px rgba(189, 56, 75, 0.15);
+                transition: all 0.3s ease;
+                position: relative;
+                z-index: 1;
             }
-            
+
+            .research-area:hover i {
+                transform: scale(1.1);
+                filter: drop-shadow(0 6px 16px rgba(189, 56, 75, 0.25));
+            }
+
             .research-area h3 {
-                font-size: 1.25rem;
-                font-weight: 700;
-                color: #2c3e50;
+                font-size: 1.3rem;
+                font-weight: 800;
+                background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
                 margin: 0;
-                line-height: 1.3;
-                letter-spacing: -0.3px;
+                line-height: 1.25;
+                letter-spacing: -0.5px;
+                position: relative;
+                z-index: 1;
+                transition: all 0.3s ease;
             }
-            
+
+            .research-area:hover h3 {
+                transform: translateX(3px);
+            }
+
             .research-area-body {
-                padding: 15px 20px 20px 20px;
-                background: linear-gradient(135deg, #fafbfc 0%, #ffffff 100%);
+                padding: 20px 25px 25px 25px;
+                background: linear-gradient(155deg, #fafbfc 0%, #ffffff 100%);
+                position: relative;
             }
-            
+
             .research-area .research-list {
                 list-style: none;
                 padding: 0;
                 margin: 0;
+                position: relative;
+                z-index: 1;
             }
-            
+
             .research-area .research-list li {
                 position: relative;
                 padding: 8px 0 8px 20px;
                 color: #5a6c7d;
-                font-size: 0.9rem;
+                font-size: 0.92rem;
                 line-height: 1.4;
-                border-left: 3px solid transparent;
-                transition: all 0.3s ease;
                 margin-bottom: 6px;
-                border-radius: 0 6px 6px 0;
             }
-            
+
             .research-area .research-list li::before {
                 content: "●";
                 position: absolute;
                 left: 0;
                 color: var(--primary-color);
                 font-weight: 700;
-                font-size: 1rem;
+                font-size: 0.9rem;
                 opacity: 0.8;
             }
-            
+
             .research-area .research-list li strong {
                 color: #34495e;
-                font-weight: 600;
+                font-weight: 700;
                 display: block;
-                margin-bottom: 1px;
+                margin-bottom: 2px;
+                font-size: 0.95rem;
             }
-            
+
             .research-overlay {
                 position: absolute;
                 bottom: 0;
                 left: 0;
                 right: 0;
-                background: linear-gradient(135deg, var(--primary-color) 0%, #c0392b 100%);
+                background: linear-gradient(135deg, var(--primary-color) 0%, #c0392b 50%, #9b59b6 100%);
                 color: white;
-                padding: 12px 20px;
+                padding: 16px 20px;
                 text-align: center;
                 opacity: 0;
                 transform: translateY(100%);
-                transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
-                font-weight: 600;
+                transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+                font-weight: 700;
                 font-size: 0.85rem;
-                letter-spacing: 0.5px;
+                letter-spacing: 1px;
                 text-transform: uppercase;
+                backdrop-filter: blur(10px);
+                border-top: 1px solid rgba(255, 255, 255, 0.2);
             }
-            
+
             .research-area:hover .research-overlay {
                 opacity: 1;
                 transform: translateY(0);
             }
-            
+
+            .research-overlay span {
+                position: relative;
+                z-index: 1;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 8px;
+            }
+
             .research-overlay::before {
                 content: '';
                 position: absolute;
                 top: 0;
                 left: 0;
                 right: 0;
-                height: 1px;
-                background: rgba(255, 255, 255, 0.4);
+                bottom: 0;
+                background: linear-gradient(45deg, rgba(255, 255, 255, 0.1) 0%, transparent 100%);
+                pointer-events: none;
             }
-            
-            /* Card animation on load */
+
+            .research-area:hover .research-overlay span::after {
+                content: '→';
+                margin-left: 4px;
+                transition: transform 0.3s ease;
+            }
+
+            .research-overlay:hover span::after {
+                transform: translateX(4px);
+            }
+
+            /* Enhanced card animation on load */
             @keyframes cardFadeIn {
                 from {
                     opacity: 0;
-                    transform: translateY(20px);
+                    transform: translateY(40px) scale(0.95);
                 }
                 to {
                     opacity: 1;
-                    transform: translateY(0);
+                    transform: translateY(0) scale(1);
                 }
             }
-            
+
+            @keyframes slideInLeft {
+                from {
+                    opacity: 0;
+                    transform: translateX(-30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+
+            @keyframes slideInRight {
+                from {
+                    opacity: 0;
+                    transform: translateX(30px);
+                }
+                to {
+                    opacity: 1;
+                    transform: translateX(0);
+                }
+            }
+
             .research-area {
-                animation: cardFadeIn 0.5s ease forwards;
+                animation: cardFadeIn 0.8s cubic-bezier(0.23, 1, 0.32, 1) forwards;
             }
-            
-            .research-area:nth-child(1) { animation-delay: 0.1s; }
-            .research-area:nth-child(2) { animation-delay: 0.15s; }
-            .research-area:nth-child(3) { animation-delay: 0.2s; }
-            .research-area:nth-child(4) { animation-delay: 0.25s; }
-            .research-area:nth-child(5) { animation-delay: 0.3s; }
-            
-            /* Seminar date style */
-            .seminar-date .date {
-                font-size: 1rem;
+
+            .research-area:nth-child(1) {
+                animation-delay: 0.1s;
+                animation-name: slideInLeft;
             }
-            
-            /* Responsive design */
+            .research-area:nth-child(2) {
+                animation-delay: 0.2s;
+                animation-name: slideInRight;
+            }
+            .research-area:nth-child(3) {
+                animation-delay: 0.3s;
+                animation-name: slideInLeft;
+            }
+            .research-area:nth-child(4) {
+                animation-delay: 0.4s;
+                animation-name: slideInRight;
+            }
+            .research-area:nth-child(5) {
+                animation-delay: 0.5s;
+                animation-name: slideInLeft;
+            }
+
+            /* Enhanced responsive design */
             @media (max-width: 768px) {
                 .research-areas {
                     grid-template-columns: 1fr;
-                    gap: 15px;
+                    gap: 20px;
                     padding: 0 15px;
                 }
-                
+
+                .research-area {
+                    border-radius: 18px;
+                }
+
                 .research-area-header {
-                    padding: 18px 18px 12px 18px;
+                    padding: 24px 22px 18px 22px;
                 }
-                
+
                 .research-area-body {
-                    padding: 12px 18px 18px 18px;
+                    padding: 18px 22px 22px 22px;
                 }
-                
+
                 .research-area h3 {
-                    font-size: 1.2rem;
+                    font-size: 1.25rem;
                 }
-                
+
                 .research-area i {
-                    font-size: 1.8rem;
-                    margin-bottom: 10px;
+                    font-size: 2rem;
+                    margin-bottom: 14px;
+                }
+
+                .research-area .research-list li {
+                    padding: 7px 0 7px 20px;
+                    font-size: 0.9rem;
+                    margin-bottom: 5px;
                 }
             }
-            
+
             @media (max-width: 480px) {
+                .research-areas {
+                    padding: 0 12px;
+                    gap: 18px;
+                }
+
+                .research-area {
+                    border-radius: 16px;
+                    margin: 0 3px;
+                }
+
                 .research-area-header {
-                    padding: 15px 15px 10px 15px;
+                    padding: 20px 18px 16px 18px;
                 }
-                
+
                 .research-area-body {
-                    padding: 10px 15px 15px 15px;
+                    padding: 16px 18px 20px 18px;
                 }
-                
+
                 .research-area h3 {
-                    font-size: 1.1rem;
+                    font-size: 1.15rem;
+                    line-height: 1.3;
                 }
-                
+
                 .research-area i {
-                    font-size: 1.6rem;
-                    margin-bottom: 8px;
+                    font-size: 1.8rem;
+                    margin-bottom: 12px;
                 }
-                
+
                 .research-area .research-list li {
-                    padding: 6px 0 6px 18px;
+                    padding: 6px 0 6px 20px;
                     font-size: 0.85rem;
                     margin-bottom: 4px;
                 }
