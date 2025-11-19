@@ -605,8 +605,8 @@ nav .container {
 }
 
 .news-date {
-    min-width: 110px;
-    width: 110px;
+    min-width: 130px;
+    width: 130px;
     font-size: 1.1rem;
     font-weight: 700;
     color: var(--primary-color);
@@ -619,8 +619,8 @@ nav .container {
 
 .date-highlight, .year-highlight {
     background-color: rgba(189, 56, 75, 0.1);
-    padding: 2px 8px;
-    border-radius: 4px;
+    padding: 5px 18px;
+    border-radius: 25px;
     display: inline-block;
     font-size: 0.9rem;
 }
@@ -870,7 +870,7 @@ nav .container {
 .publication {
     display: flex;
     background-color: var(--secondary-color);
-    border-radius: 4px;
+    border-radius: 0 20px 20px 0;
     overflow: hidden;
     transition: transform 0.3s ease;
     position: relative;
@@ -879,6 +879,7 @@ nav .container {
 /* Subtle left border for first-author papers */
 .publication.first-author {
     border-left: 3px solid var(--primary-color);
+    border-radius: 0 20px 20px 0;
 }
 
 .publication:hover {
@@ -895,7 +896,7 @@ nav .container {
     color: var(--primary-color);
     text-align: center;
     padding: 0.7rem 0.4rem;
-    border-radius: 4px;
+    border-radius: 20px 0 0 20px;
 }
 
 .pub-number {
@@ -1021,8 +1022,8 @@ nav .container {
 
 .tag {
     display: inline-block;
-    padding: 0.15rem 0.5rem;
-    border-radius: 3px;
+    padding: 0.15rem 0.6rem;
+    border-radius: 15px;
     font-size: 0.75rem;
     font-weight: 500;
     font-style: normal;
@@ -1356,8 +1357,8 @@ footer {
 .date-highlight, .year-highlight {
     display: inline-block;
     background-color: var(--background-color);
-    padding: 5px 10px;
-    border-radius: 4px;
+    padding: 5px 18px;
+    border-radius: 25px;
     font-size: 0.9rem;
 }
 
@@ -1586,7 +1587,7 @@ footer {
     display: flex;
     flex-direction: column;
     background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
-    border-radius: 16px;
+    border-radius: 20px;
     box-shadow: 0 8px 32px rgba(189, 56, 75, 0.08), 0 4px 16px rgba(0, 0, 0, 0.04);
     overflow: hidden;
     transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
@@ -1596,26 +1597,13 @@ footer {
 }
 
 .seminar-item::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    height: 3px;
-    background: linear-gradient(90deg, #3498db 0%, #9b59b6 50%, #e74c3c 100%);
-    transform: scaleX(0);
-    transform-origin: center;
-    transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
+    display: none;
 }
 
 .seminar-item:hover {
     transform: translateY(-8px);
     box-shadow: 0 16px 48px rgba(189, 56, 75, 0.12), 0 8px 24px rgba(0, 0, 0, 0.08);
     border-color: rgba(52, 152, 219, 0.15);
-}
-
-.seminar-item:hover::before {
-    transform: scaleX(1);
 }
 
 .seminar-date {
@@ -1709,7 +1697,8 @@ footer {
     font-weight: 600;
     margin-bottom: 1rem;
     margin-top: -0.2rem;
-    padding-left: 1.4rem;
+    padding-left: 0;
+    text-align: left;
 }
 
 .seminar-description {
@@ -1755,7 +1744,7 @@ footer {
 }
 
 .seminar-item:hover .seminar-image-container img {
-    transform: scale(1.05);
+    transform: none;
     box-shadow: 0 8px 20px rgba(189, 56, 75, 0.15);
 }
 
@@ -1792,7 +1781,7 @@ footer {
     }
 
     .seminar-item {
-        border-radius: 14px;
+        border-radius: 20px;
     }
 
     .seminar-date {
@@ -1827,7 +1816,7 @@ footer {
     }
 
     .seminar-item {
-        border-radius: 12px;
+        border-radius: 20px;
     }
 
     .seminar-date {
@@ -2038,7 +2027,7 @@ footer {
     font-weight: bold;
     font-size: 18px;
     transition: 0.6s ease;
-    border-radius: 0 3px 3px 0;
+    border-radius: 25px;
     user-select: none;
     background-color: rgba(0,0,0,0.3);
     z-index: 4;
@@ -2046,7 +2035,6 @@ footer {
 
 .next {
     right: 0;
-    border-radius: 3px 0 0 3px;
 }
 
 .prev {
@@ -2091,7 +2079,7 @@ footer {
     padding: 15px 25px;
     font-size: 2rem;
     font-weight: 700;
-    border-radius: 4px;
+    border-radius: 25px;
     z-index: 3;
     max-width: 80%;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -2107,7 +2095,7 @@ footer {
     color: white;
     padding: 10px 25px;
     font-size: 1.2rem;
-    border-radius: 4px;
+    border-radius: 25px;
     z-index: 3;
     max-width: 70%;
     transform: translateY(0);

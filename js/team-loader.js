@@ -120,22 +120,26 @@ function createMemberCard(member) {
     avatar.alt = member.title;
     memberCard.appendChild(avatar);
     
+    // 创建内容容器
+    const contentContainer = document.createElement('div');
+    contentContainer.className = 'team-member-content';
+
     // 姓名和链接
     const nameElement = document.createElement('h4');
     const processedTitle = processChinese(member.title);
     nameElement.innerHTML = `<a href="../data/people/profile.html?id=${member.id}">${processedTitle}</a>`;
-    memberCard.appendChild(nameElement);
-    
+    contentContainer.appendChild(nameElement);
+
     // 角色信息
     if (member.role && member.role.length > 0) {
         member.role.forEach((roleItem, index) => {
             const roleElement = document.createElement('p');
-            
+
             // 判断是否为Prof. Fang的第一个角色项
             const isProfFangLabDirector = member.id === 'prof-fang' && index === 0;
-            
+
             const processedRoleText = processChinese(roleItem.text);
-            
+
             if (roleItem.highlighted) {
                 // 高亮项始终加粗
                 if (isProfFangLabDirector) {
@@ -149,31 +153,34 @@ function createMemberCard(member) {
                 // 非高亮项不加粗
                 roleElement.innerHTML = processedRoleText;
             }
-            
-            memberCard.appendChild(roleElement);
+
+            contentContainer.appendChild(roleElement);
         });
     }
-    
+
     // 社交链接
     if (member.socialLinks && member.socialLinks.length > 0) {
         const linksContainer = document.createElement('div');
         linksContainer.className = 'member-links';
-        
+
         member.socialLinks.forEach(link => {
             const linkElement = document.createElement('a');
             linkElement.href = link.url;
             linkElement.title = link.title;
             linkElement.innerHTML = `<i class="${link.icon}"></i>`;
-            
+
             if (link.url.startsWith('http')) {
                 linkElement.target = '_blank';
             }
-            
+
             linksContainer.appendChild(linkElement);
         });
-        
-        memberCard.appendChild(linksContainer);
+
+        contentContainer.appendChild(linksContainer);
     }
+
+    // 将内容容器添加到卡片
+    memberCard.appendChild(contentContainer);
     
     return memberCard;
 }
