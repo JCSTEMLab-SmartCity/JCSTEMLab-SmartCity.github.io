@@ -875,7 +875,7 @@ nav .container {
 .publication {
     display: flex;
     background-color: var(--secondary-color);
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px;
     overflow: hidden;
     transition: transform 0.3s ease;
     position: relative;
@@ -884,7 +884,7 @@ nav .container {
 /* Subtle left border for first-author papers */
 .publication.first-author {
     border-left: 3px solid var(--primary-color);
-    border-radius: 0 20px 20px 0;
+    border-radius: 20px;
 }
 
 .publication:hover {
