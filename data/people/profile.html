@@ -22,7 +22,7 @@
         .profile-avatar {
             width: 250px;
             height: 250px;
-            border-radius: 8px;
+            border-radius: 20px;
             object-fit: cover;
             border: none;
         }
@@ -51,23 +51,27 @@
         }
         .profile-contacts {
             display: flex;
-            gap: 10px;
+            gap: 8px;
             margin-top: 20px;
         }
         .profile-contacts a {
-            padding: 8px;
+            padding: 0 10px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 50%;
-            transition: all 0.3s ease;
-            background-color: var(--background-color);
-            width: 50px;
-            height: 50px;
+            border-radius: 20px;
+            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+            background: linear-gradient(145deg, rgba(189, 56, 75, 0.1) 0%, rgba(189, 56, 75, 0.15) 100%);
+            width: auto;
+            min-width: 48px;
+            height: 36px;
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            position: relative;
+            overflow: hidden;
         }
         .profile-contacts a i {
             color: var(--primary-color);
-            font-size: 1.8rem;
+            font-size: 1.3rem;
         }
         .profile-contacts a:hover {
             background-color: rgba(189, 56, 75, 0.2);
@@ -98,7 +102,7 @@
         .interest-tag {
             background-color: rgba(189, 56, 75, 0.1);
             color: var(--primary-color);
-            padding: 6px 12px;
+            padding: 6px 18px;
             border-radius: 20px;
             font-size: 14px;
         }
@@ -146,13 +150,28 @@
             color: var(--primary-color) !important;
         }
         .back-link {
-            display: inline-block;
-            margin-top: 30px;
+            display: block;
+            margin: 30px auto 0 auto;
             color: var(--primary-color);
             text-decoration: none;
+            background: linear-gradient(145deg, rgba(189, 56, 75, 0.1) 0%, rgba(189, 56, 75, 0.15) 100%);
+            border: 1px solid rgba(255, 255, 255, 0.3);
+            padding: 12px 24px;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+            font-weight: 500;
+            text-align: center;
+            width: fit-content;
+        }
+
+        .back-link i {
+            margin-right: 8px;
         }
         .back-link:hover {
-            text-decoration: underline;
+            text-decoration: none;
+            background: linear-gradient(145deg, rgba(189, 56, 75, 0.2) 0%, rgba(189, 56, 75, 0.25) 100%);
+            transform: translateY(-2px);
+            box-shadow: 0 4px 12px rgba(189, 56, 75, 0.2);
         }
         .error-message {
             background-color: #ffebee;
@@ -243,6 +262,12 @@
             }
         });
         
+        // 包裹中文字符为chinese-text
+        function processChinese(text) {
+            if (!text) return text;
+            return text.replace(/([\u4e00-\u9fa5]+)/g, '<span class="chinese-text">$1</span>');
+        }
+
         // Load profile info from JSON
         fetch('../../data/profile-info.json')
             .then(response => response.json())
@@ -257,7 +282,7 @@
                 // Create and set subtitle
                 const subtitle = document.createElement('p');
                 subtitle.className = 'subtitle';
-                subtitle.innerHTML = data.subtitle;
+                subtitle.innerHTML = processChinese(data.subtitle);
                 profileInfo.appendChild(subtitle);
                 
                 // Create contact info container

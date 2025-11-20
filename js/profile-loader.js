@@ -146,7 +146,7 @@ function renderMemberProfile(member) {
     }
     
     // 返回按钮
-    html += `<a href="../../pages/team.html" class="back-link">← Back to Team</a>`;
+    html += `<a href="../../pages/team.html" class="back-link"><i class="fas fa-users"></i> Back to Team</a>`;
     
     // 设置HTML内容
     contentContainer.innerHTML = html;
@@ -312,7 +312,7 @@ function showError(message) {
         <div class="error-message">
             <h2>Error</h2>
             <p>${message}</p>
-            <a href="../../pages/team.html" class="back-link">← Back to Team</a>
+            <a href="../../pages/team.html" class="back-link"><i class="fas fa-users"></i> Back to Team</a>
         </div>
     `;
 } 
