@@ -22,23 +22,23 @@ organizations:
     url: 'https://www.cityu.edu.hk'
   - name: Shanghai Jiao Tong University
     url: https://www.sjtu.edu.cn/
-  #- name: Homepage  # 写自己的主页链接，如果没有则注释掉
-  # url: https://www.cs.cityu.edu.hk/~yugufang/
+  - name: Homepage  # 写自己的主页链接，如果没有则注释掉
+    url: https://sais.sjtu.edu.cn/faculty/wenxiaojing.html
 
 # TODO:这块可以附上自己的链接，社交媒体，邮箱，google scholar, CV等，不想要的注释掉即可
 social:
   - icon: envelope  # 邮箱
     icon_pack: fas
-    link: 'mailto:xiaojwen@cityu.edu.hk'
+    link: 'mailto:xiaojingwen@sjtu.edu.cn'
   #- icon: twitter # Twitter
   #  icon_pack: fab  
   #  link: https://twitter.com/GeorgeCushen
   #- icon: google-scholar  # google scholar
   #  icon_pack: ai
   #  link: https://scholar.google.com/citations?user=dJgRKmwAAAAJ
-  #- icon: house-user  # 自己的主页链接
-  #  icon_pack: fas
-  #  link: https://www.cs.cityu.edu.hk/~yugufang/
+  - icon: house-user  # 自己的主页链接
+    icon_pack: fas
+    link: https://sais.sjtu.edu.cn/faculty/wenxiaojing.html
   #- icon: github # github主页
   #  icon_pack: fab   
   #  link: https://www.github.com/
@@ -82,5 +82,3 @@ user_groups:
 Xiaojing Wen received the B.S. degree at the Department of Measurement and Control Technology and Instruments, Jilin University, Changchun, China, in 2018. She is currently pursuing the Ph.D. degree in the school of Electronic Information and Electronical Engineering, Shanghai Jiao Tong University, Shanghai, China. Additionally, she is conducting a visiting Ph.D. student program at the Department of Computer Science, City University of Hong Kong. Her current research focuses the co-design of sensing-communication-computing, edge-assisted IIoT system and industrial network slicing. 
 
 **Updates:** Dr. Wen joined Shanghai Jiao Tong University as a Assistant Researcher! (Dec. 2024)
-
-

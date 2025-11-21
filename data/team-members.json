@@ -2240,9 +2240,15 @@
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:xiaojwen@cityu.edu.hk",
+                  "url": "mailto:xiaojingwen@sjtu.edu.cn",
                   "icon": "fas fa-envelope",
                   "title": "Email"
+                },
+                {
+                  "type": "house-user",
+                  "url": "https://sais.sjtu.edu.cn/faculty/wenxiaojing.html",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
                 }
               ],
               "interests": [
