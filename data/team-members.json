@@ -2019,6 +2019,10 @@
                 {
                   "text": "Postdoc @ CityUHK (2023.5 - 2024.8) ",
                   "highlighted": false
+                },
+                {
+                  "text": "PhD & MSc @ University of Electronic Science and Technology of China",
+                  "highlighted": false
                 }
               ],
               "avatar": "data/people/PD23_XuGuowen/avatar.png",
@@ -2054,9 +2058,9 @@
                   "year": 2020
                 },
                 {
-                  "degree": "BSc in Information and Computing Science",
-                  "institution": "Anhui Jianzhu University",
-                  "year": 2014
+                  "degree": "MSc in Cyberspace security",
+                  "institution": "University of Electronic Science and Technology of China",
+                  "year": "2014 - 2017"
                 }
               ],
               "detailPage": "data/people/PD23_XuGuowen/index.html",
@@ -3275,7 +3279,7 @@
               "title": "Dr. ZHANG, Chi",
               "role": [
                 {
-                  "text": "Associate Professor",
+                  "text": "Professor",
                   "highlighted": true
                 },
               
@@ -3305,7 +3309,7 @@
                 "Blockchain",
                 "Cyber-Physical Systems (CPS)"
               ],
-              "biography": "\n\n\n\nChi Zhang received the B.E. and M.E. in electrical and information engineering from Huazhong University of Science and Technology, Wuhan, China, in 1999 and 2002, respectively, and the Ph.D. in electrical and computer engineering from the University of Florida, Gainesville, Florida, in 2011. He joined University of Science and Technology of China in September 2011 as an Associate Professor of School of Information Science and Technology.\n\nHis research interests are in the areas of network protocol design, network performance analysis, and network security guarantee, particularly for wireless networks and social networks. He has published over 50 papers in prestigious journals including IEEE/ACM Transactions on Networking, IEEE Journal on Selected Areas in Communications, and IEEE Transactions on Mobile Computing, or in top networking conferences such as IEEE INFOCOM, ICNP, and ICDCS. He has served as the Technical Program Committee (TPC) members for several international conferences including IEEE INFOCOM 2013, IEEE GLOBECOM 2010 and 2011, IEEE ICC 2011, and IEEE PIMRC 2011.",
+              "biography": "\n\n\n\nChi Zhang received the B.E. and M.E. in electrical and information engineering from Huazhong University of Science and Technology, Wuhan, China, in 1999 and 2002, respectively, and the Ph.D. in electrical and computer engineering from the University of Florida, Gainesville, Florida, in 2011. He joined University of Science and Technology of China in September 2011 and is now a Professor in the School of Cyber Science and Technology.\n\nHis research interests are in the areas of network protocol design, network performance analysis, and network security guarantee, particularly for wireless networks and social networks. He has published over 50 papers in prestigious journals including IEEE/ACM Transactions on Networking, IEEE Journal on Selected Areas in Communications, and IEEE Transactions on Mobile Computing, or in top networking conferences such as IEEE INFOCOM, ICNP, and ICDCS. He has served as the Technical Program Committee (TPC) members for several international conferences including IEEE INFOCOM 2013, IEEE GLOBECOM 2010 and 2011, IEEE ICC 2011, and IEEE PIMRC 2011.",
               "education": [
                 {
                   "degree": "PhD in Electrical and Computer Engineering",
@@ -3331,11 +3335,11 @@
               "title": "Dr. SONG, Yang",
               "role": [
                 {
-                  "text": "Sr. Manager",
+                  "text": "SVP, Chief Data Science and AI Officer",
                   "highlighted": true
                 },
                 {
-                  "text": "Applied Machine Learning, ML Intelligence Apple, USA",
+                  "text": "Equinix",
                   "highlighted": false
                 }
               ],
@@ -3365,7 +3369,7 @@
                 "Big Data Analytics for Data Center Management",
                 "Resource Allocation, Placement, Optimization in Converged Data Center/SAN Infrastructure"
               ],
-              "biography": "\n\n\n\n\nI currently work at the Applied Machine Learning division at Apple Inc. Prior to joining Apple, I was a Research Staff Member in the Cloud System Analytics Research Department at IBM Research. My research interests include statistical modeling and analysis, optimization, machine learning, big data technologies, and their applications in cloud environments for efficient resource allocation and management. I obtained my Ph.D. degree in the University of Florida.",
+              "biography": "\n\n\n\n\nI currently serve as the SVP and Chief Data Science and AI Officer at Equinix. Previously, I worked in the Applied Machine Learning division at Apple Inc. and as a Research Staff Member in the Cloud System Analytics Research Department at IBM Research. My research interests include statistical modeling and analysis, optimization, machine learning, big data technologies, and their applications in cloud environments for efficient resource allocation and management. I obtained my Ph.D. degree at the University of Florida.",
               "education": [
                 {
                   "degree": "PhD in Electrical and Computer Engineering",
@@ -3494,11 +3498,11 @@
               "title": "Dr. LI, Pan",
               "role": [
                 {
-                  "text": "Associate Professor",
+                  "text": "Academic Vice President",
                   "highlighted": true
                 },
                 {
-                  "text": "Case School of Engineering, Case Western Reserve University",
+                  "text": "Hangzhou Dianzi University",
                   "highlighted": false
                 }
               ],
@@ -3529,7 +3533,7 @@
                 "Security and privacy",
                 "Big data"
               ],
-              "biography": "\n\n\n\nPan Li received the B.E. degree in Electrical Engineering from Huazhong University of Science and Technology, Wuhan, China, in June 2005, and the Ph.D. degree in Electrical and Computer Engineering from University of Florida, Gainesville, Florida, in August 2009, respectively. Since Fall 2015, he has been with the Department of Electrical Engineering and Computer Science at Case Western Reserve University. He was an Assistant Professor in the Department of Electrical and Computer Engineering at Mississippi State University between August 2009 and August 2015.\n\nHe has been serving/served as an Editor for IEEE Transactions on Big Data, IEEE Transactions on Mobile Computing, IEEE Transactions on Network Science and Engineering, IEEE Transactions on Wireless Communications, IEEE Wireless Communications Letters, IEEE Journal on Selected Areas in Communications – Cognitive Radio Series, IEEE Communications Surveys and Tutorials, Computer Networks, and a Feature Editor for IEEE Wireless Communications. He received the NSF CAREER Award in 2012.",
+              "biography": "\n\n\n\nPan Li received the B.E. degree in Electrical Engineering from Huazhong University of Science and Technology, Wuhan, China, in June 2005, and the Ph.D. degree in Electrical and Computer Engineering from University of Florida, Gainesville, Florida, in August 2009, respectively. He is currently the Vice President of Hangzhou Dianzi University. Previously, he was with the Department of Electrical Engineering and Computer Science at Case Western Reserve University and earlier an Assistant Professor in the Department of Electrical and Computer Engineering at Mississippi State University between August 2009 and August 2015.\n\nHe has been serving/served as an Editor for IEEE Transactions on Big Data, IEEE Transactions on Mobile Computing, IEEE Transactions on Network Science and Engineering, IEEE Transactions on Wireless Communications, IEEE Wireless Communications Letters, IEEE Journal on Selected Areas in Communications – Cognitive Radio Series, IEEE Communications Surveys and Tutorials, Computer Networks, and a Feature Editor for IEEE Wireless Communications. He received the NSF CAREER Award in 2012.",
               "education": [
                 {
                   "degree": "PhD in Electrical and Computer Engineering",
@@ -7349,7 +7353,7 @@
               "title": "Dr. RIGGIO, Roberto",
               "role": [
                 {
-                  "text": "Assistant Professor",
+                  "text": "Associate Professor",
                   "highlighted": true
                 },
                 {
@@ -7376,12 +7380,6 @@
                   "url": "https://www.robertoriggio.net",
                   "icon": "fas fa-globe",
                   "title": "Homepage"
-                },
-                {
-                  "type": "github",
-                  "url": "https://github.com/rriggio",
-                  "icon": "fab fa-github",
-                  "title": "GitHub"
                 },
                 {
                   "type": "linkedin",

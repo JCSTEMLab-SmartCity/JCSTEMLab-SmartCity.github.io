@@ -13,7 +13,7 @@ authors:
 superuser: false
 
 # TODO:格式：<b>职称，比如Associate Professor, Assistant Professor <br> {工作单位}, {工作国家:China、USA等}</b>
-role: <b>Sr. Manager, Applied Machine Learning, ML Intelligence<br> Apple, USA</b>
+role: <b>SVP, Chief Data Science and AI Officer<br> Equinix</b>
  
 # TODO:Organizations/Affiliations 必填
 organizations:
@@ -76,4 +76,4 @@ user_groups:
 <!-- 这部分不要写他们的PhD招生信息，直接复制他们主页的个人简介。实在没有，在excel备注一下{个人资料缺失}再提交给我 -->
 <!-- <p style="text-align:justify">  -->
 
-I currently work at the Applied Machine Learning division at Apple Inc. Prior to joining Apple, I was a Research Staff Member in the Cloud System Analytics Research Department at IBM Research. My research interests include statistical modeling and analysis, optimization, machine learning, big data technologies, and their applications in cloud environments for efficient resource allocation and management. I obtained my Ph.D. degree in the University of Florida.
+I currently serve as the SVP and Chief Data Science and AI Officer at Equinix. Previously, I worked in the Applied Machine Learning division at Apple Inc. and as a Research Staff Member in the Cloud System Analytics Research Department at IBM Research. My research interests include statistical modeling and analysis, optimization, machine learning, big data technologies, and their applications in cloud environments for efficient resource allocation and management. I obtained my Ph.D. degree at the University of Florida.

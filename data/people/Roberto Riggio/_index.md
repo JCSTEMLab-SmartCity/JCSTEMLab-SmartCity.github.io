@@ -14,7 +14,7 @@ authors:
 superuser: false
 
 # TODO:格式：<b>职称，比如Associate Professor, Assistant Professor <br> {工作单位}, {工作国家:China、USA等}</b>
-role: <b>Assistant Professor <br> Department of Information Engineering, <br>Polytechnic University of Marche, Ancona, Italy</b>
+role: <b>Associate Professor <br> Department of Information Engineering, <br>Polytechnic University of Marche, Ancona, Italy</b>
  
 # TODO:Organizations/Affiliations 必填
 organizations:
@@ -37,9 +37,6 @@ social:
   - icon: house-user  # 自己的主页链接
     icon_pack: fas
     link: https://www.robertoriggio.net
-  - icon: github # github主页
-    icon_pack: fab   
-    link: https://github.com/rriggio
   # - icon: cv  # 如果要上传CV，将文件发给Senkang
   #   icon_pack: ai
   #   link: files/cv.pdf

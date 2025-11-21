@@ -14,12 +14,12 @@ authors:
 superuser: false
 
 # TODO:这里可以简单介绍下自己 必填
-role: <b>Associate Professor <br> Case School of Engineering, <br>Case Western Reserve University, USA </b>
+role: <b>Academic Vice President <br> Hangzhou Dianzi University, China</b>
 
 # TODO:Organizations/Affiliations 必填
 organizations:
-  - name: Case Western Reserve University
-    url: https://case.edu/
+  - name: Hangzhou Dianzi University
+    url: https://www.hdu.edu.cn/
   - name: Homepage  # 写自己的主页链接，如果没有则注释掉
     url: http://cse-apps2.case.edu/panli/doku.php
 
@@ -79,8 +79,6 @@ user_groups:
 # Biography
 <!-- <p style="text-align:justify">  -->
 
-Pan Li received the B.E. degree in Electrical Engineering from Huazhong University of Science and Technology, Wuhan, China, in June 2005, and the Ph.D. degree in Electrical and Computer Engineering from University of Florida, Gainesville, Florida, in August 2009, respectively. Since Fall 2015, he has been with the Department of Electrical Engineering and Computer Science at Case Western Reserve University. He was an Assistant Professor in the Department of Electrical and Computer Engineering at Mississippi State University between August 2009 and August 2015.
+Pan Li received the B.E. degree in Electrical Engineering from Huazhong University of Science and Technology, Wuhan, China, in June 2005, and the Ph.D. degree in Electrical and Computer Engineering from University of Florida, Gainesville, Florida, in August 2009, respectively. He is currently the Academic Vice President of Hangzhou Dianzi University. Previously, he was with the Department of Electrical Engineering and Computer Science at Case Western Reserve University and was an Assistant Professor in the Department of Electrical and Computer Engineering at Mississippi State University between August 2009 and August 2015.
 
 He has been serving/served as an Editor for IEEE Transactions on Big Data, IEEE Transactions on Mobile Computing, IEEE Transactions on Network Science and Engineering, IEEE Transactions on Wireless Communications, IEEE Wireless Communications Letters, IEEE Journal on Selected Areas in Communications – Cognitive Radio Series, IEEE Communications Surveys and Tutorials, Computer Networks, and a Feature Editor for IEEE Wireless Communications. He received the NSF CAREER Award in 2012.
-
-

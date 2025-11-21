@@ -13,7 +13,7 @@ authors:
 superuser: false
 
 # TODO:格式：<b>职称，比如Associate Professor, Assistant Professor <br> {工作单位}, {工作国家:China、USA等}</b>
-role: <b>Associate Professor <br> School of Cyber Science and Technology, University of Science and Technology of China, China</b>
+role: <b>Professor <br> School of Cyber Science and Technology, University of Science and Technology of China, China</b>
  
 # TODO:Organizations/Affiliations 必填
 organizations:
@@ -79,6 +79,6 @@ user_groups:
 # Biography
 <!-- 这部分不要写他们的PhD招生信息，直接复制他们主页的个人简介。实在没有，在excel备注一下{个人资料缺失}再提交给我 -->
 <!-- <p style="text-align:justify">  -->
-Chi Zhang received the B.E. and M.E. in electrical and information engineering from Huazhong University of Science and Technology, Wuhan, China, in 1999 and 2002, respectively, and the Ph.D. in electrical and computer engineering from the University of Florida, Gainesville, Florida, in 2011. He joined University of Science and Technology of China in September 2011 as an Associate Professor of School of Information Science and Technology.
+Chi Zhang received the B.E. and M.E. in electrical and information engineering from Huazhong University of Science and Technology, Wuhan, China, in 1999 and 2002, respectively, and the Ph.D. in electrical and computer engineering from the University of Florida, Gainesville, Florida, in 2011. He joined University of Science and Technology of China in September 2011 and is now a Professor in the School of Cyber Science and Technology.
 
 His research interests are in the areas of network protocol design, network performance analysis, and network security guarantee, particularly for wireless networks and social networks. He has published over 50 papers in prestigious journals including IEEE/ACM Transactions on Networking, IEEE Journal on Selected Areas in Communications, and IEEE Transactions on Mobile Computing, or in top networking conferences such as IEEE INFOCOM, ICNP, and ICDCS. He has served as the Technical Program Committee (TPC) members for several international conferences including IEEE INFOCOM 2013, IEEE GLOBECOM 2010 and 2011, IEEE ICC 2011, and IEEE PIMRC 2011.

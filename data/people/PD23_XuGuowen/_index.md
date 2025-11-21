@@ -47,6 +47,9 @@ education:
     - course: PhD in Cyberspace security
       institution: University of Electronic Science and Technology of China
       year: 2020
+    - course: MSc in Cyberspace security
+      institution: University of Electronic Science and Technology of China
+      year: 2014 - 2017
     - course: BSc in Information and Computing Science
       institution: Anhui Jianzhu University
       year: 2014
