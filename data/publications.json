@@ -64,7 +64,17 @@
       {
         "text": "PDF",
         "class": "code-tag",
-        "link": "#"
+        "link": "https://arxiv.org/abs/2509.20745"
+      },
+      {
+        "text": "Code",
+        "class": "code-tag",
+        "link": "https://github.com/gy65896/Neptune-X"
+      },
+      {
+        "text": "Project",
+        "class": "code-tag",
+        "link": "https://gy65896.github.io/projects/NeurIPS2025_Neptune-X"
       }
     ]
   },
