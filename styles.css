@@ -1942,6 +1942,148 @@ footer {
     font-size: 1.8rem;
 }
 
+.year-divider {
+    margin-top: 30px;
+    margin-bottom: 15px;
+    font-weight: 700;
+    color: var(--primary-color);
+    border-bottom: 2px solid #eee;
+    padding-bottom: 8px;
+    font-size: 1.4rem;
+}
+
+.publications-list {
+    margin-bottom: 20px;
+}
+
+/* News Gallery Container */
+.news-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: visible;
+    margin: 20px 0;
+    position: relative;
+    gap: 0;
+}
+
+/* 单张图片卡片 */
+.news-gallery-item {
+    display: block;
+    text-decoration: none;
+    flex: 0 0 auto;
+    position: relative;
+    /* margin-left will be set dynamically via inline style in JavaScript */
+    /* Default fallback for browsers that don't support calc */
+    margin-left: -60px; 
+}
+
+/* 第一张不需要左边距 */
+.news-gallery-item:first-child {
+    margin-left: 0 !important;
+}
+
+/* 图片通用样式 */
+.news-gallery-img {
+    width: 280px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 5px solid white;
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.15),
+        0 2px 6px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    background: white;
+    position: relative;
+}
+
+/* 添加照片的"纸张"效果 */
+.news-gallery-img::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.news-gallery-item:hover .news-gallery-img::before {
+    opacity: 1;
+}
+
+/* --- 自动旋转和层级 --- */
+
+/* 第1张 */
+.news-gallery-item:nth-child(1) { z-index: 4; }
+.news-gallery-item:nth-child(1) .news-gallery-img { 
+    transform: rotate(-2.5deg);
+    filter: brightness(1.02);
+}
+
+/* 第2张 */
+.news-gallery-item:nth-child(2) { z-index: 3; }
+.news-gallery-item:nth-child(2) .news-gallery-img { 
+    transform: rotate(1.8deg);
+    filter: brightness(0.98);
+}
+
+/* 第3张 */
+.news-gallery-item:nth-child(3) { z-index: 2; }
+.news-gallery-item:nth-child(3) .news-gallery-img { 
+    transform: rotate(-1.5deg);
+    filter: brightness(0.96);
+}
+
+/* 第4张 */
+.news-gallery-item:nth-child(4) { z-index: 1; }
+.news-gallery-item:nth-child(4) .news-gallery-img { 
+    transform: rotate(2.2deg);
+    filter: brightness(0.94);
+}
+
+/* 第5张及以后 */
+.news-gallery-item:nth-child(n+5) { z-index: 0; }
+.news-gallery-item:nth-child(n+5) .news-gallery-img { 
+    transform: rotate(-1deg);
+    filter: brightness(0.92);
+}
+
+/* --- 鼠标悬停效果 --- */
+.news-gallery-item {
+    transition: z-index 0.3s ease;
+}
+
+.news-gallery-item:hover {
+    z-index: 10 !important;
+}
+
+.news-gallery-item:hover .news-gallery-img {
+    transform: translateY(-18px) scale(1.12) rotate(0deg) !important;
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.25),
+        0 8px 16px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(255, 255, 255, 0.5);
+    filter: brightness(1.05);
+    border-color: rgba(255, 255, 255, 0.95);
+}
+
+/* 响应式调整 */
+@media (max-width: 768px) {
+    .news-gallery {
+        /* 移除 overflow-x: auto，因为动态 overlap 已经能防止溢出 */
+        justify-content: center;
+        padding-bottom: 20px;
+    }
+    /* 移除固定 margin-left，因为 JavaScript 已经动态计算了 */
+}
+
 /* Slideshow Styles */
 .slideshow-container {
     max-width: 100%;
@@ -2198,146 +2340,3 @@ footer {
         bottom: 5px;
     }
 }
-
-/* Contact Section - New Optimized Styles */
-.contact-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 1.5rem;
-    margin-top: 2rem;
-}
-
-.contact-card {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 1.5rem;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
-    transition: transform 0.3s ease;
-}
-
-.contact-card:hover {
-    transform: translateY(-5px);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
-}
-
-.contact-icons {
-    margin-bottom: 1rem;
-}
-
-.contact-text {
-    width: 100%;
-    text-align: left;
-}
-
-.contact-text p {
-    display: flex;
-    align-items: center;
-}
-
-.contact-icon, i.contact-icon {
-    color: var(--primary-color);
-    font-size: 1.5rem;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 45px;
-    height: 45px;
-    border-radius: 25px;
-    background-color: rgba(189, 56, 75, 0.1);
-    transition: all 0.3s ease;
-}
-
-a.contact-icon:hover, i.contact-icon:hover {
-    background-color: var(--primary-color);
-    color: white;
-    transform: scale(1.1);
-}
-
-.contact-text h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    color: #333;
-    text-align: center;
-}
-
-.contact-text p {
-    font-size: 0.95rem;
-    color: #666;
-    margin-bottom: 0.5rem;
-}
-
-.contact-text a {
-    color: var(--primary-color);
-    text-decoration: none;
-    transition: color 0.3s ease;
-}
-
-.contact-text a:hover {
-    text-decoration: underline;
-}
-
-.map-container {
-    grid-column: span 3;
-    height: 400px;
-}
-
-@media (max-width: 992px) {
-    .contact-grid {
-        grid-template-columns: repeat(2, 1fr);
-    }
-    
-    .map-container {
-        grid-column: span 2;
-    }
-}
-
-@media (max-width: 768px) {
-    .contact-grid {
-        grid-template-columns: 1fr;
-        gap: 1rem;
-    }
-    
-    .map-container {
-        grid-column: span 1;
-        height: 350px;
-    }
-    
-    .contact-card {
-        padding: 1.25rem;
-    }
-}
-
-.contact-icon-circle {
-    background-color: rgba(189, 56, 75, 0.1);
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 0.5rem;
-}
-
-.contact-icon-circle i {
-    color: var(--primary-color);
-    font-size: 1.8rem;
-}
-
-.year-divider {
-    margin-top: 30px;
-    margin-bottom: 15px;
-    font-weight: 700;
-    color: var(--primary-color);
-    border-bottom: 2px solid #eee;
-    padding-bottom: 8px;
-    font-size: 1.4rem;
-}
-
-.publications-list {
-    margin-bottom: 20px;
-}
-

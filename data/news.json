@@ -1,13 +1,30 @@
 [
   {
     "date": "Nov. 2025",
+    "title": "Thanksgiving Gathering",
+    "content": "Our lab came together for a warm Thanksgiving gathering, celebrating milestones and welcoming new members.",
+    "images": [
+        "/assets/thanksgiving-2025/group.jpg",
+        "/assets/thanksgiving-2025/subgroup1.jpg",
+        "/assets/thanksgiving-2025/subgroup2.jpg",
+        "/assets/thanksgiving-2025/subgroup3.jpg"
+    ]
+  },
+  {
+    "date": "Nov. 2025",
     "title": "Congratulations to Yang Song on Equinix Appointment",
     "content": "Congratulations to <b>Dr. Yang Song</b>, our former member at UF, who has just joined Equinix as SVP, Chief Data Science and AI Officer!!! Check the <a href=\"https://www.prnewswire.com/news-releases/equinix-appoints-yang-song-as-svp-chief-data-science-and-ai-officer-302614235.html\">news</a> for more detail."
   },
   {
     "date": "Oct. 2025",
     "title": "Visit from Fukui Prefectural Koshi High School, Japan",
-    "content": "The JC STEM Lab of Smart City was pleased to welcome students and teachers from <b>Fukui Prefectural Koshi High School, Japan</b>, for a visit on 24 October. The students toured our facilities and saw live demonstrations of our smart city research, including IoT sensors and data analytics platforms. The visit fostered a great exchange of ideas, and we hope it inspired the students in their future STEM pursuits. We thank our guests for their lively engagement and look forward to more such collaborations.<br><br><div style=\"display: flex; justify-content: center; gap: 15px; flex-wrap: wrap; margin: 10px 0;\"><a href=\"/images/news/67a8abedb912e709e6c80b85b90c3313.JPG\" target=\"_blank\" style=\"display: block; text-decoration: none;\"><img src=\"/images/news/67a8abedb912e709e6c80b85b90c3313.JPG\" alt=\"Visit Photo 1\" style=\"width: 280px; height: 210px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); transition: transform 0.3s ease;\" onmouseover=\"this.style.transform='scale(1.05)';\" onmouseout=\"this.style.transform='scale(1)';\"></a><a href=\"/images/news/1b29be16cd79f997560f638b1d18dbe9.JPG\" target=\"_blank\" style=\"display: block; text-decoration: none;\"><img src=\"/images/news/1b29be16cd79f997560f638b1d18dbe9.JPG\" alt=\"Visit Photo 2\" style=\"width: 280px; height: 210px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); transition: transform 0.3s ease;\" onmouseover=\"this.style.transform='scale(1.05)';\" onmouseout=\"this.style.transform='scale(1)';\"></a><a href=\"/images/news/ccf390e73fe2f03a59abf5452ca8890a.JPG\" target=\"_blank\" style=\"display: block; text-decoration: none;\"><img src=\"/images/news/ccf390e73fe2f03a59abf5452ca8890a.JPG\" alt=\"Visit Photo 3\" style=\"width: 280px; height: 210px; object-fit: cover; border-radius: 8px; box-shadow: 0 4px 8px rgba(0,0,0,0.15); transition: transform 0.3s ease;\" onmouseover=\"this.style.transform='scale(1.05)';\" onmouseout=\"this.style.transform='scale(1)';\"></a></div>"
+    "content": "The JC STEM Lab of Smart City was pleased to welcome students and teachers from <b>Fukui Prefectural Koshi High School, Japan</b>, for a visit on 24 October. The students toured our facilities and saw live demonstrations of our smart city research, including IoT sensors and data analytics platforms. The visit fostered a great exchange of ideas, and we hope it inspired the students in their future STEM pursuits. We thank our guests for their lively engagement and look forward to more such collaborations.",
+    "images": [
+        "/assets/news-labvisiting-japan-highschool/67a8abedb912e709e6c80b85b90c3313.JPG",
+        "/assets/news-labvisiting-japan-highschool/1b29be16cd79f997560f638b1d18dbe9.JPG",
+        "/assets/news-labvisiting-japan-highschool/ccf390e73fe2f03a59abf5452ca8890a.JPG",
+        "/assets/news-labvisiting-japan-highschool/Weixin Image_20251129163301_56_187.jpg"
+    ]
   },
   {
     "date": "Oct. 2025",

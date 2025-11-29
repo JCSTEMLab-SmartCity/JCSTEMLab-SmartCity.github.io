@@ -464,6 +464,40 @@ function renderPublications(publications, container) {
     });
 }
 
+// Function to generate gallery HTML
+function generateGalleryHTML(images) {
+    if (!images || images.length === 0) return '';
+    
+    const imageWidth = 280; // Fixed image width in pixels
+    const totalWidth = images.length * imageWidth;
+    const gaps = images.length - 1; // Number of gaps between images
+    
+    let galleryHtml = '<div class="news-gallery">';
+    
+    images.forEach((imgSrc, index) => {
+        // First image doesn't need margin-left
+        if (index === 0) {
+            galleryHtml += `
+                <a href="${imgSrc}" target="_blank" class="news-gallery-item">
+                    <img src="${imgSrc}" alt="News Photo" class="news-gallery-img">
+                </a>
+            `;
+        } else {
+            // Dynamic margin calculation: min(-60px, calc((100% - totalWidth) / gaps))
+            // This ensures images don't overflow while maintaining overlap on wider screens
+            const dynamicMargin = `min(-60px, calc((100% - ${totalWidth}px) / ${gaps}))`;
+            galleryHtml += `
+                <a href="${imgSrc}" target="_blank" class="news-gallery-item" style="margin-left: ${dynamicMargin};">
+                    <img src="${imgSrc}" alt="News Photo" class="news-gallery-img">
+                </a>
+            `;
+        }
+    });
+    
+    galleryHtml += '</div>';
+    return galleryHtml;
+}
+
 // Function to render news items
 function renderNewsItems(newsData, containerId, limit = 8) {
     const container = document.getElementById(containerId);
@@ -538,6 +572,13 @@ function renderNewsItems(newsData, containerId, limit = 8) {
         }
         
         contentElement.appendChild(paragraphElement);
+
+        // Append Gallery if images exist
+        if (newsItem.images && newsItem.images.length > 0) {
+             const galleryContainer = document.createElement('div');
+             galleryContainer.innerHTML = generateGalleryHTML(newsItem.images);
+             contentElement.appendChild(galleryContainer);
+        }
         
         // Add date and content to the news item
         newsElement.appendChild(dateElement);
