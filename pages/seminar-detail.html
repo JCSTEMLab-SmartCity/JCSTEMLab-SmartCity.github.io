@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Seminar Details</title>
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <ul class="nav-links">
+                <li><a href="../index.html#about">About</a></li>
+                <li><a href="../index.html#research">Research</a></li>
+                <li><a href="../index.html#team">Team</a></li>
+                <li><a href="../index.html#latest-news">News</a></li>
+                <li><a href="../index.html#seminar" class="active">Seminars</a></li>
+                <li><a href="../index.html#publications">Publications</a></li>
+            </ul>
+            <div class="nav-logo">
+                <img src="../assets/logo.png" alt="JC STEM Lab Logo">
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="seminar-container">
+            <div class="seminar-header">
+                <h1 id="seminar-title">Seminar Title</h1>
+                <div class="seminar-speaker-info">
+                    <div class="seminar-speaker-title"><i class="fas fa-microphone"></i> Speaker:</div>
+                    <div class="seminar-speaker-name" id="seminar-speaker-name">Speaker Name</div>
+                    <div class="seminar-speaker-affiliation" id="seminar-speaker-affiliation">Speaker Affiliation<br>Date</div>
+                </div>
+            </div>
+
+            <div class="seminar-section">
+                <h2>Abstract</h2>
+                <p id="seminar-abstract">Abstract content will be loaded here.</p>
+            </div>
+
+            <div class="seminar-section">
+                <h2>Biography</h2>
+                <p id="seminar-biography">Biography content will be loaded here.</p>
+            </div>
+
+            <div class="seminar-section" id="photos-section" style="display: none;">
+                <h2>Photos</h2>
+                <div class="seminar-gallery" id="seminar-gallery">
+                    <!-- Photos will be loaded here -->
+                </div>
+            </div>
+
+            <div style="text-align: center;"><div class="back-to-home"><a href="../index.html#seminar" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to all seminars</a></div></div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="copyright-year"></span> JC STEM Lab of Smart City. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Set copyright year
+        document.getElementById('copyright-year').textContent = new Date().getFullYear();
+    </script>
+    <script src="../script.js"></script>
+    <script>
+        // Function to get URL parameters
+        function getUrlParameter(name) {
+            name = name.replace(/[\[]/, '\\[').replace(/[\]]/, '\\]');
+            var regex = new RegExp('[\\?&]' + name + '=([^&#]*)');
+            var results = regex.exec(location.search);
+            return results === null ? '' : decodeURIComponent(results[1].replace(/\+/g, ' '));
+        }
+
+        // Load seminar data based on ID
+        document.addEventListener('DOMContentLoaded', function() {
+            const seminarId = getUrlParameter('id');
+            if (!seminarId) {
+                // If no ID is provided, redirect to main page
+                window.location.href = '../index.html#seminar';
+                return;
+            }
+
+            // Fetch seminar data from JSON file
+            fetch('../data/seminars.json')
+                .then(response => response.json())
+                .then(seminars => {
+                    const seminar = seminars.find(s => s.id === seminarId);
+                    if (!seminar) {
+                        // If seminar not found, redirect to main page
+                        window.location.href = '../index.html#seminar';
+                        return;
+                    }
+
+                    // Update page title
+                    document.title = seminar.title;
+                    document.getElementById('seminar-title').textContent = seminar.title;
+                    
+                    // Update speaker information
+                    document.getElementById('seminar-speaker-name').textContent = seminar.speaker.name;
+                    document.getElementById('seminar-speaker-affiliation').innerHTML = `${seminar.speaker.affiliation}<br>${seminar.date}`;
+                    
+                    // Update abstract and biography
+                    document.getElementById('seminar-abstract').textContent = seminar.abstract;
+                    document.getElementById('seminar-biography').textContent = seminar.biography;
+                    
+                    // Update photos if available
+                    if (seminar.photos && seminar.photos.length > 0) {
+                        const photosSection = document.getElementById('photos-section');
+                        const gallery = document.getElementById('seminar-gallery');
+                        
+                        photosSection.style.display = 'block';
+                        gallery.innerHTML = '';
+                        
+                        // Get current viewport width to determine image width
+                        const viewportWidth = window.innerWidth;
+                        let imageWidth = 280; // Default for desktop
+                        
+                        // Adjust image width based on viewport size (matches CSS media queries)
+                        if (viewportWidth <= 576) {
+                            imageWidth = 200;
+                        } else if (viewportWidth <= 768) {
+                            imageWidth = 220;
+                        } else if (viewportWidth <= 992) {
+                            imageWidth = 250;
+                        }
+                        
+                        const totalWidth = seminar.photos.length * imageWidth;
+                        const gaps = seminar.photos.length - 1; // Number of gaps between images
+                        
+                        seminar.photos.forEach((photo, index) => {
+                            const img = document.createElement('img');
+                            img.src = `../data/seminar/${seminarId}/${photo}`;
+                            img.alt = `${seminar.title} photo`;
+                            img.title = `${seminar.title} photo`;
+                            
+                            // Dynamic margin calculation: min(-60px, calc((100% - totalWidth) / gaps))
+                            // This ensures images don't overflow while maintaining overlap on wider screens
+                            if (index > 0 && gaps > 0) {
+                                // Adjust overlap amount based on viewport size
+                                let overlapAmount = -60;
+                                if (viewportWidth <= 576) {
+                                    overlapAmount = -30;
+                                } else if (viewportWidth <= 768) {
+                                    overlapAmount = -40;
+                                } else if (viewportWidth <= 992) {
+                                    overlapAmount = -50;
+                                }
+                                
+                                const dynamicMargin = `min(${overlapAmount}px, calc((100% - ${totalWidth}px) / ${gaps}))`;
+                                img.style.marginLeft = dynamicMargin;
+                            }
+                            
+                            gallery.appendChild(img);
+                        });
+                    }
+                })
+                .catch(error => {
+                    console.error('Error loading seminar data:', error);
+                    window.location.href = '../index.html#seminar';
+                });
+        });
+    </script>
+</body>
+</html>

@@ -2460,3 +2460,450 @@ footer {
         bottom: 5px;
     }
 }
+
+/* Seminar Detail Page Styles */
+.seminar-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 60px 20px;
+    background-color: #fff;
+    border-radius: 20px;
+    margin-top: 20px;
+    margin-bottom: 60px;
+}
+
+.seminar-header {
+    margin-bottom: 40px;
+    text-align: center;
+}
+
+.seminar-header h1 {
+    margin-bottom: 25px;
+    font-size: 2.5rem;
+    color: #2c3e50;
+    font-weight: 700;
+    line-height: 1.2;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #E74C3C 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.seminar-speaker-info {
+    padding: 20px 0;
+    margin-bottom: 30px;
+    text-align: center;
+    background: none;
+    box-shadow: none;
+    border: none;
+    transition: none;
+}
+
+.seminar-speaker-info:hover {
+    transform: none;
+    box-shadow: none;
+}
+
+.seminar-speaker-title {
+    font-weight: bold;
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.seminar-speaker-title i {
+    color: var(--primary-color);
+    margin-right: 8px;
+    font-size: 16px;
+}
+
+.seminar-speaker-name {
+    font-weight: bold;
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.seminar-speaker-affiliation {
+    font-size: 15px;
+    color: #666;
+    text-align: center;
+    line-height: 1.5;
+}
+
+.seminar-section {
+    margin-bottom: 50px;
+    padding: 0;
+    background: none;
+    box-shadow: none;
+    border: none;
+    border-radius: 0;
+    transition: none;
+}
+
+.seminar-section:hover {
+    box-shadow: none;
+    transform: none;
+}
+
+.seminar-section h2 {
+    color: var(--primary-color);
+    border-bottom: 3px solid #eee;
+    padding-bottom: 15px;
+    margin-bottom: 25px;
+    font-size: 1.8rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+}
+
+.seminar-section h2::before {
+    content: '';
+    display: inline-block;
+    width: 8px;
+    height: 30px;
+    background-color: var(--primary-color);
+    margin-right: 15px;
+    border-radius: 4px;
+}
+
+.seminar-section p {
+    font-size: 17px;
+    line-height: 1.8;
+    color: #444;
+    text-align: justify;
+    margin-bottom: 20px;
+}
+
+.seminar-section p:last-child {
+    margin-bottom: 0;
+}
+
+/* Seminar Gallery with overlapping photos */
+.seminar-gallery {
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    overflow: visible;
+    margin: 20px 0;
+    position: relative;
+    gap: 0;
+    padding: 20px 0;
+}
+
+/* 单张图片卡片 */
+.seminar-gallery img {
+    width: 280px;
+    height: 210px;
+    object-fit: cover;
+    border-radius: 12px;
+    border: 5px solid white;
+    box-shadow: 
+        0 8px 20px rgba(0, 0, 0, 0.15),
+        0 2px 6px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
+    transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
+    background: white;
+    position: relative;
+    flex-shrink: 0;
+}
+
+/* 添加照片的"纸张"效果 */
+.seminar-gallery img::before {
+    content: '';
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    right: -2px;
+    bottom: -2px;
+    border-radius: 12px;
+    background: linear-gradient(135deg, rgba(255,255,255,0.8) 0%, rgba(255,255,255,0.4) 100%);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.seminar-gallery img:hover::before {
+    opacity: 1;
+}
+
+/* 第一张不需要左边距 */
+.seminar-gallery img:first-child {
+    margin-left: 0 !important;
+}
+
+/* --- 自动旋转和层级 --- */
+
+/* 第1张 */
+.seminar-gallery img:nth-child(1) { z-index: 6; }
+.seminar-gallery img:nth-child(1) {
+    transform: rotate(-2.5deg);
+    filter: brightness(1.02);
+}
+
+/* 第2张 */
+.seminar-gallery img:nth-child(2) { z-index: 5; }
+.seminar-gallery img:nth-child(2) {
+    transform: rotate(1.8deg);
+    filter: brightness(0.98);
+}
+
+/* 第3张 */
+.seminar-gallery img:nth-child(3) { z-index: 4; }
+.seminar-gallery img:nth-child(3) {
+    transform: rotate(-1.5deg);
+    filter: brightness(0.96);
+}
+
+/* 第4张 */
+.seminar-gallery img:nth-child(4) { z-index: 3; }
+.seminar-gallery img:nth-child(4) {
+    transform: rotate(2.2deg);
+    filter: brightness(0.94);
+}
+
+/* 第5张 */
+.seminar-gallery img:nth-child(5) { z-index: 2; }
+.seminar-gallery img:nth-child(5) {
+    transform: rotate(-1deg);
+    filter: brightness(0.92);
+}
+
+/* 第6张及以后 */
+.seminar-gallery img:nth-child(n+6) { z-index: 1; }
+.seminar-gallery img:nth-child(n+6) {
+    transform: rotate(-1deg);
+    filter: brightness(0.92);
+}
+
+/* --- 鼠标悬停效果 --- */
+
+.seminar-gallery img:hover {
+    transform: translateY(-18px) scale(1.12) rotate(0deg) !important;
+    box-shadow: 
+        0 20px 40px rgba(0, 0, 0, 0.25),
+        0 8px 16px rgba(0, 0, 0, 0.15),
+        0 0 0 1px rgba(255, 255, 255, 0.5);
+    filter: brightness(1.05);
+    border-color: rgba(255, 255, 255, 0.95);
+    z-index: 10 !important;
+}
+
+/* Responsive adjustments for gallery */
+@media (max-width: 992px) {
+    .seminar-gallery img {
+        width: 250px;
+        height: 180px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seminar-gallery img {
+        width: 220px;
+        height: 160px;
+    }
+}
+
+@media (max-width: 576px) {
+    .seminar-gallery {
+        justify-content: flex-start;
+        overflow-x: auto;
+        padding: 10px 0;
+    }
+    
+    .seminar-gallery img {
+        width: 200px;
+        height: 150px;
+    }
+}
+
+.back-to-home {
+    text-align: center;
+    margin-top: 50px;
+}
+
+.back-to-home .btn-primary {
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background: linear-gradient(135deg, var(--primary-color) 0%, #E74C3C 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(189, 56, 75, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.back-to-home .btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(189, 56, 75, 0.3);
+    background: linear-gradient(135deg, #E74C3C 0%, var(--primary-color) 100%);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .seminar-container {
+        margin: 10px;
+        padding: 40px 20px;
+    }
+    
+    .seminar-header h1 {
+        font-size: 2.2rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .seminar-container {
+        padding: 40px 20px;
+    }
+    
+    .seminar-header h1 {
+        font-size: 2rem;
+    }
+    
+    .seminar-section {
+        padding: 30px;
+    }
+    
+    .seminar-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+        gap: 20px;
+    }
+    
+    .seminar-gallery img {
+        height: 200px;
+    }
+}
+
+@media (max-width: 768px) {
+    .seminar-container {
+        padding: 30px 15px;
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    
+    .seminar-header h1 {
+        font-size: 1.8rem;
+    }
+    
+    .seminar-speaker-info {
+        padding: 25px;
+    }
+    
+    .seminar-section {
+        padding: 25px;
+        margin-bottom: 30px;
+    }
+    
+    .seminar-section h2 {
+        font-size: 1.5rem;
+    }
+    
+    .seminar-gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 15px;
+    }
+    
+    .seminar-gallery img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .seminar-container {
+        padding: 20px 10px;
+        border-radius: 15px;
+    }
+    
+    .seminar-header {
+        margin-bottom: 30px;
+    }
+    
+    .seminar-header h1 {
+        font-size: 1.5rem;
+    }
+    
+    .seminar-speaker-info {
+        padding: 20px 15px;
+        margin-bottom: 30px;
+    }
+    
+    .seminar-speaker-name {
+        font-size: 20px;
+    }
+    
+    .seminar-section {
+        padding: 20px 15px;
+        margin-bottom: 25px;
+    }
+    
+    .seminar-section h2 {
+        font-size: 1.3rem;
+    }
+    
+    .seminar-section p {
+        font-size: 16px;
+        line-height: 1.7;
+    }
+    
+    .seminar-gallery {
+        grid-template-columns: 1fr;
+        gap: 15px;
+    }
+    
+    .seminar-gallery img {
+        height: 200px;
+    }
+    
+    .back-to-home .btn-primary {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
+}
+
+/* Animation for elements */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.seminar-header {
+    animation: fadeInUp 0.6s ease-out;
+}
+
+.seminar-speaker-info {
+    animation: fadeInUp 0.6s ease-out 0.1s both;
+}
+
+.seminar-section {
+    animation: fadeInUp 0.6s ease-out 0.2s both;
+}
+
+.seminar-section:nth-child(3) {
+    animation-delay: 0.3s;
+}
+
+.seminar-section:nth-child(4) {
+    animation-delay: 0.4s;
+}
+
+.seminar-section:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+.back-to-home {
+    animation: fadeInUp 0.6s ease-out 0.6s both;
+}
