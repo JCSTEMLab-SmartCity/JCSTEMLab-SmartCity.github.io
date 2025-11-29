@@ -2195,7 +2195,7 @@ footer {
 }
 
 .news-gallery-item:hover .news-gallery-img {
-    transform: translateY(-18px) scale(1.12) rotate(0deg) !important;
+    transform: translateY(-18px) scale(1.25) rotate(0deg) !important;
     box-shadow: 
         0 20px 40px rgba(0, 0, 0, 0.25),
         0 8px 16px rgba(0, 0, 0, 0.15),

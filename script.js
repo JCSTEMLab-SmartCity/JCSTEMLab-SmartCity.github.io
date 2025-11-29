@@ -475,10 +475,14 @@ function generateGalleryHTML(images) {
     let galleryHtml = '<div class="news-gallery">';
     
     images.forEach((imgSrc, index) => {
+        // Calculate z-index: first image has highest z-index, last image has lowest
+        // z-index decreases from images.length (first) to 1 (last)
+        const zIndex = images.length - index;
+        
         // First image doesn't need margin-left
         if (index === 0) {
             galleryHtml += `
-                <a href="${imgSrc}" target="_blank" class="news-gallery-item">
+                <a href="${imgSrc}" target="_blank" class="news-gallery-item" style="z-index: ${zIndex};">
                     <img src="${imgSrc}" alt="News Photo" class="news-gallery-img">
                 </a>
             `;
@@ -487,7 +491,7 @@ function generateGalleryHTML(images) {
             // This ensures images don't overflow while maintaining overlap on wider screens
             const dynamicMargin = `min(-60px, calc((100% - ${totalWidth}px) / ${gaps}))`;
             galleryHtml += `
-                <a href="${imgSrc}" target="_blank" class="news-gallery-item" style="margin-left: ${dynamicMargin};">
+                <a href="${imgSrc}" target="_blank" class="news-gallery-item" style="margin-left: ${dynamicMargin}; z-index: ${zIndex};">
                     <img src="${imgSrc}" alt="News Photo" class="news-gallery-img">
                 </a>
             `;
