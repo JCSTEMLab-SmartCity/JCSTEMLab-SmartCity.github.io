@@ -217,62 +217,44 @@
 
             .research-area {
                 position: relative;
-                background: linear-gradient(145deg, #ffffff 0%, #f8fafc 50%, #ffffff 100%);
-                border-radius: 20px;
+                background: linear-gradient(145deg, #ffffff 0%, #fef7f7 50%, #ffffff 100%);
+                border-radius: 24px;
                 padding: 0;
-                border: 2px solid rgba(189, 56, 75, 0.08);
-                transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
+                border: 2px solid rgba(189, 56, 75, 0.1);
+                transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
                 cursor: pointer;
                 overflow: hidden;
                 box-shadow:
-                    0 8px 32px rgba(189, 56, 75, 0.08),
-                    0 4px 16px rgba(0, 0, 0, 0.04),
-                    inset 0 1px 0 rgba(255, 255, 255, 0.9);
+                    0 10px 30px rgba(189, 56, 75, 0.1),
+                    0 4px 12px rgba(0, 0, 0, 0.05);
                 transform: translateZ(0);
-                backdrop-filter: blur(10px);
             }
 
-            .research-area::before {
-                content: '';
-                position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                height: 3px;
-                background: linear-gradient(90deg, #BD384B 0%, #E74C3C 25%, #3498DB 75%, #9B59B6 100%);
-                transform: scaleX(0);
-                transform-origin: center;
-                transition: transform 0.6s cubic-bezier(0.23, 1, 0.32, 1);
-            }
-
-            .research-area:hover {
-                transform: translateY(-12px) scale(1.02);
-                box-shadow:
-                    0 20px 50px rgba(189, 56, 75, 0.18),
-                    0 10px 25px rgba(0, 0, 0, 0.08),
-                    inset 0 1px 0 rgba(255, 255, 255, 0.9);
-                border-color: rgba(189, 56, 75, 0.25);
-            }
-
-            .research-area:hover::before {
-                transform: scaleX(1);
-            }
-
+            /* 添加装饰性背景图案 */
             .research-area::after {
                 content: '';
                 position: absolute;
-                top: 0;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                background: linear-gradient(135deg, rgba(189, 56, 75, 0.03) 0%, rgba(52, 152, 219, 0.03) 100%);
-                opacity: 0;
-                transition: opacity 0.4s ease;
+                top: -50px;
+                right: -50px;
+                width: 150px;
+                height: 150px;
+                background: radial-gradient(circle, rgba(189, 56, 75, 0.08) 0%, transparent 70%);
+                border-radius: 50%;
                 pointer-events: none;
+                transition: transform 0.4s ease;
+                z-index: 0;
             }
 
             .research-area:hover::after {
-                opacity: 1;
+                transform: scale(1.2);
+            }
+
+            .research-area:hover {
+                transform: translateY(-12px) rotate(1deg);
+                box-shadow:
+                    0 20px 50px rgba(189, 56, 75, 0.15),
+                    0 10px 25px rgba(0, 0, 0, 0.1);
+                border-color: rgba(189, 56, 75, 0.25);
             }
 
             .research-area-header {
@@ -290,7 +272,7 @@
                 right: -20px;
                 width: 60px;
                 height: 60px;
-                background: linear-gradient(135deg, rgba(189, 56, 75, 0.1) 0%, rgba(52, 152, 219, 0.1) 100%);
+                background: linear-gradient(135deg, rgba(189, 56, 75, 0.1) 0%, rgba(231, 76, 60, 0.1) 100%);
                 border-radius: 50%;
                 transform: translateY(-50%);
                 transition: all 0.4s ease;
@@ -317,7 +299,7 @@
             }
 
             .research-area:hover i {
-                transform: scale(1.1);
+                transform: scale(1.1) rotate(5deg);
                 filter: drop-shadow(0 6px 16px rgba(189, 56, 75, 0.25));
             }
 
@@ -338,6 +320,10 @@
 
             .research-area:hover h3 {
                 transform: translateX(3px);
+                background: linear-gradient(135deg, var(--primary-color) 0%, #E74C3C 100%);
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+                background-clip: text;
             }
 
             .research-area-body {
@@ -373,12 +359,25 @@
                 opacity: 0.8;
             }
 
+            .research-area .research-list li {
+                transition: transform 0.2s ease, color 0.2s ease;
+            }
+
+            .research-area:hover .research-list li {
+                transform: translateX(3px);
+            }
+
             .research-area .research-list li strong {
                 color: #34495e;
                 font-weight: 700;
                 display: block;
                 margin-bottom: 2px;
                 font-size: 0.95rem;
+                transition: color 0.3s ease;
+            }
+
+            .research-area:hover .research-list li strong {
+                color: var(--primary-color);
             }
 
             .research-overlay {
