@@ -35,7 +35,7 @@
                 <div class="slideshow-container">
                     <div class="mySlides">
                         <img src="assets/slides/thanksgiving2025.jpg" style="width:100%">
-                        <div class="slide-title">Thanksgiving Gathering 2025</div>
+                        <div class="slide-title">Thanksgiving Gathering</div>
                         <div class="slide-subtitle">JC STEM Lab Thanksgiving gathering @2025.11.27</div>
                     </div>
                     <div class="mySlides video-slide">
@@ -966,9 +966,6 @@
     </script>
     <script src="script.js"></script>
     <script>
-        // Update copyright year
-        document.getElementById('current-year').textContent = new Date().getFullYear();
-        
         // 增强平滑滚动效果
         document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
             anchor.addEventListener('click', function(e) {
@@ -999,18 +996,18 @@
         // Mobile navigation horizontal scroll handling
         document.addEventListener('DOMContentLoaded', function() {
             // Make all links open in a new tab
-            document.querySelectorAll('a').forEach(link => {
-                // Skip navigation links that are meant for scrolling within the page
-                // Also skip the "View All News" link
-                const href = link.getAttribute('href');
-                if (href.startsWith('#') || href === 'pages/all-news.html' || link.textContent.trim() === 'View All News') {
-                    // For these specific links, ensure they open in the same tab
-                    link.setAttribute('target', '_self');
-                } else {
-                    link.setAttribute('target', '_blank');
-                    link.setAttribute('rel', 'noopener noreferrer');
-                }
-            });
+        document.querySelectorAll('a').forEach(link => {
+            // Skip navigation links that are meant for scrolling within the page
+            // Also skip the "View All News" link
+            const href = link.getAttribute('href');
+            if (href && (href.startsWith('#') || href === 'pages/all-news.html' || link.textContent.trim() === 'View All News')) {
+                // For these specific links, ensure they open in the same tab
+                link.setAttribute('target', '_self');
+            } else {
+                link.setAttribute('target', '_blank');
+                link.setAttribute('rel', 'noopener noreferrer');
+            }
+        });
             
             const navLinks = document.querySelector('.nav-links');
             if (navLinks) {

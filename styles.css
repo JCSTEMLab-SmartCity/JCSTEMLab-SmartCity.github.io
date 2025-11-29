@@ -1173,14 +1173,24 @@ footer {
 }
 
 .btn-primary {
-    background-color: var(--background-color);
-    color: var(--primary-color);
-    border:  var(--background-color);
+    background: linear-gradient(135deg, var(--primary-color) 0%, #E74C3C 100%);
+    color: white;
+    border: none;
+    border-radius: 50px;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    box-shadow: 0 8px 20px rgba(189, 56, 75, 0.2);
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
 }
 
 .btn-primary:hover {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
+    background: linear-gradient(135deg, #E74C3C 0%, var(--primary-color) 100%);
+    transform: translateY(-3px);
+    box-shadow: 0 12px 30px rgba(189, 56, 75, 0.3);
     color: white;
 }
 
@@ -2342,15 +2352,16 @@ footer {
     position: absolute;
     bottom: 20%;
     left: 10%;
-    background-color: rgba(189, 56, 75, 0.8);
+    background: linear-gradient(135deg, rgba(189, 56, 75, 0.8) 0%, rgba(231, 76, 60, 0.8) 100%);
     color: white;
     padding: 15px 25px;
     font-size: 2rem;
     font-weight: 700;
-    border-radius: 25px;
+    border: none;
+    border-radius: 50px;
     z-index: 3;
     max-width: 80%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 8px 20px rgba(189, 56, 75, 0.2);
     transform: translateY(0);
     transition: transform 0.5s ease, background-color 0.3s ease;
 }
