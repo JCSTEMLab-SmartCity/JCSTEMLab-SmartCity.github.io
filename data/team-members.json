@@ -294,6 +294,61 @@
               "last_name": "dinghaichuan"
             },
             {
+              "id": "faculty-guoxiaoyu",
+              "title": "Prof. GUO, Xiaoyu",
+              "role": [
+                {
+                  "text": "Assistant Professor",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Mechanical Engineering, City University of Hong Kong",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/xiaoyu_guo.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:xiaoyguo@cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "house-user",
+                  "url": "https://www.cityu.edu.hk/mne/people/academic-staff/prof-guo-xiaoyu",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
+                }
+              ],
+              "interests": [
+                "Bio-inspired Control",
+                "Aerial Robotics",
+                "Hydrogen-powered Robotics",
+                "Neuromorphic Circuits and Systems"
+              ],
+              "biography": "\n\n\n\nProf. GUO, Xiaoyu is an Assistant Professor in the Department of Mechanical Engineering at City University of Hong Kong. He received his Ph.D. from the University of Manchester in 2023, M.S. from the University of Cambridge in 2019, and B.S. from Beihang University in 2018. Prior to joining CityU as Assistant Professor, he was an RGC Postdoctoral Fellow (PDFS) at City University of Hong Kong (2024-2025) and a Postdoc at City University of Hong Kong (2023-2024). His research interests include bio-inspired control, aerial robotics, hydrogen-powered robotics, and neuromorphic circuits and systems.",
+              "education": [
+                {
+                  "degree": "Ph.D.",
+                  "institution": "University of Manchester",
+                  "year": "2023"
+                },
+                {
+                  "degree": "M.S.",
+                  "institution": "University of Cambridge",
+                  "year": "2019"
+                },
+                {
+                  "degree": "B.S.",
+                  "institution": "Beihang University",
+                  "year": "2018"
+                }
+              ],
+              "detailPage": "data/people/Faculty_GuoXiaoyu/index.html",
+              "last_name": "guoxiaoyu"
+            },
+            {
               "id": "faculty-houjunhui",
               "title": "Prof. HOU, Junhui",
               "role": [
