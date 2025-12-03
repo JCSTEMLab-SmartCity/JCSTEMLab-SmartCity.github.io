@@ -959,7 +959,7 @@
               "title": "Dr. CAO, Hangcheng",
               "role": [
                 {
-                  "text": "Postdoctor @ CityU",
+                  "text": "Postdoctoral Fellow @ CityUHK",
                   "highlighted": true
                 },
                 {
@@ -1017,7 +1017,7 @@
               "title": "Dr. YUAN, Longzhi",
               "role": [
                 {
-                  "text": "Postdoctor @ CityU",
+                  "text": "Postdoctoral Fellow @ CityUHK",
                   "highlighted": true
                 },
                 {
@@ -1077,7 +1077,7 @@
               "title": "Dr. DENG, Yiqin",
               "role": [
                 {
-                  "text": "Postdoctor @ CityUHK",
+                  "text": "Postdoctoral Fellow @ CityUHK",
                   "highlighted": true
                 },
                 {
@@ -1139,7 +1139,7 @@
               "title": "Dr. LIU, Zhaofeng",
               "role": [
                 {
-                  "text": "Postdoctor @ CityU",
+                  "text": "Postdoctoral Fellow @ CityUHK",
                   "highlighted": true
                 },
                 {
@@ -1197,11 +1197,15 @@
               "title": "Dr. WANG, Qianru",
               "role": [
                 {
-                  "text": "Postdoctor @ CityUHK",
+                  "text": "Postdoctoral Fellow @ CityUHK",
                   "highlighted": true
                 },
                 {
                   "text": "Hong Kong Scholars (香江學者)",
+                  "highlighted": false
+                },
+                {
+                  "text": "Associate Professor @ Xidian University",
                   "highlighted": false
                 },
                 {
@@ -1222,6 +1226,12 @@
                   "url": "https://scholar.google.com/citations?user=aOxb8dgAAAAJ&hl=en",
                   "icon": "fas fa-graduation-cap",
                   "title": "Google Scholar"
+                },
+                {
+                  "type": "house-user",
+                  "url": "https://faculty.xidian.edu.cn/WANGQIANRU/zh_CN/index.htm",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
                 }
               ],
               "interests": [
@@ -2065,7 +2075,7 @@
           "members": [
             {
               "id": "pd23-xuguowen",
-              "title": "Dr. XU, Guowen",
+              "title": "Prof. XU, Guowen",
               "role": [
                 {
                   "text": "Professor (海外優青) @ UESTC",
@@ -2105,7 +2115,7 @@
                 "Applied Cryptography",
                 "AI Security and Privacy"
               ],
-              "biography": "\n\n\n\nDr. Guowen Xu is currently a full professor with the School of Computer Science and Engineering, University of Electronic Science and Technology of China, Chengdu, China. Prior to joining UESTC, I was a Postdoc research fellow at City University of Hong Kong (from 2023.5 to 2024.8) and a Research Fellow at Nanyang Technolgoical University (from 2021 to 2023). His current research interests focus on AI Security and Privacy.",
+              "biography": "\n\n\n\nProf. Guowen Xu is currently a full professor with the School of Computer Science and Engineering, University of Electronic Science and Technology of China, Chengdu, China. Prior to joining UESTC, I was a Postdoc research fellow at City University of Hong Kong (from 2023.5 to 2024.8) and a Research Fellow at Nanyang Technolgoical University (from 2021 to 2023). His current research interests focus on AI Security and Privacy.",
               "education": [
                 {
                   "degree": "PhD in Cyberspace security",
@@ -2194,6 +2204,12 @@
                   "url": "mailto:xinyuanqian@outlook.com",
                   "icon": "fas fa-envelope",
                   "title": "Email"
+                },
+                {
+                  "type": "house-user",
+                  "url": "https://openreview.net/profile?id=~Xinyuan_Qian1",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
                 }
               ],
               "interests": [
