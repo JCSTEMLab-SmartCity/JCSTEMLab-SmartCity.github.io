@@ -171,7 +171,8 @@
                 // Add venue text below the number
                 const venueTextElement = document.createElement('span');
                 venueTextElement.className = 'venue-text';
-                venueTextElement.textContent = venueText;
+                // Allow explicit line breaks from data (e.g., "GLOBECOM'25<br>Best Paper Award")
+                venueTextElement.innerHTML = venueText;
                 venueElement.appendChild(venueTextElement);
                 
                 // Create publication content container

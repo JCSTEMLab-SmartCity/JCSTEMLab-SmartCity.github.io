@@ -977,6 +977,8 @@ nav .container {
     /* text-transform: uppercase; */
     word-break: break-word;
     hyphens: auto;
+    display: block;
+    white-space: normal;
 }
 
 .pub-content {
