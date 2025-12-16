@@ -1652,6 +1652,12 @@
                   "url": "https://scholar.google.com/citations?user=YlRk19IAAAAJ&hl=zh-CN&authuser=1",
                   "icon": "fas fa-graduation-cap",
                   "title": "Google Scholar"
+                },
+                {
+                  "type": "house-user",
+                  "url": "https://haonanan309.github.io/",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
                 }
               ],
               "interests": [
