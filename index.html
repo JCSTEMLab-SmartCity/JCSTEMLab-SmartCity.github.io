@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,11 +10,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
-   
+
 
     <nav>
         <div class="container">
+            <div class="nav-logo">
+                <a href="#" class="logo-text">JC STEM Lab of Smart City</a>
+            </div>
             <ul class="nav-links">
                 <li><a href="#about" class="active">About</a></li>
                 <li><a href="#research">Research</a></li>
@@ -21,78 +26,106 @@
                 <li><a href="#latest-news">News</a></li>
                 <li><a href="#seminar">Seminars</a></li>
                 <li><a href="#publications">Publications</a></li>
-                <!-- <li><a href="#location">Contact</a></li> -->
             </ul>
-            <div class="nav-logo">
-                <img src="assets/logo.png" alt="JC STEM Lab Logo">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
 
     <main>
-        <section id="slideshow" class="section full-width-section">
-            <div class="container">
-                <div class="slideshow-container">
-                    <div class="mySlides">
-                        <img src="assets/slides/thanksgiving2025.jpg" style="width:100%">
-                        <div class="slide-title">Thanksgiving Gathering</div>
-                        <div class="slide-subtitle">JC STEM Lab Thanksgiving gathering @2025.11.27</div>
+        <section id="hero" class="hero">
+            <div class="hero-slider">
+                <!-- Slide 1 -->
+                <div class="hero-item active">
+                    <div class="hero-bg" style="background-image: url('assets/slides/thanksgiving2025.jpg');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <h1>Thanksgiving Gathering</h1>
+                        <p>JC STEM Lab Thanksgiving gathering @2025.11.27</p>
                     </div>
-                    <div class="mySlides video-slide">
-                        <video src="assets/JCLab-OpenCeremony.mp4" style="width:100%" autoplay muted class="clickable-video" data-video-src="assets/JCLab-OpenCeremony.mp4"></video>
-                        <div class="slide-title">JC STEM Labs Inauguration Ceremony</div>
-                        <div class="slide-subtitle">Welcome to our state-of-the-art laboratory! @2025.7.8 <small style="font-size: 0.8em; opacity: 0.9;">Click video to watch with sound</small></div>
-                    </div>
-                    <div class="mySlides">
-                        <img src="assets/slides/jclab-luncheon.png" style="width:100%">
-                        <div class="slide-title">JC STEM Circle Luncheon</div>
-                        <div class="slide-subtitle">Prof. Fang and Prof. Chen attended the JC STEM Circle Luncheon!!! @2025.3.20</div>
-                    </div>
-                    <div class="mySlides">
-                        <img src="assets/slides/ACM-Fang.png" style="width:100%">
-                        <div class="slide-title">Congratulations to Prof Fang!!!</div>
-                        <!-- <div class="slide-subtitle">Prof Yuguang Michael FANG elected to an ACM Fellow of Class 2022</div> -->
-                    </div>
-                    
-                    <div class="mySlides">
-                        <img src="assets/slides/group4.jpg" style="width:100%">
-                        <div class="slide-title">Team Banquet</div>
-                        <div class="slide-subtitle">2024 Thanksgiving Dinner @2024.11.29</div>
-                    </div>
-                    <div class="mySlides">
-                        <img src="assets/slides/group3.jpg" style="width:100%">
-                        <div class="slide-title">Close to Nature</div>
-                        <div class="slide-subtitle">Hiking between the Mountains and the Sea of Hong Kong @2024.3.9</div>
-                    </div>
-                    
-                    <div class="mySlides">
-                        <img src="assets/slides/group2.jpg" style="width:100%">
-                        <div class="slide-title">Team Building</div>
-                        <div class="slide-subtitle">2023 Thanksgiving Dinner @2023.11.23</div>
-                    </div>
-                    <div class="mySlides">
-                        <img src="assets/slides/group1.png" style="width:100%">
-                        <div class="slide-title">First Meeting</div>
-                        <div class="slide-subtitle">Our First Onsite Meeting at CityUHK @2023.9.9</div>
-                    </div>
-                
-
-                    <!-- 前后导航按钮 -->
-                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
                 </div>
 
-                <!-- 导航点 -->
-                <div class="dots-container">
-                    <span class="dot" onclick="currentSlide(1)"></span>
-                    <span class="dot" onclick="currentSlide(2)"></span>
-                    <span class="dot" onclick="currentSlide(3)"></span>
-                    <span class="dot" onclick="currentSlide(4)"></span>
-                    <span class="dot" onclick="currentSlide(5)"></span>
-                    <span class="dot" onclick="currentSlide(6)"></span>
-                    <span class="dot" onclick="currentSlide(7)"></span>
-                    <span class="dot" onclick="currentSlide(8)"></span>
+                <!-- Slide 2 (Video) -->
+                <div class="hero-item video-slide">
+                    <video src="assets/JCLab-OpenCeremony.mp4" autoplay muted loop playsinline
+                        class="hero-bg-video"></video>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <h1>JC STEM Labs Inauguration Ceremony</h1>
+                        <p>Welcome to our state-of-the-art laboratory! @2025.7.8</p>
+                        <small style="color: rgba(255,255,255,0.8);">Click to toggle sound</small>
+                    </div>
                 </div>
+
+                <!-- Slide 3 -->
+                <div class="hero-item">
+                    <div class="hero-bg" style="background-image: url('assets/slides/jclab-luncheon.png');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <h1>JC STEM Circle Luncheon</h1>
+                        <p>Prof. Fang and Prof. Chen attended the JC STEM Circle Luncheon!!! @2025.3.20</p>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="hero-item">
+                    <div class="hero-bg" style="background-image: url('assets/slides/ACM-Fang.png');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <h1>Congratulations to Prof Fang!!!</h1>
+                        <p>Prof Yuguang Michael FANG elected to an ACM Fellow of Class 2022</p>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="hero-item">
+                    <div class="hero-bg" style="background-image: url('assets/slides/group4.jpg');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <h1>Team Banquet</h1>
+                        <p>2024 Thanksgiving Dinner @2024.11.29</p>
+                    </div>
+                </div>
+
+                <!-- Slide 6 -->
+                <div class="hero-item">
+                    <div class="hero-bg" style="background-image: url('assets/slides/group3.jpg');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <h1>Close to Nature</h1>
+                        <p>Hiking between the Mountains and the Sea of Hong Kong @2024.3.9</p>
+                    </div>
+                </div>
+
+                <!-- Slide 7 -->
+                <div class="hero-item">
+                    <div class="hero-bg" style="background-image: url('assets/slides/group2.jpg');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <h1>Team Building</h1>
+                        <p>2023 Thanksgiving Dinner @2023.11.23</p>
+                    </div>
+                </div>
+
+                <!-- Slide 8 -->
+                <div class="hero-item">
+                    <div class="hero-bg" style="background-image: url('assets/slides/group1.png');"></div>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <h1>First Meeting</h1>
+                        <p>Our First Onsite Meeting at CityUHK @2023.9.9</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <button class="hero-btn prev" aria-label="Previous Slide"><i class="fas fa-chevron-left"></i></button>
+            <button class="hero-btn next" aria-label="Next Slide"><i class="fas fa-chevron-right"></i></button>
+
+            <!-- Dots -->
+            <div class="hero-dots">
+                <!-- Will be generated by JS -->
             </div>
         </section>
         <header>
@@ -109,13 +142,19 @@
             <div class="container">
                 <h2 class="section-title">About</h2>
                 <div class="about-content">
-                    <p>The <b>JC STEM Lab of Smart City</b> is led by <a href="https://www.cs.cityu.edu.hk/~yugufang/">Prof. Yuguang "Michael" Fang</a>. It was founded in January 2023 on a fund from Hong Kong Jockey Club Charities Trust. It is currently the home to graduate students, postdoctoral researchers, and visiting scholars.
-                        </p><br>
-                    
+                    <p>The <b>JC STEM Lab of Smart City</b> is led by <a
+                            href="https://www.cs.cityu.edu.hk/~yugufang/">Prof. Yuguang "Michael" Fang</a>. It was
+                        founded in January 2023 on a fund from Hong Kong Jockey Club Charities Trust. It is currently
+                        the home to graduate students, postdoctoral researchers, and visiting scholars.
+                    </p><br>
 
-                    <p>The Lab focuses on the cutting-edge research in Smart Cities, Internet of Things, Wireless Communications and Networking, Machine Learning, Computer Vision, Privacy and Security, Health Monitoring, and more, exploring how to leverage mobile things to help things, leading to cost-effective and sustainable solutions to building smarter cities.</p>
-                    
-                    
+
+                    <p>The Lab focuses on the cutting-edge research in Smart Cities, Internet of Things, Wireless
+                        Communications and Networking, Machine Learning, Computer Vision, Privacy and Security, Health
+                        Monitoring, and more, exploring how to leverage mobile things to help things, leading to
+                        cost-effective and sustainable solutions to building smarter cities.</p>
+
+
                 </div>
             </div>
         </section>
@@ -131,12 +170,12 @@
 
         <script>
             // Load research data from JSON
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
                 fetch('data/research.json')
                     .then(response => response.json())
                     .then(data => {
                         const container = document.getElementById('research-areas-container');
-                        
+
                         // Define page mapping for each research category
                         const pageMapping = {
                             "Connected and Autonomous Driving (CAD)": "pages/research-detail/research-connected-autonomous-driving.html",
@@ -145,7 +184,7 @@
                             "Wireless Communication and Networking": "pages/research-detail/research-wireless-communication-networking.html",
                             "Artificial Intelligence Security and Data Privacy": "pages/research-detail/research-ai-security-data-privacy.html"
                         };
-                        
+
                         // Process each main research category (一级方向)
                         Object.entries(data).forEach(([category, subcategories]) => {
                             // Select appropriate icon for main category
@@ -167,11 +206,11 @@
                             } else if (category.includes("Smart City")) {
                                 icon = 'fas fa-city';
                             }
-                            
+
                             const researchArea = document.createElement('div');
                             researchArea.className = 'research-area';
                             researchArea.setAttribute('data-category', encodeURIComponent(category));
-                            
+
                             researchArea.innerHTML = `
                                 <div class="research-area-header">
                                     <i class="${icon}"></i>
@@ -186,18 +225,18 @@
                                     <span>View Details</span>
                                 </div>
                             `;
-                            
+
                             container.appendChild(researchArea);
-                            
+
                             // Add click event to navigate to static page
-                            researchArea.addEventListener('click', function() {
+                            researchArea.addEventListener('click', function () {
                                 const targetPage = pageMapping[category];
                                 if (targetPage) {
                                     window.location.href = targetPage;
                                 } else {
                                     // Fallback to old dynamic page if mapping not found
-                                localStorage.setItem('selectedResearchCategory', this.dataset.category);
-                                window.location.href = 'pages/research-details.html';
+                                    localStorage.setItem('selectedResearchCategory', this.dataset.category);
+                                    window.location.href = 'pages/research-details.html';
                                 }
                             });
                         });
@@ -205,7 +244,7 @@
                     .catch(error => console.error('Error loading research data:', error));
             });
         </script>
-        
+
         <style>
             .research-areas {
                 display: grid;
@@ -441,6 +480,7 @@
                     opacity: 0;
                     transform: translateY(40px) scale(0.95);
                 }
+
                 to {
                     opacity: 1;
                     transform: translateY(0) scale(1);
@@ -452,6 +492,7 @@
                     opacity: 0;
                     transform: translateX(-30px);
                 }
+
                 to {
                     opacity: 1;
                     transform: translateX(0);
@@ -463,6 +504,7 @@
                     opacity: 0;
                     transform: translateX(30px);
                 }
+
                 to {
                     opacity: 1;
                     transform: translateX(0);
@@ -477,18 +519,22 @@
                 animation-delay: 0.1s;
                 animation-name: slideInLeft;
             }
+
             .research-area:nth-child(2) {
                 animation-delay: 0.2s;
                 animation-name: slideInRight;
             }
+
             .research-area:nth-child(3) {
                 animation-delay: 0.3s;
                 animation-name: slideInLeft;
             }
+
             .research-area:nth-child(4) {
                 animation-delay: 0.4s;
                 animation-name: slideInRight;
             }
+
             .research-area:nth-child(5) {
                 animation-delay: 0.5s;
                 animation-name: slideInLeft;
@@ -571,8 +617,11 @@
             <div class="container">
                 <h2 class="section-title">Our Team</h2>
                 <div class="about-content">
-                    <p>Our lab is led by <a href="https://www.cs.cityu.edu.hk/~yugufang/"><b>Prof. Yuguang "Michael" Fang</b>, Chair Professor of Internet of Things, Fellow of ACM & IEEE & AAAS, </a> and consists of talented researchers and PhD students working on cutting-edge research in IoT, wireless communications, and smart city technologies.</p>
-                    
+                    <p>Our lab is led by <a href="https://www.cs.cityu.edu.hk/~yugufang/"><b>Prof. Yuguang "Michael"
+                                Fang</b>, Chair Professor of Internet of Things, Fellow of ACM & IEEE & AAAS, </a> and
+                        consists of talented researchers and PhD students working on cutting-edge research in IoT,
+                        wireless communications, and smart city technologies.</p>
+
                     <p>Our team includes:</p>
                     <ul style="margin-left: 20px; margin-bottom: 20px;">
                         <li>Faculty Members</li>
@@ -593,7 +642,8 @@
                     <!-- News items will be dynamically loaded here from news.json -->
                 </div>
                 <div class="view-all-news">
-                    <a href="pages/all-news.html" class="btn btn-primary" target="_self"><i class="fas fa-list"></i> View All News</a>
+                    <a href="pages/all-news.html" class="btn btn-primary" target="_self"><i class="fas fa-list"></i>
+                        View All News</a>
                 </div>
             </div>
         </section>
@@ -607,13 +657,17 @@
                             <span class="date">Jul. 29, 2025</span>
                         </div>
                         <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=aibo">6G Empowered Intelligent High-Speed Railway</a></h3>
+                            <h3><a href="pages/seminar-detail.html?id=aibo">6G Empowered Intelligent High-Speed
+                                    Railway</a></h3>
                             <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
                             <p class="speaker-name">Prof. Bo Ai @ BJTU, China</p>
-                            <p class="seminar-description">This talk presents an in-depth analysis of the requirements for future intelligent HSR systems and examines how emerging 6G technologies can address these challenges.</p>
+                            <p class="seminar-description">This talk presents an in-depth analysis of the requirements
+                                for future intelligent HSR systems and examines how emerging 6G technologies can address
+                                these challenges.</p>
                         </div>
                         <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=aibo"><img src="data/seminar/aibo/featured.jpg" alt="Seminar by Prof. Bo Ai"></a>
+                            <a href="pages/seminar-detail.html?id=aibo"><img src="data/seminar/aibo/featured.jpg"
+                                    alt="Seminar by Prof. Bo Ai"></a>
                         </div>
                     </div>
                     <div class="seminar-item">
@@ -621,13 +675,17 @@
                             <span class="date">Mar. 27, 2025</span>
                         </div>
                         <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=weigao">Towards Prevalence of On-Device AI with Full Runtime Adaptability</a></h3>
+                            <h3><a href="pages/seminar-detail.html?id=weigao">Towards Prevalence of On-Device AI with
+                                    Full Runtime Adaptability</a></h3>
                             <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
                             <p class="speaker-name">Prof. Wei Gao @ Pittsburgh, USA</p>
-                            <p class="seminar-description">This talk explores adaptable on-device AI for real-time inference and training in resource-limited settings, with applications in healthcare and embodied AI.</p>
+                            <p class="seminar-description">This talk explores adaptable on-device AI for real-time
+                                inference and training in resource-limited settings, with applications in healthcare and
+                                embodied AI.</p>
                         </div>
                         <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=weigao"><img src="data/seminar/weigao/featured.jpg" alt="Seminar by Prof. Wei Gao"></a>
+                            <a href="pages/seminar-detail.html?id=weigao"><img src="data/seminar/weigao/featured.jpg"
+                                    alt="Seminar by Prof. Wei Gao"></a>
                         </div>
                     </div>
                     <div class="seminar-item">
@@ -635,13 +693,17 @@
                             <span class="date">Dec. 17, 2024</span>
                         </div>
                         <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=Dusit">Toward Scalable Generative AI via Mixture of Experts in Mobile Edge Networks</a></h3>
+                            <h3><a href="pages/seminar-detail.html?id=Dusit">Toward Scalable Generative AI via Mixture
+                                    of Experts in Mobile Edge Networks</a></h3>
                             <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
                             <p class="speaker-name">Prof. Dusit Niyato @ NTU, Singapore</p>
-                            <p class="seminar-description">This talk explores scalable generative AI through mixture of experts in mobile edge networks, addressing challenges in resource utilization when deployed on local user devices.</p>
+                            <p class="seminar-description">This talk explores scalable generative AI through mixture of
+                                experts in mobile edge networks, addressing challenges in resource utilization when
+                                deployed on local user devices.</p>
                         </div>
                         <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=Dusit"><img src="data/seminar/Dusit/featured.jpg" alt="Seminar by Prof. Dusit Niyato"></a>
+                            <a href="pages/seminar-detail.html?id=Dusit"><img src="data/seminar/Dusit/featured.jpg"
+                                    alt="Seminar by Prof. Dusit Niyato"></a>
                         </div>
                     </div>
                     <div class="seminar-item">
@@ -649,13 +711,18 @@
                             <span class="date">Dec. 3, 2024</span>
                         </div>
                         <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=davidAtienza">Accelerator-Centric Edge AI Architectures for Low-Power and Personalized Wearables</a></h3>
+                            <h3><a href="pages/seminar-detail.html?id=davidAtienza">Accelerator-Centric Edge AI
+                                    Architectures for Low-Power and Personalized Wearables</a></h3>
                             <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
                             <p class="speaker-name">Prof. David Atienza @ EPFL, Switzerland</p>
-                            <p class="seminar-description">A talk on edge AI architectures for wearable systems, focusing on integrating different families of accelerators for energy-efficient computing.</p>
+                            <p class="seminar-description">A talk on edge AI architectures for wearable systems,
+                                focusing on integrating different families of accelerators for energy-efficient
+                                computing.</p>
                         </div>
                         <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=davidAtienza"><img src="data/seminar/davidAtienza/featured.png" alt="Seminar by Prof. David Atienza"></a>
+                            <a href="pages/seminar-detail.html?id=davidAtienza"><img
+                                    src="data/seminar/davidAtienza/featured.png"
+                                    alt="Seminar by Prof. David Atienza"></a>
                         </div>
                     </div>
                     <div class="seminar-item">
@@ -663,90 +730,114 @@
                             <span class="date">May 13, 2024</span>
                         </div>
                         <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=24-05-13-LiuJianqing">Quantum Communications, Applications and Challenges</a></h3>
+                            <h3><a href="pages/seminar-detail.html?id=24-05-13-LiuJianqing">Quantum Communications,
+                                    Applications and Challenges</a></h3>
                             <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
                             <p class="speaker-name">Prof. Jianqing Liu @ NCSU, USA</p>
-                            <p class="seminar-description">An exploration of quantum communications principles, applications such as quantum key distribution, and the technical challenges in the field.</p>
+                            <p class="seminar-description">An exploration of quantum communications principles,
+                                applications such as quantum key distribution, and the technical challenges in the
+                                field.</p>
                         </div>
                         <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=24-05-13-LiuJianqing"><img src="data/seminar/24-05-13-LiuJianqing/featured.jpg" alt="Seminar by Prof. Jianqing Liu"></a>
+                            <a href="pages/seminar-detail.html?id=24-05-13-LiuJianqing"><img
+                                    src="data/seminar/24-05-13-LiuJianqing/featured.jpg"
+                                    alt="Seminar by Prof. Jianqing Liu"></a>
                         </div>
                     </div>
-                    
 
-                    
+
+
                     <div class="seminar-item">
                         <div class="seminar-date">
                             <span class="date">Oct. 9, 2023</span>
                         </div>
                         <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=haibozhou">A Decoupled Radio Access Networks Architecture for 6G</a></h3>
+                            <h3><a href="pages/seminar-detail.html?id=haibozhou">A Decoupled Radio Access Networks
+                                    Architecture for 6G</a></h3>
                             <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
                             <p class="speaker-name">Prof. Haibo Zhou @ NJU, China</p>
-                            <p class="seminar-description">This talk introduces a fully-decoupled radio access network architecture for 6G that enhances spectrum utilization and improves user experience.</p>
+                            <p class="seminar-description">This talk introduces a fully-decoupled radio access network
+                                architecture for 6G that enhances spectrum utilization and improves user experience.</p>
                         </div>
                         <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=haibozhou"><img src="data/seminar/haibozhou/featured.jpg" alt="Seminar by Prof. Haibo Zhou"></a>
+                            <a href="pages/seminar-detail.html?id=haibozhou"><img
+                                    src="data/seminar/haibozhou/featured.jpg" alt="Seminar by Prof. Haibo Zhou"></a>
                         </div>
                     </div>
-                    
+
                     <div class="seminar-item">
                         <div class="seminar-date">
                             <span class="date">Oct. 9, 2023</span>
                         </div>
                         <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=nancheng">RingSFL: An Adaptive Split Federated Learning Towards Taming Client Heterogeneity</a></h3>
+                            <h3><a href="pages/seminar-detail.html?id=nancheng">RingSFL: An Adaptive Split Federated
+                                    Learning Towards Taming Client Heterogeneity</a></h3>
                             <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
                             <p class="speaker-name">Prof. Nan Cheng @ Xidian, China</p>
-                            <p class="seminar-description">A presentation on a novel distributed learning scheme that integrates federated learning with a model split mechanism to adapt to client heterogeneity.</p>
+                            <p class="seminar-description">A presentation on a novel distributed learning scheme that
+                                integrates federated learning with a model split mechanism to adapt to client
+                                heterogeneity.</p>
                         </div>
                         <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=nancheng"><img src="data/seminar/nancheng/featured.jpg" alt="Seminar by Prof. Nan Cheng"></a>
+                            <a href="pages/seminar-detail.html?id=nancheng"><img
+                                    src="data/seminar/nancheng/featured.jpg" alt="Seminar by Prof. Nan Cheng"></a>
                         </div>
                     </div>
-                    
+
                     <div class="seminar-item">
                         <div class="seminar-date">
                             <span class="date">Oct. 7, 2023</span>
                         </div>
                         <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=weihuazhuang">Stochastic Cumulative DNN Inference for Intelligent IoT Applications</a></h3>
+                            <h3><a href="pages/seminar-detail.html?id=weihuazhuang">Stochastic Cumulative DNN Inference
+                                    for Intelligent IoT Applications</a></h3>
                             <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
                             <p class="speaker-name">Prof. Weihua Zhuang @ Waterloo, Canada</p>
-                            <p class="seminar-description">A discussion on when to offload DNN inference computation from IoT devices to the edge and how to incorporate multiple inference results to improve accuracy.</p>
+                            <p class="seminar-description">A discussion on when to offload DNN inference computation
+                                from IoT devices to the edge and how to incorporate multiple inference results to
+                                improve accuracy.</p>
                         </div>
                         <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=weihuazhuang"><img src="data/seminar/weihuazhuang/featured.jpg" alt="Seminar by Prof. Weihua Zhuang"></a>
+                            <a href="pages/seminar-detail.html?id=weihuazhuang"><img
+                                    src="data/seminar/weihuazhuang/featured.jpg"
+                                    alt="Seminar by Prof. Weihua Zhuang"></a>
                         </div>
                     </div>
-                    
+
                     <div class="seminar-item">
                         <div class="seminar-date">
                             <span class="date">May 3, 2023</span>
                         </div>
                         <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=PhoneLin">Data-Driven Anomaly Detection & Prediction for IoT</a></h3>
+                            <h3><a href="pages/seminar-detail.html?id=PhoneLin">Data-Driven Anomaly Detection &
+                                    Prediction for IoT</a></h3>
                             <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
                             <p class="speaker-name">Prof. Phone Lin @ NTU, Taiwan</p>
-                            <p class="seminar-description">This talk illustrates technologies and solutions for anomaly detection/prediction in IoT systems, along with prototypes and applications.</p>
+                            <p class="seminar-description">This talk illustrates technologies and solutions for anomaly
+                                detection/prediction in IoT systems, along with prototypes and applications.</p>
                         </div>
                         <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=PhoneLin"><img src="data/seminar/PhoneLin/featured.jpg" alt="Seminar by Prof. Phone Lin"></a>
+                            <a href="pages/seminar-detail.html?id=PhoneLin"><img
+                                    src="data/seminar/PhoneLin/featured.jpg" alt="Seminar by Prof. Phone Lin"></a>
                         </div>
                     </div>
-                    
+
                     <div class="seminar-item">
                         <div class="seminar-date">
                             <span class="date">May 3, 2023</span>
                         </div>
                         <div class="seminar-content">
-                            <h3><a href="pages/seminar-detail.html?id=chih-wei-huang">Enhancing Resource Management and Remote 3D Rendering for Future Wireless Networks</a></h3>
+                            <h3><a href="pages/seminar-detail.html?id=chih-wei-huang">Enhancing Resource Management and
+                                    Remote 3D Rendering for Future Wireless Networks</a></h3>
                             <p class="seminar-speaker"><i class="fas fa-microphone"></i> Speaker:</p>
                             <p class="speaker-name">Prof. Chih-Wei Huang @ NCU, Taiwan</p>
-                            <p class="seminar-description">This talk examines recent advancements in wireless networks for supporting complex applications like MIMO systems and mixed reality experiences.</p>
+                            <p class="seminar-description">This talk examines recent advancements in wireless networks
+                                for supporting complex applications like MIMO systems and mixed reality experiences.</p>
                         </div>
                         <div class="seminar-image-container">
-                            <a href="pages/seminar-detail.html?id=chih-wei-huang"><img src="data/seminar/chih-wei-huang/featured.jpg" alt="Seminar by Prof. Chih-Wei Huang"></a>
+                            <a href="pages/seminar-detail.html?id=chih-wei-huang"><img
+                                    src="data/seminar/chih-wei-huang/featured.jpg"
+                                    alt="Seminar by Prof. Chih-Wei Huang"></a>
                         </div>
                     </div>
                 </div>
@@ -759,35 +850,39 @@
         <section id="publications" class="section">
             <div class="container">
                 <h2 class="section-title">Publications</h2>
-                <p>Check Prof. Fang's <a href="https://scholars.cityu.edu.hk/en/persons/yuguang-fang(b2d78936-ab0a-4186-9f64-0f468013de23)/publications.html" target="_blank">CityU Scholars</a> to obtain the full list of publications.</p>
+                <p>Check Prof. Fang's <a
+                        href="https://scholars.cityu.edu.hk/en/persons/yuguang-fang(b2d78936-ab0a-4186-9f64-0f468013de23)/publications.html"
+                        target="_blank">CityU Scholars</a> to obtain the full list of publications.</p>
                 <div id="publications-container">
                     <!-- Publications will be dynamically loaded here by year -->
                 </div>
-                
+
                 <div class="view-all-news text-center mt-4">
-                    <a href="pages/publications.html" class="btn btn-primary" target="_self"><i class="fas fa-book"></i> View All Publications</a>
+                    <a href="pages/publications.html" class="btn btn-primary" target="_self"><i class="fas fa-book"></i>
+                        View All Publications</a>
                 </div>
             </div>
         </section>
 
-        
+
 
         <section id="funding" class="section">
             <div class="container">
                 <div style="text-align: center;">Funded by</div>
                 <div style="display: flex; justify-content: center; align-items: center;">
-                  <img src="assets/JC.png" width="30%">
+                    <img src="assets/JC.png" width="30%">
                 </div>
             </div>
             <br><br><br><br>
             <div style="width: 15%; height: auto; margin: auto;">
-                <script type="text/javascript" id="clstr_globe" src="//clustrmaps.com/globe.js?d=5ARm8_nN_s8xJvlRADyN_VZA0ugAYp45tSMSw9xW0Uc"></script>
+                <script type="text/javascript" id="clstr_globe"
+                    src="//clustrmaps.com/globe.js?d=5ARm8_nN_s8xJvlRADyN_VZA0ugAYp45tSMSw9xW0Uc"></script>
             </div>
         </section>
 
         <script>
             // Create year containers dynamically when publications are loaded
-            document.addEventListener('DOMContentLoaded', function() {
+            document.addEventListener('DOMContentLoaded', function () {
                 fetch('data/publications.json')
                     .then(response => response.json())
                     .then(publications => {
@@ -952,7 +1047,7 @@
                 
             
         </section> -->
-        
+
     </main>
 
     <footer>
@@ -969,47 +1064,47 @@
     <script>
         // 增强平滑滚动效果
         document.querySelectorAll('nav a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
+            anchor.addEventListener('click', function (e) {
                 e.preventDefault();
-                
+
                 const targetId = this.getAttribute('href');
                 const targetElement = document.querySelector(targetId);
-                
+
                 if (targetElement) {
                     // 计算导航栏高度，以便滚动到正确位置
                     const navHeight = document.querySelector('nav').offsetHeight;
-                    
+
                     // 获取目标元素的位置
                     const targetPosition = targetElement.getBoundingClientRect().top + window.scrollY;
-                    
+
                     // 滚动到目标位置，减去导航栏高度和小偏移量来优化显示
                     window.scrollTo({
                         top: targetPosition - navHeight - 20,
                         behavior: 'smooth'
                     });
-                    
+
                     // 更新URL中的锚点(可选)
                     history.pushState(null, null, targetId);
                 }
             });
         });
-        
+
         // Mobile navigation horizontal scroll handling
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             // Make all links open in a new tab
-        document.querySelectorAll('a').forEach(link => {
-            // Skip navigation links that are meant for scrolling within the page
-            // Also skip the "View All News" link
-            const href = link.getAttribute('href');
-            if (href && (href.startsWith('#') || href === 'pages/all-news.html' || link.textContent.trim() === 'View All News')) {
-                // For these specific links, ensure they open in the same tab
-                link.setAttribute('target', '_self');
-            } else {
-                link.setAttribute('target', '_blank');
-                link.setAttribute('rel', 'noopener noreferrer');
-            }
-        });
-            
+            document.querySelectorAll('a').forEach(link => {
+                // Skip navigation links that are meant for scrolling within the page
+                // Also skip the "View All News" link
+                const href = link.getAttribute('href');
+                if (href && (href.startsWith('#') || href === 'pages/all-news.html' || link.textContent.trim() === 'View All News')) {
+                    // For these specific links, ensure they open in the same tab
+                    link.setAttribute('target', '_self');
+                } else {
+                    link.setAttribute('target', '_blank');
+                    link.setAttribute('rel', 'noopener noreferrer');
+                }
+            });
+
             const navLinks = document.querySelector('.nav-links');
             if (navLinks) {
                 // Check if scrollable
@@ -1017,11 +1112,11 @@
                     const isScrollable = navLinks.scrollWidth > navLinks.clientWidth;
                     document.querySelector('nav .container').classList.toggle('has-scroll', isScrollable);
                 };
-                
+
                 // Check on load and resize
                 checkScrollable();
                 window.addEventListener('resize', checkScrollable);
-                
+
                 // Scroll to active link
                 const activeLink = navLinks.querySelector('a.active');
                 if (activeLink) {
@@ -1038,4 +1133,5 @@
         });
     </script>
 </body>
-</html> 
+
+</html>
