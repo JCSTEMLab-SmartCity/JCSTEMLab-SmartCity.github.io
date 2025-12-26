@@ -1,5 +1,27 @@
 [
   {
+    "title": "CP-uniGuard: A Unified, Probability-Agnostic, and Adaptive Framework for Malicious Agent Detection and Defense in Multi-Agent Embodied Perception Systems",
+    "authors": "Senkang Hu, Yihang Tao, Guowen Xu, Xinyuan Qian, Yiqin Deng, Xianhao Chen, Sam Tak Wu Kwong, Yuguang Fang",
+    "venue": "IEEE Transactions on Mobile Computing",
+    "year": "2025",
+    "tags": [
+      {
+        "text": "TMC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2506.22890"
+      },
+      {
+        "text": "Project",
+        "class": "code-tag",
+        "link": "https://dl-m9.github.io/paper-pages/cp-uniguard/index.html"
+      }
+    ]
+  },
+  {
     "title": "Removing Box-Free Watermarks for Image-to-Image Models via Query-Based Reverse Engineering",
     "authors": "Haonan An, Guang Hua, Hangcheng Cao, Zhengru Fang, Guowen Xu, Susanto Rahardja, Yuguang Fang",
     "venue": "The 40th AAAI Conference on Artificial Intelligence",
