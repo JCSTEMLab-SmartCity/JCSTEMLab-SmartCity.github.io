@@ -205,13 +205,13 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 0.8rem 0;
+    padding: 0.5rem 0;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     background: transparent;
 }
 
 nav.scrolled {
-    padding: 0.6rem 0;
+    padding: 0.4rem 0;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -228,11 +228,11 @@ nav .container {
 .nav-logo {
     display: flex;
     align-items: center;
-    height: 50px;
+    height: 40px;
 }
 
 .logo-text {
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     font-weight: 700;
     color: white;
     /* Default for transparent header on dark hero */
@@ -276,8 +276,8 @@ nav.scrolled .nav-links a:hover {
 
 .nav-links a {
     display: inline-block;
-    height: 70px;
-    line-height: 70px;
+    height: 50px;
+    line-height: 50px;
     font-weight: 500;
     position: relative;
     color: rgba(255, 255, 255, 0.9);
@@ -293,7 +293,7 @@ nav.scrolled .nav-links a:hover {
 .nav-links a::after {
     content: '';
     position: absolute;
-    bottom: 15px;
+    bottom: 10px;
     /* Moved up slightly */
     left: 0;
     width: 0;
@@ -364,7 +364,7 @@ nav.scrolled .nav-links a:hover {
     }
 
     .nav-logo {
-        height: 40px;
+        height: 35px;
         /* 手机上稍微减小logo大小 */
     }
 
@@ -508,7 +508,7 @@ nav.scrolled .nav-links a:hover {
 
 @media (max-width: 576px) {
     nav {
-        padding: 0.4rem 0;
+        padding: 0.3rem 0;
     }
 
     body {
@@ -586,7 +586,7 @@ nav.scrolled .nav-links a:hover {
     }
 
     .nav-logo {
-        height: 35px;
+        height: 30px;
         /* 更小的屏幕上进一步减小logo大小 */
     }
 
@@ -1465,11 +1465,11 @@ footer {
     }
 
     nav {
-        padding: 0.4rem 0;
+        padding: 0.3rem 0;
     }
 
     .nav-logo {
-        height: 35px;
+        height: 30px;
         /* 更小的屏幕上进一步减小logo大小 */
     }
 
@@ -2981,7 +2981,7 @@ footer {
 /* 通过路径检测：如果页面在子目录中，应用这些样式 */
 html[data-subpage="true"] nav,
 body[data-subpage="true"] nav {
-    padding: 0.6rem 0 !important;
+    padding: 0.4rem 0 !important;
     background: rgba(255, 255, 255, 0.95) !important;
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -2991,12 +2991,15 @@ body[data-subpage="true"] nav {
 
 html[data-subpage="true"] .logo-text,
 body[data-subpage="true"] .logo-text {
+    font-size: 1.2rem !important;
     color: var(--primary-color) !important;
     text-shadow: none !important;
 }
 
 html[data-subpage="true"] .nav-links a,
 body[data-subpage="true"] .nav-links a {
+    height: 50px !important;
+    line-height: 50px !important;
     color: var(--text-color) !important;
     text-shadow: none !important;
 }
