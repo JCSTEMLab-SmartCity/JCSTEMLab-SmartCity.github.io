@@ -8,201 +8,161 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        .profile-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
+        /* Profile Page Custom Enhancements */
         .profile-header {
             display: flex;
             flex-wrap: wrap;
-            margin-bottom: 40px;
-            gap: 30px;
+            margin-bottom: 4rem;
+            gap: 40px;
+            align-items: center;
+            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            padding: 3rem;
+            border-radius: 30px;
+            border: 1px solid rgba(189, 56, 75, 0.1);
+            box-shadow: 0 15px 45px rgba(189, 56, 75, 0.05);
         }
+        
         .profile-avatar {
-            width: 250px;
-            height: 250px;
-            border-radius: 20px;
+            width: 280px;
+            height: 280px;
+            border-radius: 24px;
             object-fit: cover;
-            border: none;
+            border: 2px solid #fff;
+            box-shadow: 0 10px 30px rgba(189, 56, 75, 0.15);
         }
+        
         .profile-info {
             flex: 1;
             min-width: 300px;
         }
+        
         .profile-info h1 {
-            margin-bottom: 10px;
-            font-size: 2.2rem;
+            margin-bottom: 1rem;
+            font-size: 2.5rem; /* 稍微减小到更和谐的比例 */
+            font-weight: 800;
+            color: var(--text-color);
+            letter-spacing: -0.02em;
         }
+        
         .profile-role {
-            margin-bottom: 15px;
-            font-size: 1.1rem;
+            margin-bottom: 1.5rem;
+            font-size: 1.15rem;
             line-height: 1.6;
+            color: var(--light-text);
         }
-        .profile-affiliations {
-            margin-bottom: 15px;
-        }
-        .profile-affiliations a {
-            color: #1565C0;
-            text-decoration: none;
-        }
-        .profile-affiliations a:hover {
-            text-decoration: underline;
-        }
+        
         .profile-contacts {
             display: flex;
-            gap: 8px;
-            margin-top: 20px;
+            gap: 12px;
+            margin-top: 2rem;
+            flex-wrap: wrap;
         }
+        
         .profile-contacts a {
-            padding: 0 10px;
+            width: 48px;
+            height: 48px;
             display: flex;
             align-items: center;
             justify-content: center;
-            border-radius: 20px;
-            transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-            background: linear-gradient(145deg, rgba(189, 56, 75, 0.1) 0%, rgba(189, 56, 75, 0.15) 100%);
-            width: auto;
-            min-width: 48px;
-            height: 36px;
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            position: relative;
-            overflow: hidden;
+            border-radius: 14px;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            background: #fff;
+            border: 1px solid rgba(189, 56, 75, 0.1);
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
         }
+        
         .profile-contacts a i {
             color: var(--primary-color);
-            font-size: 1.3rem;
+            font-size: 1.4rem;
         }
+        
         .profile-contacts a:hover {
-            background-color: rgba(189, 56, 75, 0.2);
-            transform: translateY(-3px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            background: var(--primary-color);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(189, 56, 75, 0.2);
+            border-color: var(--primary-color);
         }
+        
+        .profile-contacts a:hover i {
+            color: #fff;
+        }
+        
         .profile-section {
-            margin-bottom: 30px;
+            margin-bottom: 4rem;
         }
-        .profile-section h2 {
-            color: var(--primary-color);
-            border-bottom: 2px solid rgba(189, 56, 75, 0.1);
-            padding-bottom: 10px;
-            margin-bottom: 20px;
-        }
+        
         .profile-section p {
-            font-size: 16px;
-            line-height: 1.6;
-            color: #333;
-            margin-bottom: 15px;
+            font-size: 1.05rem;
+            line-height: 1.8;
+            color: #444;
+            margin-bottom: 1.5rem;
         }
+        
         .interests-list {
             display: flex;
             flex-wrap: wrap;
-            gap: 10px;
-            margin-top: 15px;
-        }
-        .interest-tag {
-            background-color: rgba(189, 56, 75, 0.1);
-            color: var(--primary-color);
-            padding: 6px 18px;
-            border-radius: 20px;
-            font-size: 14px;
-        }
-        .education-list {
-            margin-top: 15px;
-        }
-        .education-item {
-            margin-bottom: 15px;
-            padding-left: 20px;
-            border-left: 3px solid rgba(189, 56, 75, 0.2);
-        }
-        .education-item h3 {
-            font-size: 18px;
-            margin-bottom: 5px;
-            color: #333;
-        }
-        .education-item p {
-            margin: 0;
-            color: #666;
-            font-size: 14px;
-        }
-        .loading-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 300px;
-            flex-direction: column;
-        }
-        .loading-spinner {
-            border: 5px solid #f3f3f3;
-            border-top: 5px solid var(--primary-color);
-            border-radius: 50%;
-            width: 50px;
-            height: 50px;
-            animation: spin 1s linear infinite;
-            margin-bottom: 20px;
-        }
-        @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            gap: 12px;
+            margin-top: 1.5rem;
         }
         
-        /* Override for highlighted role colors */
-        .profile-role b[style*="color:#1565C0"] {
-            color: var(--primary-color) !important;
-        }
-        .back-link {
-            display: block;
-            margin: 30px auto 0 auto;
+        .interest-tag {
+            background-color: rgba(189, 56, 75, 0.05);
             color: var(--primary-color);
-            text-decoration: none;
-            background: linear-gradient(145deg, rgba(189, 56, 75, 0.1) 0%, rgba(189, 56, 75, 0.15) 100%);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            padding: 12px 24px;
-            border-radius: 25px;
-            transition: all 0.3s ease;
+            padding: 8px 20px;
+            border-radius: 50px;
+            font-size: 0.95rem;
             font-weight: 500;
-            text-align: center;
-            width: fit-content;
+            border: 1px solid rgba(189, 56, 75, 0.1);
+            transition: all 0.3s ease;
+        }
+        
+        .interest-tag:hover {
+            background-color: var(--primary-color);
+            color: #fff;
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(189, 56, 75, 0.2);
+        }
+        
+        .education-item {
+            margin-bottom: 2rem;
+            padding-left: 25px;
+            border-left: 4px solid rgba(189, 56, 75, 0.1);
+            position: relative;
+        }
+        
+        .education-item::before {
+            content: '';
+            position: absolute;
+            left: -4px;
+            top: 0;
+            width: 4px;
+            height: 30px;
+            background: var(--primary-color);
         }
 
-        .back-link i {
-            margin-right: 8px;
-        }
-        .back-link:hover {
-            text-decoration: none;
-            background: linear-gradient(145deg, rgba(189, 56, 75, 0.2) 0%, rgba(189, 56, 75, 0.25) 100%);
-            transform: translateY(-2px);
-            box-shadow: 0 4px 12px rgba(189, 56, 75, 0.2);
-        }
-        .error-message {
-            background-color: #ffebee;
-            color: #c62828;
-            padding: 20px;
-            border-radius: 5px;
-            text-align: center;
-            margin: 20px 0;
-        }
+        .text-center { text-align: center; }
+        .mt-5 { margin-top: 3rem; }
         
-        /* 中文楷体字体样式 */
-        .chinese-text {
-            font-family: "楷体", "KaiTi", "STKaiti", "华文楷体", serif;
+        /* 移动端适配 */
+        @media (max-width: 768px) {
+            .profile-header {
+                padding: 2rem;
+                flex-direction: column;
+                text-align: center;
+            }
+            .profile-avatar {
+                width: 220px;
+                height: 220px;
+                margin: 0 auto;
+            }
+            .profile-info h1 {
+                font-size: 2.2rem;
+            }
         }
-        
-        .profile-container {
-            padding-top: 2rem;
-        }
-        
     </style>
 </head>
 <body data-subpage="true">
-    <header style="display: none;">
-        <div class="container">
-            <div class="header-content">
-                <div class="profile-info">
-                    <!-- Profile info will be loaded from JSON -->
-                </div>
-            </div>
-        </div>
-    </header>
+    <header style="display: none;"></header>
 
     <nav>
         <div class="container">
@@ -221,13 +181,17 @@
     </nav>
 
     <main>
-        <div class="loading-container" id="loading">
-            <div class="loading-spinner"></div>
-            <p>Loading profile information...</p>
-        </div>
-        <div class="profile-container" id="profile-content" style="display: none;">
-            <!-- Content will be loaded dynamically -->
-        </div>
+        <section class="section">
+            <div class="container">
+                <div class="loading-container" id="loading">
+                    <div class="loading-spinner"></div>
+                    <p>Loading profile information...</p>
+                </div>
+                <div id="profile-content" style="display: none;">
+                    <!-- Content will be loaded dynamically -->
+                </div>
+            </div>
+        </section>
     </main>
 
     <footer>
@@ -238,79 +202,13 @@
 
     <script src="../../js/profile-loader.js"></script>
     <script>
-        // Set copyright year
         document.getElementById('copyright-year').textContent = new Date().getFullYear();
         
-        // Mobile navigation horizontal scroll handling
-        document.addEventListener('DOMContentLoaded', function() {
-            const navLinks = document.querySelector('.nav-links');
-            if (navLinks) {
-                // Check if scrollable
-                const checkScrollable = () => {
-                    const isScrollable = navLinks.scrollWidth > navLinks.clientWidth;
-                    document.querySelector('nav .container').classList.toggle('has-scroll', isScrollable);
-                };
-                
-                // Check on load and resize
-                checkScrollable();
-                window.addEventListener('resize', checkScrollable);
-                
-                // Scroll to active link
-                const activeLink = navLinks.querySelector('a.active');
-                if (activeLink) {
-                    const activeLi = activeLink.closest('li');
-                    if (activeLi) {
-                        setTimeout(() => {
-                            // Center the active link
-                            const scrollPos = activeLi.offsetLeft - (navLinks.clientWidth / 2) + (activeLi.offsetWidth / 2);
-                            navLinks.scrollLeft = Math.max(0, scrollPos);
-                        }, 100);
-                    }
-                }
-            }
-        });
-        
-        // 包裹中文字符为chinese-text
+        // 自动包裹中文字符
         function processChinese(text) {
             if (!text) return text;
             return text.replace(/([\u4e00-\u9fa5]+)/g, '<span class="chinese-text">$1</span>');
         }
-
-        // 不加载 header 信息，因为 header 已被隐藏
-        // fetch('../../data/profile-info.json')
-        //     .then(response => response.json())
-        //     .then(data => {
-        //         const profileInfo = document.querySelector('.header-content .profile-info');
-        //         
-        //         // Create and set name
-        //         const name = document.createElement('h1');
-        //         name.innerHTML = data.name;
-        //         profileInfo.appendChild(name);
-        //         
-        //         // Create and set subtitle
-        //         const subtitle = document.createElement('p');
-        //         subtitle.className = 'subtitle';
-        //         subtitle.innerHTML = processChinese(data.subtitle);
-        //         profileInfo.appendChild(subtitle);
-        //         
-        //         // Create contact info container
-        //         const contactInfo = document.createElement('div');
-        //         contactInfo.className = 'contact-info';
-        //         
-        //         // Add social links
-        //         data.socialLinks.forEach(link => {
-        //             const a = document.createElement('a');
-        //             a.href = link.url.startsWith('assets/') ? '../../' + link.url : link.url;
-        //             a.innerHTML = link.icon;
-        //             if (link.target) {
-        //                 a.target = link.target;
-        //             }
-        //             contactInfo.appendChild(a);
-        //         });
-        //         
-        //         profileInfo.appendChild(contactInfo);
-        //     })
-        //     .catch(error => console.error('Error loading profile info:', error));
     </script>
 </body>
 </html> 

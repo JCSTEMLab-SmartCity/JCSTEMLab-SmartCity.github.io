@@ -96,8 +96,10 @@ function renderTeamStructure(data) {
     
     // 添加返回首页按钮
     containerElement.innerHTML += `
-        <div class="back-to-home">
-            <a href="../index.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to Homepage</a>
+        <div class="text-center mt-5">
+            <a href="../index.html" class="btn btn-primary">
+                <i class="fas fa-arrow-left"></i> Back to Homepage
+            </a>
         </div>
     `;
     

@@ -9,11 +9,6 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        .publications-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 40px 20px;
-        }
         .year-divider {
             margin-top: 40px;
             margin-bottom: 20px;
@@ -21,10 +16,6 @@
             color: var(--primary-color);
             border-bottom: 2px solid var(--background-color);
             padding-bottom: 10px;
-        }
-        
-        .section {
-            padding-top: 2rem;
         }
     </style>
 </head>
@@ -55,13 +46,15 @@
     </nav>
 
     <main>
-        <section class="publications-container">
-            <h1 class="section-title">Publications</h1>
-            <p> Check Prof. Fang's <a href="https://scholars.cityu.edu.hk/en/persons/yuguang-fang(b2d78936-ab0a-4186-9f64-0f468013de23)/publications.html" target="_blank">CityU Scholars</a> to obtain the full list of publications.</p>
-            
-            <!-- Publications will be loaded dynamically by year -->
-            <div id="publications-by-year">
-                <!-- Year sections will be created dynamically based on the data -->
+        <section class="section">
+            <div class="container">
+                <h1 class="section-title">Publications</h1>
+                <p> Check Prof. Fang's <a href="https://scholars.cityu.edu.hk/en/persons/yuguang-fang(b2d78936-ab0a-4186-9f64-0f468013de23)/publications.html" target="_blank">CityU Scholars</a> to obtain the full list of publications.</p>
+                
+                <!-- Publications will be loaded dynamically by year -->
+                <div id="publications-by-year">
+                    <!-- Year sections will be created dynamically based on the data -->
+                </div>
             </div>
         </section>
     </main>

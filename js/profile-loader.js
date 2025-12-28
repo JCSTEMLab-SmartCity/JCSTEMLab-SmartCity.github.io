@@ -109,7 +109,7 @@ function renderMemberProfile(member) {
     if (member.interests && member.interests.length > 0) {
         html += `
             <div class="profile-section">
-                <h2>Research Interests</h2>
+                <h2 class="section-title">Research Interests</h2>
                 <div class="interests-list">
                     ${member.interests.map(interest => {
                         if (containsChinese(interest)) {
@@ -127,7 +127,7 @@ function renderMemberProfile(member) {
     if (member.education && member.education.length > 0) {
         html += `
             <div class="profile-section">
-                <h2>Education</h2>
+                <h2 class="section-title">Education</h2>
                 <div class="education-list">
                     ${renderEducation(member.education)}
                 </div>
@@ -139,14 +139,20 @@ function renderMemberProfile(member) {
     if (member.biography) {
         html += `
             <div class="profile-section">
-                <h2>Biography</h2>
+                <h2 class="section-title">Biography</h2>
                 ${formatBiography(member.biography)}
             </div>
         `;
     }
     
     // 返回按钮
-    html += `<a href="../../pages/team.html" class="back-link"><i class="fas fa-users"></i> Back to Team</a>`;
+    html += `
+        <div class="text-center mt-5">
+            <a href="../../pages/team.html" class="btn btn-primary">
+                <i class="fas fa-users"></i> Back to Team
+            </a>
+        </div>
+    `;
     
     // 设置HTML内容
     contentContainer.innerHTML = html;
