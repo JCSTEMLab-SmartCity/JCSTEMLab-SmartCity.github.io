@@ -22,10 +22,14 @@
             border-bottom: 2px solid var(--background-color);
             padding-bottom: 10px;
         }
+        
+        .section {
+            padding-top: 2rem;
+        }
     </style>
 </head>
-<body>
-    <header>
+<body data-subpage="true">
+    <header style="display: none;">
         <div class="container">
             <div class="header-content">
                 <div class="profile-info">
@@ -37,17 +41,15 @@
 
     <nav>
         <div class="container">
-            <ul class="nav-links">
-                <li><a href="../index.html#about">About</a></li>
-                <li><a href="../index.html#research">Research</a></li>
-                <li><a href="team.html">Team</a></li>
-                <li><a href="../index.html#latest-news">News</a></li>
-                <li><a href="../index.html#seminar">Seminars</a></li>
-                <li><a href="publications.html" class="active">Publications</a></li>
-                <li><a href="../index.html#location">Contact</a></li>
-            </ul>
             <div class="nav-logo">
-                <img src="../assets/logo.png" alt="JC STEM Lab Logo">
+                <a href="../index.html" class="logo-text">JC STEM Lab of Smart City</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+                <li><a href="publications.html" class="active">Publications</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
@@ -73,8 +75,8 @@
     <script src="../script.js"></script>
     <script>
         document.addEventListener('DOMContentLoaded', function() {
-            // Load profile info
-            loadProfileInfo(true); // true indicates this is a subpage
+            // 不加载 header 信息，因为 header 已被隐藏
+            // loadProfileInfo(true); // true indicates this is a subpage
             
             // Set copyright year
             document.getElementById('copyright-year').textContent = new Date().getFullYear();

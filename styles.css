@@ -2971,3 +2971,63 @@ footer {
 .back-to-home {
     animation: fadeInUp 0.6s ease-out 0.6s both;
 }
+
+/* ============================================
+   统一子页面导航栏样式规则
+   Subpage Navigation Styles - Unified Rules
+   ============================================ */
+
+/* 子页面导航栏统一样式 - 适用于所有 /pages/ 目录下的页面 */
+/* 通过路径检测：如果页面在子目录中，应用这些样式 */
+html[data-subpage="true"] nav,
+body[data-subpage="true"] nav {
+    padding: 0.6rem 0 !important;
+    background: rgba(255, 255, 255, 0.95) !important;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+html[data-subpage="true"] .logo-text,
+body[data-subpage="true"] .logo-text {
+    color: var(--primary-color) !important;
+    text-shadow: none !important;
+}
+
+html[data-subpage="true"] .nav-links a,
+body[data-subpage="true"] .nav-links a {
+    color: var(--text-color) !important;
+    text-shadow: none !important;
+}
+
+html[data-subpage="true"] .nav-links a.active,
+html[data-subpage="true"] .nav-links a:hover,
+body[data-subpage="true"] .nav-links a.active,
+body[data-subpage="true"] .nav-links a:hover {
+    color: var(--primary-color) !important;
+}
+
+/* 隐藏子页面的标准 header（保留 research-header） */
+html[data-subpage="true"] header:not(.research-header),
+body[data-subpage="true"] header:not(.research-header) {
+    display: none !important;
+}
+
+html[data-subpage="true"] .header-content,
+body[data-subpage="true"] .header-content {
+    display: none !important;
+}
+
+html[data-subpage="true"] .profile-image,
+html[data-subpage="true"] #profile-img,
+body[data-subpage="true"] .profile-image,
+body[data-subpage="true"] #profile-img {
+    display: none !important;
+}
+
+/* 子页面 main 顶部间距 */
+html[data-subpage="true"] main,
+body[data-subpage="true"] main {
+    padding-top: 100px !important;
+}

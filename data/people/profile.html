@@ -187,57 +187,13 @@
             font-family: "楷体", "KaiTi", "STKaiti", "华文楷体", serif;
         }
         
-        /* 彻底隐藏 header 和所有可能的 logo 元素 */
-        header {
-            display: none !important;
-        }
-        
-        .header-content {
-            display: none !important;
-        }
-        
-        .profile-image,
-        #profile-img,
-        .profile-image::after,
-        .profile-image::before {
-            display: none !important;
-        }
-        
-        /* 导航栏样式调整 - 适配非首页 */
-        nav {
-            padding: 0.6rem 0 !important;
-            background: rgba(255, 255, 255, 0.95) !important;
-            backdrop-filter: blur(12px);
-            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
-        }
-        
-        .logo-text {
-            color: var(--primary-color) !important;
-            text-shadow: none !important;
-        }
-        
-        .nav-links a {
-            color: var(--text-color) !important;
-        }
-        
-        .nav-links a.active,
-        .nav-links a:hover {
-            color: var(--primary-color) !important;
-        }
-        
-        /* 增加 main 顶部间距 */
-        main {
-            padding-top: 100px !important;
-        }
-        
         .profile-container {
             padding-top: 2rem;
         }
         
     </style>
 </head>
-<body>
+<body data-subpage="true">
     <header style="display: none;">
         <div class="container">
             <div class="header-content">
