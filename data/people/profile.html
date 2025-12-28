@@ -186,10 +186,59 @@
         .chinese-text {
             font-family: "楷体", "KaiTi", "STKaiti", "华文楷体", serif;
         }
+        
+        /* 彻底隐藏 header 和所有可能的 logo 元素 */
+        header {
+            display: none !important;
+        }
+        
+        .header-content {
+            display: none !important;
+        }
+        
+        .profile-image,
+        #profile-img,
+        .profile-image::after,
+        .profile-image::before {
+            display: none !important;
+        }
+        
+        /* 导航栏样式调整 - 适配非首页 */
+        nav {
+            padding: 0.6rem 0 !important;
+            background: rgba(255, 255, 255, 0.95) !important;
+            backdrop-filter: blur(12px);
+            border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+        }
+        
+        .logo-text {
+            color: var(--primary-color) !important;
+            text-shadow: none !important;
+        }
+        
+        .nav-links a {
+            color: var(--text-color) !important;
+        }
+        
+        .nav-links a.active,
+        .nav-links a:hover {
+            color: var(--primary-color) !important;
+        }
+        
+        /* 增加 main 顶部间距 */
+        main {
+            padding-top: 100px !important;
+        }
+        
+        .profile-container {
+            padding-top: 2rem;
+        }
+        
     </style>
 </head>
 <body>
-    <header>
+    <header style="display: none;">
         <div class="container">
             <div class="header-content">
                 <div class="profile-info">
@@ -201,13 +250,16 @@
 
     <nav>
         <div class="container">
+            <div class="nav-logo">
+                <a href="../../index.html" class="logo-text">JC STEM Lab of Smart City</a>
+            </div>
             <ul class="nav-links">
                 <li><a href="../../index.html">Home</a></li>
                 <li><a href="../../pages/team.html">Team</a></li>
                 <li><a href="#" class="active" id="member-nav-name">Team Member</a></li>
             </ul>
-            <div class="nav-logo">
-                <img src="../../assets/logo.png" alt="JC STEM Lab Logo">
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
             </div>
         </div>
     </nav>
@@ -268,41 +320,41 @@
             return text.replace(/([\u4e00-\u9fa5]+)/g, '<span class="chinese-text">$1</span>');
         }
 
-        // Load profile info from JSON
-        fetch('../../data/profile-info.json')
-            .then(response => response.json())
-            .then(data => {
-                const profileInfo = document.querySelector('.header-content .profile-info');
-                
-                // Create and set name
-                const name = document.createElement('h1');
-                name.innerHTML = data.name;
-                profileInfo.appendChild(name);
-                
-                // Create and set subtitle
-                const subtitle = document.createElement('p');
-                subtitle.className = 'subtitle';
-                subtitle.innerHTML = processChinese(data.subtitle);
-                profileInfo.appendChild(subtitle);
-                
-                // Create contact info container
-                const contactInfo = document.createElement('div');
-                contactInfo.className = 'contact-info';
-                
-                // Add social links
-                data.socialLinks.forEach(link => {
-                    const a = document.createElement('a');
-                    a.href = link.url.startsWith('assets/') ? '../../' + link.url : link.url;
-                    a.innerHTML = link.icon;
-                    if (link.target) {
-                        a.target = link.target;
-                    }
-                    contactInfo.appendChild(a);
-                });
-                
-                profileInfo.appendChild(contactInfo);
-            })
-            .catch(error => console.error('Error loading profile info:', error));
+        // 不加载 header 信息，因为 header 已被隐藏
+        // fetch('../../data/profile-info.json')
+        //     .then(response => response.json())
+        //     .then(data => {
+        //         const profileInfo = document.querySelector('.header-content .profile-info');
+        //         
+        //         // Create and set name
+        //         const name = document.createElement('h1');
+        //         name.innerHTML = data.name;
+        //         profileInfo.appendChild(name);
+        //         
+        //         // Create and set subtitle
+        //         const subtitle = document.createElement('p');
+        //         subtitle.className = 'subtitle';
+        //         subtitle.innerHTML = processChinese(data.subtitle);
+        //         profileInfo.appendChild(subtitle);
+        //         
+        //         // Create contact info container
+        //         const contactInfo = document.createElement('div');
+        //         contactInfo.className = 'contact-info';
+        //         
+        //         // Add social links
+        //         data.socialLinks.forEach(link => {
+        //             const a = document.createElement('a');
+        //             a.href = link.url.startsWith('assets/') ? '../../' + link.url : link.url;
+        //             a.innerHTML = link.icon;
+        //             if (link.target) {
+        //                 a.target = link.target;
+        //             }
+        //             contactInfo.appendChild(a);
+        //         });
+        //         
+        //         profileInfo.appendChild(contactInfo);
+        //     })
+        //     .catch(error => console.error('Error loading profile info:', error));
     </script>
 </body>
 </html> 

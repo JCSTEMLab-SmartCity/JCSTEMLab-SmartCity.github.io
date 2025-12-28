@@ -205,13 +205,13 @@ nav {
     left: 0;
     width: 100%;
     z-index: 1000;
-    padding: 1.5rem 0;
+    padding: 0.8rem 0;
     transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
     background: transparent;
 }
 
 nav.scrolled {
-    padding: 0.8rem 0;
+    padding: 0.6rem 0;
     background: rgba(255, 255, 255, 0.85);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
@@ -508,7 +508,7 @@ nav.scrolled .nav-links a:hover {
 
 @media (max-width: 576px) {
     nav {
-        padding: 0;
+        padding: 0.4rem 0;
     }
 
     body {
@@ -1465,7 +1465,7 @@ footer {
     }
 
     nav {
-        padding: 3px 0;
+        padding: 0.4rem 0;
     }
 
     .nav-logo {
