@@ -98,7 +98,7 @@ function renderMemberProfile(member) {
             <div class="profile-info">
                 <h1>${processChinese(member.title)}</h1>
                 <div class="profile-role">
-                    ${renderRoles(member.role)}
+                    ${renderRoles(member.role, member.id)}
                 </div>
                 ${renderSocialLinks(member.socialLinks)}
             </div>
@@ -161,9 +161,10 @@ function renderMemberProfile(member) {
 /**
  * 渲染角色信息
  * @param {Array} roles - 角色数组
+ * @param {string} memberId - 成员ID
  * @returns {string} HTML字符串
  */
-function renderRoles(roles) {
+function renderRoles(roles, memberId) {
     if (!roles || roles.length === 0) return '';
     
     let html = '';
@@ -172,11 +173,16 @@ function renderRoles(roles) {
         const processedText = processChinese(role.text);
         
         if (role.highlighted) {
-            // 突出显示的角色（如实验室主任）使用蓝色
-            html += `<p><b style="color:#1565C0;">${processedText}</b></p>`;
+            // 只有 Prof. Fang 的第一个高亮项（实验室主任）显示为蓝色
+            if ((memberId === 'prof-fang' || memberId === 'michael-fang') && index === 0) {
+                html += `<p><b style="color:#1565C0;">${processedText}</b></p>`;
+            } else {
+                // 其他人的高亮项仅加粗
+                html += `<p><b>${processedText}</b></p>`;
+            }
         } else {
-            // 其他角色使用正常加粗
-            html += `<p><b>${processedText}</b></p>`;
+            // 非高亮项正常显示
+            html += `<p>${processedText}</p>`;
         }
     });
     
