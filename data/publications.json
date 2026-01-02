@@ -1,5 +1,17 @@
 [
   {
+    "title": "Decoder Gradient Shields: A Family of Provable and High-Fidelity Methods Against Gradient-Based Box-Free Watermark Removal",
+    "authors": "Haonan An, Guang Hua, Wei Du, Hangcheng Cao, Yihang Tao, Guowen Xu, Susanto Rahardja, Yuguang Fang",
+    "venue": "IEEE Transactions on Dependable and Secure Computing",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "TDSC",
+        "class": "venue-tag"
+      }
+    ]
+  },
+  {
     "title": "RAISE: Optimizing RIS Placement to Maximize Task Throughput in Multi-Server Vehicular Edge Computing",
     "authors": "Yanan Ma, Yiqin Deng, Zhengru Fang, Longzhi Yuan, Xianhao Chen, Yuguang Fang",
     "venue": "IEEE Transactions on Wireless Communications",

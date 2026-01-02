@@ -298,13 +298,17 @@ function loadPublications() {
                 return parseInt(b.year) - parseInt(a.year);
             });
 
-            // Filter publications for current year only (2025)
-            const currentYear = new Date().getFullYear().toString();
-            const currentYearPublications = publications.filter(pub => pub.year === currentYear);
+            // Filter publications for the last two years
+            const currentYear = parseInt(new Date().getFullYear());
+            const lastYear = currentYear - 1;
+            const recentPublications = publications.filter(pub => {
+                const pubYear = parseInt(pub.year);
+                return pubYear === currentYear || pubYear === lastYear;
+            });
 
-            // Group the current year publications by year
+            // Group the recent publications by year
             const pubsByYear = {};
-            currentYearPublications.forEach(pub => {
+            recentPublications.forEach(pub => {
                 if (!pubsByYear[pub.year]) {
                     pubsByYear[pub.year] = [];
                 }

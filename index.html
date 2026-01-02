@@ -886,25 +886,43 @@
                 fetch('data/publications.json')
                     .then(response => response.json())
                     .then(publications => {
-                        // Filter publications for current year only
-                        const currentYear = new Date().getFullYear().toString();
-                        const currentYearPublications = publications.filter(pub => pub.year === currentYear);
+                        // Filter publications for the last two years
+                        const currentYear = parseInt(new Date().getFullYear());
+                        const lastYear = currentYear - 1;
+                        const recentPublications = publications.filter(pub => {
+                            const pubYear = parseInt(pub.year);
+                            return pubYear === currentYear || pubYear === lastYear;
+                        });
 
-                        // Create container for current year only
+                        // Group publications by year
+                        const pubsByYear = {};
+                        recentPublications.forEach(pub => {
+                            const year = pub.year;
+                            if (!pubsByYear[year]) {
+                                pubsByYear[year] = [];
+                            }
+                            pubsByYear[year].push(pub);
+                        });
+
+                        // Create containers for each year (most recent first)
                         const container = document.getElementById('publications-container');
-                        if (currentYearPublications.length > 0) {
-                            const yearSection = document.createElement('div');
-                            yearSection.innerHTML = `
-                                <h3 class="year-divider">Accepted Papers in ${currentYear}</h3>
-                                <div class="publications-list" id="publications-${currentYear}"></div>
-                            `;
-                            container.appendChild(yearSection);
+                        const years = Object.keys(pubsByYear).sort((a, b) => parseInt(b) - parseInt(a));
+                        
+                        if (years.length > 0) {
+                            years.forEach(year => {
+                                const yearSection = document.createElement('div');
+                                yearSection.innerHTML = `
+                                    <h3 class="year-divider">Accepted Papers in ${year}</h3>
+                                    <div class="publications-list" id="publications-${year}"></div>
+                                `;
+                                container.appendChild(yearSection);
 
-                            // Render the publications
-                            const publicationsList = document.getElementById(`publications-${currentYear}`);
-                            renderPublications(currentYearPublications, publicationsList);
+                                // Render the publications for this year
+                                const publicationsList = document.getElementById(`publications-${year}`);
+                                renderPublications(pubsByYear[year], publicationsList);
+                            });
                         } else {
-                            container.innerHTML = '<p class="no-publications">No publications available for the current year.</p>';
+                            container.innerHTML = '<p class="no-publications">No publications available for the recent years.</p>';
                         }
                     })
                     .catch(error => console.error('Error:', error));
