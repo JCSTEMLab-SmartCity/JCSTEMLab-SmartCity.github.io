@@ -294,6 +294,55 @@
               "last_name": "dinghaichuan"
             },
             {
+              "id": "pd24-yiqindeng",
+              "title": "Prof. DENG, Yiqin",
+              "role": [
+                {
+                  "text": "Research Assistant Professor",
+                  "highlighted": true
+                },
+                {
+                  "text": "Department of Data Science, Lingnan University",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/PD24_YiqinDeng/avatar.jpeg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:yiqin.deng@email.sdu.edu.cn",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=EdRi_MEAAAAJ&hl=zh-CN",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Edge/Fog computing",
+                "Internet of Vehicles",
+                "Resource Management"
+              ],
+              "biography": "\n\n\n\n\n\nYiqin Deng is currently a Research Assistant Professor in the Department of Data Science at Lingnan University, Hong Kong. Previously, she was a Postdoctoral Fellow at City University of Hong Kong and a Postdoctoral Researcher at Shandong University, Jinan, China. She received her M.S. degree in software engineering and PhD degree in computer science and technology from Central South University, Changsha, China, in 2017 and 2022, respectively. She was a visiting researcher at the University of Florida, Gainesville, from 2019 to 2021. Her research interests include edge/fog computing, the Internet of Vehicles, and resource management.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science and Technology",
+                  "institution": "Central South University",
+                  "year": "2017 - 2022"
+                },
+                {
+                  "degree": "MSc in Software Engineering",
+                  "institution": "Central South University",
+                  "year": "2014 - 2017"
+                }
+              ],
+              "detailPage": "data/people/PD24_YiqinDeng/index.html",
+              "last_name": "abd"
+            },
+            {
               "id": "faculty-guoxiaoyu",
               "title": "Prof. GUO, Xiaoyu",
               "role": [
@@ -1071,65 +1120,6 @@
               ],
               "detailPage": "data/people/PD_YuanLongzhi/index.html",
               "last_name": "aac"
-            },
-            {
-              "id": "pd24-yiqindeng",
-              "title": "Dr. DENG, Yiqin",
-              "role": [
-                {
-                  "text": "Postdoctoral Fellow @ CityUHK",
-                  "highlighted": true
-                },
-                {
-                  "text": "Postdoctor @ Shandong University",
-                  "highlighted": false
-                },
-                {
-                  "text": "PhD & MSc @ Central South University",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/people/PD24_YiqinDeng/avatar.jpeg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:yiqin.deng@email.sdu.edu.cn",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=EdRi_MEAAAAJ&hl=zh-CN",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
-                },
-                {
-                  "type": "house-user",
-                  "url": "http://www.icon.sdu.edu.cn/info/1055/1733.htm",
-                  "icon": "fas fa-globe",
-                  "title": "Homepage"
-                }
-              ],
-              "interests": [
-                "Edge/Fog computing",
-                "Internet of Vehicles",
-                "Resource Management"
-              ],
-              "biography": "\n\n\n\n\n\nYiqin Deng is currently a Postdoctoral Research at City University of Hong Kong. Previously, she was a Postdoctoral Research at Shandong University, Jinan, China. She received her M.S. degree in software engineering and PhD degree in computer science and technology from Central South University, Changsha, China, in 2017 and 2022, respectively. She was a visiting researcher at the University of Florida, Gainesville, from 2019 to 2021. Her research interests include edge/fog computing, the Internet of Vehicles, and resource management.",
-              "education": [
-                {
-                  "degree": "PhD in Computer Science and Technology",
-                  "institution": "Central South University",
-                  "year": "2017 - 2022"
-                },
-                {
-                  "degree": "MSc in Software Engineering",
-                  "institution": "Central South University",
-                  "year": "2014 - 2017"
-                }
-              ],
-              "detailPage": "data/people/PD24_YiqinDeng/index.html",
-              "last_name": "abt"
             },
 
             
@@ -2029,6 +2019,10 @@
                 {
                   "text": "BSc & MSc @ Dalian University of Technology",
                   "highlighted": false
+                },
+                {
+                  "text": "Advisor: Jun Huang",
+                  "highlighted": false
                 }
               ],
               "avatar": "data/people/JinCan.jpg",
@@ -2079,6 +2073,63 @@
         {
           "name": "Former Postdoctoral Researchers",
           "members": [
+            {
+              "id": "pd24-yiqindeng",
+              "title": "Prof. DENG, Yiqin",
+              "role": [
+                {
+                  "text": "Research Assistant Professor @ Lingnan University",
+                  "highlighted": true
+                },
+                {
+                  "text": "Postdoc @ CityUHK",
+                  "highlighted": false
+                },
+                {
+                  "text": "Postdoc @ Shandong University",
+                  "highlighted": false
+                },
+                {
+                  "text": "PhD & MSc @ Central South University",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/PD24_YiqinDeng/avatar.jpeg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:yiqin.deng@email.sdu.edu.cn",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=EdRi_MEAAAAJ&hl=zh-CN",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Edge/Fog computing",
+                "Internet of Vehicles",
+                "Resource Management"
+              ],
+              "biography": "Yiqin Deng is currently a Research Assistant Professor in the Department of Data Science at Lingnan University, Hong Kong. Previously, she was a Postdoctoral Fellow at City University of Hong Kong and a Postdoctoral Researcher at Shandong University, Jinan, China. She received her M.S. degree in software engineering and PhD degree in computer science and technology from Central South University, Changsha, China, in 2017 and 2022, respectively. She was a visiting researcher at the University of Florida, Gainesville, from 2019 to 2021. Her research interests include edge/fog computing, the Internet of Vehicles, and resource management.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science and Technology",
+                  "institution": "Central South University",
+                  "year": "2017 - 2022"
+                },
+                {
+                  "degree": "MSc in Software Engineering",
+                  "institution": "Central South University",
+                  "year": "2014 - 2017"
+                }
+              ],
+              "detailPage": "data/people/PD24_YiqinDeng/index.html",
+              "last_name": "abd"
+            },
             {
               "id": "pd23-xuguowen",
               "title": "Prof. XU, Guowen",
