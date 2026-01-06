@@ -302,7 +302,7 @@
                   "highlighted": true
                 },
                 {
-                  "text": "Department of Data Science, Lingnan University",
+                  "text": "School of Data Science, Lingnan University",
                   "highlighted": false
                 }
               ],
@@ -326,7 +326,7 @@
                 "Internet of Vehicles",
                 "Resource Management"
               ],
-              "biography": "\n\n\n\n\n\nYiqin Deng is currently a Research Assistant Professor in the Department of Data Science at Lingnan University, Hong Kong. Previously, she was a Postdoctoral Fellow at City University of Hong Kong and a Postdoctoral Researcher at Shandong University, Jinan, China. She received her M.S. degree in software engineering and PhD degree in computer science and technology from Central South University, Changsha, China, in 2017 and 2022, respectively. She was a visiting researcher at the University of Florida, Gainesville, from 2019 to 2021. Her research interests include edge/fog computing, the Internet of Vehicles, and resource management.",
+              "biography": "Yiqin Deng is currently a Research Assistant Professor in the School of Data Science at Lingnan University, Hong Kong. Previously, she was a Postdoctoral Fellow at City University of Hong Kong and a Postdoctoral Researcher at Shandong University, Jinan, China. She received her M.S. degree in software engineering and PhD degree in computer science and technology from Central South University, Changsha, China, in 2017 and 2022, respectively. She was a visiting researcher at the University of Florida, Gainesville, from 2019 to 2021. Her research interests include edge/fog computing, the Internet of Vehicles, and resource management.",
               "education": [
                 {
                   "degree": "PhD in Computer Science and Technology",
@@ -1193,6 +1193,7 @@
                 {
                   "text": "Hong Kong Scholars (香江學者)",
                   "highlighted": false
+                  
                 },
                 {
                   "text": "Associate Professor @ Xidian University",
@@ -1452,7 +1453,7 @@
                   "highlighted": true
                 },
                 {
-                  "text": "BEng @ Beijing Institute of Technology",
+                  "text": "BSc @ Beijing Institute of Technology",
                   "highlighted": false
                 }
               ],
@@ -1489,7 +1490,7 @@
                 "Multi-Agent System",
                 "Embodied AI"
               ],
-              "biography": "Senkang \"Forest\" Hu is currently a Ph.D. candidate at the Department of Computer Science, City University of Hong Kong, under the supervision of Chair Professor of Internet of Things and Fellow of ACM & IEEE & AAAS, Prof. Yuguang \"Michael\" Fang. Previously, he received his BEng degree from the School of Information and Electronics, Beijing Institute of Technology in 2022. His research interests include large language model (LLM) reasoning, intelligent agents, post-training techniques (such as PEFT and RL), as well as autonomous driving, specifically in perception, security, decision-making, and planning. His works have been published in top-tier conferences such as NeurIPS, AAAI (Oral), ICRA, etc., and top-tier journals such as TMC, TITS, ToN. He also serves as a reviewer or technical program committee member for ICML, ICLR, NeurIPS, ICRA, TMC, ToN, TITS, etc.",
+              "biography": "Senkang \"Forest\" Hu is currently a Ph.D. candidate at the Department of Computer Science, City University of Hong Kong, under the supervision of Chair Professor of Internet of Things and Fellow of ACM & IEEE & AAAS, Prof. Yuguang \"Michael\" Fang. Previously, he received his BSc degree from the School of Information and Electronics, Beijing Institute of Technology in 2022. His research interests include large language model (LLM) reasoning, intelligent agents, post-training techniques (such as PEFT and RL), as well as autonomous driving, specifically in perception, security, decision-making, and planning. His works have been published in top-tier conferences such as NeurIPS, AAAI (Oral), ICRA, etc., and top-tier journals such as TMC, TITS, ToN. He also serves as a reviewer or technical program committee member for ICML, ICLR, NeurIPS, ICRA, TMC, ToN, TITS, etc.",
               "education": [
                 {
                   "degree": "PhD in Computer Science",
@@ -1497,7 +1498,7 @@
                   "year": "2023 - Now"
                 },
                 {
-                  "degree": "BEng in Electronic and Information Engineering",
+                  "degree": "BSc in Electronic and Information Engineering",
                   "institution": "Beijing Institute of Technology, Beijing, China",
                   "year": "2018 - 2022"
                 }
@@ -1956,6 +1957,55 @@
                   "year": "2018-2022"
                 }
               ]
+            },
+            {
+              "id": "phd26-jincan",
+              "title": "Mr. JIN, Can",
+              "role": [
+                {
+                  "text": "PhD Student @ 26 Spring (advised by Prof. HUANG, Jun)",
+                  "highlighted": true
+                },
+                {
+                  "text": "BSc & MSc @ Dalian University of Technology",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/JinCan.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:74764629@qq.com",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                }
+              ],
+              "interests": [
+                "Wireless Sensing",
+                "Machine Learning",
+                "Wireless AI", 
+                "Internet of Things",
+                "Smart and Connected Health"
+              ],
+              "biography": "Can Jin received a BSc degree in Electronic Information Engineering from Dalian University of Technology, Liaoning, China in 2022, an MSc degree in the new generation of electronic information technology from Dalian University of Technology in 2025. He is currently pursuing a PhD degree in Computer Science at City University of Hong Kong, focusing on research areas including wireless sensing and smart health care.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science",
+                  "institution": "City University of Hong Kong",
+                  "year": "2025.10 - Now"
+                },
+                {
+                  "degree": "MSc in the New Generation of Electronic Information Technology",
+                  "institution": "Dalian University of Technology",
+                  "year": "2022-2025"
+                },
+                {
+                  "degree": "BSc in Electronic Information Engineering",
+                  "institution": "Dalian University of Technology",
+                  "year": "2018-2022"
+                }
+              ],
+              "last_name": "26jincan"
             }
           ]
         },
@@ -2007,55 +2057,7 @@
               ],
               "detailPage": "data/people/PhD25_GaoJunhui/index.html",
               "last_name": "gaojunhui"
-            },
-            {
-              "id": "ra26-jincan",
-              "title": "Mr. JIN, Can",
-              "role": [
-                {
-                  "text": "Research Assistant (2025.10 - Now)",
-                  "highlighted": true
-                },
-                {
-                  "text": "BSc & MSc @ Dalian University of Technology",
-                  "highlighted": false
-                },
-                {
-                  "text": "Advisor: Jun Huang",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/people/JinCan.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:74764629@qq.com",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                }
-              ],
-              "interests": [
-                "Wireless Sensing",
-                "Machine Learning",
-                "Wireless AI", 
-                "Internet of Things",
-                "Smart and Connected Health"
-              ],
-              "biography": "Can Jin received a BSc degree in Electronic Information Engineering from Dalian University of Technology, Liaoning, China in 2022, an MSc degree in the new generation of electronic information technology from Dalian University of Technology in 2025. He is currently pursuing a PhD degree in Computer Science at City University of Hong Kong, focusing on research areas including wireless sensing and smart health care.",
-              "education": [
-                {
-                  "degree": "MSc in the New Generation of E··lectronic Information Technology",
-                  "institution": "Dalian University of Technology",
-                  "year": "2022-2025"
-                },
-                {
-                  "degree": "BSc in Electronic Information Engineering",
-                  "institution": "Dalian University of Technology",
-                  "year": "2018-2022"
-                }
-              ]
             }
-            
           ]
         },
         {
@@ -2082,7 +2084,7 @@
                   "highlighted": true
                 },
                 {
-                  "text": "Postdoc @ CityUHK",
+                  "text": "Postdoc @ CityUHK (2024.8 - 2025.12)",
                   "highlighted": false
                 },
                 {
@@ -2114,7 +2116,7 @@
                 "Internet of Vehicles",
                 "Resource Management"
               ],
-              "biography": "Yiqin Deng is currently a Research Assistant Professor in the Department of Data Science at Lingnan University, Hong Kong. Previously, she was a Postdoctoral Fellow at City University of Hong Kong and a Postdoctoral Researcher at Shandong University, Jinan, China. She received her M.S. degree in software engineering and PhD degree in computer science and technology from Central South University, Changsha, China, in 2017 and 2022, respectively. She was a visiting researcher at the University of Florida, Gainesville, from 2019 to 2021. Her research interests include edge/fog computing, the Internet of Vehicles, and resource management.",
+              "biography": "Yiqin Deng is currently a Research Assistant Professor in the School of Data Science at Lingnan University, Hong Kong. Previously, she was a Postdoctoral Fellow at City University of Hong Kong and a Postdoctoral Researcher at Shandong University, Jinan, China. She received her M.S. degree in software engineering and PhD degree in computer science and technology from Central South University, Changsha, China, in 2017 and 2022, respectively. She was a visiting researcher at the University of Florida, Gainesville, from 2019 to 2021. Her research interests include edge/fog computing, the Internet of Vehicles, and resource management.",
               "education": [
                 {
                   "degree": "PhD in Computer Science and Technology",
