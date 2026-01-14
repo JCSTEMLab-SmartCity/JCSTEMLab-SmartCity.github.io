@@ -1,5 +1,22 @@
 [
   {
+    "title": "UAV-enabled Computing Power Networks: Design and Performance Analysis under Energy Constraints",
+    "authors": "Yiqin Deng, Zhengru Fang, Senkang Hu, Yanan Ma, Xiaoyu Guo, Haixia Zhang, and Yuguang Fang",
+    "venue": "IEEE Transactions on Mobile Computing.",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "TMC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "#"
+      }
+    ]
+  },
+  {
     "title": "Decoder Gradient Shields: A Family of Provable and High-Fidelity Methods Against Gradient-Based Box-Free Watermark Removal",
     "authors": "Haonan An, Guang Hua, Wei Du, Hangcheng Cao, Yihang Tao, Guowen Xu, Susanto Rahardja, Yuguang Fang",
     "venue": "IEEE Transactions on Dependable and Secure Computing",
