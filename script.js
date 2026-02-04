@@ -507,7 +507,18 @@ function renderNewsItems(newsData, containerId, limit = 8) {
 
         // Create the paragraph for content
         const paragraphElement = document.createElement('p');
-        paragraphElement.innerHTML = newsItem.content;
+
+        let contentHtml = newsItem.content;
+        // Fix relative paths in content if on a subpage
+        if (window.location.pathname.includes('/pages/')) {
+            // If link points to "pages/...", it's a sibling in the "pages" dir
+            contentHtml = contentHtml.replace(/href="pages\//g, 'href="');
+            // Assets need to go up one level
+            contentHtml = contentHtml.replace(/src="assets\//g, 'src="../assets/');
+            contentHtml = contentHtml.replace(/href="assets\//g, 'href="../assets/');
+        }
+
+        paragraphElement.innerHTML = contentHtml;
 
         // Add links if provided in the links array format
         if (newsItem.links && newsItem.links.length > 0) {

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JC STEM Labs Inauguration Ceremony</title>
+    <link rel="icon" type="image/png" href="../assets/favicon.png">
+    <link rel="stylesheet" href="../styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        .video-page-container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 40px 20px 60px;
+        }
+
+        .video-wrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 aspect ratio */
+            height: 0;
+            overflow: hidden;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            background: #000;
+            margin-bottom: 30px;
+        }
+
+        .video-wrapper video {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        .video-header {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .video-title {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            margin-bottom: 12px;
+            font-weight: 700;
+        }
+
+        .video-meta {
+            color: var(--light-text);
+            font-size: 1.1rem;
+        }
+
+        .back-button-container {
+            text-align: center;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+
+<body data-subpage="true">
+    <nav>
+        <div class="container">
+            <div class="nav-logo">
+                <a href="../index.html" class="logo-text">JC STEM Lab of Smart City</a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="../index.html">Home</a></li>
+            </ul>
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </nav>
+
+    <main>
+        <div class="video-page-container">
+            <div class="video-header">
+                <h1 class="video-title">JC STEM Labs Inauguration Ceremony</h1>
+                <p class="video-meta">Welcome to our state-of-the-art laboratory! @2025.7.8</p>
+                <p style="color: var(--primary-color); font-size: 0.9rem; margin-top: 10px;"><i
+                        class="fas fa-info-circle"></i> Video is muted by default. Please unmute for sound.</p>
+            </div>
+
+            <div class="video-wrapper">
+                <video id="opening-video" controls autoplay muted playsinline>
+                    <source src="../assets/JCLab-OpenCeremony.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+
+            <div class="back-button-container">
+                <a href="../index.html" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; <span id="copyright-year"></span> JC STEM Lab of Smart City. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Use a minimal version of script for subpages to avoid hero slider interference -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Set copyright year
+            document.getElementById('copyright-year').textContent = new Date().getFullYear();
+
+            // Ensure the video is properly handled
+            const video = document.getElementById('opening-video');
+            if (video) {
+                // Some browsers might need a manual play() if autoplay is blocked
+                video.play().catch(function (error) {
+                    console.log("Autoplay was prevented:", error);
+                });
+            }
+
+            // Handle navigation scroll effect (minimal version)
+            const nav = document.querySelector('nav');
+            window.addEventListener('scroll', function () {
+                if (window.scrollY > 20) {
+                    nav.classList.add('scrolled');
+                } else {
+                    nav.classList.remove('scrolled');
+                }
+            });
+        });
+    </script>
+</body>
+
+</html>
