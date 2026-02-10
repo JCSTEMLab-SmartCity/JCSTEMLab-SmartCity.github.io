@@ -130,7 +130,7 @@ document.addEventListener('DOMContentLoaded', function () {
         fetch('data/news.json')
             .then(response => response.json())
             .then(data => {
-                renderNewsItems(data, 'news-container', 8); // Show the most recent 8 news items
+                renderNewsItems(data, 'news-container', 12); // Show the most recent 12 news items
             })
             .catch(error => console.error('Error loading news:', error));
     }
