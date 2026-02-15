@@ -6,7 +6,7 @@
     --secondary-color: #2c3e50;
     --text-color: #333;
     --bg-color: #fff;
-    --font-family: 'Inter', sans-serif;
+    --font-family: 'Montserrat', sans-serif;
     --border-radius: 8px;
     --transition: 0.3s ease;
     --light-gray: #f8f9fa;
@@ -64,6 +64,13 @@ body {
     margin-bottom: 15px;
     text-align: center;
     text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.research-header .header-icon {
+    display: block;
+    font-size: 3.5rem;
+    margin: 0 auto 16px;
+    text-align: center;
 }
 
 .research-header .subtitle {
@@ -236,6 +243,10 @@ body {
     --theme-gradient: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
 }
 
+.foundation-theme {
+    --theme-gradient: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
+}
+
 /* Apply theme gradients to headers */
 .cad-theme .research-header {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -255,6 +266,10 @@ body {
 
 .ai-security-theme .research-header {
     background: linear-gradient(135deg, #fa709a 0%, #fee140 100%);
+}
+
+.foundation-theme .research-header {
+    background: linear-gradient(135deg, #a18cd1 0%, #fbc2eb 100%);
 }
 
 /* Responsive Design */

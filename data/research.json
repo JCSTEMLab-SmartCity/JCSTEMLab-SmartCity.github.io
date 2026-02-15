@@ -1,4 +1,40 @@
 {
+  "Foundation Models": {
+    "Large Language Models (LLMs)": {
+      "Agentic Reasoning and Reinforcement Learning": [
+        "Designing agentic reasoning and reinforcement learning methods to improve the performance of LLMs.",
+        "Exploring how LLMs can iteratively plan, reflect, and act in complex environments through chain-of-thought and self-correction mechanisms.",
+        "Integrating reinforcement learning (RLHF, RLAIF) to align LLM outputs with human preferences and task objectives."
+      ],
+      "Agentic Systems": [
+        "Designing agentic systems (single/multi-agent) that can achieve complex tasks.",
+        "Building single-agent systems that autonomously decompose goals, use tools, and execute multi-step plans.",
+        "Developing multi-agent frameworks for collaboration, negotiation, and emergent problem-solving in open-ended environments."
+      ],
+      "PEFT and Task Adaptation": [
+        "Designing PEFT methods and task-adaptation strategies to adapt LLMs to specific tasks better and more efficiently.",
+        "Low-rank adaptation (LoRA), adapter modules, and prompt tuning for parameter-efficient fine-tuning.",
+        "Task-specific adaptation for embodied AI, robotics, and domain-specific applications with limited compute."
+      ]
+    },
+    "World Models and Embodied AI": {
+      "Spatial Intelligence for Embodied AI": [
+        "Constructing a comprehensive World Model for Spatial Intelligence, serving as the cognitive core for Embodied AI (e.g., Autonomous Vehicles).",
+        "The system mirrors the current physical world and reasons about its dynamics—enabling agents to predict outcomes and plan actions.",
+        "Unifying perception, prediction, and planning within a coherent World Model for safe and intelligent autonomous behavior."
+      ],
+      "Spatial Breadth — Collaborative Perception": [
+        "Collaborative Perception among agents to overcome individual sensing limitations (e.g., occlusions, limited range).",
+        "This collective intelligence builds a more complete and robust World Model, ensuring agents maintain accurate 3D understanding.",
+        "Addressing challenges in complex, adversarial, or bandwidth-constrained environments through efficient information sharing and fusion."
+      ],
+      "Temporal Depth — Generative Models and 3D Reconstruction": [
+        "Leveraging Generative Models and 3D Gaussian Splatting to empower agents to hallucinate plausible future scenarios.",
+        "Recovering 3D geometry from sparse observations for scene completion and understanding.",
+        "This predictive capability enables the World Model to simulate potential outcomes, facilitating foresightful planning and decision-making for Embodied AI."
+      ]
+    }
+  },
   "Connected and Autonomous Driving (CAD)": {
     "Vehicular Perception, Learning and Computing": {
       "Collaborative Perception & Learning": [

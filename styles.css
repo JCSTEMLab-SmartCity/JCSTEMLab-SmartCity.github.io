@@ -47,7 +47,7 @@ html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Inter', sans-serif;
+    font-family: 'Montserrat', sans-serif;
 }
 
 body {
@@ -675,7 +675,7 @@ nav.scrolled .nav-links a:hover {
 
 .news-item:hover {
     transform: translateX(5px);
-    background-color: rgba(0, 102, 204, 0.05);
+    background-color: rgba(189, 56, 75, 0.05);
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
@@ -774,119 +774,7 @@ nav.scrolled .nav-links a:hover {
     }
 }
 
-/* Research Areas */
-.research-areas {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-top: 2rem;
-}
-
-.research-area {
-    flex: 1;
-    min-width: 250px;
-    padding: 2rem;
-    background: linear-gradient(145deg, #ffffff 0%, #fef7f7 50%, #f0f9ff 100%);
-    border-radius: 24px;
-    text-align: center;
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    border: 2px solid rgba(189, 56, 75, 0.1);
-    box-shadow:
-        0 10px 30px rgba(189, 56, 75, 0.1),
-        0 4px 12px rgba(0, 0, 0, 0.05);
-    position: relative;
-    overflow: hidden;
-}
-
-/* 添加装饰性背景图案 */
-.research-area::after {
-    content: '';
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    width: 150px;
-    height: 150px;
-    background: radial-gradient(circle, rgba(189, 56, 75, 0.08) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    transition: transform 0.4s ease;
-    z-index: 0;
-}
-
-.research-area:hover::after {
-    transform: scale(1.2);
-}
-
-.research-area:hover {
-    transform: translateY(-12px) rotate(1deg);
-    box-shadow:
-        0 20px 50px rgba(189, 56, 75, 0.15),
-        0 10px 25px rgba(0, 0, 0, 0.1);
-    border-color: rgba(189, 56, 75, 0.25);
-}
-
-.research-area i {
-    font-size: 2.5rem;
-    color: var(--primary-color);
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 1;
-    transition: transform 0.3s ease;
-}
-
-.research-area:hover i {
-    transform: scale(1.1) rotate(5deg);
-}
-
-.research-area h3 {
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    position: relative;
-    z-index: 1;
-    transition: color 0.3s ease;
-}
-
-.research-area:hover h3 {
-    color: var(--primary-color);
-}
-
-.research-area p {
-    font-size: 0.9rem;
-    color: var(--light-text);
-    line-height: 1.5;
-    position: relative;
-    z-index: 1;
-}
-
-.research-list {
-    text-align: left;
-    padding-left: 1.2rem;
-    margin-bottom: 0;
-    position: relative;
-    z-index: 1;
-}
-
-.research-list li {
-    font-size: 0.9rem;
-    color: var(--light-text);
-    line-height: 1.5;
-    margin-bottom: 0.8rem;
-    transition: transform 0.2s ease, color 0.2s ease;
-    padding-left: 4px;
-}
-
-.research-area:hover .research-list li {
-    transform: translateX(3px);
-}
-
-.research-list li strong {
-    color: var(--text-color);
-    transition: color 0.3s ease;
-}
-
-.research-area:hover .research-list li strong {
-    color: var(--primary-color);
-}
+/* Research Areas — styles now in inline <style> block in index.html */
 
 /* Education Timeline */
 .timeline {
@@ -1365,9 +1253,7 @@ footer {
         align-self: center;
     }
 
-    .research-areas {
-        flex-direction: column;
-    }
+    /* research-areas responsive handled in inline style */
 }
 
 @media (max-width: 768px) {
@@ -1577,7 +1463,7 @@ footer {
 
 .service-list li:hover {
     transform: translateX(5px);
-    background-color: rgba(0, 102, 204, 0.05);
+    background-color: rgba(189, 56, 75, 0.05);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     border-color: rgba(0, 102, 204, 0.1);
 }
@@ -1743,148 +1629,109 @@ footer {
 /* Seminars Section */
 .seminars-list {
     margin-top: 2rem;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
-    gap: 25px;
 }
 
 .seminar-item {
     display: flex;
-    flex-direction: column;
-    background: linear-gradient(145deg, #ffffff 0%, #fef7f7 50%, #fff5f5 100%);
-    border-radius: 24px;
-    box-shadow:
-        0 10px 30px rgba(189, 56, 75, 0.1),
-        0 4px 12px rgba(0, 0, 0, 0.05);
-    overflow: hidden;
-    transition: all 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
-    height: 100%;
-    border: 2px solid rgba(189, 56, 75, 0.1);
-    position: relative;
+    align-items: flex-start;
+    padding: 0.5rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.2s ease;
+    border-radius: 4px;
+    background-color: transparent;
 }
 
-/* 添加装饰性背景图案 */
-.seminar-item::after {
-    content: '';
-    position: absolute;
-    top: -50px;
-    right: -50px;
-    width: 150px;
-    height: 150px;
-    background: radial-gradient(circle, rgba(189, 56, 75, 0.08) 0%, transparent 70%);
-    border-radius: 50%;
-    pointer-events: none;
-    transition: transform 0.4s ease;
-    z-index: 0;
-}
-
-.seminar-item:hover::after {
-    transform: scale(1.2);
+.seminar-item:last-child {
+    border-bottom: none;
 }
 
 .seminar-item:hover {
-    transform: translateY(-12px) rotate(1deg);
-    box-shadow:
-        0 20px 50px rgba(189, 56, 75, 0.15),
-        0 10px 25px rgba(0, 0, 0, 0.1);
-    border-color: rgba(189, 56, 75, 0.25);
+    transform: translateX(5px);
+    background-color: rgba(189, 56, 75, 0.05);
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
 }
 
-.seminar-date {
-    background: linear-gradient(135deg,
-            rgba(189, 56, 75, 0.12) 0%,
-            rgba(231, 76, 60, 0.15) 50%,
-            rgba(189, 56, 75, 0.1) 100%);
-    color: #2c3e50;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    padding: 1.2rem 1rem;
-    text-align: center;
-    border-bottom: 2px dashed rgba(189, 56, 75, 0.2);
-    position: relative;
-    overflow: hidden;
-    z-index: 1;
-}
-
-.seminar-date::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    right: 0;
-    width: 40px;
-    height: 40px;
-    background: linear-gradient(135deg, rgba(189, 56, 75, 0.15) 0%, rgba(231, 76, 60, 0.2) 100%);
-    border-radius: 50%;
-    transform: translate(50%, -50%);
-    opacity: 0.7;
-}
-
-/* 添加装饰性圆点 */
-.seminar-date::after {
-    content: '';
-    position: absolute;
-    bottom: -5px;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 60px;
-    height: 4px;
-    background: linear-gradient(90deg,
-            transparent 0%,
-            rgba(189, 56, 75, 0.3) 50%,
-            transparent 100%);
-    border-radius: 2px;
-}
-
-.seminar-date .date {
+/* Date column — same style as news */
+.seminars-list .seminar-date {
+    min-width: 160px;
+    width: 160px;
     font-size: 1.1rem;
     font-weight: 700;
-    line-height: 1;
-    color: #BD384B;
-    margin-bottom: 0.3rem;
-}
-
-.seminar-date .month {
-    font-size: 0.8rem;
-    text-transform: uppercase;
-    color: #E74C3C;
-    letter-spacing: 1px;
-    font-weight: 500;
-}
-
-.seminar-date .year {
-    font-size: 0.75rem;
-    color: #C0392B;
-    margin-top: 0.2rem;
-    font-weight: 400;
-}
-
-.seminar-content {
-    padding: 1.8rem 1.8rem 1.5rem;
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    background: linear-gradient(155deg, #ffffff 0%, #fafbfc 50%, #ffffff 100%);
-    position: relative;
-    z-index: 1;
-}
-
-.seminar-content h3 {
-    font-size: 1.25rem;
-    color: #2c3e50;
-    margin-bottom: 1rem;
-    line-height: 1.4;
-    font-weight: 700;
-    transition: all 0.3s ease;
-    position: relative;
-}
-
-.seminar-content h3:hover {
     color: var(--primary-color);
-    transform: translateX(5px);
+    margin-right: 15px;
+    flex-shrink: 0;
+    display: flex;
+    align-items: flex-start;
+    padding-top: 2px;
 }
 
+/* Content column */
+.seminars-list .seminar-content {
+    flex: 1;
+    min-width: 0;
+}
+
+.seminars-list .seminar-content h3 {
+    font-size: 1rem;
+    color: var(--text-color);
+    margin-bottom: 0.35rem;
+    line-height: 1.45;
+    font-weight: 700;
+    transition: color 0.2s ease;
+}
+
+.seminar-item:hover .seminar-content h3 {
+    color: var(--primary-color);
+}
+
+.seminars-list .speaker-name {
+    font-size: 0.9rem;
+    color: #555;
+    font-weight: 500;
+    margin-bottom: 0.4rem;
+    display: block;
+}
+
+.seminars-list .speaker-name i {
+    color: var(--primary-color);
+    margin-right: 4px;
+    font-size: 13px;
+}
+
+.seminars-list .seminar-description {
+    font-size: 0.9rem;
+    color: var(--light-text);
+    line-height: 1.55;
+    margin-bottom: 0;
+}
+
+/* Photo column */
+.seminar-photo {
+    flex-shrink: 0;
+    width: 160px;
+    margin-left: 20px;
+    border-radius: 6px;
+    overflow: hidden;
+}
+
+.seminar-photo img {
+    width: 100%;
+    height: 105px;
+    object-fit: cover;
+    display: block;
+    border-radius: 6px;
+}
+
+.view-all-seminars {
+    text-align: center;
+    margin-top: 2rem;
+}
+
+/* Legacy selectors kept for seminar-detail pages */
 .seminar-speaker,
 .seminar-location {
     font-size: 0.9rem;
@@ -1901,29 +1748,6 @@ footer {
     font-size: 14px;
 }
 
-.speaker-name {
-    font-size: 1.05rem;
-    color: #34495e;
-    font-weight: 600;
-    margin-bottom: 1rem;
-    margin-top: -0.2rem;
-    padding-left: 0;
-    text-align: left;
-}
-
-.seminar-description {
-    font-size: 0.9rem;
-    color: #666;
-    margin-top: 0.8rem;
-    line-height: 1.5;
-    flex-grow: 1;
-}
-
-.view-all-seminars {
-    text-align: center;
-    margin-top: 2rem;
-}
-
 .seminar-thumbnail {
     margin-top: 15px;
     overflow: hidden;
@@ -1933,35 +1757,6 @@ footer {
     margin-left: 0;
     margin-right: 0;
     padding: 0 0 1rem;
-}
-
-.seminar-image-container {
-    padding: 0 1.8rem 1.8rem;
-    margin: 0;
-    width: 100%;
-    overflow: visible;
-    box-sizing: border-box;
-    position: relative;
-}
-
-.seminar-image-container::before {
-    display: none;
-}
-
-.seminar-image-container img {
-    width: 100%;
-    height: 180px;
-    object-fit: cover;
-    display: block;
-    border-radius: 12px;
-    border: 3px solid rgba(255, 255, 255, 0.9);
-    box-shadow:
-        0 8px 24px rgba(0, 0, 0, 0.12),
-        0 4px 12px rgba(0, 0, 0, 0.08),
-        inset 0 1px 0 rgba(255, 255, 255, 0.5);
-    position: relative;
-    z-index: 1;
-    background: white;
 }
 
 .seminar-thumbnail img {
@@ -1984,87 +1779,51 @@ footer {
 
 .seminar-content h3 a:hover {
     color: var(--primary-color);
-    text-decoration: underline;
-}
-
-@media (max-width: 992px) {
-    .seminars-list {
-        grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
-        gap: 20px;
-    }
 }
 
 @media (max-width: 768px) {
-    .seminars-list {
-        grid-template-columns: 1fr;
-        gap: 18px;
-    }
-
     .seminar-item {
-        border-radius: 20px;
+        flex-wrap: wrap;
     }
 
-    .seminar-date {
-        padding: 1rem 0.8rem;
+    .seminars-list .seminar-date {
+        margin-right: 0;
+        margin-bottom: 0.75rem;
+        width: 100%;
+        min-width: unset;
     }
 
-    .seminar-date .date {
-        font-size: 1rem;
+    .seminar-photo {
+        width: 120px;
+        margin-left: 15px;
     }
 
-    .seminar-content {
-        padding: 1.5rem 1.5rem 1.2rem;
+    .seminar-photo img {
+        height: 85px;
     }
 
-    .seminar-content h3 {
-        font-size: 1.15rem;
-    }
-
-    .seminar-image-container {
-        padding: 0 1.5rem 1.5rem;
-        overflow: visible;
-    }
-
-    .seminar-image-container img {
-        height: 160px;
-        border-radius: 10px;
+    .seminars-list .seminar-content h3 {
+        font-size: 0.95rem;
     }
 }
 
 @media (max-width: 576px) {
-    .seminars-list {
-        grid-template-columns: 1fr;
-        gap: 15px;
+    .seminar-photo {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0.75rem;
     }
 
-    .seminar-item {
-        border-radius: 20px;
+    .seminar-photo img {
+        height: 160px;
     }
 
-    .seminar-date {
-        padding: 0.8rem 0.6rem;
+    .seminars-list .seminar-content h3 {
+        font-size: 0.9rem;
     }
 
-    .seminar-date .date {
-        font-size: 0.95rem;
-    }
-
-    .seminar-content {
-        padding: 1.2rem 1.2rem 1rem;
-    }
-
-    .seminar-content h3 {
-        font-size: 1.1rem;
-    }
-
-    .seminar-image-container {
-        padding: 0 1.2rem 1.2rem;
-        overflow: visible;
-    }
-
-    .seminar-image-container img {
-        height: 140px;
-        border-radius: 10px;
+    .seminars-list .seminar-description {
+        font-size: 0.85rem;
     }
 }
 
