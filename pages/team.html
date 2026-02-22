@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,32 +8,84 @@
     <link rel="icon" type="image/png" href="/assets/favicon.png">
     <link rel="stylesheet" href="../styles.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <style>
         .team-member h4 a {
             color: var(--text-color);
             text-decoration: none;
             transition: color 0.3s;
         }
-        
+
         .team-member h4 a:hover {
             color: var(--primary-color);
             text-decoration: underline;
         }
-        
-        /* 修改头像容器为1:1 */
+
+        /* Apple-style Filter Tabs */
+        .team-filters {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            margin: 40px 0 20px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .filter-btn {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid rgba(0, 0, 0, 0.05);
+            color: #666;
+            padding: 10px 24px;
+            border-radius: 30px;
+            font-size: 0.95rem;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            font-family: inherit;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.03);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+        }
+
+        .filter-btn:hover {
+            background: rgba(255, 255, 255, 1);
+            color: var(--primary-color);
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+        }
+
+        .filter-btn.active {
+            background: var(--primary-color);
+            color: white;
+            border-color: var(--primary-color);
+            box-shadow: 0 6px 16px rgba(189, 56, 75, 0.25);
+        }
+
+        /* 修改头像容器为1:1 Apple-style Glassmorphism */
         .team-member {
             display: flex;
             flex-direction: column;
-            background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+            background: rgba(255, 255, 255, 0.65);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             border-radius: 20px;
             overflow: hidden;
-            box-shadow: 0 8px 32px rgba(189, 56, 75, 0.08),
-                        0 2px 8px rgba(0, 0, 0, 0.06);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.04),
+                0 2px 8px rgba(0, 0, 0, 0.02);
             transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
-            border: 1px solid rgba(255, 255, 255, 0.2);
+            border: 1px solid rgba(255, 255, 255, 0.8);
             position: relative;
-            height: 100%; /* 确保所有卡片等高 */
+            height: 100%;
+            /* 确保所有卡片等高 */
+            opacity: 0;
+            transform: translateY(20px);
+        }
+
+        .team-member.fade-in {
+            opacity: 1;
+            transform: translateY(0);
         }
 
         .team-member::before {
@@ -42,7 +95,7 @@
             left: 0;
             right: 0;
             bottom: 0;
-            background: linear-gradient(135deg, rgba(189, 56, 75, 0.05) 0%, transparent 100%);
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%);
             border-radius: 20px;
             opacity: 0;
             transition: opacity 0.4s ease;
@@ -55,9 +108,10 @@
 
         .team-member:hover {
             transform: translateY(-8px) scale(1.02);
-            box-shadow: 0 16px 40px rgba(189, 56, 75, 0.15),
-                        0 8px 16px rgba(0, 0, 0, 0.1);
-            border-color: rgba(189, 56, 75, 0.3);
+            box-shadow: 0 16px 40px rgba(189, 56, 75, 0.12),
+                0 8px 16px rgba(0, 0, 0, 0.05);
+            border-color: rgba(189, 56, 75, 0.2);
+            background: rgba(255, 255, 255, 0.85);
         }
 
         .team-member img {
@@ -73,15 +127,14 @@
         .team-member:hover img {
             transform: scale(1.05);
         }
-        
+
         /* 修改卡片内容区域样式 */
         .team-member-content {
             padding: 1.5rem 0.25rem 1.5rem 0.25rem;
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.95) 0%, rgba(248, 249, 250, 0.95) 100%);
-            backdrop-filter: blur(10px);
+            background: transparent;
             position: relative;
             z-index: 3;
-            border-top: 1px solid rgba(189, 56, 75, 0.1);
+            border-top: 1px solid rgba(0, 0, 0, 0.03);
             flex: 1;
             display: flex;
             flex-direction: column;
@@ -111,7 +164,7 @@
             padding: 1rem 0 0 0;
             justify-content: center;
         }
-        
+
         .member-links a {
             display: flex;
             align-items: center;
@@ -164,9 +217,9 @@
         .member-links a:hover i {
             color: #fff;
         }
-        
+
         /* 修改间距样式 */
-        
+
         .section-title {
             font-size: 2rem;
             margin-top: 1rem;
@@ -174,17 +227,19 @@
             position: relative;
             display: inline-block;
         }
-        
-        
+
+
         .team-container {
-            margin-bottom: 60px;  /* 增加底部间距 */
+            margin-bottom: 60px;
+            /* 增加底部间距 */
         }
-        
+
         .team-category {
-            margin-bottom: 20px;  /* 增加底部间距 */
+            margin-bottom: 20px;
+            /* 增加底部间距 */
         }
-        
-        
+
+
         .team-category h3 {
             font-size: 1.6rem;
             margin-bottom: 30px;
@@ -193,14 +248,16 @@
             border-bottom: 2px solid var(--background-color);
             color: var(--primary-color);
         }
-        
+
         .team-members {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-            gap: 2.5rem;  /* 增加成员卡片之间的间距 */
-            align-items: stretch; /* 让所有卡片拉伸到相同高度 */
+            gap: 2.5rem;
+            /* 增加成员卡片之间的间距 */
+            align-items: stretch;
+            /* 让所有卡片拉伸到相同高度 */
         }
-        
+
         .empty-category-note {
             color: #666;
             font-style: italic;
@@ -228,17 +285,22 @@
         }
 
         @keyframes spin {
-            0% { transform: rotate(0deg); }
-            100% { transform: rotate(360deg); }
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
         }
 
         /* Override Prof. Fang's role highlight color */
         b[style*="color:#1565C0"] {
             color: var(--primary-color) !important;
         }
-        
     </style>
 </head>
+
 <body data-subpage="true">
     <header style="display: none;">
         <div class="container">
@@ -266,11 +328,24 @@
     </nav>
 
     <main>
+        <div class="container">
+            <h1
+                style="text-align: center; font-size: 2.5rem; color: var(--text-color); margin-top: 4rem; margin-bottom: 1rem;">
+                Meet Our Team</h1>
+            <p style="text-align: center; color: #666; margin-bottom: 2rem; font-size: 1.1rem;">Discover the brilliant
+                minds shaping the future of Smart City & IoT.</p>
+            <div class="team-filters" id="team-filters">
+                <!-- Filters will be generated dynamically -->
+            </div>
+        </div>
+
         <!-- 加载动画 -->
-        <div class="loading-container">
+        <div class="loading-container" id="loading-container">
             <div class="loading-spinner"></div>
             <p>Loading team information...</p>
         </div>
+
+        <div id="team-content-area"></div>
     </main>
 
     <footer>
@@ -325,4 +400,5 @@
     <!-- 加载团队成员数据 -->
     <script src="../js/team-loader.js"></script>
 </body>
-</html> 
+
+</html>

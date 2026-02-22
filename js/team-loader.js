@@ -3,15 +3,17 @@
  * 动态从 JSON 文件加载团队成员数据并渲染到页面
  */
 
-document.addEventListener('DOMContentLoaded', function() {
+document.addEventListener('DOMContentLoaded', function () {
     loadTeamMembers();
-    
+
     // 设置版权年份
     document.getElementById('copyright-year').textContent = new Date().getFullYear();
-    
+
     // 处理导航栏水平滚动
     handleNavScrolling();
 });
+
+let teamDataCache = null;
 
 /**
  * 加载团队成员数据并渲染到页面
@@ -25,84 +27,145 @@ function loadTeamMembers() {
             return response.json();
         })
         .then(data => {
-            renderTeamStructure(data);
+            teamDataCache = data;
+
+            // Remove loading container if exists
+            const loader = document.getElementById('loading-container');
+            if (loader) loader.remove();
+
+            generateFilters(data);
+            renderTeamStructure(data, 'All');
         })
         .catch(error => {
             console.error('Error loading team members data:', error);
-            document.querySelector('main').innerHTML = `
-                <div class="container text-center" style="padding: 50px 20px;">
-                    <h2>Error loading team members data</h2>
-                    <p>${error.message}</p>
-                    <a href="../index.html" class="btn btn-primary">Back to Homepage</a>
-                </div>
-            `;
+            const contentArea = document.getElementById('team-content-area') || document.querySelector('main');
+            if (contentArea) {
+                contentArea.innerHTML = `
+                    <div class="container text-center" style="padding: 50px 20px;">
+                        <h2>Error loading team members data</h2>
+                        <p>${error.message}</p>
+                        <a href="../index.html" class="btn btn-primary">Back to Homepage</a>
+                    </div>
+                `;
+            }
         });
+}
+
+function generateFilters(data) {
+    const filterContainer = document.getElementById('team-filters');
+    if (!filterContainer) return;
+
+    // Create 'All Members' button
+    const allBtn = document.createElement('button');
+    allBtn.className = 'filter-btn active';
+    allBtn.textContent = 'All';
+    allBtn.onclick = () => filterTeam('All', allBtn);
+    filterContainer.appendChild(allBtn);
+
+    // Generate tabs from subcategories
+    if (data.categories && data.categories.length > 0) {
+        data.categories[0].subcategories.forEach(sub => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn';
+
+            // Shorter, cleaner labels for filtering
+            let shortName = sub.name;
+            if (shortName === 'Postdoctoral Researchers') shortName = 'Postdocs';
+            if (shortName === 'Current PhD Students') shortName = 'PhD Students';
+            if (shortName === 'Graduated PhD Students') shortName = 'PhD Alumni';
+            if (shortName === 'Graduated Master Students') shortName = 'Master Alumni';
+            if (shortName === 'Former Postdoctoral Researchers') shortName = 'Postdoc Alumni';
+            if (shortName === 'Former Visiting Students') shortName = 'Visiting Alumni';
+            if (shortName === 'Former Visiting Scholars') shortName = 'Scholar Alumni';
+
+            btn.textContent = shortName;
+            btn.onclick = () => filterTeam(sub.name, btn);
+            filterContainer.appendChild(btn);
+        });
+    }
+}
+
+function filterTeam(categoryName, btnElement) {
+    document.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+    btnElement.classList.add('active');
+    renderTeamStructure(teamDataCache, categoryName);
 }
 
 /**
  * 渲染整个团队结构
  * @param {Object} data - 团队成员数据
+ * @param {string} filterCategory - 分类选择
  */
-function renderTeamStructure(data) {
-    const mainContainer = document.querySelector('main');
+function renderTeamStructure(data, filterCategory = 'All') {
+    const mainContainer = document.getElementById('team-content-area');
+    if (!mainContainer) return;
     mainContainer.innerHTML = ''; // 清空现有内容
-    
+
     // 创建主容器
     const sectionElement = document.createElement('section');
     sectionElement.className = 'section';
-    
+    sectionElement.style.paddingTop = '0';
+    sectionElement.style.border = 'none';
+
     const containerElement = document.createElement('div');
     containerElement.className = 'container';
-    
+
+    let delayCounter = 0;
+
     // 遍历主要类别
     data.categories.forEach(category => {
-        // 如果是主要类别，不添加分隔标题
-        
-            containerElement.innerHTML += `<h2 class="section-title">${category.name}</h2>`;
-        
-        
         // 创建团队容器
         const teamContainer = document.createElement('div');
         teamContainer.className = 'team-container';
-        
+
         // 渲染子类别
         category.subcategories.forEach(subcategory => {
+            if (filterCategory !== 'All' && subcategory.name !== filterCategory) return;
+
             const subcategoryElement = document.createElement('div');
             subcategoryElement.className = 'team-category';
-            
+
             subcategoryElement.innerHTML = `<h3>${subcategory.name}</h3>`;
-            
+
             const membersContainer = document.createElement('div');
             membersContainer.className = 'team-members';
-            
+
             // 检查是否有成员
             if (subcategory.members && subcategory.members.length > 0) {
                 // 渲染成员卡片
                 subcategory.members.forEach(member => {
-                    membersContainer.appendChild(createMemberCard(member));
+                    const card = createMemberCard(member);
+                    membersContainer.appendChild(card);
+
+                    observeCard(card, delayCounter);
+                    delayCounter += 0.08;
                 });
             } else {
                 // 显示空类别提示
                 const emptyNote = getEmptyNoteForCategory(subcategory.name);
                 membersContainer.innerHTML = `<p class="empty-category-note">${emptyNote}</p>`;
             }
-            
+
             subcategoryElement.appendChild(membersContainer);
             teamContainer.appendChild(subcategoryElement);
         });
-        
-        containerElement.appendChild(teamContainer);
+
+        if (teamContainer.children.length > 0) {
+            containerElement.appendChild(teamContainer);
+        }
+
+        delayCounter = 0;
     });
-    
+
     // 添加返回首页按钮
-    containerElement.innerHTML += `
+    containerElement.insertAdjacentHTML('beforeend', `
         <div class="text-center mt-5">
             <a href="../index.html" class="btn btn-primary">
                 <i class="fas fa-arrow-left"></i> Back to Homepage
             </a>
         </div>
-    `;
-    
+    `);
+
     sectionElement.appendChild(containerElement);
     mainContainer.appendChild(sectionElement);
 }
@@ -115,13 +178,13 @@ function renderTeamStructure(data) {
 function createMemberCard(member) {
     const memberCard = document.createElement('div');
     memberCard.className = 'team-member';
-    
+
     // 头像
     const avatar = document.createElement('img');
     avatar.src = `../${member.avatar}`;
     avatar.alt = member.title;
     memberCard.appendChild(avatar);
-    
+
     // 创建内容容器
     const contentContainer = document.createElement('div');
     contentContainer.className = 'team-member-content';
@@ -183,7 +246,7 @@ function createMemberCard(member) {
 
     // 将内容容器添加到卡片
     memberCard.appendChild(contentContainer);
-    
+
     return memberCard;
 }
 
@@ -202,7 +265,7 @@ function getEmptyNoteForCategory(categoryName) {
         "Former Postdoctoral Researchers": "Former postdoctoral researchers data will be added soon.",
         "Former Visiting Scholars": "Former visiting scholars data will be added soon."
     };
-    
+
     return messages[categoryName] || `No ${categoryName.toLowerCase()} available.`;
 }
 
@@ -217,11 +280,11 @@ function handleNavScrolling() {
             const isScrollable = navLinks.scrollWidth > navLinks.clientWidth;
             document.querySelector('nav .container').classList.toggle('has-scroll', isScrollable);
         };
-        
+
         // 加载时和调整大小时检查
         checkScrollable();
         window.addEventListener('resize', checkScrollable);
-        
+
         // 滚动到活动链接
         const activeLink = navLinks.querySelector('a.active');
         if (activeLink) {
@@ -255,7 +318,28 @@ function containsChinese(text) {
  */
 function processChinese(text) {
     if (!text || !containsChinese(text)) return text;
-    
+
     // 使用正则表达式匹配连续的中文字符
     return text.replace(/([\u4e00-\u9fa5]+)/g, '<span class="chinese-text">$1</span>');
-} 
+}
+
+/**
+ * Intersection Observer to trigger scroll animations
+ */
+function observeCard(card, delay) {
+    const observer = new IntersectionObserver((entries, obs) => {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                setTimeout(() => {
+                    entry.target.classList.add('fade-in');
+                }, delay * 1000);
+                obs.unobserve(entry.target);
+            }
+        });
+    }, {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    });
+
+    observer.observe(card);
+}
