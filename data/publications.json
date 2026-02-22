@@ -1,20 +1,27 @@
 [
   {
-    "title": "Learning Mutual View Information Graph for Adaptive Adversarial Collaborative Perception",
-    "authors": "Yihang Tao, Senkang Hu, Haonan An, Zhengru Fang, Hangcheng Cao, Yuguang Fang",
+    "title": "RecoverMark: Robust Watermarking for Localization and Recovery of Manipulated Faces",
+    "authors": "Haonan An*, Xiaohui Ye*, Guang Hua, Yihang Tao, Hangcheng Cao, Xiangyu Yu, Yuguang Fang",
     "type": "accepted",
-    "isFirstAuthor": true,
     "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Denver, USA, 2026.",
     "year": "2026",
-    "categories": ["multi-agent-security"],
     "tags": [
       {
         "text": "CVPR'26",
         "class": "venue-tag"
-      },
+      }
+    ]
+  },
+  {
+    "title": "Learning Mutual View Information Graph for Adaptive Adversarial Collaborative Perception",
+    "authors": "Yihang Tao, Senkang Hu, Haonan An, Zhengru Fang, Hangcheng Cao, Yuguang Fang",
+    "type": "accepted",
+    "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Denver, USA, 2026.",
+    "year": "2026",
+    "tags": [
       {
-        "text": "CCF-A",
-        "class": "ccf-tag"
+        "text": "CVPR'26",
+        "class": "venue-tag"
       }
     ]
   },
@@ -22,10 +29,8 @@
     "title": "Mobility Helps Learning: Unsupervised Model Adaptation for Object Recognition with Movable Agents",
     "authors": "Yanan Ma, Yihang Tao, Zhengru Fang, Senkang Hu, Xianhao Chen, Yuguang Fang",
     "type": "accepted",
-    "isFirstAuthor": false,
     "venue": "The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR), Denver, USA, 2026.",
     "year": "2026",
-    "categories": ["multi-agent-perception"],
     "tags": [
       {
         "text": "CVPR'26 Findings",
@@ -35,10 +40,6 @@
         "text": "PDF",
         "class": "code-tag",
         "link": "https://openreview.net/forum?id=Auw2gIdAJm"
-      },
-      {
-        "text": "CCF-A",
-        "class": "ccf-tag"
       }
     ]
   },
@@ -55,7 +56,7 @@
       {
         "text": "PDF",
         "class": "code-tag",
-        "link": "#"
+        "link": "https://arxiv.org/abs/2601.09493"
       }
     ]
   },
@@ -68,6 +69,11 @@
       {
         "text": "TDSC",
         "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2601.11952"
       }
     ]
   },
@@ -166,7 +172,6 @@
       }
     ]
   },
-  
   {
     "title": "Neptune-X: Active X-to-Maritime Generation for Universal Maritime Object Detection",
     "authors": "Yu Guo, Shengfeng He, Yuxu Lu, Haonan An, Yihang Tao, Huilin Zhu, Jingxian Liu, Yuguang Fang",
@@ -284,7 +289,6 @@
       }
     ]
   },
-
   {
     "title": "Task-Oriented Communications for Visual Navigation with Edge-Aerial Collaboration",
     "authors": "Zhengru Fang, Zhenghao Liu, Jingjing Wang, Senkang Hu, Yu Guo, Yiqin Deng, and Yuguang Fang",
@@ -306,7 +310,7 @@
         "link": "https://github.com/fangzr/TOC-Edge-Aerial"
       }
     ]
-  }, 
+  },
   {
     "title": "R-ACP: Real-Time Adaptive Collaborative Perception Leveraging Robust Task-Oriented Communications",
     "authors": "Zhengru Fang, Jingjing Wang, Yanan Ma, Yihang Tao, Xianhao Chen, Yuguang Fang",
