@@ -15,6 +15,34 @@ document.addEventListener('DOMContentLoaded', function () {
 
 let teamDataCache = null;
 
+function getFilterButtonLabel(categoryName) {
+    if (!categoryName) return '';
+
+    const buttonNameMap = {
+        "Former Visiting Students": "Visiting Student Alumni",
+        "Former Visiting Scholars": "Visiting Scholar Alumni"
+    };
+
+    return buttonNameMap[categoryName] || categoryName;
+}
+
+function getSectionTitle(categoryName, parentCategoryName = '') {
+    if (!categoryName) return '';
+
+    const isUfFormerMembers = parentCategoryName === 'Former Members (@University of Florida)';
+    if (!isUfFormerMembers) return categoryName;
+
+    const sectionTitleMap = {
+        "Graduated PhD Students": "Graduated PhD Students (@UF)",
+        "Graduated Master Students": "Graduated Master Students (@UF)",
+        "Former Postdoctoral Researchers": "Former Postdoctoral Researchers (@UF)",
+        "Former Visiting Scholars": "Former Visiting Scholars (@UF)",
+        "Former Visiting Students": "Former Visiting Students (@UF)"
+    };
+
+    return sectionTitleMap[categoryName] || categoryName;
+}
+
 /**
  * 加载团队成员数据并渲染到页面
  */
@@ -54,6 +82,7 @@ function loadTeamMembers() {
 function generateFilters(data) {
     const filterContainer = document.getElementById('team-filters');
     if (!filterContainer) return;
+    filterContainer.innerHTML = '';
 
     // Create 'All Members' button
     const allBtn = document.createElement('button');
@@ -62,25 +91,34 @@ function generateFilters(data) {
     allBtn.onclick = () => filterTeam('All', allBtn);
     filterContainer.appendChild(allBtn);
 
-    // Generate tabs from subcategories
+    // Generate tabs from all categories and de-duplicate by subcategory name.
+    // Some subcategories appear in multiple top-level groups (e.g., UF + CityUHK).
+    const seenSubcategoryNames = new Set();
     if (data.categories && data.categories.length > 0) {
-        data.categories[0].subcategories.forEach(sub => {
-            const btn = document.createElement('button');
-            btn.className = 'filter-btn';
+        data.categories.forEach(category => {
+            if (!category.subcategories || category.subcategories.length === 0) return;
 
-            // Shorter, cleaner labels for filtering
-            let shortName = sub.name;
-            if (shortName === 'Postdoctoral Researchers') shortName = 'Postdocs';
-            if (shortName === 'Current PhD Students') shortName = 'PhD Students';
-            if (shortName === 'Graduated PhD Students') shortName = 'PhD Alumni';
-            if (shortName === 'Graduated Master Students') shortName = 'Master Alumni';
-            if (shortName === 'Former Postdoctoral Researchers') shortName = 'Postdoc Alumni';
-            if (shortName === 'Former Visiting Students') shortName = 'Visiting Alumni';
-            if (shortName === 'Former Visiting Scholars') shortName = 'Scholar Alumni';
+            category.subcategories.forEach(sub => {
+                if (!sub.name || seenSubcategoryNames.has(sub.name)) return;
+                seenSubcategoryNames.add(sub.name);
 
-            btn.textContent = shortName;
-            btn.onclick = () => filterTeam(sub.name, btn);
-            filterContainer.appendChild(btn);
+                const btn = document.createElement('button');
+                btn.className = 'filter-btn';
+
+                // Shorter, cleaner labels for filtering
+                let shortName = sub.name;
+                if (shortName === 'Postdoctoral Researchers') shortName = 'Postdocs';
+                if (shortName === 'Current PhD Students') shortName = 'PhD Students';
+                if (shortName === 'Graduated PhD Students') shortName = 'PhD Alumni';
+                if (shortName === 'Graduated Master Students') shortName = 'Master Alumni';
+                if (shortName === 'Former Postdoctoral Researchers') shortName = 'Postdoc Alumni';
+                if (shortName === 'Former Visiting Students') shortName = 'Visiting Student Alumni';
+                if (shortName === 'Former Visiting Scholars') shortName = 'Visiting Scholar Alumni';
+
+                btn.textContent = getFilterButtonLabel(shortName);
+                btn.onclick = () => filterTeam(sub.name, btn);
+                filterContainer.appendChild(btn);
+            });
         });
     }
 }
@@ -110,8 +148,6 @@ function renderTeamStructure(data, filterCategory = 'All') {
     const containerElement = document.createElement('div');
     containerElement.className = 'container';
 
-    let delayCounter = 0;
-
     // 遍历主要类别
     data.categories.forEach(category => {
         // 创建团队容器
@@ -125,7 +161,7 @@ function renderTeamStructure(data, filterCategory = 'All') {
             const subcategoryElement = document.createElement('div');
             subcategoryElement.className = 'team-category';
 
-            subcategoryElement.innerHTML = `<h3>${subcategory.name}</h3>`;
+            subcategoryElement.innerHTML = `<h3>${getSectionTitle(subcategory.name, category.name)}</h3>`;
 
             const membersContainer = document.createElement('div');
             membersContainer.className = 'team-members';
@@ -136,9 +172,7 @@ function renderTeamStructure(data, filterCategory = 'All') {
                 subcategory.members.forEach(member => {
                     const card = createMemberCard(member);
                     membersContainer.appendChild(card);
-
-                    observeCard(card, delayCounter);
-                    delayCounter += 0.08;
+                    card.classList.add('fade-in');
                 });
             } else {
                 // 显示空类别提示
@@ -154,7 +188,6 @@ function renderTeamStructure(data, filterCategory = 'All') {
             containerElement.appendChild(teamContainer);
         }
 
-        delayCounter = 0;
     });
 
     // 添加返回首页按钮
