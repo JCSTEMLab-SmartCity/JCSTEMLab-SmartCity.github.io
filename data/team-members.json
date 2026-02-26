@@ -1797,6 +1797,12 @@
                   "title": "Email"
                 },
                 {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com.hk/citations?user=YopoapwAAAAJ&hl=zh-CN&oi=ao",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                },
+                {
                   "type": "house-user",
                   "url": "https://yihangtao.github.io",
                   "icon": "fas fa-globe",
