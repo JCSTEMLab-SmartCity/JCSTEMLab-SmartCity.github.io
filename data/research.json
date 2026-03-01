@@ -40,8 +40,7 @@
       "Collaborative Perception & Learning": [
         "Multi-agent collaborative perception to overcome occlusion and limited sensing in autonomous driving.",
         "Security challenges in collaborative perception, including adversarial attacks and defense mechanisms.",
-        "Use of large language/vision models for multi-agent reasoning and decision-making.",
-        "Automated fine-tuning of perception models for connected and autonomous vehicles/robots using pseudo labels generated from improved prediction confidence as agents approach objects."
+        "Use of large language/vision models for multi-agent reasoning and decision-making."
       ],
       "RIS-aided Communications and Computing": [
         "Enhancing vehicular data transmission rates using reflecting surfaces and optimizing wireless channels for moving vehicles.",
