@@ -2047,6 +2047,55 @@
               ],
               "detailPage": "data/people/PhD25_GaoJunhui/index.html",
               "last_name": "gaojunhui"
+            },
+            {
+              "id": "ra-louhuanhuan",
+              "title": "Mr. LOU, Huanhuan",
+              "role": [
+                {
+                  "text": "Research Assistant",
+                  "highlighted": true
+                },
+                {
+                  "text": "MEng @ Nankai University, BEng @ Zhengzhou University",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/louhuanhuan.JPG",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:louhh2001@gmail.com",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                }
+              ],
+              "interests": [
+                "Autonomous Unmanned Systems",
+                "Unmanned Aerial Vehicle",
+                "Path Planning",
+                "Safety-Critical Control",
+                "Embodied AI"
+              ],
+              "biography": "Huanhuan Lou received his B.Eng. degree (Hons.) in mechanical engineering from Zhengzhou University, Zhengzhou, China, in 2023 and his M.Eng. degree from Nankai University, Tianjin, China, in 2026. Under the supervision of Prof. Yuguang \"Michael\" Fang, he is pursuing a Doctor of Philosophy in the Department of Computer Science at City University of Hong Kong. His research interests include unmanned aerial vehicle, path planning, safety-critical control, and embodied AI.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science",
+                  "institution": "City University of Hong Kong",
+                  "year": "2026 (expected)"
+                },
+                {
+                  "degree": "MEng in Artificial Intelligence",
+                  "institution": "Nankai University",
+                  "year": "2023 - 2026"
+                },
+                {
+                  "degree": "BEng in Mechanical Engineering",
+                  "institution": "Zhengzhou University",
+                  "year": "2019 - 2023"
+                }
+              ],
+              "last_name": "louhuanhuan"
             }
           ]
         },
