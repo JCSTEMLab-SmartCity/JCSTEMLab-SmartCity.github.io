@@ -33,7 +33,7 @@ social:
 #    link: https://twitter.com/GeorgeCushen
   - icon: google-scholar  # google scholar
     icon_pack: ai
-    link: https://scholar.google.com/citations?user=klYz-acAAAAJ&hl
+    link: https://scholar.google.com/citations?user=5qAe9ZMAAAAJ
   - icon: house-user  # 自己的主页链接
     icon_pack: fas
     link: https://gy65896.github.io/

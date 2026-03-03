@@ -1,0 +1,137 @@
+{
+  "version": "1.0.0",
+  "lastScanned": 1772507012460,
+  "projectRoot": "/Users/sensen/Desktop/01_PhD_Career/04_JC_Lab/JC-Lab-Modernism.io",
+  "techStack": {
+    "languages": [
+      {
+        "name": "JavaScript/TypeScript",
+        "version": null,
+        "confidence": "high",
+        "markers": [
+          "package.json"
+        ]
+      }
+    ],
+    "frameworks": [],
+    "packageManager": "npm",
+    "runtime": null
+  },
+  "build": {
+    "buildCommand": null,
+    "testCommand": null,
+    "lintCommand": null,
+    "devCommand": null,
+    "scripts": {}
+  },
+  "conventions": {
+    "namingStyle": null,
+    "importStyle": null,
+    "testPattern": null,
+    "fileOrganization": null
+  },
+  "structure": {
+    "isMonorepo": false,
+    "workspaces": [],
+    "mainDirectories": [
+      "assets",
+      "docs",
+      "pages",
+      "scripts"
+    ],
+    "gitBranches": null
+  },
+  "customNotes": [],
+  "directoryMap": {
+    "assets": {
+      "path": "assets",
+      "purpose": "Static assets",
+      "fileCount": 8,
+      "lastAccessed": 1772507012442,
+      "keyFiles": [
+        "JC.png",
+        "JCLab-OpenCeremony.mp4",
+        "Multi-View-UAV-Dataset.jpg",
+        "favicon.png",
+        "logo.png"
+      ]
+    },
+    "data": {
+      "path": "data",
+      "purpose": "Data files",
+      "fileCount": 7,
+      "lastAccessed": 1772507012443,
+      "keyFiles": [
+        "news.json",
+        "profile-info.json",
+        "publications.json",
+        "research.json",
+        "seminars.json"
+      ]
+    },
+    "docs": {
+      "path": "docs",
+      "purpose": "Documentation",
+      "fileCount": 2,
+      "lastAccessed": 1772507012452,
+      "keyFiles": [
+        "team-management-guide.md",
+        "team-management-summary.md"
+      ]
+    },
+    "js": {
+      "path": "js",
+      "purpose": null,
+      "fileCount": 2,
+      "lastAccessed": 1772507012453,
+      "keyFiles": [
+        "profile-loader.js",
+        "team-loader.js"
+      ]
+    },
+    "pages": {
+      "path": "pages",
+      "purpose": "Page components",
+      "fileCount": 8,
+      "lastAccessed": 1772507012453,
+      "keyFiles": [
+        "all-news.html",
+        "opening-ceremony.html",
+        "publications.html",
+        "research-details.html",
+        "research-index.html"
+      ]
+    },
+    "scripts": {
+      "path": "scripts",
+      "purpose": "Build/utility scripts",
+      "fileCount": 0,
+      "lastAccessed": 1772507012453,
+      "keyFiles": []
+    },
+    "tools": {
+      "path": "tools",
+      "purpose": null,
+      "fileCount": 1,
+      "lastAccessed": 1772507012454,
+      "keyFiles": [
+        "member-parser.js"
+      ]
+    }
+  },
+  "hotPaths": [
+    {
+      "path": "data/people/PhD25_GuoYu/_index.md",
+      "accessCount": 3,
+      "lastAccessed": 1772507068555,
+      "type": "directory"
+    },
+    {
+      "path": "data/team-members.json",
+      "accessCount": 3,
+      "lastAccessed": 1772507098152,
+      "type": "directory"
+    }
+  ],
+  "userDirectives": []
+}
