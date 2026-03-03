@@ -1,8 +1,0 @@
-{
-  "active": true,
-  "started_at": "2026-03-03T03:04:43.230Z",
-  "original_prompt": "not in this file, in @data/team-members.json ",
-  "session_id": "dc248f32-a450-445e-92a0-b91b44afcefd",
-  "reinforcement_count": 1,
-  "last_checked_at": "2026-03-03T03:05:00.582Z"
-}
