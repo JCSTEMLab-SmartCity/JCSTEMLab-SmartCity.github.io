@@ -41,6 +41,23 @@
     ]
   },
   {
+    "title": "Automated Federated Pipeline for Parameter-Efficient Fine-Tuning of Large Language Models",
+    "authors": "Zihan Fang, Zheng Lin, Zhe Chen, Xianhao Chen, Yue Gao, Yuguang Fang",
+    "venue": "IEEE Transactions on Mobile Computing",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "TMC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://ieeexplore.ieee.org/abstract/document/11320816"
+      }
+    ]
+  },
+  {
     "title": "UAV-enabled Computing Power Networks: Design and Performance Analysis under Energy Constraints",
     "authors": "Yiqin Deng, Zhengru Fang, Senkang Hu, Yanan Ma, Xiaoyu Guo, Haixia Zhang, and Yuguang Fang",
     "venue": "IEEE Transactions on Mobile Computing.",
