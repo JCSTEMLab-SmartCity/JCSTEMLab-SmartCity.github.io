@@ -1349,18 +1349,6 @@
                   "url": "mailto:zihan_f@163.com",
                   "icon": "fas fa-envelope",
                   "title": "Email"
-                },
-                {
-                  "type": "house-user",
-                  "url": "https://fzh1996.github.io",
-                  "icon": "fas fa-globe",
-                  "title": "Homepage"
-                },
-                {
-                  "type": "github",
-                  "url": "https://fzh1996.github.io",
-                  "icon": "fab fa-github",
-                  "title": "GitHub"
                 }
               ],
               "interests": [
@@ -1515,11 +1503,7 @@
                   "highlighted": true
                 },
                 {
-                  "text": "MEng @ Dalian University of Technology",
-                  "highlighted": false
-                },
-                {
-                  "text": "BSc @ Dalian University of Technology",
+                  "text": "MEng & BSc @ Dalian University of Technology",
                   "highlighted": false
                 }
               ],
