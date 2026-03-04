@@ -6574,14 +6574,18 @@
             },
             {
               "id": "pd24-yiqindeng",
-              "title": "Dr. DENG, Yiqin",
+              "title": "Prof. DENG, Yiqin",
               "role": [
                 {
-                  "text": "Postdoctor @ CityUHK",
+                  "text": "Research Assistant Professor @ Lingnan University",
                   "highlighted": true
                 },
                 {
-                  "text": "Postdoctor @ Shandong University",
+                  "text": "Postdoc @ CityUHK",
+                  "highlighted": false
+                },
+                {
+                  "text": "Postdoc @ Shandong University",
                   "highlighted": false
                 },
                 {
