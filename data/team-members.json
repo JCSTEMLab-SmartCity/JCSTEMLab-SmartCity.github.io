@@ -1248,6 +1248,68 @@
                   "year": "2012 - 2016"
                 }
               ]
+            },
+            {
+              "id": "pd26-zhengzhirun",
+              "title": "Dr. ZHENG, Zhirun",
+              "role": [
+                {
+                  "text": "Postdoctoral Fellow @ CityUHK",
+                  "highlighted": true
+                },
+                {
+                  "text": "Postdoctoral Fellow @ Ajou University",
+                  "highlighted": false
+                },
+                {
+                  "text": "PhD @ Xiangtan University",
+                  "highlighted": false
+                },
+                {
+                  "text": "BSc @ Henan University of Science and Technology",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/people/ZhengZhirun.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:zhengzhirun2019@gmail.com",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com.hk/citations?user=oWFvqbQAAAAJ&hl=zh-CN",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                },
+                {
+                  "type": "house-user",
+                  "url": "https://zhengzhirun.github.io/CH/",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
+                }
+              ],
+              "interests": [
+                "Privacy Computing",
+                "Data Privacy",
+                "AI Security and Privacy",
+                "Security and Privacy in Intelligent Systems"
+              ],
+              "biography": "Zhirun Zheng (郑智润) is a Postdoctoral Fellow at the City University of Hong Kong, supervised by Prof. Yuguang Fang. He received his B.S. degree in the School of Mathematics and Statistics, Henan University of Science and Technology, China, in 2017, and received his Ph.D. degree in the School of Mathematics and Computational Science, Xiangtan University, China, in 2024. From December 2022 to December 2023, he visited the Broadband Communications Research (BBCR) Lab, Department of Electrical and Computer Engineering, University of Waterloo, Canada. Since October 2024, he had been a Postdoctoral Fellow in the Department of Artificial Intelligence at Ajou University, South Korea, where he also served as a lecturer from March 2025 until March 2026. Starting in March 2026, he has been a Postdoctoral Fellow in the Department of Computer Science, City University of Hong Kong, China. His research interests are in the areas of security and privacy in Crowdsensing systems, artificial intelligence, and mobile networks. Dr. Zheng serves as a Guest Editor for Electronics and as a TPC member of several conferences, including GLOBECOM and WCSP.",
+              "education": [
+                {
+                  "degree": "PhD in School of Mathematics and Computational Science",
+                  "institution": "Xiangtan University",
+                  "year": "2024"
+                },
+                {
+                  "degree": "BSc in School of Mathematics and Statistics",
+                  "institution": "Henan University of Science and Technology",
+                  "year": "2017"
+                }
+              ]
             }
 
           ]
