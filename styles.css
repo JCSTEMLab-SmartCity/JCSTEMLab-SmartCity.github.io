@@ -1783,24 +1783,19 @@ footer {
 
 @media (max-width: 768px) {
     .seminar-item {
-        flex-wrap: wrap;
+        flex-direction: column;
     }
 
     .seminars-list .seminar-date {
-        margin-right: 0;
-        margin-bottom: 0.5rem;
-        width: 100%;
+        width: auto;
         min-width: unset;
-        font-size: 0.95rem;
+        margin-right: 0;
+        margin-bottom: 0.4rem;
+        font-size: 0.9rem;
     }
 
     .seminar-photo {
-        width: 100px;
-        margin-left: 12px;
-    }
-
-    .seminar-photo img {
-        height: 70px;
+        display: none;
     }
 
     .seminars-list .seminar-content h3 {
@@ -1813,29 +1808,9 @@ footer {
 }
 
 @media (max-width: 576px) {
-    .seminar-item {
-        padding: 0.4rem;
-        padding-bottom: 0.9rem;
-    }
-
-    .seminars-list .seminar-date {
-        font-size: 0.88rem;
-        margin-bottom: 0.4rem;
-    }
-
-    .seminar-photo {
-        width: 80px;
-        margin-left: 10px;
-        margin-top: 0;
-    }
-
-    .seminar-photo img {
-        height: 60px;
-    }
-
     .seminars-list .seminar-content h3 {
         font-size: 0.88rem;
-        margin-bottom: 0.2rem;
+        line-height: 1.35;
     }
 
     .seminars-list .speaker-name {
@@ -1843,12 +1818,8 @@ footer {
     }
 
     .seminars-list .seminar-description {
-        font-size: 0.8rem;
+        font-size: 0.82rem;
         line-height: 1.45;
-        display: -webkit-box;
-        -webkit-line-clamp: 2;
-        -webkit-box-orient: vertical;
-        overflow: hidden;
     }
 }
 
