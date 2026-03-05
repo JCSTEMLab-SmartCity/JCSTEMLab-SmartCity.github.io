@@ -436,7 +436,8 @@ function generateGalleryHTML(images) {
     const totalWidth = images.length * imageWidth;
     const gaps = images.length - 1; // Number of gaps between images
 
-    let galleryHtml = '<div class="news-gallery">';
+    const galleryClass = images.length === 1 ? 'news-gallery single' : 'news-gallery';
+    let galleryHtml = `<div class="${galleryClass}">`;
 
     images.forEach((imgSrc, index) => {
         // Calculate z-index: first image has highest z-index, last image has lowest

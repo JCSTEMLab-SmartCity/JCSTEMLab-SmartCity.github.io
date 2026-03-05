@@ -1940,6 +1940,11 @@ footer {
     gap: 0;
 }
 
+.news-gallery.single {
+    display: block;
+    margin: 20px 0;
+}
+
 /* 单张图片卡片 */
 .news-gallery-item {
     display: block;
@@ -1949,6 +1954,10 @@ footer {
     /* margin-left will be set dynamically via inline style in JavaScript */
     /* Default fallback for browsers that don't support calc */
     margin-left: -60px;
+}
+
+.news-gallery.single .news-gallery-item {
+    margin-left: 0 !important;
 }
 
 /* 第一张不需要左边距 */
@@ -1970,6 +1979,25 @@ footer {
     transition: all 0.4s cubic-bezier(0.23, 1, 0.32, 1);
     background: white;
     position: relative;
+}
+
+.news-gallery.single .news-gallery-img {
+    width: min(100%, 720px);
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    transform: none !important;
+}
+
+.news-gallery.single .news-gallery-item:hover .news-gallery-img {
+    transform: none !important;
+    box-shadow:
+        0 8px 20px rgba(0, 0, 0, 0.15),
+        0 2px 6px rgba(0, 0, 0, 0.1),
+        inset 0 1px 0 rgba(255, 255, 255, 0.9);
 }
 
 /* 添加照片的"纸张"效果 */
