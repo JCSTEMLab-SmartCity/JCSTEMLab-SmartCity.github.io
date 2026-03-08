@@ -1362,11 +1362,11 @@
                 }
               ],
               "interests": [
-                "Collaborative Perception",
-                "Mobile/Edge Computing",
-                "Age of Information"
+                "Information Bottleneck Theory",
+                "Resource-Constrained Inference",
+                "Multimodal Data Integration"
               ],
-              "biography": "\n\nZhengru Fang received his B.S. degree (*Hons.*) in electronics and information engineering from the Huazhong University of Science and Technology, Wuhan, China, in 2019 and received his M.S. degree (*Hons.*) from Tsinghua University, Beijing, China, in 2022. Under the supervision of Prof. Yuguang \"Michael\" Fang, he is pursuing Doctor of Philosophy in the Department of Computer Science at City University of Hong Kong, sponsored by Hong Kong PhD Fellowship Scheme (HKPFS). His research interests include collaborative perception, V2X, age of information, and mobile edge computing. He has been serving as a Reviewer for *IEEE JSAC*, *IEEE IoTJ*, *IEEE TVT*, *IEEE WCL*, *IEEE CL*, *IEEE VTM*, etc.",
+              "biography": "\n\nZhengru Fang received his B.S. degree (*Hons.*) in electronics and information engineering from the Huazhong University of Science and Technology, Wuhan, China, in 2019 and his M.S. degree (*Hons.*) from Tsinghua University, Beijing, China, in 2022. He is pursuing his Ph.D. in the Department of Computer Science at City University of Hong Kong, supervised by Prof. Yuguang \"Michael\" Fang, supported by the Hong Kong PhD Fellowship Scheme (HKPFS). His research focuses on theoretical analysis and resource allocation optimization, with emphasis on information bottleneck theory, resource-constrained inference, and multimodal data integration. He has been serving as a reviewer for *IEEE JSAC*, *IEEE TWC*, *IEEE TMC*, *ACM Computing Surveys*, among others.",
               "education": [
                 {
                   "degree": "PhD in Computer Science",
