@@ -1,5 +1,16 @@
 [
   {
+    "date": "Mar. 12, 2026",
+    "title": "China Mobile Hong Kong Visited the Lab for Collaboration Discussion",
+    "content": "Representatives from China Mobile Hong Kong visited the JC STEM Lab of Smart City to discuss potential collaboration opportunities.",
+    "images": [
+      "/assets/news-assets/2026-3-12-ChinaMobile/DSC_0002.JPG",
+      "/assets/news-assets/2026-3-12-ChinaMobile/DSC_0032.JPG",
+      "/assets/news-assets/2026-3-12-ChinaMobile/DSC_0046.JPG",
+      "/assets/news-assets/2026-3-12-ChinaMobile/DSC_0047.JPG"
+    ]
+  },
+  {
     "date": "Jan. 2026",
     "title": "Yanmin Joined Texas A&M University as Associate Professor",
     "content": "Congratulations to <b>Prof. Yanmin Gong</b>, our former lab member, who has joined the <b>School of Engineering Medicine</b> at <b>Texas A&M University</b> as an <b>Associate Professor</b>!!!"
@@ -9,7 +20,7 @@
     "title": "<a href=\"https://www.mittrchina.com/news/detail/15843\">MIT Technology Review Report</a> (<span style=\"font-family: STKaiti;\">麻省理工科技评论</span>)",
     "content": "PhD student <b>Zhengru Fang</b> and his team at City University of Hong Kong had multiple AI agents explore a virtual maze together, giving them only one extremely simple goal—to learn to predict what their companions would see and where they would go in the next second. The results showed that these agents not only learned to cooperate efficiently but also spontaneously formed 'map cells' similar to those in animal brains within their 'minds,' and even developed a secret language only they could understand.<br>Paper: <a href=\"https://fangzr.github.io/SSM-PC/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">Shared Spatial Memory Through Predictive Coding</a>",
     "images": [
-        "/assets/news-image/mit.png"
+        "/assets/news-assets/2026-1-29-MITTechnologyReviewReport/mit.png"
     ]
   },
   {
@@ -17,7 +28,7 @@
     "title": "<a href=\"https://www.cityu.edu.hk/media/news/2025/12/23/future-global-leaders-programme\">Future Global Leaders Programme Featured by CityUHK</a>",
     "content": "Congratulations to <b>Mr. Alex Cheng Chit-yuen</b>, PhD student of our lab, on being featured in CityUHK's <b>Future Global Leaders Programme</b> news report. This programme develops global vision, leadership capability, and interdisciplinary perspectives for future leaders. We are proud of Alex's achievement and look forward to his continued impact.",
     "images": [
-        "/assets/news-image/alex-future-global.png"
+        "/assets/news-assets/2025-12-23-FutureGlobalLeadersProgramme/alex-future-global.png"
     ]
   },
   {
@@ -25,8 +36,8 @@
     "title": "Best Paper Award at GLOBECOM'25",
     "content": "Our paper <b>\"UAV-enabled Computing Power Networks: Task Completion Probability Analysis\"</b> has received the <b>Best Paper Award</b> at <b>IEEE GLOBECOM'25</b>!!!",
     "images": [
-        "/assets/news_best_paper_award/certificate.png",
-        "/assets/news_best_paper_award/photos.JPG"
+        "/assets/news-assets/2025-12-9-GLOBECOM25BestPaperAward/certificate.png",
+        "/assets/news-assets/2025-12-9-GLOBECOM25BestPaperAward/photos.JPG"
     ]
   },
   {
@@ -34,10 +45,10 @@
     "title": "Thanksgiving Gathering",
     "content": "Our lab came together for a warm Thanksgiving gathering. Everyone was very happy and enjoyed the celebration.",
     "images": [
-        "/assets/thanksgiving-2025/group.jpg",
-        "/assets/thanksgiving-2025/subgroup1.jpg",
-        "/assets/thanksgiving-2025/subgroup2.jpg",
-        "/assets/thanksgiving-2025/subgroup3.jpg"
+        "/assets/news-assets/2025-11-27-ThanksgivingGathering/group.jpg",
+        "/assets/news-assets/2025-11-27-ThanksgivingGathering/subgroup1.jpg",
+        "/assets/news-assets/2025-11-27-ThanksgivingGathering/subgroup2.jpg",
+        "/assets/news-assets/2025-11-27-ThanksgivingGathering/subgroup3.jpg"
     ]
   },
   {
@@ -50,12 +61,12 @@
     "title": "Visit from Fukui Prefectural Koshi High School, Japan",
     "content": "The JC STEM Lab of Smart City was pleased to welcome students and teachers from <b>Fukui Prefectural Koshi High School, Japan</b>, for a visit on 24 October. The students toured our facilities and saw live demonstrations of our smart city research, including IoT sensors and data analytics platforms. The visit fostered a great exchange of ideas, and we hope it inspired the students in their future STEM pursuits. We thank our guests for their lively engagement and look forward to more such collaborations.",
     "images": [
-        "/assets/news-labvisiting-japan-highschool/67a8abedb912e709e6c80b85b90c3313.JPG",
-        "/assets/news-labvisiting-japan-highschool/1b29be16cd79f997560f638b1d18dbe9.JPG",
-        "/assets/news-labvisiting-japan-highschool/ccf390e73fe2f03a59abf5452ca8890a.JPG",
-        "/assets/news-labvisiting-japan-highschool/Weixin Image_20251129163301_56_187.jpg",
-        "/assets/news-labvisiting-japan-highschool/DSC02704.JPG",
-        "/assets/news-labvisiting-japan-highschool/DSC02654.JPG"
+        "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/67a8abedb912e709e6c80b85b90c3313.JPG",
+        "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/1b29be16cd79f997560f638b1d18dbe9.JPG",
+        "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/ccf390e73fe2f03a59abf5452ca8890a.JPG",
+        "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/Weixin Image_20251129163301_56_187.jpg",
+        "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/DSC02704.JPG",
+        "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/DSC02654.JPG"
     ]
   },
   {
@@ -83,7 +94,7 @@
     "title": "<a href=\"https://www.cityu.edu.hk/media/news/2025/07/21/cityuhk-establishes-five-jc-stem-labs-foster-interdisciplinary-research\">JC STEM Labs Inauguration Ceremony</a>",
     "content": "Officiating at the JC STEM Labs' inauguration ceremony on 3 July were Professor Lee Chun-sing, Provost and Deputy President at CityUHK; Ms Elsie Tsang, Executive Manager of Charities (Talent and Sector Development) at The Hong Kong Jockey Club (HKJC), Professor Li Wen Jung, Vice-President (Talent and International Strategy) and Professor Chan Chi-hou, Vice-President (Community Engagement) at CityUHK. They were joined by five CityUHK Global STEM Professors — Professor Lee Duu-Jong, Professor Wang Xin, Professor Ren Yang, Professor Takashi Hibiki and <b>Professor Fang Yuguang</b> — the directors of the JC STEM Labs. Check the <a href=\"https://www.cityu.edu.hk/media/news/2025/07/21/cityuhk-establishes-five-jc-stem-labs-foster-interdisciplinary-research\">link</a> and <a href=\"pages/opening-ceremony.html\">video</a> for more details.",
     "images": [
-        "/assets/news-image/Inauguration-Ceremony.png"
+        "/assets/news-assets/2025-7-8-JCSTEMLabsInaugurationCeremony/Inauguration-Ceremony.png"
     ]
   },
   {
