@@ -225,7 +225,7 @@ function createMemberCard(member) {
     // 姓名和链接
     const nameElement = document.createElement('h4');
     const processedTitle = processChinese(member.title);
-    nameElement.innerHTML = `<a href="../data/people/profile.html?id=${member.id}">${processedTitle}</a>`;
+    nameElement.innerHTML = `<a href="../data/profile/profile.html?id=${member.id}">${processedTitle}</a>`;
     contentContainer.appendChild(nameElement);
 
     // 角色信息
