@@ -325,6 +325,12 @@
                   "url": "https://scholar.google.com/citations?user=EdRi_MEAAAAJ&hl=zh-CN",
                   "icon": "fas fa-graduation-cap",
                   "title": "Google Scholar"
+                },
+                {
+                  "type": "house-user",
+                  "url": "https://scholars.ln.edu.hk/en/persons/yiqin-deng/",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
                 }
               ],
               "interests": [
@@ -2216,6 +2222,12 @@
                   "url": "https://scholar.google.com/citations?user=EdRi_MEAAAAJ&hl=zh-CN",
                   "icon": "fas fa-graduation-cap",
                   "title": "Google Scholar"
+                },
+                {
+                  "type": "house-user",
+                  "url": "https://scholars.ln.edu.hk/en/persons/yiqin-deng/",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
                 }
               ],
               "interests": [
@@ -6621,7 +6633,7 @@
                 },
                 {
                   "type": "house-user",
-                  "url": "http://www.icon.sdu.edu.cn/info/1055/1733.htm",
+                  "url": "https://scholars.ln.edu.hk/en/persons/yiqin-deng/",
                   "icon": "fas fa-globe",
                   "title": "Homepage"
                 }
