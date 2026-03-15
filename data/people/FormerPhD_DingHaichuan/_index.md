@@ -31,9 +31,9 @@ social:
   # - icon: twitter # Twitter
   #   icon_pack: fab  
   #   link: https://twitter.com/GeorgeCushen
-  # - icon: google-scholar  # google scholar
-  #   icon_pack: ai
-  #   link: https://scholar.google.com/citations?user=Umj-GRAAAAAJ&hl=en
+  - icon: google-scholar  # google scholar
+    icon_pack: ai
+    link: https://scholar.google.com/citations?hl=en&user=N10hpYIAAAAJ
   - icon: house-user  # 自己的主页链接
     icon_pack: fas
     link: https://cst.bit.edu.cn/szdw/jsml/bssds/1f59f14cc937426290f6a6dde2aa8476.htm
@@ -82,4 +82,3 @@ user_groups:
 # Biography
 <!-- <p style="text-align:justify">  -->
 I am currently a professor with the School of Cyberspace Science and Technology, Beijing Institute of Technology, Beijing, China. I received the B.S. and M.S. degrees in electrical engineering from the Beijing Institute of Technology, Beijing, China, in 2011 and 2014, and the Ph.D. degree in electrical and computer engineering from the University of Florida, Gainesville, FL, USA, in 2018.
-

@@ -2873,6 +2873,12 @@
                   "title": "Email"
                 },
                 {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?hl=en&user=N10hpYIAAAAJ",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                },
+                {
                   "type": "house-user",
                   "url": "https://cst.bit.edu.cn/szdw/jsml/bssds/1f59f14cc937426290f6a6dde2aa8476.htm",
                   "icon": "fas fa-globe",
