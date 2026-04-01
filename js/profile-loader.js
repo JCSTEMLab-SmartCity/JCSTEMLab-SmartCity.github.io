@@ -122,6 +122,18 @@ function renderMemberProfile(member) {
             </div>
         `;
     }
+
+    // 职业经历
+    if (member.experience && member.experience.length > 0) {
+        html += `
+            <div class="profile-section">
+                <h2 class="section-title">Experience</h2>
+                <div class="experience-list">
+                    ${renderExperience(member.experience)}
+                </div>
+            </div>
+        `;
+    }
     
     // 教育经历
     if (member.education && member.education.length > 0) {
@@ -208,6 +220,33 @@ function renderSocialLinks(links) {
     
     html += '</div>';
     
+    return html;
+}
+
+/**
+ * 渲染职业经历
+ * @param {Array} experience - 职业经历
+ * @returns {string} HTML字符串
+ */
+function renderExperience(experience) {
+    let html = '';
+
+    experience.forEach(item => {
+        const titleDisplay = containsChinese(item.title) ? `<span class="chinese-text">${item.title}</span>` : item.title;
+        const institutionDisplay = containsChinese(item.institution) ? `<span class="chinese-text">${item.institution}</span>` : item.institution;
+        const periodDisplay = containsChinese(item.period) ? `<span class="chinese-text">${item.period}</span>` : item.period;
+        const descriptionDisplay = item.description ? `<p>${processChinese(item.description)}</p>` : '';
+
+        html += `
+            <div class="education-item">
+                <h3>${titleDisplay}</h3>
+                <p>${institutionDisplay}</p>
+                <p>${periodDisplay}</p>
+                ${descriptionDisplay}
+            </div>
+        `;
+    });
+
     return html;
 }
 

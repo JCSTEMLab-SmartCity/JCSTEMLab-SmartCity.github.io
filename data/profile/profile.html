@@ -132,6 +132,7 @@
             box-shadow: 0 5px 15px rgba(189, 56, 75, 0.2);
         }
         
+        .timeline-item,
         .education-item {
             margin-bottom: 2rem;
             padding-left: 25px;
@@ -139,6 +140,7 @@
             position: relative;
         }
         
+        .timeline-item::before,
         .education-item::before {
             content: '';
             position: absolute;
@@ -147,6 +149,22 @@
             width: 4px;
             height: 30px;
             background: var(--primary-color);
+        }
+
+        .timeline-meta {
+            color: #666;
+            font-weight: 500;
+            margin-bottom: 0.4rem;
+        }
+
+        .timeline-item h3,
+        .education-item h3 {
+            margin-bottom: 0.4rem;
+        }
+
+        .timeline-item p,
+        .education-item p {
+            margin-bottom: 0.4rem;
         }
 
         .text-center { text-align: center; }

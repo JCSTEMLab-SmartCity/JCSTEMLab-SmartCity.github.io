@@ -106,6 +106,13 @@
                 "Vehicular Networking",
                 "Incentive Design for Wireless Networks"
               ],
+              "experience": [
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Electrical and Electronic Engineering, The University of Hong Kong",
+                  "period": "Mar. 2022 - Present"
+                }
+              ],
               "biography": "\n\n\n\nI am an assistant professor at the [Department of Electrical and Electronic Engineering, University of Hong Kong](https://www.eee.hku.hk/), leading the **W**ireless **I**nformation & Inte**ll**igence (**WILL**) lab. I obtained my Ph.D. degree in electrical and computer engineering from the University of Florida in 2022, advised by [Prof. Yuguang Fang](https://www.cs.cityu.edu.hk/~yugufang/), and my B.Eng. degree from Southwest Jiaotong University, Chengdu, China, in 2017. I received 2022 ECE graduate excellence award for research from the University of Florida.\n\n**If you are interested in working with me as a Ph.D. student/research assistant, please feel free to drop me an email including your CV, transcript, and sample publications (if any)**. Due to the volume of email inquiries, I may only be able to contact shortlisted candidates (usually within one week). Thanks for your understanding.",
               "education": [
                 {
@@ -274,6 +281,23 @@
                 "Edge computing",
                 "Signal processing and machine learning"
               ],
+              "experience": [
+                {
+                  "title": "Professor",
+                  "institution": "School of Cyberspace Science and Technology, Beijing Institute of Technology",
+                  "period": "Nov. 2022 - Present"
+                },
+                {
+                  "title": "Senior Research Engineer",
+                  "institution": "Samsung Research America",
+                  "period": "Mar. 2021 - Nov. 2022"
+                },
+                {
+                  "title": "Postdoctoral Researcher",
+                  "institution": "University of Michigan",
+                  "period": "Nov. 2018 - Mar. 2021"
+                }
+              ],
               "biography": "\n\n\nI am currently a professor with the School of Cyberspace Science and Technology, Beijing Institute of Technology, Beijing, China. I received the B.S. and M.S. degrees in electrical engineering from the Beijing Institute of Technology, Beijing, China, in 2011 and 2014, and the Ph.D. degree in electrical and computer engineering from the University of Florida, Gainesville, FL, USA, in 2018.",
               "education": [
                 {
@@ -332,6 +356,23 @@
                 "Edge/Fog computing",
                 "Internet of Vehicles",
                 "Resource Management"
+              ],
+              "experience": [
+                {
+                  "title": "Research Assistant Professor",
+                  "institution": "School of Data Science, Lingnan University",
+                  "period": "Oct. 2025 - Present"
+                },
+                {
+                  "title": "Postdoctoral Fellow",
+                  "institution": "City University of Hong Kong",
+                  "period": "Aug. 2024 - Dec. 2025"
+                },
+                {
+                  "title": "Postdoctoral Researcher",
+                  "institution": "Shandong University",
+                  "period": "2022 - 2024"
+                }
               ],
               "biography": "Yiqin Deng is currently a Research Assistant Professor in the School of Data Science at Lingnan University, Hong Kong. Previously, she was a Postdoctoral Fellow at City University of Hong Kong and a Postdoctoral Researcher at Shandong University, Jinan, China. She received her M.S. degree in software engineering and PhD degree in computer science and technology from Central South University, Changsha, China, in 2017 and 2022, respectively. She was a visiting researcher at the University of Florida, Gainesville, from 2019 to 2021. Her research interests include edge/fog computing, the Internet of Vehicles, and resource management.",
               "education": [
@@ -562,6 +603,18 @@
                 "Intelligent Wireless Networks",
                 "Wireless Sensing and Computing",
                 "Novel Wireless Networking and Communication Technologies"
+              ],
+              "experience": [
+                {
+                  "title": "Professor",
+                  "institution": "School of Electronics and Communication Engineering, Sun Yat-sen University",
+                  "period": "Oct. 2018 - Present"
+                },
+                {
+                  "title": "Assistant Researcher / Associate Researcher / Researcher",
+                  "institution": "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences",
+                  "period": "2008 - 2018"
+                }
               ],
               "biography": "\n\n\n\nDr. Xiaoxia Huang received her Bachelor's and Master's degrees in Electronic and Information Engineering from Huazhong University of Science and Technology in 2000 and 2002, respectively. She graduated from the University of Florida in 2007 with a Ph.D. in Electrical and Computer Engineering. Since 2008, he has worked as an assistant researcher, associate researcher and researcher in Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences. In 2018, she joined the School of Electronics and Communication Engineering at Sun Yat-sen University. She has co-authored two academic books and published over 70 scholarly papers in international journals and conferences on wireless networks and communications, with citations exceeding a thousand (Google Scholar). Since 2013, she has been an editorial board member of the IEEE Transactions on Vehicular Technology and served on the Technical Program Committee for more than ten international conferences, including the CCF A-category conference INFOCOM from 2012 to 2020 and C-category conferences such as IEEE GLOBECOM from 2011 to 2019, ICC from 2011 to 2018, WCNC from 2011 to 2014, and WASA from 2013 to 2017. She has been recognized as a leading young talent in the Guangdong Special Support Program for Technological Innovation and a member of the Youth Innovation Promotion Association, Chinese Academy of Sciences.",
               "education": [
@@ -2152,19 +2205,11 @@
               "title": "Prof. DENG, Yiqin",
               "role": [
                 {
-                  "text": "Research Assistant Professor @ Lingnan University",
+                  "text": "Research Assistant Professor",
                   "highlighted": true
                 },
                 {
-                  "text": "Postdoc @ CityUHK (2024.8 - 2025.12)",
-                  "highlighted": false
-                },
-                {
-                  "text": "Postdoc @ Shandong University",
-                  "highlighted": false
-                },
-                {
-                  "text": "PhD & MSc @ Central South University",
+                  "text": "School of Data Science, Lingnan University",
                   "highlighted": false
                 }
               ],
@@ -2194,6 +2239,23 @@
                 "Internet of Vehicles",
                 "Resource Management"
               ],
+              "experience": [
+                {
+                  "title": "Research Assistant Professor",
+                  "institution": "School of Data Science, Lingnan University",
+                  "period": "Oct. 2025 - Present"
+                },
+                {
+                  "title": "Postdoctoral Fellow",
+                  "institution": "City University of Hong Kong",
+                  "period": "Aug. 2024 - Dec. 2025"
+                },
+                {
+                  "title": "Postdoctoral Researcher",
+                  "institution": "Shandong University",
+                  "period": "2022 - 2024"
+                }
+              ],
               "biography": "Yiqin Deng is currently a Research Assistant Professor in the School of Data Science at Lingnan University, Hong Kong. Previously, she was a Postdoctoral Fellow at City University of Hong Kong and a Postdoctoral Researcher at Shandong University, Jinan, China. She received her M.S. degree in software engineering and PhD degree in computer science and technology from Central South University, Changsha, China, in 2017 and 2022, respectively. She was a visiting researcher at the University of Florida, Gainesville, from 2019 to 2021. Her research interests include edge/fog computing, the Internet of Vehicles, and resource management.",
               "education": [
                 {
@@ -2214,15 +2276,11 @@
               "title": "Prof. XU, Guowen",
               "role": [
                 {
-                  "text": "Professor (海外優青) @ UESTC",
+                  "text": "Professor",
                   "highlighted": true
                 },
                 {
-                  "text": "Postdoc @ CityUHK (2023.5 - 2024.8) ",
-                  "highlighted": false
-                },
-                {
-                  "text": "PhD & MSc @ University of Electronic Science and Technology of China",
+                  "text": "School of Computer Science and Engineering, University of Electronic Science and Technology of China",
                   "highlighted": false
                 }
               ],
@@ -2250,6 +2308,23 @@
               "interests": [
                 "Applied Cryptography",
                 "AI Security and Privacy"
+              ],
+              "experience": [
+                {
+                  "title": "Professor",
+                  "institution": "School of Computer Science and Engineering, University of Electronic Science and Technology of China",
+                  "period": "Jul. 2024 - Present"
+                },
+                {
+                  "title": "Postdoctoral Fellow",
+                  "institution": "City University of Hong Kong",
+                  "period": "May 2023 - Aug. 2024"
+                },
+                {
+                  "title": "Research Fellow",
+                  "institution": "Nanyang Technological University",
+                  "period": "2021 - 2023"
+                }
               ],
               "biography": "\n\n\n\nProf. Guowen Xu is currently a full professor with the School of Computer Science and Engineering, University of Electronic Science and Technology of China, Chengdu, China. Prior to joining UESTC, I was a Postdoc research fellow at City University of Hong Kong (from 2023.5 to 2024.8) and a Research Fellow at Nanyang Technolgoical University (from 2021 to 2023). His current research interests focus on AI Security and Privacy.",
               "education": [
@@ -2428,11 +2503,11 @@
               "title": "Dr. WEN, Xiaojing",
               "role": [
                 {
-                  "text": "Assistant Researcher @ SJTU",
+                  "text": "Assistant Researcher",
                   "highlighted": true
                 },
                 {
-                  "text": "Visiting Student @ CityUHK (2023.3 - 2024.3)",
+                  "text": "Shanghai Jiao Tong University",
                   "highlighted": false
                 }
               ],
@@ -2458,7 +2533,14 @@
                 "Network Slicing",
                 "Edge-Assisted Industrial IoT Systems"
               ],
-              "biography": "\n\n\nXiaojing Wen received the B.S. degree at the Department of Measurement and Control Technology and Instruments, Jilin University, Changchun, China, in 2018. She is currently pursuing the Ph.D. degree in the school of Electronic Information and Electronical Engineering, Shanghai Jiao Tong University, Shanghai, China. Additionally, she is conducting a visiting Ph.D. student program at the Department of Computer Science, City University of Hong Kong. Her current research focuses the co-design of sensing-communication-computing, edge-assisted IIoT system and industrial network slicing. \n\n**Updates:** Dr. Wen joined Shanghai Jiao Tong University as a Assistant Researcher! (Dec. 2024)",
+              "experience": [
+                {
+                  "title": "Assistant Researcher",
+                  "institution": "Shanghai Jiao Tong University",
+                  "period": "Dec. 2024 - Present"
+                }
+              ],
+              "biography": "\n\n\nXiaojing Wen is an assistant researcher at Shanghai Jiao Tong University. She received the B.S. degree in measurement and control technology and instruments from Jilin University, Changchun, China, in 2018, and was a visiting Ph.D. student at the Department of Computer Science, City University of Hong Kong, from 2023 to 2024. Her research focuses on the co-design of sensing, communication, and computing, edge-assisted industrial IoT systems, and industrial network slicing.",
               "education": [
                 {
                   "degree": "Visiting PhD student in Computer Science",
@@ -2493,15 +2575,11 @@
               "title": "Dr. ZHU, Guangyu",
               "role": [
                 {
-                  "text": "Researcher @ Huawei 2012 Lab, Beijing",
+                  "text": "Researcher",
                   "highlighted": true
                 },
                 {
-                  "text": "PhD Student @ University of Florida",
-                  "highlighted": false
-                },
-                {
-                  "text": "BSc @ Xidian University",
+                  "text": "Huawei 2012 Lab, Beijing",
                   "highlighted": false
                 }
               ],
@@ -2519,7 +2597,14 @@
                 "Wireless Networks",
                 "Edge Computing"
               ],
-              "biography": "\n\n\nGuangyu Zhu received his B.Eng. degree from Xidian University, Xi'an, China, in 2019. Since 2019, he has been pursuing a Ph.D degree with the Department of Electrical and Computer Engineering, University of Florida, Gainesville, supervised by Prof. FANG. Yuguang. His research interests include machine learning, wireless networks, and edge computing",
+              "experience": [
+                {
+                  "title": "Researcher",
+                  "institution": "Huawei 2012 Lab, Beijing",
+                  "period": "Jul. 2025 - Present"
+                }
+              ],
+              "biography": "\n\n\nGuangyu Zhu is a researcher at Huawei 2012 Lab in Beijing. He received his B.Eng. degree from Xidian University, Xi'an, China, in 2019 and his Ph.D. degree from the Department of Electrical and Computer Engineering, University of Florida, in 2025, supervised by Prof. Yuguang Fang. His research interests include machine learning, wireless networks, and edge computing.",
               "education": [
                 {
                   "degree": "PhD in Electrical and Computer Engineering",
@@ -2686,6 +2771,13 @@
                 "Vehicular Networking",
                 "Incentive Design for Wireless Networks"
               ],
+              "experience": [
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Electrical and Electronic Engineering, The University of Hong Kong",
+                  "period": "Mar. 2022 - Present"
+                }
+              ],
               "biography": "\n\n\n\nI am an assistant professor at the [Department of Electrical and Electronic Engineering, University of Hong Kong](https://www.eee.hku.hk/), leading the **W**ireless **I**nformation & Inte**ll**igence (**WILL**) lab. I obtained my Ph.D. degree in electrical and computer engineering from the University of Florida in 2022, advised by [Prof. Yuguang Fang](https://www.cs.cityu.edu.hk/~yugufang/), and my B.Eng. degree from Southwest Jiaotong University, Chengdu, China, in 2017. I received 2022 ECE graduate excellence award for research from the University of Florida.\n\n**If you are interested in working with me as a Ph.D. student/research assistant, please feel free to drop me an email including your CV, transcript, and sample publications (if any)**. Due to the volume of email inquiries, I may only be able to contact shortlisted candidates (usually within one week). Thanks for your understanding.",
               "education": [
                 {
@@ -2748,6 +2840,13 @@
                 "Internet-of-Things (IoT)",
                 "Cyber-Physical Systems (CPS)"
               ],
+              "experience": [
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Electrical and Computer Engineering, Michigan Technological University",
+                  "period": "Apr. 2020 - Present"
+                }
+              ],
               "biography": "\n\n\n\nHi, I am Lan. I am an assistant professor at the Department of ECE, and an affiliated assistant professor at the Department of CS and BME, Michigan Technological University (MTU). My research interest spans the area of wireless communications, distributed machine learning, cybersecurity, Internet-of-Things (IoT), and cyber-physical systems (CPS). I received my Ph.D. degree from the University of Florida (UF) under the supervision of Dr. Yuguang Fang.",
               "education": [
                 {
@@ -2797,6 +2896,13 @@
                 }
               ],
               "interests": [],
+              "experience": [
+                {
+                  "title": "Lecturer",
+                  "institution": "Department of IoT, Nanjing University of Information Science and Technology",
+                  "period": "Oct. 2019 - Present"
+                }
+              ],
               "biography": "\n\n\nDr. Pang Yawei is a lecturer at the School of Computer and Software at Nanjing University of Information Science and Technology. He received his PhD in Electrical and Computer Engineering from the University of Florida in August 2019 under Professor Yuguang Fang. His research interests include intelligent communication and network, communication big data processing and application, communication network resource management and optimization, machine learning, etc",
               "education": [
                 {
@@ -2847,6 +2953,23 @@
                 "Stochastic optimization and cross-layer design",
                 "Edge computing",
                 "Signal processing and machine learning"
+              ],
+              "experience": [
+                {
+                  "title": "Professor",
+                  "institution": "School of Cyberspace Science and Technology, Beijing Institute of Technology",
+                  "period": "Nov. 2022 - Present"
+                },
+                {
+                  "title": "Senior Research Engineer",
+                  "institution": "Samsung Research America",
+                  "period": "Mar. 2021 - Nov. 2022"
+                },
+                {
+                  "title": "Postdoctoral Researcher",
+                  "institution": "University of Michigan",
+                  "period": "Nov. 2018 - Mar. 2021"
+                }
               ],
               "biography": "\n\n\nI am currently a professor with the School of Cyberspace Science and Technology, Beijing Institute of Technology, Beijing, China. I received the B.S. and M.S. degrees in electrical engineering from the Beijing Institute of Technology, Beijing, China, in 2011 and 2014, and the Ph.D. degree in electrical and computer engineering from the University of Florida, Gainesville, FL, USA, in 2018.",
               "education": [
@@ -2913,7 +3036,24 @@
                 "Data Privacy",
                 "Communication & Networking"
               ],
-              "biography": "\n\n\nI am an assistant professor with the CS Department at NC State University. I received my Ph.D. degree from the University of Florida in 2018 and B.Eng. degree from the University of Electronic Science and Technology of China in 2013.\n\nMy lab's research interest is to tackle the security, data privacy, and communication & networking challenges in future communication systems such as 5G (beyond) and quantum internet. The applied methodology includes theories (e.g., optimization, control, and statistics) and experiments (e.g., reverse-engineering, system implementation, and hardware-software co-design). Our mission is to build more secure and functional communication systems for the future connected world.",
+              "experience": [
+                {
+                  "title": "Associate Professor",
+                  "institution": "Department of Computer Science, North Carolina State University",
+                  "period": "Mar. 2025 - Present"
+                },
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Computer Science, North Carolina State University",
+                  "period": "Jun. 2022 - Mar. 2025"
+                },
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Electrical and Computer Engineering, University of Alabama in Huntsville",
+                  "period": "Mar. 2018 - Jun. 2022"
+                }
+              ],
+              "biography": "\n\n\nI am an associate professor with the Department of Computer Science at North Carolina State University. I received my Ph.D. degree from the University of Florida in 2018 and my B.Eng. degree from the University of Electronic Science and Technology of China in 2013.\n\nMy lab's research interests focus on security, data privacy, and communication and networking challenges in future communication systems such as beyond-5G and quantum internet. The applied methodology includes theory, reverse engineering, system implementation, and hardware-software co-design.",
               "education": [
                 {
                   "degree": "PhD in Electrical and Computer Engineering",
@@ -2937,7 +3077,7 @@
                   "highlighted": true
                 },
                 {
-                  "text": "Department of Electrical and Computer Engineering, The University of Texas at San Antonio",
+                  "text": "School of Engineering Medicine, Texas A&M University",
                   "highlighted": false
                 }
               ],
@@ -2945,7 +3085,7 @@
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:yanmin.gong@utsa.edu",
+                  "url": "mailto:yanmin.gong@tamu.edu",
                   "icon": "fas fa-envelope",
                   "title": "Email"
                 },
@@ -2968,7 +3108,19 @@
                 "Edge Computing",
                 "Wireless Networking"
               ],
-              "biography": "\n\n\nYanmin Gong is an associate professor and Microsoft President’s Endowed Fellow in the Department of Electrical and Computer Engineering at The University of Texas at San Antonio, where she directs the Trustworthy and Intelligent Networked Systems (TINS) Lab. She is a recipient of the prestigious NSF CAREER Award and NSF CRII Award. She received a Ph.D. degree in electrical and computer engineering at the University of Florida, an M.S. degree in electronic engineering at Tsinghua University, and a B.E. degree in electronics and information engineering at Huazhong University of Science & Technology.",
+              "experience": [
+                {
+                  "title": "Associate Professor",
+                  "institution": "School of Engineering Medicine, Texas A&M University",
+                  "period": "Oct. 2025 - Present"
+                },
+                {
+                  "title": "Associate Professor and Microsoft President’s Endowed Fellow",
+                  "institution": "Department of Electrical and Computer Engineering, The University of Texas at San Antonio",
+                  "period": "2019 - 2025"
+                }
+              ],
+              "biography": "\n\n\nYanmin Gong is an associate professor at the School of Engineering Medicine, Texas A&M University. Her research includes machine learning, edge computing, trustworthy AI, and AI for health. She is a recipient of the NSF CAREER Award and NSF CRII Award. She received a Ph.D. degree in electrical and computer engineering at the University of Florida, an M.S. degree in electronic engineering at Tsinghua University, and a B.E. degree in electronics and information engineering at Huazhong University of Science & Technology.",
               "education": [
                 {
                   "degree": "PhD in Electrical and Computer Engineering",
@@ -2997,7 +3149,7 @@
                   "highlighted": true
                 },
                 {
-                  "text": "Department of Computer Science, San Francisco State University",
+                  "text": "Department of Computer Science and Engineering, University of California, Santa Cruz",
                   "highlighted": false
                 }
               ],
@@ -3005,7 +3157,7 @@
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:haoyue@sfsu.edu",
+                  "url": "mailto:hyue11@ucsc.edu",
                   "icon": "fas fa-envelope",
                   "title": "Email"
                 },
@@ -3017,17 +3169,34 @@
                 },
                 {
                   "type": "house-user",
-                  "url": "https://csme.sfsu.edu/hao-yue",
+                  "url": "https://campusdirectory.ucsc.edu/cd_detail?uid=hyue11",
                   "icon": "fas fa-globe",
                   "title": "Homepage"
                 }
               ],
               "interests": [
-                "Computer Networks",
-                "Cybersecurity",
-                "Cyber-Physical Systems"
+                "Computer Science and Engineering Education",
+                "AI in Education",
+                "Large Language Models"
               ],
-              "biography": "\n\n\nHao Yue grew up in China. He wanted to be a statesman when he grew up. He received his Ph.D. degree in Electrical and Computer Engineering from University of Florida in 2015. He came to SF State in 2015. He is now an Assistant Professor in the Computer Science Department. His work focuses on K-12 CS education, including K-12 CS teacher preparation and professional development, curriculum development, and the development and implementation of CS supplementary authorization program.",
+              "experience": [
+                {
+                  "title": "Associate Professor",
+                  "institution": "Department of Computer Science and Engineering, University of California, Santa Cruz",
+                  "period": "Sep. 2024 - Present"
+                },
+                {
+                  "title": "Associate Professor and Associate Chair",
+                  "institution": "Department of Computer Science, San Francisco State University",
+                  "period": "Jun. 2020 - Sep. 2024"
+                },
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Computer Science, San Francisco State University",
+                  "period": "May 2015 - Jun. 2020"
+                }
+              ],
+              "biography": "\n\n\nHao Yue is an associate professor in the Department of Computer Science and Engineering at the University of California, Santa Cruz. Before joining UCSC, he was the associate chair and an associate professor in the Department of Computer Science at San Francisco State University. He received his Ph.D. degree in Computer Engineering from the University of Florida in 2015. His research interests are in computer science and engineering education, with a focus on innovative curricula, pedagogical methods, AI in education, and reducing learning barriers and equity gaps.",
               "education": [
                 {
                   "degree": "PhD in Electrical and Computer Engineering",
@@ -3148,7 +3317,24 @@
                 "Wireless Network",
                 "Wireless Security"
               ],
-              "biography": "\n\n\n\n\n**Academic:**\n\nDr. Linke Guo received the BE degree in electronic information science and technology from the Beijing University of Posts and Telecommunications in 2008. He received the MS and PhD degrees in electrical and computer engineering from the University of Florida in 2011 and 2014, respectively. From August 2014 to August 2019, he was an assistant professor at the Department of Electrical and Computer Engineering, Binghamton University, State University of New York. Starting from August 2019, he has been an assistant professor with Department of Electrical and Computer Engineering, Clemson University.\n\n**Professional:**\n\nDr. Guo is currently serving as the editor of IEEE Transactions on Vehicular Technology. He also serves as the poster/demo co-chair of IEEE INFOCOM 2020. He was the publication chair of IEEE Conference on Communications and Network Security (CNS) 2016 and 2017. He was the symposium co-chair of Network Algorithms and Performance Evaluation Symposium, ICNC 2016. He has served as the Technical Program Committee (TPC) members for several conferences including IEEE INFOCOM, ICC, GLOBECOM, and WCNC. He is the co-recipient of Best Paper Award of Globecom 2015, Symposium on Communication and Information System Security. He is a member of the IEEE and ACM.\n\n**Research:**\n\nDr. Guo’s current research interests include security and privacy in wireless network, mobile crowdsensing, IoT, eHealth/wireless healthcare, and machine learning algorithms. Dr. Guo is also strongly interested in security mechanism design for cloud-based system and usable biometrics, as well as building future wireless systems. Dr. Guo’s research is supported by National Science Foundation.",
+              "experience": [
+                {
+                  "title": "Associate Professor",
+                  "institution": "Department of Electrical and Computer Engineering, Clemson University",
+                  "period": "May 2022 - Present"
+                },
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Electrical and Computer Engineering, Clemson University",
+                  "period": "Aug. 2019 - May 2022"
+                },
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Electrical and Computer Engineering, Binghamton University",
+                  "period": "Aug. 2014 - Aug. 2019"
+                }
+              ],
+              "biography": "\n\n\n\n\nLinke Guo is an associate professor in the Department of Electrical and Computer Engineering at Clemson University. He received the B.E. degree in electronic information science and technology from Beijing University of Posts and Telecommunications in 2008, and the M.S. and Ph.D. degrees in electrical and computer engineering from the University of Florida in 2011 and 2014, respectively. Before joining Clemson University, he was an assistant professor at Binghamton University from 2014 to 2019.\n\nHis research interests include security and privacy in wireless networks, mobile crowdsensing, IoT, eHealth, wireless healthcare, and machine learning algorithms.",
               "education": [
                 {
                   "degree": "PhD in Electrical and Computer Engineering",
@@ -3221,6 +3407,23 @@
                 "Applications to Human-Robot Collaboration",
                 "Healthcare",
                 "Energy Sustainability"
+              ],
+              "experience": [
+                {
+                  "title": "Associate Professor",
+                  "institution": "Department of Information Systems and Cyber Security, The University of Texas at San Antonio",
+                  "period": "Feb. 2022 - Present"
+                },
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Information Systems and Cyber Security, The University of Texas at San Antonio",
+                  "period": "Jun. 2019 - Feb. 2022"
+                },
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Electrical and Computer Engineering, Oklahoma State University",
+                  "period": "Mar. 2014 - Jun. 2019"
+                }
               ],
               "biography": "\n\n\n\nI am currently an associate professor in the Department of Information Systems and Cyber Security, Department of Electrical and Computer Engineering, and School of Data Science at The University of Texas at San Antonio. My current research focuses on machine learning, edge intelligence, cybersecurity and their applications to human-robot collaboration, healthcare, and energy sustainability. I received my PhD degree from the University of Florida in 2014.\n\nI am a Senior Member of IEEE and currently serving as an Editor of IEEE Transactions on Vehicular Technology. I am also the recipient of UTSA Cloud Technology Endowed Fellowship (2023), UTSA Dean’s Distingushied Research Award (2020), AFRL Visiting Faculty Research Program Award (2017), Distighuished TPC Member in IEEE INFOCOM (2016-2017), and Best Paper Award in IEEE GLOBECOM (2014). My research has been supported by NSF, DoE, AFRL, NVIDIA, and local industry.",
               "education": [
@@ -3579,7 +3782,7 @@
               "title": "Dr. SUN, Jinyuan",
               "role": [
                 {
-                  "text": "Professor",
+                  "text": "Associate Professor",
                   "highlighted": true
                 },
                 {
@@ -3619,7 +3822,19 @@
                 "Privacy",
                 "Networks"
               ],
-              "biography": "\n\n\n\nJinyuan Stella Sun received the PhD degree in Electrical and Computer Engineering from University of Florida under the direction of Dr. Yuguang \"Michael\" Fang, in 2010. She has been an assistant professor in the Department of Electrical Engineering and Computer Science at University of Tennessee since August 2010. Her research interests lie in the general areas of security and privacy (S&P), information assurance, trustworthy computing, wireless networks, and mobile systems. [Here is my curriculum vitae.](http://web.eecs.utk.edu/~jysun/CV-Sun)",
+              "experience": [
+                {
+                  "title": "Associate Professor",
+                  "institution": "Department of Electrical Engineering and Computer Science, University of Tennessee",
+                  "period": "Aug. 2016 - Present"
+                },
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Electrical Engineering and Computer Science, University of Tennessee",
+                  "period": "Aug. 2010 - Aug. 2016"
+                }
+              ],
+              "biography": "\n\n\n\nJinyuan Stella Sun is an associate professor in the Department of Electrical Engineering and Computer Science at the University of Tennessee. She received the Ph.D. degree in Electrical and Computer Engineering from the University of Florida in 2010 under the direction of Dr. Yuguang \"Michael\" Fang. Her research interests lie in security and privacy, information assurance, trustworthy computing, wireless networks, and mobile systems. [Here is my curriculum vitae.](http://web.eecs.utk.edu/~jysun/CV-Sun)",
               "education": [
                 {
                   "degree": "PhD in Electrical and Computer Engineering",
@@ -3776,6 +3991,18 @@
                 "Intelligent Wireless Networks",
                 "Wireless Sensing and Computing",
                 "Novel Wireless Networking and Communication Technologies"
+              ],
+              "experience": [
+                {
+                  "title": "Professor",
+                  "institution": "School of Electronics and Communication Engineering, Sun Yat-sen University",
+                  "period": "Oct. 2018 - Present"
+                },
+                {
+                  "title": "Assistant Researcher / Associate Researcher / Researcher",
+                  "institution": "Shenzhen Institutes of Advanced Technology, Chinese Academy of Sciences",
+                  "period": "2008 - 2018"
+                }
               ],
               "biography": "\n\n\n\nDr. Xiaoxia Huang received her Bachelor's and Master's degrees in Electronic and Information Engineering from Huazhong University of Science and Technology in 2000 and 2002, respectively. She graduated from the University of Florida in 2007 with a Ph.D. in Electrical and Computer Engineering. Since 2008, he has worked as an assistant researcher, associate researcher and researcher in Shenzhen Institute of Advanced Technology, Chinese Academy of Sciences. In 2018, she joined the School of Electronics and Communication Engineering at Sun Yat-sen University. She has co-authored two academic books and published over 70 scholarly papers in international journals and conferences on wireless networks and communications, with citations exceeding a thousand (Google Scholar). Since 2013, she has been an editorial board member of the IEEE Transactions on Vehicular Technology and served on the Technical Program Committee for more than ten international conferences, including the CCF A-category conference INFOCOM from 2012 to 2020 and C-category conferences such as IEEE GLOBECOM from 2011 to 2019, ICC from 2011 to 2018, WCNC from 2011 to 2014, and WASA from 2013 to 2017. She has been recognized as a leading young talent in the Guangdong Special Support Program for Technological Innovation and a member of the Youth Innovation Promotion Association, Chinese Academy of Sciences.",
               "education": [
@@ -5245,7 +5472,24 @@
                 "Network Economics",
                 "Network Optimization"
               ],
-              "biography": "\r\n\n\r\n\r\nBeatriz Lorenzo is an assistant professor in the Department of Electrical and Computer Engineering at the University of Massachusetts, Amherst. She received her Ph.D. degree from the University of Oulu, Finland, in 2012, and M.Sc. degree in telecommunication engineering from the University of Vigo, Spain, in 2008. She was a senior researcher at the Centre for Wireless Communications (CWC) at the University of Oulu, Finland, and at the Atlantic Research Center for Information and Communication Technologies (AtlantTIC) at the University of Vigo, Spain. Dr. Lorenzo received the Fulbright Visiting Scholar Fellowship, University of Florida, from 2016 to 2017. She published more than 50 journal and conference papers in top IEEE/ACM journals. Her research has been funded by NSF, European, and industry projects and several awards. Dr. Lorenzo is an editor for IEEE Transactions on Vehicular Technology and serves regularly in the TCP of IEEE ICC, GLOBECOM, WCNC, PIMRC, and EUCNC conferences. She was general co-chair of WiMob conference in 2019.",
+              "experience": [
+                {
+                  "title": "Associate Professor with Tenure",
+                  "institution": "Department of Electrical and Computer Engineering, University of Massachusetts Amherst",
+                  "period": "Jun. 2025 - Present"
+                },
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Electrical and Computer Engineering, University of Massachusetts Amherst",
+                  "period": "Jun. 2019 - Jun. 2025"
+                },
+                {
+                  "title": "Senior Researcher",
+                  "institution": "Centre for Wireless Communications, University of Oulu",
+                  "period": "Before 2019"
+                }
+              ],
+              "biography": "\r\n\n\r\n\r\nBeatriz Lorenzo is an associate professor with tenure in the Department of Electrical and Computer Engineering at the University of Massachusetts Amherst. She received her Ph.D. degree from the University of Oulu, Finland, in 2012, and her M.Sc. degree in telecommunication engineering from the University of Vigo, Spain, in 2008. She was a senior researcher at the Centre for Wireless Communications (CWC) at the University of Oulu, Finland, and at the Atlantic Research Center for Information and Communication Technologies (AtlantTIC) at the University of Vigo, Spain. Dr. Lorenzo received the Fulbright Visiting Scholar Fellowship at the University of Florida from 2016 to 2017. She has published more than 50 journal and conference papers in top IEEE/ACM venues. Her research has been funded by NSF, European, and industry projects. Dr. Lorenzo is an editor for IEEE Transactions on Vehicular Technology and serves regularly on the technical program committees of IEEE ICC, GLOBECOM, WCNC, PIMRC, and EUCNC conferences.",
               "education": [
                 {
                   "degree": "PhD Degree",
@@ -6471,19 +6715,11 @@
               "title": "Prof. DENG, Yiqin",
               "role": [
                 {
-                  "text": "Research Assistant Professor @ Lingnan University",
+                  "text": "Research Assistant Professor",
                   "highlighted": true
                 },
                 {
-                  "text": "Postdoc @ CityUHK",
-                  "highlighted": false
-                },
-                {
-                  "text": "Postdoc @ Shandong University",
-                  "highlighted": false
-                },
-                {
-                  "text": "PhD & MSc @ Central South University",
+                  "text": "School of Data Science, Lingnan University",
                   "highlighted": false
                 }
               ],
@@ -6513,7 +6749,24 @@
                 "Internet of Vehicles",
                 "Resource Management"
               ],
-              "biography": "\n\n\n\n\n\nYiqin Deng is currently a Postdoctoral Research at City University of Hong Kong. Previously, she was a Postdoctoral Research at Shandong University, Jinan, China. She received her M.S. degree in software engineering and PhD degree in computer science and technology from Central South University, Changsha, China, in 2017 and 2022, respectively. She was a visiting researcher at the University of Florida, Gainesville, from 2019 to 2021. Her research interests include edge/fog computing, the Internet of Vehicles, and resource management.",
+              "experience": [
+                {
+                  "title": "Research Assistant Professor",
+                  "institution": "School of Data Science, Lingnan University",
+                  "period": "Oct. 2025 - Present"
+                },
+                {
+                  "title": "Postdoctoral Fellow",
+                  "institution": "City University of Hong Kong",
+                  "period": "Aug. 2024 - Dec. 2025"
+                },
+                {
+                  "title": "Postdoctoral Researcher",
+                  "institution": "Shandong University",
+                  "period": "2022 - 2024"
+                }
+              ],
+              "biography": "\n\n\n\n\n\nYiqin Deng is currently a Research Assistant Professor in the School of Data Science at Lingnan University, Hong Kong. Previously, she was a Postdoctoral Fellow at City University of Hong Kong and a Postdoctoral Researcher at Shandong University, Jinan, China. She received her M.S. degree in software engineering and PhD degree in computer science and technology from Central South University, Changsha, China, in 2017 and 2022, respectively. She was a visiting researcher at the University of Florida, Gainesville, from 2019 to 2021. Her research interests include edge/fog computing, the Internet of Vehicles, and resource management.",
               "education": [
                 {
                   "degree": "PhD in Computer Science and Technology",
