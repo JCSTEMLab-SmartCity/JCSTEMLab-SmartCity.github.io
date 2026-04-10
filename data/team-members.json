@@ -2662,7 +2662,12 @@
                 {
                   "title": "Assistant Professor",
                   "institution": "Department of Electrical Engineering, University of South Florida, Florida, USA",
-                  "period": "Present"
+                  "period": "2024 - Present"
+                },
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Electrical and Computer Engineering, Idaho State University, USA",
+                  "period": "2022 - 2024"
                 }
               ],
               "education": [
@@ -2817,7 +2822,7 @@
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:lanzhang@mtu.edu",
+                  "url": "mailto:lan7@clemson.edu",
                   "icon": "fas fa-envelope",
                   "title": "Email"
                 },
@@ -2851,10 +2856,15 @@
                 {
                   "title": "Assistant Professor",
                   "institution": "Department of Electrical and Computer Engineering, Clemson University, South Carolina, USA",
-                  "period": "Apr. 2020 - Present"
+                  "period": "2023 - Present"
+                },
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Electrical and Computer Engineering, Michigan Technological University",
+                  "period": "2020 - 2023"
                 }
               ],
-              "biography": "\n\n\n\nHi, I am Lan. I am an assistant professor in the Department of Electrical and Computer Engineering at Clemson University. My research interest spans the area of wireless communications, distributed machine learning, cybersecurity, Internet-of-Things (IoT), and cyber-physical systems (CPS). I received my Ph.D. degree from the University of Florida (UF) under the supervision of Dr. Yuguang Fang.",
+              "biography": "\n\n\n\nHi, I am Lan. I am an assistant professor in the Department of Electrical and Computer Engineering at Clemson University. Before joining Clemson University in 2023, I was an assistant professor in the Department of Electrical and Computer Engineering at Michigan Technological University from 2020 to 2023. My research interest spans the area of wireless communications, distributed machine learning, cybersecurity, Internet-of-Things (IoT), and cyber-physical systems (CPS). I received my Ph.D. degree from the University of Florida (UF) under the supervision of Dr. Yuguang Fang.",
               "education": [
                 {
                   "degree": "PhD in Electrical and Computer Engineering",
