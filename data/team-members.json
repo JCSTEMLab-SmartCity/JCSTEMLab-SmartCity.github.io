@@ -2628,7 +2628,7 @@
                   "highlighted": true
                 },
                 {
-                  "text": "Department of Electrical and Computer Engineering, Idaho State University, USA (Supervised by Shuo Wang and Yuguang Fang)",
+                  "text": "Department of Electrical Engineering, University of South Florida, Florida, USA",
                   "highlighted": false
                 }
               ],
@@ -2657,7 +2657,14 @@
                 "Security and Privacy",
                 "Cyber-Physical Systems"
               ],
-              "biography": "\n\n\nI am an assistant professor with the Department of Electrical and Computer Engineering at the Idaho State University. I received my Ph.D. degree from the University of Florida in 2022 and B.S. degree from the University of Science and Technology of China in 2015.\n\nMy research interest focuses on the security and privacy of cyber-physical systems, including smart grid and connected vehicles. The applied methodologies include optimization, control, statistics and machine learning, system implementation, etc.",
+              "biography": "\n\n\nI am an assistant professor of instruction with the Department of Electrical Engineering at the University of South Florida. I received my Ph.D. degree from the University of Florida in 2022 and B.S. degree from the University of Science and Technology of China in 2015.\n\nMy research interest focuses on the security and privacy of cyber-physical systems, including smart grid and connected vehicles. The applied methodologies include optimization, control, statistics and machine learning, system implementation, etc.",
+              "experience": [
+                {
+                  "title": "Assistant Professor",
+                  "institution": "Department of Electrical Engineering, University of South Florida, Florida, USA",
+                  "period": "Present"
+                }
+              ],
               "education": [
                 {
                   "degree": "PhD in Electrical and Computer Engineering",
@@ -2802,7 +2809,7 @@
                   "highlighted": true
                 },
                 {
-                  "text": "Department of Electrical and Computer Engineering, Michigan Technological University",
+                  "text": "Department of Electrical and Computer Engineering, Clemson University, South Carolina, USA",
                   "highlighted": false
                 }
               ],
@@ -2843,11 +2850,11 @@
               "experience": [
                 {
                   "title": "Assistant Professor",
-                  "institution": "Department of Electrical and Computer Engineering, Michigan Technological University",
+                  "institution": "Department of Electrical and Computer Engineering, Clemson University, South Carolina, USA",
                   "period": "Apr. 2020 - Present"
                 }
               ],
-              "biography": "\n\n\n\nHi, I am Lan. I am an assistant professor at the Department of ECE, and an affiliated assistant professor at the Department of CS and BME, Michigan Technological University (MTU). My research interest spans the area of wireless communications, distributed machine learning, cybersecurity, Internet-of-Things (IoT), and cyber-physical systems (CPS). I received my Ph.D. degree from the University of Florida (UF) under the supervision of Dr. Yuguang Fang.",
+              "biography": "\n\n\n\nHi, I am Lan. I am an assistant professor in the Department of Electrical and Computer Engineering at Clemson University. My research interest spans the area of wireless communications, distributed machine learning, cybersecurity, Internet-of-Things (IoT), and cyber-physical systems (CPS). I received my Ph.D. degree from the University of Florida (UF) under the supervision of Dr. Yuguang Fang.",
               "education": [
                 {
                   "degree": "PhD in Electrical and Computer Engineering",
