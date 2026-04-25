@@ -2221,8 +2221,17 @@ footer {
     font-weight: 300;
 }
 
+.hero-content small {
+    display: inline-block;
+    opacity: 0;
+    transform: translateY(30px);
+    transition: all 0.8s ease 0.7s;
+    text-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+}
+
 .hero-item.active .hero-content h1,
-.hero-item.active .hero-content p {
+.hero-item.active .hero-content p,
+.hero-item.active .hero-content small {
     opacity: 1;
     transform: translateY(0);
 }
