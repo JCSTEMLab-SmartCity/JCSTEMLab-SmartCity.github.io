@@ -1,5 +1,22 @@
 [
   {
+    "title": "Box-Free Model Watermarks Are Prone to Black-Box Removal Attacks",
+    "authors": "Haonan An, Guang Hua, Zhiping Lin, Yuguang Fang",
+    "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "TPAMI",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2405.09863"
+      }
+    ]
+  },
+  {
     "title": "Dynamic Uncertainty-Aware Multimodal Fusion for Outdoor Health Monitoring",
     "authors": "Zihan Fang, Zheng Lin, Senkang Hu, Yihang Tao, Yiqin Deng, Xianhao Chen, Yuguang Fang",
     "venue": "IEEE Transactions on Mobile Computing",
