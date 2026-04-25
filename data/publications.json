@@ -1,5 +1,23 @@
 [
   {
+    "title": "GCP: Guarded Collaborative Perception with Spatial-Temporal Aware Malicious Agent Detection",
+    "authors": "Yihang Tao, Senkang \"Forest\" Hu, Yue Hu, Haonan An, Hangcheng Cao, Yuguang Fang",
+    "venue": "IEEE Transactions on Dependable and Secure Computing",
+    "type": "accepted",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "TDSC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2501.02450"
+      }
+    ]
+  },
+  {
     "title": "Box-Free Model Watermarks Are Prone to Black-Box Removal Attacks",
     "authors": "Haonan An, Guang Hua, Zhiping Lin, Yuguang Fang",
     "venue": "IEEE Transactions on Pattern Analysis and Machine Intelligence",
