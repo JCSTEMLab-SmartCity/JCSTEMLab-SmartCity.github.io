@@ -45,6 +45,7 @@
 
 - `data/team-members.json` is the active source of truth for team data. Do not revive the old `data/people/**` content model.
 - Keep member IDs unique. The profile loader finds the first matching `id`, so duplicate IDs can route to the wrong profile.
+- When editing a member in `data/team-members.json`, anchor the change on that member's unique `id` and verify the surrounding `title`. Do not patch by generic fields such as `"text": "Professor"` because many members share the same role text.
 - If the same person appears in multiple categories or roles, use distinct IDs in the existing repo style, for example `faculty-name` and `formerphd-name`.
 - When adding a new member inside a category, place the new entry at the top of that category's `members` array unless the user requests a different order.
 - `role` is for the current displayed position only.
