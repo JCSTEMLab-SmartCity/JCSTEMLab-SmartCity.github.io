@@ -6800,10 +6800,10 @@
             },
             {
               "id": "jian-li",
-              "title": "Dr. LI, Jian",
+              "title": "Prof. LI, Jian",
               "role": [
                 {
-                  "text": "PostDoctoral Fellow",
+                  "text": "Associate Professor",
                   "highlighted": true
                 },
                 {
@@ -6821,7 +6821,7 @@
                 },
                 {
                   "type": "house-user",
-                  "url": "https://faculty.ustc.edu.cn/Jian_Li/en/index.htm",
+                  "url": "https://infonetlijian.github.io/homepage/",
                   "icon": "fas fa-globe",
                   "title": "Homepage"
                 }
@@ -6830,17 +6830,39 @@
                 "Future Internet Architecture Design",
                 "Quantum Networking"
               ],
-              "biography": "\r\n\n\r\n\r\nJian Li received his B.S. degree from the Department of Electronics and Information Engineering, Anhui University, in 2015, and received Ph.D degree from the Department of Electronic Engineering and Information Science (EEIS), University of Science and Technology of China (USTC), in 2020. From Nov. 2019 to Nov. 2020, he was a visiting scholar with the Department of Electronic and Computer Engineering, University of Florida. He is currently a Post-Doctoral fellow with the Department of EEIS, USTC. His research interests include wireless communications, satellite networks and next-generation Internet.",
+              "experience": [
+                {
+                  "title": "Associate Professor",
+                  "institution": "School of Cyber Science and Technology, University of Science and Technology of China, China",
+                  "period": "Apr. 2026 - Present"
+                },
+                {
+                  "title": "Associate Researcher",
+                  "institution": "School of Cyber Science and Technology, University of Science and Technology of China, China",
+                  "period": "Nov. 2022 - Mar. 2026"
+                },
+                {
+                  "title": "Postdoctoral Researcher",
+                  "institution": "School of Cyber Science and Technology, University of Science and Technology of China, China",
+                  "period": "Dec. 2020 - Oct. 2022"
+                },
+                {
+                  "title": "Visiting Scholar",
+                  "institution": "Department of Electrical and Computer Engineering, University of Florida",
+                  "period": "Nov. 2019 - Nov. 2020"
+                }
+              ],
+              "biography": "\r\n\n\r\n\r\nJian Li is currently an Associate Professor with the School of Cyber Science and Technology, University of Science and Technology of China. He received his B.S. degree from the Department of Electronics and Information Engineering, Anhui University, in 2015, and received his Ph.D. degree from the Department of Electronic Engineering and Information Science (EEIS), University of Science and Technology of China (USTC), in 2020. From Nov. 2019 to Nov. 2020, he was a visiting scholar with the Department of Electrical and Computer Engineering, University of Florida. His research interests include wireless communications, satellite networks and next-generation Internet.",
               "education": [
                 {
                   "degree": "PhD",
                   "institution": "University of Science and Technology of China",
-                  "year": "2015 - 2020"
+                  "year": "Sep. 2015 - Dec. 2020"
                 },
                 {
                   "degree": "BSc",
-                  "institution": "University of Science and Technology of China",
-                  "year": "2010 - 2015"
+                  "institution": "Anhui University",
+                  "year": "Sep. 2011 - Jun. 2015"
                 }
               ],
               "last_name": "abu"

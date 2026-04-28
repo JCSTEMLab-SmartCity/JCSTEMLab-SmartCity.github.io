@@ -29,6 +29,9 @@
 - Use exact dates instead of relative wording like `today` when adding time-sensitive news.
 - If a news item has images, place them in `assets/news-assets/YYYY-M-D-ShortName/` and reference them with absolute site paths such as `/assets/news-assets/...`.
 - Keep the image order intentional. The first image is the lead image shown first in galleries.
+- When adding a news item that involves a member's career move, promotion, new affiliation, or other position change, also update that member's profile in `data/team-members.json`.
+- For career-related news, verify the updated position and affiliation online when possible, preferably using the person's official homepage or institutional profile.
+- Sync related profile fields together, including `role`, `experience`, `biography`, homepage links, and affiliation text when relevant.
 - Homepage hero slides are manual HTML in `index.html`. Adding a news item does not automatically add it to the hero slider.
 
 ## Publication Rules
