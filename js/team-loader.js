@@ -95,6 +95,7 @@ function generateFilters(data) {
     // Generate tabs from all categories and de-duplicate by subcategory name.
     // Some subcategories appear in multiple top-level groups (e.g., UF + CityUHK).
     const seenSubcategoryNames = new Set();
+    const filterItems = [];
     if (data.categories && data.categories.length > 0) {
         data.categories.forEach(category => {
             if (!category.subcategories || category.subcategories.length === 0) return;
@@ -102,26 +103,44 @@ function generateFilters(data) {
             category.subcategories.forEach(sub => {
                 if (!sub.name || seenSubcategoryNames.has(sub.name)) return;
                 seenSubcategoryNames.add(sub.name);
-
-                const btn = document.createElement('button');
-                btn.className = 'filter-btn';
-
-                // Shorter, cleaner labels for filtering
-                let shortName = sub.name;
-                if (shortName === 'Postdoctoral Researchers') shortName = 'Postdocs';
-                if (shortName === 'Current PhD Students') shortName = 'PhD Students';
-                if (shortName === 'Graduated PhD Students') shortName = 'PhD Alumni';
-                if (shortName === 'Graduated Master Students') shortName = 'Master Alumni';
-                if (shortName === 'Former Postdoctoral Researchers') shortName = 'Postdoc Alumni';
-                if (shortName === 'Former Visiting Students') shortName = 'Visiting Student Alumni';
-                if (shortName === 'Former Visiting Scholars') shortName = 'Visiting Scholar Alumni';
-
-                btn.textContent = getFilterButtonLabel(shortName);
-                btn.onclick = () => filterTeam(sub.name, btn);
-                filterContainer.appendChild(btn);
+                filterItems.push(sub);
             });
         });
     }
+
+    const filterOrder = {
+        "Faculty": 10,
+        "Postdoctoral Researchers": 20,
+        "Current PhD Students": 30,
+        "Research Assistant": 40,
+        "Visiting Students": 50,
+        "Former Postdoctoral Researchers": 60,
+        "Graduated PhD Students": 61,
+        "Graduated Master Students": 62,
+        "Former Visiting Scholars": 63,
+        "Former Visiting Students": 64
+    };
+
+    filterItems
+        .sort((a, b) => (filterOrder[a.name] ?? 1000) - (filterOrder[b.name] ?? 1000))
+        .forEach(sub => {
+            const btn = document.createElement('button');
+            btn.className = 'filter-btn';
+
+            // Shorter, cleaner labels for filtering
+            let shortName = sub.name;
+            if (shortName === 'Postdoctoral Researchers') shortName = 'Postdocs';
+            if (shortName === 'Current PhD Students') shortName = 'PhD Students';
+            if (shortName === 'Graduated PhD Students') shortName = 'PhD Alumni';
+            if (shortName === 'Graduated Master Students') shortName = 'Master Alumni';
+            if (shortName === 'Former Postdoctoral Researchers') shortName = 'Postdoc Alumni';
+            if (shortName === 'Former Visiting Students') shortName = 'Visiting Student Alumni';
+            if (shortName === 'Former Visiting Scholars') shortName = 'Visiting Scholar Alumni';
+
+            btn.textContent = getFilterButtonLabel(shortName);
+            btn.onclick = () => filterTeam(sub.name, btn);
+            filterContainer.appendChild(btn);
+        });
 }
 
 function filterTeam(categoryName, btnElement) {
