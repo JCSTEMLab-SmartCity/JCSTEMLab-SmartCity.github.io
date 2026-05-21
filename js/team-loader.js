@@ -26,7 +26,8 @@ function getFilterButtonLabel(categoryName) {
     return buttonNameMap[categoryName] || categoryName;
 }
 
-function getSectionTitle(categoryName, parentCategoryName = '') {
+function getSectionTitle(categoryName, parentCategoryName = '', displayName = '') {
+    if (displayName) return displayName;
     if (!categoryName) return '';
 
     const isUfFormerMembers = parentCategoryName === 'Former Members (@University of Florida)';
@@ -161,7 +162,7 @@ function renderTeamStructure(data, filterCategory = 'All') {
             const subcategoryElement = document.createElement('div');
             subcategoryElement.className = 'team-category';
 
-            subcategoryElement.innerHTML = `<h3>${getSectionTitle(subcategory.name, category.name)}</h3>`;
+            subcategoryElement.innerHTML = `<h3>${getSectionTitle(subcategory.name, category.name, subcategory.displayName)}</h3>`;
 
             const membersContainer = document.createElement('div');
             membersContainer.className = 'team-members';
