@@ -411,6 +411,12 @@
                   "title": "Email"
                 },
                 {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=etW7bTkAAAAJ&hl=zh-CN",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                },
+                {
                   "type": "house-user",
                   "url": "https://www.cityu.edu.hk/mne/people/academic-staff/prof-guo-xiaoyu",
                   "icon": "fas fa-globe",
