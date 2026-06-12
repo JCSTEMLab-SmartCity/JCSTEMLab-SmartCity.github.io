@@ -567,6 +567,43 @@ function generateGalleryHTML(images) {
     return galleryHtml;
 }
 
+function setupDeferredGalleryLoading(container) {
+    if (!container) return;
+
+    const placeholders = Array.from(container.querySelectorAll('.news-gallery-placeholder[data-images]'));
+    if (!placeholders.length) return;
+
+    const hydrateGallery = placeholder => {
+        if (!placeholder || placeholder.dataset.loaded === 'true') return;
+        placeholder.dataset.loaded = 'true';
+
+        try {
+            const images = JSON.parse(placeholder.dataset.images || '[]');
+            placeholder.innerHTML = generateGalleryHTML(images);
+        } catch (error) {
+            console.error('Error hydrating news gallery:', error);
+        }
+    };
+
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                hydrateGallery(entry.target);
+                observer.unobserve(entry.target);
+            });
+        }, {
+            rootMargin: '250px 0px',
+            threshold: 0.01
+        });
+
+        placeholders.forEach(placeholder => observer.observe(placeholder));
+        return;
+    }
+
+    placeholders.forEach(placeholder => hydrateGallery(placeholder));
+}
+
 // Function to render news items
 function renderNewsItems(newsData, containerId, limit = 8) {
     const container = document.getElementById(containerId);
@@ -574,100 +611,99 @@ function renderNewsItems(newsData, containerId, limit = 8) {
 
     // Clear any existing content
     container.innerHTML = '';
-    const fragment = document.createDocumentFragment();
+    const items = newsData.slice(0, limit);
+    const deferGalleries = containerId === 'news-container';
+    const batchSize = containerId === 'news-container' ? 4 : 10;
+    let index = 0;
 
-    // Add each news item to the container
-    newsData.slice(0, limit).forEach(newsItem => {
-        const newsElement = document.createElement('div');
-        newsElement.className = 'news-item';
+    const appendBatch = () => {
+        const fragment = document.createDocumentFragment();
 
-        // Create the date element
-        const dateElement = document.createElement('div');
-        dateElement.className = 'news-date';
+        items.slice(index, index + batchSize).forEach(newsItem => {
+            const newsElement = document.createElement('div');
+            newsElement.className = 'news-item';
 
-        const dateHighlight = document.createElement('span');
-        dateHighlight.className = 'year-highlight';
-        dateHighlight.textContent = newsItem.date;
-        dateElement.appendChild(dateHighlight);
+            const dateElement = document.createElement('div');
+            dateElement.className = 'news-date';
 
-        // Create the content element
-        const contentElement = document.createElement('div');
-        contentElement.className = 'news-content';
+            const dateHighlight = document.createElement('span');
+            dateHighlight.className = 'year-highlight';
+            dateHighlight.textContent = newsItem.date;
+            dateElement.appendChild(dateHighlight);
 
-        // Create the title element
-        const titleElement = document.createElement('h3');
+            const contentElement = document.createElement('div');
+            contentElement.className = 'news-content';
 
-        // Check if title contains HTML (like '<a href=')
-        if (newsItem.title && newsItem.title.includes('<a href=')) {
-            // Parse HTML in title
-            titleElement.innerHTML = newsItem.title;
-        } else {
-            titleElement.textContent = newsItem.title;
-        }
+            const titleElement = document.createElement('h3');
+            if (newsItem.title && newsItem.title.includes('<a href=')) {
+                titleElement.innerHTML = newsItem.title;
+            } else {
+                titleElement.textContent = newsItem.title;
+            }
+            contentElement.appendChild(titleElement);
 
-        contentElement.appendChild(titleElement);
+            const paragraphElement = document.createElement('p');
+            let contentHtml = newsItem.content;
+            if (window.location.pathname.includes('/pages/')) {
+                contentHtml = contentHtml.replace(/href="pages\//g, 'href="');
+                contentHtml = contentHtml.replace(/src="assets\//g, 'src="../assets/');
+                contentHtml = contentHtml.replace(/href="assets\//g, 'href="../assets/');
+            }
 
-        // Create the paragraph for content
-        const paragraphElement = document.createElement('p');
+            paragraphElement.innerHTML = contentHtml;
 
-        let contentHtml = newsItem.content;
-        // Fix relative paths in content if on a subpage
-        if (window.location.pathname.includes('/pages/')) {
-            // If link points to "pages/...", it's a sibling in the "pages" dir
-            contentHtml = contentHtml.replace(/href="pages\//g, 'href="');
-            // Assets need to go up one level
-            contentHtml = contentHtml.replace(/src="assets\//g, 'src="../assets/');
-            contentHtml = contentHtml.replace(/href="assets\//g, 'href="../assets/');
-        }
+            if (newsItem.links && newsItem.links.length > 0) {
+                newsItem.links.forEach(link => {
+                    paragraphElement.appendChild(document.createTextNode(' '));
+                    const linkElement = document.createElement('a');
+                    linkElement.href = link.url;
+                    linkElement.textContent = link.text;
+                    linkElement.target = "_blank";
+                    linkElement.rel = "noopener noreferrer";
+                    paragraphElement.appendChild(linkElement);
+                });
+            }
 
-        paragraphElement.innerHTML = contentHtml;
-
-        // Add links if provided in the links array format
-        if (newsItem.links && newsItem.links.length > 0) {
-            newsItem.links.forEach(link => {
-                // Add a space if needed
-                const space = document.createTextNode(' ');
-                paragraphElement.appendChild(space);
-
-                // Create link
+            if (newsItem.link && newsItem.linkText) {
+                paragraphElement.appendChild(document.createTextNode(' '));
                 const linkElement = document.createElement('a');
-                linkElement.href = link.url;
-                linkElement.textContent = link.text;
+                linkElement.href = newsItem.link;
+                linkElement.textContent = newsItem.linkText;
                 linkElement.target = "_blank";
                 linkElement.rel = "noopener noreferrer";
                 paragraphElement.appendChild(linkElement);
-            });
+            }
+
+            contentElement.appendChild(paragraphElement);
+
+            if (newsItem.images && newsItem.images.length > 0) {
+                const galleryContainer = document.createElement('div');
+
+                if (deferGalleries) {
+                    galleryContainer.className = 'news-gallery-placeholder';
+                    galleryContainer.dataset.images = JSON.stringify(newsItem.images);
+                } else {
+                    galleryContainer.innerHTML = generateGalleryHTML(newsItem.images);
+                }
+
+                contentElement.appendChild(galleryContainer);
+            }
+
+            newsElement.appendChild(dateElement);
+            newsElement.appendChild(contentElement);
+            fragment.appendChild(newsElement);
+        });
+
+        container.appendChild(fragment);
+        if (deferGalleries) {
+            setupDeferredGalleryLoading(container);
         }
 
-        // Check for old style link (backward compatibility)
-        if (newsItem.link && newsItem.linkText) {
-            const space = document.createTextNode(' ');
-            paragraphElement.appendChild(space);
-
-            const linkElement = document.createElement('a');
-            linkElement.href = newsItem.link;
-            linkElement.textContent = newsItem.linkText;
-            linkElement.target = "_blank";
-            linkElement.rel = "noopener noreferrer";
-            paragraphElement.appendChild(linkElement);
+        index += batchSize;
+        if (index < items.length) {
+            window.requestAnimationFrame(appendBatch);
         }
+    };
 
-        contentElement.appendChild(paragraphElement);
-
-        // Append Gallery if images exist
-        if (newsItem.images && newsItem.images.length > 0) {
-            const galleryContainer = document.createElement('div');
-            galleryContainer.innerHTML = generateGalleryHTML(newsItem.images);
-            contentElement.appendChild(galleryContainer);
-        }
-
-        // Add date and content to the news item
-        newsElement.appendChild(dateElement);
-        newsElement.appendChild(contentElement);
-
-        // Add the news item to the container
-        fragment.appendChild(newsElement);
-    });
-
-    container.appendChild(fragment);
+    appendBatch();
 } 
