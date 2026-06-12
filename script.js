@@ -1,6 +1,7 @@
 // Hero Slider Logic
 let heroIndex = 0;
 let heroInterval;
+const jsonCache = new Map();
 
 function initHero() {
     const slides = document.querySelectorAll('.hero-item');
@@ -45,6 +46,13 @@ function initHero() {
     }
 }
 
+function ensureHeroVideoLoaded(video) {
+    if (video && video.dataset.src && !video.getAttribute('src')) {
+        video.src = video.dataset.src;
+        video.load();
+    }
+}
+
 function showHero(n) {
     const slides = document.querySelectorAll('.hero-item');
     const dots = document.querySelectorAll('.hero-dots .dot');
@@ -63,16 +71,15 @@ function showHero(n) {
     // Video handling
     const activeSlide = slides[heroIndex];
     if (activeSlide) {
-        const videos = document.querySelectorAll('video');
+        const videos = document.querySelectorAll('.hero-bg-video');
         videos.forEach(v => v.pause());
 
-        const video = activeSlide.querySelector('video');
+        const video = activeSlide.querySelector('.hero-bg-video');
         if (video) {
+            ensureHeroVideoLoaded(video);
             video.currentTime = 0;
             video.play().catch(e => console.log('Autoplay prevented', e));
             video.muted = true; // Force mute initially for policy
-            // Optional: Unmute on click handled by specific listener logic if adding one, 
-            // but for now simple autoplay loop
         }
     }
 }
@@ -95,23 +102,12 @@ function startHeroAuto() {
     if (!slides.length) return;
 
     const current = slides[heroIndex];
-    if (current && current.classList.contains('video-slide')) {
-        const video = current.querySelector('video');
-        if (video && !video.paused) {
-            video.onended = () => moveHero(1);
-            return;
-        }
-    }
-    heroInterval = setInterval(() => moveHero(1), 6000);
+    const intervalMs = Number(current?.dataset.autoplayMs) || 6000;
+    heroInterval = setInterval(() => moveHero(1), intervalMs);
 }
 
 function stopHeroAuto() {
     clearInterval(heroInterval);
-    const slides = document.querySelectorAll('.hero-item');
-    if (slides.length && slides[heroIndex]) {
-        const video = slides[heroIndex].querySelector('video');
-        if (video) video.onended = null;
-    }
 }
 
 document.addEventListener('DOMContentLoaded', function () {
@@ -122,27 +118,14 @@ document.addEventListener('DOMContentLoaded', function () {
     // Load profile info
     loadProfileInfo();
 
-    // Load publications
-    loadPublications();
-
-    // Load news items
-    if (document.getElementById('news-container')) {
-        fetch('data/news.json')
-            .then(response => response.json())
-            .then(data => {
-                renderNewsItems(data, 'news-container', 12); // Show the most recent 12 news items
-            })
-            .catch(error => console.error('Error loading news:', error));
+    // Homepage sections are loaded lazily to avoid blocking first paint.
+    if (document.getElementById('news-container') || document.getElementById('publications-container')) {
+        setupDeferredHomepageLoading();
     }
 
     // All news page specific
     if (document.getElementById('all-news-container')) {
-        fetch('../data/news.json')
-            .then(response => response.json())
-            .then(data => {
-                renderNewsItems(data, 'all-news-container', Infinity); // Show ALL news items, no limit
-            })
-            .catch(error => console.error('Error loading all news:', error));
+        loadAllNews();
     }
 
     // Navigation active link handling
@@ -190,6 +173,84 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+function fetchJsonCached(path) {
+    if (!jsonCache.has(path)) {
+        jsonCache.set(path, fetch(path).then(response => {
+            if (!response.ok) {
+                throw new Error(`Failed to load ${path}: ${response.status}`);
+            }
+            return response.json();
+        }));
+    }
+
+    return jsonCache.get(path);
+}
+
+function resolveDataPath(fileName) {
+    return window.location.pathname.includes('/pages/') ? `../data/${fileName}` : `data/${fileName}`;
+}
+
+function scheduleIdleTask(callback, timeout = 1200) {
+    if ('requestIdleCallback' in window) {
+        window.requestIdleCallback(callback, { timeout });
+        return;
+    }
+
+    window.setTimeout(callback, timeout);
+}
+
+function setupDeferredHomepageLoading() {
+    const jobs = [
+        {
+            key: 'publications',
+            element: document.getElementById('publications'),
+            loader: loadHomepagePublications
+        },
+        {
+            key: 'news',
+            element: document.getElementById('latest-news'),
+            loader: loadLatestNews
+        }
+    ];
+
+    const loaded = new Set();
+    const runJob = job => {
+        if (!job || loaded.has(job.key)) return;
+        loaded.add(job.key);
+        job.loader();
+    };
+
+    if ('IntersectionObserver' in window) {
+        const observer = new IntersectionObserver(entries => {
+            entries.forEach(entry => {
+                if (!entry.isIntersecting) return;
+                const job = jobs.find(item => item.element === entry.target);
+                if (job) {
+                    runJob(job);
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, {
+            rootMargin: '600px 0px',
+            threshold: 0.01
+        });
+
+        jobs.forEach(job => {
+            if (job.element) {
+                observer.observe(job.element);
+            }
+        });
+    } else {
+        jobs.forEach((job, index) => {
+            scheduleIdleTask(() => runJob(job), 600 + index * 250);
+        });
+    }
+
+    jobs.forEach((job, index) => {
+        scheduleIdleTask(() => runJob(job), 900 + index * 350);
+    });
+}
 
 // Function to load profile information
 function loadProfileInfo() {
@@ -271,61 +332,97 @@ function processChinese(text) {
     return text.replace(/([\u4e00-\u9fa5]+)/g, '<span class="chinese-text">$1</span>');
 }
 
-// Function to load publications from JSON
-function loadPublications() {
-    let publicationsJsonPath = 'data/publications.json';
-    if (window.location.pathname.includes('/pages/')) {
-        publicationsJsonPath = '../data/publications.json';
-    }
-
-    // Check if we're on the homepage or publications page
-    const isHomepage = !window.location.pathname.includes('/pages/publications.html');
-
-    fetch(publicationsJsonPath)
-        .then(response => response.json())
-        .then(publications => {
-            // If on publications page, handle like before
-            if (!isHomepage) {
-                const publicationsList = document.querySelector('.publications-list');
-                if (publicationsList) {
-                    renderPublications(publications, publicationsList);
-                }
-                return;
+function loadLatestNews() {
+    fetchJsonCached(resolveDataPath('news.json'))
+        .then(data => {
+            renderNewsItems(data, 'news-container', 12);
+        })
+        .catch(error => {
+            console.error('Error loading news:', error);
+            const container = document.getElementById('news-container');
+            if (container) {
+                container.innerHTML = '<p class="no-publications">Unable to load the latest news right now.</p>';
             }
+        });
+}
 
-            // Sort publications by year in descending order
-            publications.sort((a, b) => {
-                return parseInt(b.year) - parseInt(a.year);
-            });
+function loadAllNews() {
+    fetchJsonCached(resolveDataPath('news.json'))
+        .then(data => {
+            renderNewsItems(data, 'all-news-container', Infinity);
+        })
+        .catch(error => console.error('Error loading all news:', error));
+}
 
-            // Filter publications for the last two years
-            const currentYear = parseInt(new Date().getFullYear());
+function loadHomepagePublications() {
+    const container = document.getElementById('publications-container');
+    if (!container) return;
+
+    fetchJsonCached(resolveDataPath('publications.json'))
+        .then(publications => {
+            const currentYear = parseInt(new Date().getFullYear(), 10);
             const lastYear = currentYear - 1;
             const recentPublications = publications.filter(pub => {
-                const pubYear = parseInt(pub.year);
+                const pubYear = parseInt(pub.year, 10);
                 return pubYear === currentYear || pubYear === lastYear;
             });
 
-            // Group the recent publications by year
             const pubsByYear = {};
             recentPublications.forEach(pub => {
-                if (!pubsByYear[pub.year]) {
-                    pubsByYear[pub.year] = [];
+                const year = pub.year;
+                if (!pubsByYear[year]) {
+                    pubsByYear[year] = [];
                 }
-                pubsByYear[pub.year].push(pub);
+                pubsByYear[year].push(pub);
             });
 
-            // Get years in descending order
-            const years = Object.keys(pubsByYear).sort((a, b) => b - a);
+            const years = Object.keys(pubsByYear).sort((a, b) => parseInt(b, 10) - parseInt(a, 10));
+            container.innerHTML = '';
 
-            // Render publications for each year
+            if (!years.length) {
+                container.innerHTML = '<p class="no-publications">No publications available for the recent years.</p>';
+                return;
+            }
+
+            const fragment = document.createDocumentFragment();
+
             years.forEach(year => {
-                const yearContainer = document.getElementById(`publications-${year}`);
-                if (yearContainer) {
-                    yearContainer.innerHTML = ''; // Clear existing content
-                    renderPublications(pubsByYear[year], yearContainer);
-                }
+                const yearSection = document.createElement('div');
+                const yearTitle = document.createElement('h3');
+                yearTitle.className = 'year-divider';
+                yearTitle.textContent = `Accepted Papers in ${year}`;
+
+                const publicationsList = document.createElement('div');
+                publicationsList.className = 'publications-list';
+                publicationsList.id = `publications-${year}`;
+
+                yearSection.appendChild(yearTitle);
+                yearSection.appendChild(publicationsList);
+                fragment.appendChild(yearSection);
             });
+
+            container.appendChild(fragment);
+
+            years.forEach(year => {
+                const publicationsList = document.getElementById(`publications-${year}`);
+                renderPublications(pubsByYear[year], publicationsList);
+            });
+        })
+        .catch(error => {
+            console.error('Error loading publications data:', error);
+            container.innerHTML = '<p class="no-publications">Unable to load recent publications right now.</p>';
+        });
+}
+
+// Function to load publications from JSON
+function loadPublications() {
+    const publicationsJsonPath = resolveDataPath('publications.json');
+    const publicationsList = document.querySelector('.publications-list');
+    if (!publicationsList) return;
+
+    fetchJsonCached(publicationsJsonPath)
+        .then(publications => {
+            renderPublications(publications, publicationsList);
         })
         .catch(error => {
             console.error('Error loading publications data:', error);
@@ -338,6 +435,7 @@ function renderPublications(publications, container) {
 
     // Counter for auto-numbering publications
     let counter = 1;
+    const fragment = document.createDocumentFragment();
 
     publications.forEach(pub => {
         const pubElement = document.createElement('div');
@@ -355,7 +453,7 @@ function renderPublications(publications, container) {
             venueText = 'Preprint';
         } else if (pub.venue) {
             // Extract short venue name from the venue string or tags
-            const venueTag = pub.tags.find(tag => tag.class === 'venue-tag');
+            const venueTag = (pub.tags || []).find(tag => tag.class === 'venue-tag');
             venueText = venueTag ? venueTag.text : pub.venue.split(',')[0].split(' ').pop();
         }
 
@@ -399,7 +497,7 @@ function renderPublications(publications, container) {
         const tagsContainer = document.createElement('div');
         tagsContainer.className = 'pub-tags';
 
-        pub.tags.forEach(tag => {
+        (pub.tags || []).forEach(tag => {
             // Skip venue tag as we're now showing it on the left
             if (tag.class === 'venue-tag') return;
 
@@ -424,8 +522,10 @@ function renderPublications(publications, container) {
         // Combine elements and add to publications list
         pubElement.appendChild(venueElement);
         pubElement.appendChild(contentElement);
-        container.appendChild(pubElement);
+        fragment.appendChild(pubElement);
     });
+
+    container.appendChild(fragment);
 }
 
 // Function to generate gallery HTML
@@ -448,7 +548,7 @@ function generateGalleryHTML(images) {
         if (index === 0) {
             galleryHtml += `
                 <a href="${imgSrc}" target="_blank" class="news-gallery-item" style="z-index: ${zIndex};">
-                    <img src="${imgSrc}" alt="News Photo" class="news-gallery-img">
+                    <img src="${imgSrc}" alt="News Photo" class="news-gallery-img" loading="lazy" decoding="async">
                 </a>
             `;
         } else {
@@ -457,7 +557,7 @@ function generateGalleryHTML(images) {
             const dynamicMargin = `min(-60px, calc((100% - ${totalWidth}px) / ${gaps}))`;
             galleryHtml += `
                 <a href="${imgSrc}" target="_blank" class="news-gallery-item" style="margin-left: ${dynamicMargin}; z-index: ${zIndex};">
-                    <img src="${imgSrc}" alt="News Photo" class="news-gallery-img">
+                    <img src="${imgSrc}" alt="News Photo" class="news-gallery-img" loading="lazy" decoding="async">
                 </a>
             `;
         }
@@ -474,6 +574,7 @@ function renderNewsItems(newsData, containerId, limit = 8) {
 
     // Clear any existing content
     container.innerHTML = '';
+    const fragment = document.createDocumentFragment();
 
     // Add each news item to the container
     newsData.slice(0, limit).forEach(newsItem => {
@@ -565,6 +666,8 @@ function renderNewsItems(newsData, containerId, limit = 8) {
         newsElement.appendChild(contentElement);
 
         // Add the news item to the container
-        container.appendChild(newsElement);
+        fragment.appendChild(newsElement);
     });
+
+    container.appendChild(fragment);
 } 

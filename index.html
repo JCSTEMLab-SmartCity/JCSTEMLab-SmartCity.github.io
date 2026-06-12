@@ -37,8 +37,20 @@
     <main>
         <section id="hero" class="hero">
             <div class="hero-slider">
-                <!-- Slide 1 -->
-                <div class="hero-item active">
+                <!-- Slide 1 (Video) -->
+                <div class="hero-item active video-slide" data-autoplay-ms="12000">
+                    <video data-src="assets/RGC_Visit.mp4" autoplay muted loop playsinline preload="none"
+                        poster="assets/news-assets/2026-6-11-RGCVisit/Weixin Image_20260611143344_43_107.jpg"
+                        class="hero-bg-video"></video>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <h1>Research Grants Council (RGC) Visit</h1>
+                        <p>RGC visited the JC STEM Lab at CityUHK Innovation Center @2026.6.11</p>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/news-assets/2026-3-12-ChinaMobile/DSC_0047.JPG');"></div>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
@@ -47,7 +59,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 2 -->
+                <!-- Slide 3 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/thanksgiving2025.jpg');"></div>
                     <div class="hero-overlay"></div>
@@ -57,9 +69,9 @@
                     </div>
                 </div>
 
-                <!-- Slide 3 (Video) -->
-                <div class="hero-item video-slide">
-                    <video src="assets/JCLab-OpenCeremony.mp4" autoplay muted loop playsinline
+                <!-- Slide 4 (Video) -->
+                <div class="hero-item video-slide" data-autoplay-ms="12000">
+                    <video data-src="assets/JCLab-OpenCeremony.mp4" autoplay muted loop playsinline preload="none"
                         class="hero-bg-video"></video>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
@@ -69,7 +81,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 4 -->
+                <!-- Slide 5 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/jclab-luncheon.png');"></div>
                     <div class="hero-overlay"></div>
@@ -79,7 +91,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 5 -->
+                <!-- Slide 6 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/ACM-Fang.png');"></div>
                     <div class="hero-overlay"></div>
@@ -89,7 +101,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 6 -->
+                <!-- Slide 7 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/group4.jpg');"></div>
                     <div class="hero-overlay"></div>
@@ -99,7 +111,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 7 -->
+                <!-- Slide 8 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/group3.jpg');"></div>
                     <div class="hero-overlay"></div>
@@ -109,7 +121,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 8 -->
+                <!-- Slide 9 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/group2.jpg');"></div>
                     <div class="hero-overlay"></div>
@@ -119,7 +131,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 9 -->
+                <!-- Slide 10 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/group1.png');"></div>
                     <div class="hero-overlay"></div>
@@ -394,7 +406,7 @@
             <div class="container">
                 <h2 class="section-title">Latest News</h2>
                 <div id="news-container" class="news-list">
-                    <!-- News items will be dynamically loaded here from news.json -->
+                    <p class="loading-placeholder">Loading latest news...</p>
                 </div>
                 <div class="view-all-news">
                     <a href="pages/all-news.html" class="btn btn-primary" target="_self"><i class="fas fa-list"></i>
@@ -528,7 +540,7 @@
                         href="https://scholars.cityu.edu.hk/en/persons/yuguang-fang(b2d78936-ab0a-4186-9f64-0f468013de23)/publications.html"
                         target="_blank">CityU Scholars</a> to obtain the full list of publications.</p>
                 <div id="publications-container">
-                    <!-- Publications will be dynamically loaded here by year -->
+                    <p class="loading-placeholder">Loading recent publications...</p>
                 </div>
 
                 <div class="view-all-news text-center mt-4">
@@ -569,145 +581,6 @@
                     src="//clustrmaps.com/globe.js?d=5ARm8_nN_s8xJvlRADyN_VZA0ugAYp45tSMSw9xW0Uc"></script>
             </div>
         </section>
-
-        <script>
-            // Create year containers dynamically when publications are loaded
-            document.addEventListener('DOMContentLoaded', function () {
-                fetch('data/publications.json')
-                    .then(response => response.json())
-                    .then(publications => {
-                        // Filter publications for the last two years
-                        const currentYear = parseInt(new Date().getFullYear());
-                        const lastYear = currentYear - 1;
-                        const recentPublications = publications.filter(pub => {
-                            const pubYear = parseInt(pub.year);
-                            return pubYear === currentYear || pubYear === lastYear;
-                        });
-
-                        // Group publications by year
-                        const pubsByYear = {};
-                        recentPublications.forEach(pub => {
-                            const year = pub.year;
-                            if (!pubsByYear[year]) {
-                                pubsByYear[year] = [];
-                            }
-                            pubsByYear[year].push(pub);
-                        });
-
-                        // Create containers for each year (most recent first)
-                        const container = document.getElementById('publications-container');
-                        const years = Object.keys(pubsByYear).sort((a, b) => parseInt(b) - parseInt(a));
-                        
-                        if (years.length > 0) {
-                            years.forEach(year => {
-                                const yearSection = document.createElement('div');
-                                yearSection.innerHTML = `
-                                    <h3 class="year-divider">Accepted Papers in ${year}</h3>
-                                    <div class="publications-list" id="publications-${year}"></div>
-                                `;
-                                container.appendChild(yearSection);
-
-                                // Render the publications for this year
-                                const publicationsList = document.getElementById(`publications-${year}`);
-                                renderPublications(pubsByYear[year], publicationsList);
-                            });
-                        } else {
-                            container.innerHTML = '<p class="no-publications">No publications available for the recent years.</p>';
-                        }
-                    })
-                    .catch(error => console.error('Error:', error));
-            });
-
-            function renderPublications(publications, container) {
-                // Counter for auto-numbering publications
-                let counter = 1;
-
-                publications.forEach(pub => {
-                    const pubElement = document.createElement('div');
-                    const classes = ['publication', pub.type];
-                    if (pub.isFirstAuthor) classes.push('first-author');
-                    pubElement.className = classes.join(' ');
-                    pubElement.dataset.year = pub.year || "2024";
-
-                    // Create venue/type label for left side
-                    const venueElement = document.createElement('div');
-                    venueElement.className = 'pub-venue-label';
-
-                    // Determine what text to show in the left column
-                    let venueText = '';
-                    if (pub.type === 'preprint') {
-                        venueText = 'Preprint';
-                    } else if (pub.venue) {
-                        // Extract short venue name from the venue string or tags
-                        const venueTag = pub.tags.find(tag => tag.class === 'venue-tag');
-                        venueText = venueTag ? venueTag.text : pub.venue.split(',')[0].split(' ').pop();
-                    }
-
-                    // Create publication number
-                    const numberElement = document.createElement('span');
-                    numberElement.className = 'pub-number';
-                    numberElement.textContent = counter++;
-
-                    venueElement.appendChild(numberElement);
-
-                    // Add venue text below the number
-                    const venueTextElement = document.createElement('span');
-                    venueTextElement.className = 'venue-text';
-                    // Allow explicit line breaks from data (e.g., "GLOBECOM'25<br>Best Paper Award")
-                    venueTextElement.innerHTML = venueText;
-                    venueElement.appendChild(venueTextElement);
-
-                    // Create publication content container
-                    const contentElement = document.createElement('div');
-                    contentElement.className = 'pub-content';
-
-                    // Add title
-                    const titleElement = document.createElement('h3');
-                    titleElement.textContent = pub.title;
-                    contentElement.appendChild(titleElement);
-
-                    // Add authors
-                    const authorsElement = document.createElement('p');
-                    authorsElement.className = 'authors';
-                    authorsElement.innerHTML = pub.authors;
-                    contentElement.appendChild(authorsElement);
-
-                    // Add full venue if it exists (for accepted papers)
-                    if (pub.venue) {
-                        const fullVenueElement = document.createElement('p');
-                        fullVenueElement.className = 'venue';
-                        fullVenueElement.textContent = pub.venue;
-                        contentElement.appendChild(fullVenueElement);
-                    }
-
-                    // Add tags
-                    if (pub.tags && pub.tags.length > 0) {
-                        const tagsElement = document.createElement('div');
-                        tagsElement.className = 'pub-tags';
-
-                        pub.tags.forEach(tag => {
-                            const tagElement = document.createElement('a');
-                            tagElement.className = `tag ${tag.class}`;
-                            tagElement.textContent = tag.text;
-                            if (tag.link) {
-                                tagElement.href = tag.link;
-                                tagElement.target = '_blank';
-                            }
-                            tagsElement.appendChild(tagElement);
-                        });
-
-                        contentElement.appendChild(tagsElement);
-                    }
-
-                    // Assemble the publication element
-                    pubElement.appendChild(venueElement);
-                    pubElement.appendChild(contentElement);
-
-                    // Add to container
-                    container.appendChild(pubElement);
-                });
-            }
-        </script>
 
         <!-- <section id="location" class="section">
             <div class="container">
