@@ -2861,3 +2861,288 @@ html[data-subpage="true"] main section:first-of-type,
 body[data-subpage="true"] main section:first-of-type {
     padding-top: 2rem !important;
 }
+
+/* Stronger mobile adaptation for homepage and shared sections */
+img {
+    max-width: 100%;
+}
+
+.lab-logo {
+    max-width: 100%;
+}
+
+@media (max-width: 768px) {
+    html,
+    body {
+        overflow-x: hidden;
+    }
+
+    body {
+        padding-top: 108px;
+    }
+
+    .container {
+        width: min(94%, 1200px);
+        padding: 0 10px;
+    }
+
+    nav .container {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .nav-logo {
+        justify-content: center;
+        height: auto;
+        padding: 0.55rem 0 0.1rem;
+    }
+
+    .logo-text {
+        font-size: 1rem;
+        text-align: center;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        max-width: 100%;
+    }
+
+    .nav-links {
+        width: 100%;
+        justify-content: flex-start;
+        padding: 0.35rem 0 0.55rem;
+    }
+
+    .section {
+        padding: 2.75rem 0;
+    }
+
+    .section-title {
+        font-size: 1.75rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .section-title::after {
+        width: 42px;
+        bottom: -8px;
+    }
+
+    .header-content {
+        align-items: center;
+        text-align: center;
+        gap: 1.25rem;
+    }
+
+    .profile-info h1 {
+        margin-top: 1rem;
+        font-size: 2rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .contact-info {
+        justify-content: center;
+        margin-top: 1.25rem;
+    }
+
+    .about-content {
+        font-size: 1rem;
+    }
+
+    .about-intro {
+        font-size: 1.05rem !important;
+        line-height: 1.7 !important;
+    }
+
+    .lab-logo {
+        width: min(100%, 360px) !important;
+    }
+
+    .hero {
+        min-height: 520px;
+        height: 78vh;
+    }
+
+    .hero-content {
+        padding: 96px 1rem 5rem;
+        justify-content: flex-end;
+    }
+
+    .hero-content h1 {
+        font-size: 2rem;
+        line-height: 1.08;
+        max-width: 95%;
+    }
+
+    .hero-content p {
+        font-size: 0.98rem;
+        max-width: 95%;
+    }
+
+    .hero-btn {
+        width: 38px;
+        height: 38px;
+    }
+
+    .hero-btn.prev {
+        left: 0.75rem;
+    }
+
+    .hero-btn.next {
+        right: 0.75rem;
+    }
+
+    .hero-dots {
+        bottom: 1.25rem;
+        gap: 0.55rem;
+    }
+
+    .year-highlight,
+    .date-highlight {
+        width: auto;
+        min-width: 120px;
+        padding: 5px 12px;
+    }
+
+    .news-item,
+    .seminar-item {
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .news-content h3,
+    .seminars-list .seminar-content h3 {
+        line-height: 1.4;
+    }
+
+    .news-gallery {
+        margin: 14px 0 8px;
+    }
+
+    .news-gallery-img {
+        width: 220px;
+        height: 165px;
+    }
+
+    .news-gallery.single .news-gallery-img {
+        width: min(100%, 360px);
+    }
+
+    .btn-primary,
+    .btn-soft {
+        padding: 12px 22px;
+        font-size: 1rem;
+        gap: 8px;
+    }
+
+    footer {
+        padding: 1.5rem 0;
+        font-size: 0.85rem;
+    }
+
+    html[data-subpage="true"] main,
+    body[data-subpage="true"] main {
+        padding-top: 110px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    body {
+        padding-top: 96px;
+    }
+
+    .container {
+        width: 95%;
+        padding: 0 8px;
+    }
+
+    .logo-text {
+        font-size: 0.9rem;
+    }
+
+    .nav-links a {
+        font-size: 0.86rem;
+    }
+
+    .section {
+        padding: 2.25rem 0;
+    }
+
+    .section-title {
+        font-size: 1.5rem;
+    }
+
+    .profile-info h1 {
+        font-size: 1.7rem;
+    }
+
+    .subtitle,
+    .about-content,
+    .authors,
+    .venue,
+    .news-content p,
+    .seminars-list .seminar-description {
+        font-size: 0.9rem;
+    }
+
+    .about-intro {
+        font-size: 0.98rem !important;
+    }
+
+    .hero {
+        min-height: 460px;
+        height: 72vh;
+    }
+
+    .hero-content {
+        padding: 88px 0.75rem 4.5rem;
+    }
+
+    .hero-content h1 {
+        font-size: 1.65rem;
+        max-width: 100%;
+    }
+
+    .hero-content p {
+        font-size: 0.88rem;
+        max-width: 100%;
+    }
+
+    .hero-btn {
+        width: 34px;
+        height: 34px;
+    }
+
+    .hero-dots .dot {
+        width: 8px;
+        height: 8px;
+    }
+
+    .news-gallery-img {
+        width: 180px;
+        height: 135px;
+    }
+
+    .btn-primary,
+    .btn-soft {
+        width: 100%;
+        max-width: 320px;
+        justify-content: center;
+    }
+
+    .view-all-news,
+    .view-all-members,
+    .view-all-seminars,
+    .back-to-home {
+        display: flex;
+        justify-content: center;
+    }
+
+    html[data-subpage="true"] main,
+    body[data-subpage="true"] main {
+        padding-top: 98px !important;
+    }
+}
