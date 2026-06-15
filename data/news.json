@@ -1,5 +1,24 @@
 [
   {
+    "date": "Jun. 15, 2026",
+    "title": "Media Coverage of Our V2X Cooperative Perception and Low-Altitude Economy Research",
+    "content": "Recent research achievements from the <b>JC STEM Lab</b> in <b>V2X-based cooperative perception</b> and the <b>low-altitude economy</b> have been covered by several major media outlets, including <b>CCTV</b>, <b>China Daily</b>, and <b>China News Service</b>. The reports highlight the team's work on priority-aware cooperative perception for connected vehicles, cross-domain perception under complex sensing and weather conditions, and air-ground collaborative computing and sensing for low-altitude economy applications. These studies aim to improve perception accuracy, reduce communication overhead, and support safer autonomous driving and smart city mobility. Many thanks to all collaborators and students who contributed to these projects!",
+    "links": [
+      {
+        "text": "China Daily,",
+        "url": "https://caijing.chinadaily.com.cn/a/202606/15/WS6a2f8990a310d709c2fb8039.html"
+      },
+      {
+        "text": "China News,",
+        "url": "http://www.xj.chinanews.com.cn/kejiao/2026-06-12/detail-ihffhxiw7356666.shtml"
+      },
+      {
+        "text": "CCTV",
+        "url": "https://jingji.cctv.com/2026/06/03/ARTI7OQTaSpUHwuP1oAJDFlX260603.shtml"
+      }
+    ]
+  },
+  {
     "date": "Jun. 11, 2026",
     "title": "Research Grants Council (RGC) Visited the Lab",
     "content": "Representatives from the <b>Research Grants Council (RGC)</b> visited <b>CityUHK</b>, where the <b>JC STEM Lab of Smart City</b> presented the lab's <b>UGV-UAV Collaborative Navigation Demo</b>.",
