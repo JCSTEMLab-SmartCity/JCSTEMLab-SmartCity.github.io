@@ -2134,6 +2134,75 @@
                 }
               ],
               "last_name": "louhuanhuan"
+            },
+            {
+              "id": "ra26-qinlangtian",
+              "title": "Mr. Langtian Qin",
+              "role": [
+                {
+                  "text": "Research Assistant",
+                  "highlighted": true
+                },
+                {
+                  "text": "City University of Hong Kong",
+                  "highlighted": false
+                },
+                {
+                  "text": "PhD Candidate @ UC Irvine",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/avatars/RA26_LangtianQin.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:langiq@uci.edu",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=2gaiM-wAAAAJ",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                },
+                {
+                  "type": "homepage",
+                  "url": "https://qlt315.github.io/",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
+                },
+                {
+                  "type": "github",
+                  "url": "https://github.com/qlt315/",
+                  "icon": "fab fa-github",
+                  "title": "GitHub"
+                }
+              ],
+              "interests": [
+                "Wireless Networks",
+                "Mobile/Edge Computing",
+                "Machine Learning and Wireless Systems"
+              ],
+              "biography": "Langtian Qin is a Computer Science PhD candidate at UC Irvine and a short-term Research Assistant at City University of Hong Kong. He received his M.S. degree in Electrical Engineering from the University of Science and Technology of China in 2024 and his B.E. degree in Information Engineering from Xidian University in 2021. His research interests lie at the intersection of machine learning and wireless systems.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science",
+                  "institution": "UC Irvine",
+                  "year": "2028 (expected)"
+                },
+                {
+                  "degree": "MSc in Electrical Engineering",
+                  "institution": "University of Science and Technology of China",
+                  "year": 2024
+                },
+                {
+                  "degree": "BSc in Information Engineering",
+                  "institution": "Xidian University",
+                  "year": 2021
+                }
+              ],
+              "last_name": "qinlangtian"
             }
           ]
         },
