@@ -2065,21 +2065,22 @@
                 }
               ],
               "last_name": "louhuanhuan"
-            },
+            }
+          ]
+        },
+        {
+          "name": "Visiting Students",
+          "members": [
             {
               "id": "ra26-qinlangtian",
               "title": "Mr. Langtian Qin",
               "role": [
                 {
-                  "text": "Research Assistant",
+                  "text": "PhD student @ UC Irvine",
                   "highlighted": true
                 },
                 {
-                  "text": "City University of Hong Kong",
-                  "highlighted": false
-                },
-                {
-                  "text": "PhD Candidate @ UC Irvine",
+                  "text": "Visiting Student @ CityUHK",
                   "highlighted": false
                 }
               ],
@@ -2115,7 +2116,7 @@
                 "Mobile/Edge Computing",
                 "Machine Learning and Wireless Systems"
               ],
-              "biography": "Langtian Qin is a Computer Science PhD candidate at UC Irvine and a short-term Research Assistant at City University of Hong Kong. He received his M.S. degree in Electrical Engineering from the University of Science and Technology of China in 2024 and his B.E. degree in Information Engineering from Xidian University in 2021. His research interests lie at the intersection of machine learning and wireless systems.",
+              "biography": "Langtian Qin received his B.E. degree in Information Engineering from Xidian University in 2021 and his M.S. degree in Electrical Engineering from the University of Science and Technology of China in 2024. He is currently pursuing the Ph.D. degree in Computer Science at UC Irvine and is a visiting student at City University of Hong Kong. His research interests lie at the intersection of machine learning and wireless systems.",
               "education": [
                 {
                   "degree": "PhD in Computer Science",
@@ -2136,10 +2137,6 @@
               "last_name": "qinlangtian"
             }
           ]
-        },
-        {
-          "name": "Visiting Students",
-          "members": []
         }
       ]
     },
