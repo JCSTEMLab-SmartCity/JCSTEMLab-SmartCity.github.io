@@ -1307,75 +1307,6 @@
           "name": "Current PhD Students",
           "members": [
             {
-              "id": "phd23-fangzhengru",
-              "title": "Mr. FANG, Zhengru",
-              "role": [
-                {
-                  "text": "PhD Student (HKPFS)",
-                  "highlighted": true
-                },
-                {
-                  "text": "MSc @ Tsinghua University",
-                  "highlighted": false
-                },
-                {
-                  "text": "BSc @ Huazhong University of Science and Technology",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/avatars/PhD23_FangZhengru.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:zhefang4-c@my.cityu.edu.hk",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=yggQMJMAAAAJ&hl",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
-                },
-                {
-                  "type": "house-user",
-                  "url": "http://www.zhengrufang.com/index.html",
-                  "icon": "fas fa-globe",
-                  "title": "Homepage"
-                },
-                {
-                  "type": "github",
-                  "url": "https://github.com/fangzr",
-                  "icon": "fab fa-github",
-                  "title": "GitHub"
-                }
-              ],
-              "interests": [
-                "Information Bottleneck Theory",
-                "Resource-Constrained Inference",
-                "Multimodal Data Integration"
-              ],
-              "biography": "\n\nZhengru Fang received his B.S. degree (*Hons.*) in electronics and information engineering from the Huazhong University of Science and Technology, Wuhan, China, in 2019 and his M.S. degree (*Hons.*) from Tsinghua University, Beijing, China, in 2022. He is pursuing his Ph.D. in the Department of Computer Science at City University of Hong Kong, supervised by Prof. Yuguang \"Michael\" Fang, supported by the Hong Kong PhD Fellowship Scheme (HKPFS). His research focuses on theoretical analysis and resource allocation optimization, with emphasis on information bottleneck theory, resource-constrained inference, and multimodal data integration. He has been serving as a reviewer for *IEEE JSAC*, *IEEE TWC*, *IEEE TMC*, *ACM Computing Surveys*, among others.",
-              "education": [
-                {
-                  "degree": "PhD in Computer Science",
-                  "institution": "City University of Hong Kong, Hong Kong SAR",
-                  "year": "2023 - now"
-                },
-                {
-                  "degree": "MEng in Electronic Engineering",
-                  "institution": "Tsinghua University, Beijing, China",
-                  "year": "2019 - 2022"
-                },
-                {
-                  "degree": "BSc in Electronics and Information Engineering",
-                  "institution": "Huazhong University of Science and Technology, Wuhan, China",
-                  "year": "2015 – 2019"
-                }
-              ],
-              "last_name": "23fangzhengru"
-            },
-            {
               "id": "phd24-fangzihan",
               "title": "Ms. FANG, Zihan",
               "role": [
@@ -2428,6 +2359,81 @@
                 }
               ],
               "last_name": "aaa"
+            }
+          ]
+        },
+        {
+          "name": "Graduated PhD Students",
+          "displayName": "Graduated PhD Students (@CityUHK)",
+          "members": [
+            {
+              "id": "phd23-fangzhengru",
+              "title": "Mr. FANG, Zhengru",
+              "role": [
+                {
+                  "text": "PhD Student (HKPFS)",
+                  "highlighted": true
+                },
+                {
+                  "text": "MSc @ Tsinghua University",
+                  "highlighted": false
+                },
+                {
+                  "text": "BSc @ Huazhong University of Science and Technology",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/avatars/PhD23_FangZhengru.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:zhefang4-c@my.cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=yggQMJMAAAAJ&hl",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                },
+                {
+                  "type": "house-user",
+                  "url": "http://www.zhengrufang.com/index.html",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
+                },
+                {
+                  "type": "github",
+                  "url": "https://github.com/fangzr",
+                  "icon": "fab fa-github",
+                  "title": "GitHub"
+                }
+              ],
+              "interests": [
+                "Information Bottleneck Theory",
+                "Resource-Constrained Inference",
+                "Multimodal Data Integration"
+              ],
+              "biography": "\n\nZhengru Fang received his B.S. degree (*Hons.*) in electronics and information engineering from the Huazhong University of Science and Technology, Wuhan, China, in 2019 and his M.S. degree (*Hons.*) from Tsinghua University, Beijing, China, in 2022. He is pursuing his Ph.D. in the Department of Computer Science at City University of Hong Kong, supervised by Prof. Yuguang \"Michael\" Fang, supported by the Hong Kong PhD Fellowship Scheme (HKPFS). His research focuses on theoretical analysis and resource allocation optimization, with emphasis on information bottleneck theory, resource-constrained inference, and multimodal data integration. He has been serving as a reviewer for *IEEE JSAC*, *IEEE TWC*, *IEEE TMC*, *ACM Computing Surveys*, among others.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science",
+                  "institution": "City University of Hong Kong, Hong Kong SAR",
+                  "year": "2023 - now"
+                },
+                {
+                  "degree": "MEng in Electronic Engineering",
+                  "institution": "Tsinghua University, Beijing, China",
+                  "year": "2019 - 2022"
+                },
+                {
+                  "degree": "BSc in Electronics and Information Engineering",
+                  "institution": "Huazhong University of Science and Technology, Wuhan, China",
+                  "year": "2015 – 2019"
+                }
+              ],
+              "last_name": "23fangzhengru"
             }
           ]
         },
