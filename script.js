@@ -349,9 +349,50 @@ function loadLatestNews() {
 function loadAllNews() {
     fetchJsonCached(resolveDataPath('news.json'))
         .then(data => {
+            setupNewsFilters(data);
             renderNewsItems(data, 'all-news-container', Infinity);
         })
         .catch(error => console.error('Error loading all news:', error));
+}
+
+const NEWS_CATEGORY_ORDER = ['Career', 'Awards', 'Events', 'Service', 'Visits', 'Media', 'Research', 'Others'];
+
+function setupNewsFilters(newsData) {
+    const filtersContainer = document.getElementById('news-filters');
+    if (!filtersContainer) return;
+
+    const categories = Array.from(new Set(newsData.map(item => item.category || 'Others')));
+    const orderedCategories = NEWS_CATEGORY_ORDER
+        .filter(category => categories.includes(category))
+        .concat(categories.filter(category => !NEWS_CATEGORY_ORDER.includes(category)).sort());
+
+    filtersContainer.innerHTML = '';
+
+    const createFilterButton = (label, category) => {
+        const button = document.createElement('button');
+        button.type = 'button';
+        button.className = 'filter-btn';
+        button.dataset.category = category;
+        button.textContent = label;
+
+        button.addEventListener('click', () => {
+            filtersContainer.querySelectorAll('.filter-btn').forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+
+            const filteredNews = category === 'all'
+                ? newsData
+                : newsData.filter(item => (item.category || 'Others') === category);
+            renderNewsItems(filteredNews, 'all-news-container', Infinity);
+        });
+
+        filtersContainer.appendChild(button);
+    };
+
+    createFilterButton('All', 'all');
+    orderedCategories.forEach(category => createFilterButton(category, category));
+
+    const allButton = filtersContainer.querySelector('[data-category="all"]');
+    if (allButton) allButton.classList.add('active');
 }
 
 function loadHomepagePublications() {
@@ -635,10 +676,15 @@ function renderNewsItems(newsData, containerId, limit = 8) {
             contentElement.className = 'news-content';
 
             const titleElement = document.createElement('h3');
+            const categoryElement = document.createElement('span');
+            categoryElement.className = 'news-category';
+            categoryElement.textContent = `${newsItem.category || 'Others'} | `;
+            titleElement.appendChild(categoryElement);
+
             if (newsItem.title && newsItem.title.includes('<a href=')) {
-                titleElement.innerHTML = newsItem.title;
+                titleElement.insertAdjacentHTML('beforeend', newsItem.title);
             } else {
-                titleElement.textContent = newsItem.title;
+                titleElement.appendChild(document.createTextNode(newsItem.title));
             }
             contentElement.appendChild(titleElement);
 

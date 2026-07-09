@@ -1,31 +1,43 @@
 [
   {
     "date": "Jul. 9, 2026",
+    "category": "Awards",
+    "title": "Senkang Hu Awarded the Goertek Scholarship",
+    "content": "Congratulations to <b>Senkang Hu</b>, who was selected as a recipient of the <b>Goertek Scholarships</b> for the 2025/26 academic year, sponsored by <b>Goertek Inc.</b>!"
+  },
+  {
+    "date": "Jul. 9, 2026",
+    "category": "Career",
     "title": "Zhengru Fang Accepted a Postdoctoral Research Position at HKUST",
     "content": "Congratulations to <b>Dr. Zhengru Fang</b>, our recent PhD graduate, who has accepted a <b>postdoctoral research position</b> at <b>The Hong Kong University of Science and Technology (HKUST)</b>!!!"
   },
   {
     "date": "Jul. 6, 2026",
+    "category": "Awards",
     "title": "Tianxi Ji Won the NSF Faculty CAREER Award",
     "content": "Congratulations to <b>Prof. Tianxi Ji</b>, a former PhD student of <b>Prof. Pan Li</b> and an <b>Assistant Professor</b> in the Department of Computer Science at <b>Texas Tech University</b>, who has won the prestigious <b>NSF Faculty CAREER Award</b>!!!"
   },
   {
     "date": "Jul. 1, 2026",
+    "category": "Service",
     "title": "Prof. Fang Assumed the EiC of IEEE TMLCN",
     "content": "<b>Prof. Yuguang \"Michael\" Fang</b> assumed the role of <b>Editor-in-Chief</b> of <b>IEEE Transactions on Machine Learning for Communications and Networking</b> starting on <b>July 1, 2026</b>."
   },
   {
     "date": "Jun. 27, 2026",
+    "category": "Awards",
     "title": "Yiqin Deng Received the Hong Kong Research Grants Council Early Career Award",
     "content": "Congratulations to <b>Dr. Yiqin Deng</b>, our former lab member and now a <b>Research Assistant Professor</b> at <b>Lingnan University</b>, who received the <b>Hong Kong Research Grants Council (RGC) Early Career Award</b>!!!"
   },
   {
     "date": "Jun. 18, 2026",
+    "category": "Awards",
     "title": "Zhengru Fang Received the College of Computing Research Excellence Award for PhD Students",
     "content": "Congratulations to <b>Zhengru Fang</b>, who was selected for the <b>College of Computing Research Excellence Award for PhD Students</b>! He was the sole awardee from the <b>Department of Computer Science</b>."
   },
   {
     "date": "Jun. 15, 2026",
+    "category": "Media",
     "title": "Media Coverage of Our V2X Cooperative Perception and Low-Altitude Economy Research",
     "content": "Recent research achievements from the <b>JC STEM Lab</b> in <b>V2X-based cooperative perception</b> and the <b>low-altitude economy</b> have been covered by several major media outlets, including <b>CCTV</b>, <b>China Daily</b>, and <b>China News Service</b>. The reports highlight the team's work on priority-aware cooperative perception for connected vehicles, cross-domain perception under complex sensing and weather conditions, and air-ground collaborative computing and sensing for low-altitude economy applications. These studies aim to improve perception accuracy, reduce communication overhead, and support safer autonomous driving and smart city mobility. Many thanks to all collaborators and students who contributed to these projects!",
     "links": [
@@ -45,6 +57,7 @@
   },
   {
     "date": "Jun. 11, 2026",
+    "category": "Visits",
     "title": "Research Grants Council (RGC) Visited the Lab",
     "content": "Representatives from the <b>Research Grants Council (RGC)</b> visited <b>CityUHK</b>, where the <b>JC STEM Lab of Smart City</b> presented the lab's <b>UGV-UAV Collaborative Navigation Demo</b>.",
     "images": [
@@ -57,11 +70,13 @@
   },
   {
     "date": "May 22, 2026",
+    "category": "Awards",
     "title": "Xiaonan Zhang Won the NSF Faculty CAREER Award",
     "content": "Congratulations to <b>Prof. Xiaonan Zhang</b>, a former PhD student of <b>Prof. Linke Guo</b> and an <b>Assistant Professor</b> in the Department of Computer Science at <b>Florida State University</b>, who has won the prestigious <b>NSF Faculty CAREER Award</b>!!!"
   },
   {
     "date": "May 12, 2026",
+    "category": "Visits",
     "title": "Visitors from PolyU and China Telecom Singapore Innovation Institute Visited the Lab",
     "content": "<b>Prof. MA Yuan</b> (first photo, right) from the Department of Mechanical Engineering at <b>The Hong Kong Polytechnic University</b> and <b>Senior Researcher Wang Dong</b> (first photo, left) from the <b>China Telecom Singapore Innovation Institute</b> visited the <b>JC STEM Lab of Smart City</b> for research exchange and collaboration discussions.",
     "images": [
@@ -71,21 +86,25 @@
   },
   {
     "date": "May 6, 2026",
+    "category": "Career",
     "title": "Gen Li Accepted Assistant Professor Position at University of Houston",
     "content": "Congratulations to <b>Gen Li</b> (a PhD student of Professor Linke Guo), who has accepted an <b>Assistant Professor</b> position in the Department of Computer Science at <b>University of Houston</b>!!!"
   },
   {
     "date": "Apr. 28, 2026",
+    "category": "Career",
     "title": "Jian Li Promoted to Associate Professor at USTC",
     "content": "Congratulations to <b>Prof. Jian Li</b>, our former member, who has been promoted to (long-term) <b>Associate Professor</b> at <b>University of Science and Technology of China</b>!!!"
   },
   {
     "date": "Apr. 9, 2026",
+    "category": "Awards",
     "title": "Lan Won the NSF Faculty CAREER Award",
     "content": "Congratulations to <b>Prof. Lan Zhang</b>, our former member and an <b>Assistant Professor</b> in the Department of Electrical and Computer Engineering at <b>Clemson University</b>, who has won the prestigious <b>NSF Faculty CAREER Award</b>!!!"
   },
   {
     "date": "Mar. 19, 2026",
+    "category": "Events",
     "title": "Zhengru Fang Successfully Defended His PhD Dissertation",
     "content": "Congratulations to <b>Zhengru Fang</b>, who successfully defended his PhD dissertation! He is our first PhD graduate at CityUHK!!!",
     "images": [
@@ -95,6 +114,7 @@
   },
   {
     "date": "Mar. 12, 2026",
+    "category": "Visits",
     "title": "China Mobile Hong Kong Visited the Lab for Academic Exchange",
     "content": "Representatives from China Mobile Hong Kong visited the JC STEM Lab of Smart City for academic exchange and to learn more about the lab's research. Lab members also presented live demonstrations showcasing the lab's recent work in low-altitude economy, vehicle-to-everything networking, autonomous driving, and health monitoring.",
     "images": [
@@ -106,525 +126,617 @@
   },
   {
     "date": "Jan. 2026",
+    "category": "Career",
     "title": "Yanmin Joined Texas A&M University as Associate Professor",
     "content": "Congratulations to <b>Prof. Yanmin Gong</b>, our former lab member, who has joined the <b>School of Engineering Medicine</b> at <b>Texas A&M University</b> as an <b>Associate Professor</b>!!!"
   },
   {
     "date": "Jan. 29, 2026",
+    "category": "Media",
     "title": "<a href=\"https://www.mittrchina.com/news/detail/15843\">MIT Technology Review Report</a> (<span style=\"font-family: STKaiti;\">麻省理工科技评论</span>)",
     "content": "PhD student <b>Zhengru Fang</b> and his team at City University of Hong Kong had multiple AI agents explore a virtual maze together, giving them only one extremely simple goal—to learn to predict what their companions would see and where they would go in the next second. The results showed that these agents not only learned to cooperate efficiently but also spontaneously formed 'map cells' similar to those in animal brains within their 'minds,' and even developed a secret language only they could understand.<br>Paper: <a href=\"https://fangzr.github.io/SSM-PC/index.html\" target=\"_blank\" rel=\"noopener noreferrer\">Shared Spatial Memory Through Predictive Coding</a>",
     "images": [
-        "/assets/news-assets/2026-1-29-MITTechnologyReviewReport/mit.png"
+      "/assets/news-assets/2026-1-29-MITTechnologyReviewReport/mit.png"
     ]
   },
   {
     "date": "Dec. 23, 2025",
+    "category": "Media",
     "title": "<a href=\"https://www.cityu.edu.hk/media/news/2025/12/23/future-global-leaders-programme\">Future Global Leaders Programme Featured by CityUHK</a>",
     "content": "Congratulations to <b>Mr. Alex Cheng Chit-yuen</b>, PhD student of our lab, on being featured in CityUHK's <b>Future Global Leaders Programme</b> news report. This programme develops global vision, leadership capability, and interdisciplinary perspectives for future leaders. We are proud of Alex's achievement and look forward to his continued impact.",
     "images": [
-        "/assets/news-assets/2025-12-23-FutureGlobalLeadersProgramme/alex-future-global.png"
+      "/assets/news-assets/2025-12-23-FutureGlobalLeadersProgramme/alex-future-global.png"
     ]
   },
   {
     "date": "Dec. 9, 2025",
+    "category": "Awards",
     "title": "Best Paper Award at GLOBECOM'25",
     "content": "Our paper <b>\"UAV-enabled Computing Power Networks: Task Completion Probability Analysis\"</b> has received the <b>Best Paper Award</b> at <b>IEEE GLOBECOM'25</b>!!!",
     "images": [
-        "/assets/news-assets/2025-12-9-GLOBECOM25BestPaperAward/certificate.png",
-        "/assets/news-assets/2025-12-9-GLOBECOM25BestPaperAward/photos.JPG"
+      "/assets/news-assets/2025-12-9-GLOBECOM25BestPaperAward/certificate.png",
+      "/assets/news-assets/2025-12-9-GLOBECOM25BestPaperAward/photos.JPG"
     ]
   },
   {
     "date": "Nov. 27, 2025",
+    "category": "Events",
     "title": "Thanksgiving Gathering",
     "content": "Our lab came together for a warm Thanksgiving gathering. Everyone was very happy and enjoyed the celebration.",
     "images": [
-        "/assets/news-assets/2025-11-27-ThanksgivingGathering/group.jpg",
-        "/assets/news-assets/2025-11-27-ThanksgivingGathering/subgroup1.jpg",
-        "/assets/news-assets/2025-11-27-ThanksgivingGathering/subgroup2.jpg",
-        "/assets/news-assets/2025-11-27-ThanksgivingGathering/subgroup3.jpg"
+      "/assets/news-assets/2025-11-27-ThanksgivingGathering/group.jpg",
+      "/assets/news-assets/2025-11-27-ThanksgivingGathering/subgroup1.jpg",
+      "/assets/news-assets/2025-11-27-ThanksgivingGathering/subgroup2.jpg",
+      "/assets/news-assets/2025-11-27-ThanksgivingGathering/subgroup3.jpg"
     ]
   },
   {
     "date": "Nov. 13, 2025",
+    "category": "Career",
     "title": "Congratulations to Yang Song on Equinix Appointment",
     "content": "Congratulations to <b>Dr. Yang Song</b>, our former member at UF, who has just joined Equinix as SVP, Chief Data Science and AI Officer!!! Check the <a href=\"https://www.prnewswire.com/news-releases/equinix-appoints-yang-song-as-svp-chief-data-science-and-ai-officer-302614235.html\">news</a> for more detail."
   },
   {
     "date": "Oct. 27, 2025",
+    "category": "Visits",
     "title": "Visit from Fukui Prefectural Koshi High School, Japan",
     "content": "The JC STEM Lab of Smart City was pleased to welcome students and teachers from <b>Fukui Prefectural Koshi High School, Japan</b>, for a visit on 24 October. The students toured our facilities and saw live demonstrations of our smart city research, including IoT sensors and data analytics platforms. The visit fostered a great exchange of ideas, and we hope it inspired the students in their future STEM pursuits. We thank our guests for their lively engagement and look forward to more such collaborations.",
     "images": [
-        "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/67a8abedb912e709e6c80b85b90c3313.JPG",
-        "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/1b29be16cd79f997560f638b1d18dbe9.JPG",
-        "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/ccf390e73fe2f03a59abf5452ca8890a.JPG",
-        "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/Weixin Image_20251129163301_56_187.jpg",
-        "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/DSC02704.JPG",
-        "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/DSC02654.JPG"
+      "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/67a8abedb912e709e6c80b85b90c3313.JPG",
+      "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/1b29be16cd79f997560f638b1d18dbe9.JPG",
+      "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/ccf390e73fe2f03a59abf5452ca8890a.JPG",
+      "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/Weixin Image_20251129163301_56_187.jpg",
+      "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/DSC02704.JPG",
+      "/assets/news-assets/2025-10-27-JapanHighSchoolVisit/DSC02654.JPG"
     ]
   },
   {
     "date": "Oct. 2025",
+    "category": "Awards",
     "title": "Prof. Zhang Won The 2025 IEEE ComSoc AP WICE Outstanding Achievement Award",
     "content": "Congratulations to <b>Prof. Haixia Zhang</b>, our former group member, who won the 2025 IEEE ComSoc AP WICE Outstanding Achievement Award!!!"
   },
   {
     "date": "Oct. 2025",
+    "category": "Career",
     "title": "Yiqin will Join Lingnan University as a Research Assistant Professor",
     "content": "Congratulations to <b>Dr. Yiqin Deng</b>, who will join the Department of Data Science at <b>Lingnan University</b> as a <b>Research Assistant Professor (RAP)</b>!!!"
   },
   {
     "date": "Sep. 2025",
+    "category": "Awards",
     "title": "Three Lab Members Awarded Scholarships",
     "content": "Outstanding Academic Performance Scholarship (OAPA): <b>Zhengru Fang, Yihang Tao</b> <br> Research Tuition Scholarship (RTS): <b>Senkang Hu</b> <br> Chow Yei Ching School of Graduate Studies Scholarship (CYCSGS): <b>Senkang Hu</b> (sole awardee in the Department of Computer Science)<br>Congratulations to them!!!"
   },
   {
     "date": "Jul. 2025",
+    "category": "Service",
     "title": "Prof. Fang Elected as a Member-at-Large",
-    "content": "Congratulations to <b>Prof. Fang</b>, who was elected to a <b>Member-at-Large</b> of the Board of Governors of IEEE Communications Society!!!" 
+    "content": "Congratulations to <b>Prof. Fang</b>, who was elected to a <b>Member-at-Large</b> of the Board of Governors of IEEE Communications Society!!!"
   },
   {
     "date": "Jul. 8, 2025",
+    "category": "Events",
     "title": "<a href=\"https://www.cityu.edu.hk/media/news/2025/07/21/cityuhk-establishes-five-jc-stem-labs-foster-interdisciplinary-research\">JC STEM Labs Inauguration Ceremony</a>",
     "content": "Officiating at the JC STEM Labs' inauguration ceremony on 3 July were Professor Lee Chun-sing, Provost and Deputy President at CityUHK; Ms Elsie Tsang, Executive Manager of Charities (Talent and Sector Development) at The Hong Kong Jockey Club (HKJC), Professor Li Wen Jung, Vice-President (Talent and International Strategy) and Professor Chan Chi-hou, Vice-President (Community Engagement) at CityUHK. They were joined by five CityUHK Global STEM Professors — Professor Lee Duu-Jong, Professor Wang Xin, Professor Ren Yang, Professor Takashi Hibiki and <b>Professor Fang Yuguang</b> — the directors of the JC STEM Labs. Check the <a href=\"https://www.cityu.edu.hk/media/news/2025/07/21/cityuhk-establishes-five-jc-stem-labs-foster-interdisciplinary-research\">link</a> and <a href=\"pages/opening-ceremony.html\">video</a> for more details.",
     "images": [
-        "/assets/news-assets/2025-7-8-JCSTEMLabsInaugurationCeremony/Inauguration-Ceremony.png"
+      "/assets/news-assets/2025-7-8-JCSTEMLabsInaugurationCeremony/Inauguration-Ceremony.png"
     ]
   },
   {
     "date": "Jul. 2025",
+    "category": "Career",
     "title": "Guangyu Will Join Huawei 2012 Lab",
-    "content": "Congratulations to <b>Dr. Guangyu Zhu</b>, our last member from University of Florida, who will join <b>Huawei 2012 Lab</b>!!!" 
+    "content": "Congratulations to <b>Dr. Guangyu Zhu</b>, our last member from University of Florida, who will join <b>Huawei 2012 Lab</b>!!!"
   },
   {
     "date": "Jun. 2025",
+    "category": "Career",
     "title": "Beatriz was Promoted to Associate Professor with Tenure",
-    "content": "Congratulations to <b>Dr. Beatriz Lorenzo</b>, our former lab member, who was promoted to <b>Associate Professor with tenure</b> in the Department of Electrical and Computer Engineering at <b>University of Massachusetts at Amherst (UMass Amherst)</b>!!!" 
+    "content": "Congratulations to <b>Dr. Beatriz Lorenzo</b>, our former lab member, who was promoted to <b>Associate Professor with tenure</b> in the Department of Electrical and Computer Engineering at <b>University of Massachusetts at Amherst (UMass Amherst)</b>!!!"
   },
   {
     "date": "Jun. 2025",
+    "category": "Awards",
     "title": "Alex Chit-Yuen Cheng was Selected for Future Global Leader Programme",
-    "content": "Congratulations to <b>Mr. Alex Chit-Yuen Cheng</b>, our current PhD student, who was selected for the <b>Future Global Leader Programme (Lucy Cavendish College, University of Cambridge x City University of Hong Kong)</b>, which is only 10 people univerity-wide. Congratulations, Alex!!! This programme aims to foster a global and enterprising mindset among participants, equipping you to tackle the diverse economic and environmental challenges of the coming decades. It will serve as your gateway to unlocking your full potential as a leader while exploring the captivating wonders of the global and Asia. Check the <a href=\"https://www.cityu.edu.hk/vpti/FGLPPoster.pdf\">Poster</a> for more details." 
+    "content": "Congratulations to <b>Mr. Alex Chit-Yuen Cheng</b>, our current PhD student, who was selected for the <b>Future Global Leader Programme (Lucy Cavendish College, University of Cambridge x City University of Hong Kong)</b>, which is only 10 people univerity-wide. Congratulations, Alex!!! This programme aims to foster a global and enterprising mindset among participants, equipping you to tackle the diverse economic and environmental challenges of the coming decades. It will serve as your gateway to unlocking your full potential as a leader while exploring the captivating wonders of the global and Asia. Check the <a href=\"https://www.cityu.edu.hk/vpti/FGLPPoster.pdf\">Poster</a> for more details."
   },
   {
     "date": "Jun. 2025",
+    "category": "Awards",
     "title": "<a href=\"https://www.chinapostdoctor.org.cn/article?inid=e5a3aefa-b8f4-4bd8-99a6-60a1d4c49028\">Xinyuan Qian was Selected for the Postdoctoral Innovation Talent Support Program</a>",
     "content": "Congratulations to <b>Dr. Xinyuan Qian</b>, our former visiting student (Aug. 2023 - Apr. 2025), who was selected for the <b>Postdoctoral Innovation Talent Support Program</b> (<span style=\"font-family: STKaiti;\">博士後創新人才支持計劃</span>). Congratulations, Dr. Qian!!!"
   },
   {
     "date": "Mar. 2025",
+    "category": "Career",
     "title": "Jianqing was Promoted to Associate Professor with Tenure at NCSU",
     "content": "Congratulations to <b>Jianqing</b>, our former lab member, who has just been promoted to <b>Associate Professor with tenure</b> in the Department of Computer Science at <b>North Carolina State University</b>!!!"
   },
-  
   {
     "date": "Mar. 2025",
+    "category": "Events",
     "title": "Guangyu Zhu Successfully Defends PhD Dissertation",
     "content": "Congratulations to <b>Guangyu</b>, who successfully defended his PhD dissertation yesterday! Guangyu is the final PhD student of Prof. Fang at University of Florida. Congratulations, Dr. Zhu!!!"
   },
-  
   {
     "date": "Dec. 2024",
+    "category": "Career",
     "title": "Xiaojing Wen Joined Shanghai Jiao Tong University",
     "content": "Congratulations to <b>Dr. Xiaojing Wen</b>, our former visiting student, who joined Shanghai Jiao Tong University as a <b>Assistant Researcher</b>!!!"
   },
-  
   {
     "date": "Oct. 2024",
+    "category": "Awards",
     "title": "Xianhao Chen Received Hong Kong RGC Early Career Award",
     "content": "Congratulations to <b>Professor Xianhao Chen (EEE, HKU)</b>, our former lab member, who received the <b>Hong Kong Research Grant Council's Early Career Award</b> in 2024/25!!!"
   },
   {
     "date": "Jul. 2024",
+    "category": "Career",
     "title": "Guowen Xu was Appointed Full Professor at UESTC",
     "content": "Congratulations to <b>Dr. Guowen Xu</b>, who will join the Department of Computer Science at the <b>University of Electronic Science and Technology of China (UESTC)</b> as a <b>Full Professor</b>!!!"
   },
   {
     "date": "Jul. 2024",
+    "category": "Career",
     "title": "Hao Yue Moved to UCSC as Tenured Associate Professor",
     "content": "Congratulations to <b>Dr. Hao Yue</b>, who will move to the Department of Computer Science and Engineering at the <b>University of California, Santa Cruz (UCSC)</b> as a <b>Tenured Associate Professor</b> in September!!!"
   },
   {
     "date": "Nov. 2023",
+    "category": "Awards",
     "title": "Pan Li was Elevated to IEEE Fellow",
     "content": "Congratulations to Professor <b>Pan Li</b>, our former lab member, who has been elevated to <b>IEEE Fellow</b>!!!"
   },
-  
   {
     "date": "Jan. 2023",
+    "category": "Awards",
     "title": "Prof. Fang was Elevated to ACM Fellow",
     "content": "🔥🔥🔥 Congratulations to <b>Prof. Fang</b>, who has been elevated to <a href=\"https://www.acm.org/media-center/2023/january/fellows-2022\">ACM Fellow</a> for contributions to wireless networks and mobile computing!!!"
-    
   },
   {
     "date": "Nov. 2022",
+    "category": "Career",
     "title": "Haichuan Ding Joined Beijing Institute of Technology as Full Professor",
     "content": "Congratulations to <b>Haichuan Ding</b>, who has joined the School of Cyberspace Science and Technology, <b>Beijing Institute of Technology</b>, Beijing, China, as a <b>Full Professor</b>!!!"
   },
   {
     "date": "Aug. 2022",
+    "category": "Career",
     "title": "Prof. Fang Appointed Chair Professor at CityU",
     "content": "🔥🔥🔥 Congratulations to <b>Prof. Fang</b>, who will join the Department of Computer Science, City University of Hong Kong (CityU), as the <b>Chair Professor of Internet of Things</b>!!!"
   },
   {
     "date": "Jun. 2022",
+    "category": "Career",
     "title": "Jianqing Liu Joins NC State as Assistant Professor",
     "content": "Congratulations to <b>Dr. Jianqing Liu</b>, our former member, who will join the Department of Computer Science, North Carolina State University (NC State), as an <b>Assistant Professor</b>!!!"
   },
   {
     "date": "May 2022",
+    "category": "Career",
     "title": "Kaichen Accepts Assistant Professor Position at Michigan Tech",
     "content": "Congratulations to <b>Kaichen</b>, who has accepted an <b>Assistant Professor</b> position in the Department of Electrical and Computer Engineering at <b>Michigan Technological University</b>!!!"
   },
   {
     "date": "May 2022",
+    "category": "Career",
     "title": "Linke Promoted to Associate Professor with Tenure at Clemson",
     "content": "Congratulations to <b>Linke</b>, our former member, who has been promoted to <b>Associate Professor</b> with tenure in the Department of Electrical and Computer Engineering at Clemson University!!!"
   },
   {
     "date": "Apr. 2022",
+    "category": "Career",
     "title": "Rui Hu Accepts Assistant Professor Position at UNR",
     "content": "Congratulations to <b>Rui Hu</b> (a PhD student of Dr. Yanmin Gong), who has accepted an <b>Assistant Professor</b> position at the Department of Computer Science and Engineering, <b>University of Nevada, Reno</b>!!!"
   },
   {
     "date": "Apr. 2022",
+    "category": "Career",
     "title": "Yifang Guo and Tianxi Ji Accept Assistant Professor Positions",
     "content": "Congratulations to <b>Yifang Guo</b> and <b>Tianxi Ji</b> (PhD students of Dr. Pan Li), who have accepted <b>tenure-track</b> <b>Assistant Professor</b> positions in the Department of Computer and Information Sciences at <b>Towson University</b> and the Department of Computer Science at <b>Texas Technological University</b>, respectively!!! Congratulations to Pan as well!"
   },
   {
     "date": "Apr. 2022",
+    "category": "Career",
     "title": "Yaodan Accepts Assistant Professor Position at Idaho State",
     "content": "Congratulations to <b>Yaodan</b>, who has accepted an <b>Assistant Professor</b> position in the Department of Electrical and Computer Engineering at <b>Idaho State University</b>!!!"
   },
   {
     "date": "Mar. 2022",
+    "category": "Career",
     "title": "Xianhao Joins HKU as Assistant Professor",
     "content": "Congratulations to <b>Xianhao</b>, who has accepted a <b>tenure-track Assistant Professor</b> position in the Department of Electrical and Electronic Engineering at <b>The University of Hong Kong</b>!!!"
   },
   {
     "date": "Feb. 2022",
+    "category": "Career",
     "title": "Yanmin and Yuanxiong Promoted to Associate Professor with Tenure at UTSA",
     "content": "Congratulations to <b>Yanmin</b> and <b>Yuanxiong</b>, our former members, who have been promoted to <b>Associate Professor</b> with tenure at University of Texas at San Antonio!!!"
   },
   {
     "date": "Nov. 2021",
+    "category": "Career",
     "title": "Haichuan Ding Joins Beijing Institute of Technology as Full Professor",
     "content": "Congratulations to <b>Haichuan (Ding)</b>, who has joined the School of Cyberspace Science and Technology, <b>Beijing Institute of Technology</b>, Beijing, China, as a <b>Full Professor</b>!!!"
   },
   {
     "date": "Jun. 2021",
+    "category": "Career",
     "title": "Qianlong Wang Accepts Assistant Professor Position at Towson University",
     "content": "Congratulations to <b>Qianlong (Wang)</b>, a PhD student of our former member Dr. Pan Li, who has accepted a <b>tenure-track Assistant Professor</b> position in the Department of Computer and Information Sciences at <b>Towson University</b>!!!"
   },
   {
     "date": "May 2021",
+    "category": "Awards",
     "title": "Yanmin Receives NSF CAREER Award",
     "content": "Congratulations to <b>Yanmin</b>, our former member and an Assistant Professor in the Department of Electrical and Computer Engineering at University of Texas at San Antonio, who has won the prestigious <b>NSF Faculty CAREER Award</b>!!!"
   },
   {
     "date": "Mar. 2021",
+    "category": "Career",
     "title": "Haichuan Joins Samsung Research America",
     "content": "Congratulations to <b>Haichuan</b>, our former member, who has joined <b>Samsung Research America</b> as a <b>Senior Research Engineer</b>!!!"
   },
   {
     "date": "Mar. 2021",
+    "category": "Awards",
     "title": "Jianqing Receives NSF CAREER Award",
     "content": "Congratulations to <b>Jianqing</b>, our former member and an Assistant Professor in the Department of Electrical and Computer Engineering at University of Alabama in Huntsville, who has won the prestigious <b>NSF Faculty CAREER Award</b>!!!"
   },
   {
     "date": "Mar. 2021",
+    "category": "Career",
     "title": "Xinyue Zhang Accepts Assistant Professor Position at Kennesaw State",
     "content": "Congratulations to <b>Xinyue (Zhang)</b>, a PhD student of our former member Dr. Miao Pan, who has accepted a <b>tenure-track Assistant Professor</b> position in the Department of Computer Science at <b>Kennesaw State University</b>!!!"
   },
   {
     "date": "Jun. 2020",
+    "category": "Career",
     "title": "Hao Yue Promoted to Associate Professor with Tenure",
     "content": "Congratulations to <b>Hao (Yue)</b>, who has received early promotion to <b>Associate Professor with Tenure</b>!!!"
   },
   {
     "date": "Jun. 2020",
+    "category": "Events",
     "title": "Lan Successfully Defends PhD Dissertation",
     "content": "Congratulations to <b>Lan</b>, who has successfully defensed her PhD dissertation!!!"
   },
   {
     "date": "May 2020",
+    "category": "Awards",
     "title": "Ming Li Receives NSF CAREER Award",
     "content": "Congratulations to <b>Dr. Ming Li</b>, a former PhD student of our former member Dr. Pan Li, who has won the prestigious <b>NSF Faculty CAREER Award</b>!!!"
   },
   {
     "date": "Apr. 2020",
+    "category": "Career",
     "title": "Lan Accepts Assistant Professor Position at Michigan Tech",
     "content": "Congratulations to <b>Lan</b>, who has accepted an assistant professor position in the Department of Electrical and Computer Engineering, <b>Michigan Technological University</b>!"
   },
   {
     "date": "Apr. 2020",
+    "category": "Career",
     "title": "Xiaonan Zhang Accepts Assistant Professor Position at FSU",
     "content": "Congratulations to <b>Xiaonan Zhang</b>, a graduating PhD student of our former member Dr. Linke Guo, who has accepted an assistant professor position in the Department of Computer Science, <b>Florida State University</b>! Congratulations to Dr. Linke Guo as well for a great job well done!"
   },
   {
     "date": "Dec. 2019",
+    "category": "Awards",
     "title": "Prof. Fang Receives IEEE AHSN Technical Achievement Award",
     "content": "Congratulations to <b>Dr. Fang</b>, who has received 2019 IEEE Ad Hoc and Sensor Networks Technical Committee (AHSN) Technical Achievement Award (for \"Outstanding Contributions to Medium Access Control and Security in Mobile Ad Hoc Networks and Wireless Sensor Networks\")!!!"
   },
   {
     "date": "Oct. 2019",
+    "category": "Career",
     "title": "Yawei Accepts Lecturer Position at NUIST",
     "content": "Congratulations to <b>Yawei</b>, who has accepted a lecturer position in the Department of IoT, School of Computer and Software, <b>Nanjing University of Information Science and Technology</b>!"
   },
   {
     "date": "Sep. 2019",
+    "category": "Awards",
     "title": "Prof. Fang Receives UF Foundation Preeminence Term Professorship",
     "content": "Congratulations to <b>Dr. Fang</b>, who has been selected to receive a University of Florida Foundation Preeminence Term Professorship for three-year period starting in 2019."
   },
   {
     "date": "Jul. 2019",
+    "category": "Events",
     "title": "Yawei Successfully Defends PhD Dissertation",
     "content": "Congratulations to <b>Yawei</b>, who has successfully defensed his PhD dissertation!!!"
   },
   {
     "date": "Jul. 2019",
+    "category": "Awards",
     "title": "Prof. Fang Receives UF Term Professorship",
     "content": "Congratulations to <b>Dr. Fang</b>, who has been selected to receive a University of Florida Term Professorship for another three-year period starting in 2019."
   },
   {
     "date": "Jun. 2019",
+    "category": "Career",
     "title": "Prof. Fang Promoted to Distinguished Professor",
     "content": "Congratulations to <b>Dr. Fang</b>, who has been promoted to <b>Distinguished Professor</b>!"
   },
   {
     "date": "Jun. 2019",
+    "category": "Career",
     "title": "Beatriz Lorenzo Joins UMass Amherst as Assistant Professor",
     "content": "Congratulations to <b>Dr. Beatriz Lorenzo</b>, our former visiting scholar, who has accepted an assistant professor position in Department of Electrical and Computer Engineering, the <b>University of Massachusetts at Amherst</b>!"
   },
   {
     "date": "Jun. 2019",
+    "category": "Career",
     "title": "Yanmin Gong Joins UTSA as Assistant Professor",
     "content": "Congratulations to <b>Dr. Yanmin Gong</b>, our former member, who has moved to Department of Electrical and Computer Engineering, the <b>University of Texas at San Antonio</b>, as an assistant professor!"
   },
   {
     "date": "Jun. 2019",
+    "category": "Career",
     "title": "Yuanxiong Guo Joins UTSA as Assistant Professor",
     "content": "Congratulations to <b>Dr. Yuanxiong Guo</b>, our former member, who has moved to Department of Information Systems and Cyber Security, College of Business, the <b>University of Texas at San Antonio</b>, as an assistant professor!"
   },
   {
     "date": "Jun. 2019",
+    "category": "Career",
     "title": "Linke Guo Joins Clemson as Assistant Professor",
     "content": "Congratulations to <b>Dr. Linke Guo</b>, our former member, who has moved to Department of Electrical and Computer Engineering at <b>Clemson University</b> as an assistant professor!"
   },
   {
     "date": "Jun. 2019",
+    "category": "Career",
     "title": "Miao Pan Promoted to Associate Professor with Tenure",
     "content": "Congratulations to <b>Dr. Miao Pan</b>, our former member, who has been promoted to <b>Associate Professor with Tenure</b>!"
   },
   {
     "date": "Jun. 2019",
+    "category": "Awards",
     "title": "Hao Yue Receives Presidential Award at SFSU",
     "content": "Congratulations to <b>Dr. Hao Yue</b>, our former member, who the Presidential Award from his university, the highest honor for assistant professors in <b>San Francisco State University</b>!"
   },
   {
     "date": "Mar. 2019",
+    "category": "Career",
     "title": "Miao Pan's Students Accept Academic Positions",
     "content": "Congratulations to <b>Dr. Miao Pan</b>, our former member, who has sent his first two graduated PhD students to academia this year (<b>Dr. Sai Mounika Errapotu</b> will join ECE department at <b>University of Texas at El Paso</b> and <b>Ms Jingyi Wang</b> will join CS department at <b>San Francisco State University</b>)!"
   },
   {
     "date": "Nov. 2018",
+    "category": "Career",
     "title": "Haichuan Accepts Postdoc Position at University of Michigan",
     "content": "Congratulations to <b>Haichuan</b>, who has accepted a postdoc position and will join Professor Kang Shin's research group at <b>University of Michigan</b>!"
   },
   {
     "date": "Nov. 2018",
+    "category": "Events",
     "title": "Haichuan Successfully Defends PhD Dissertation",
     "content": "Congratulations to <b>Haichuan</b>, who has successfully defended his PhD dissertation!"
   },
   {
     "date": "Oct. 2018",
+    "category": "Career",
     "title": "Xiaoxia Joins Sun Yat-sen University as Full Professor",
     "content": "Congratulations to <b>Xiaoxia</b>, our former member, who has recently joined the School of Electronics and Communication Engineering at <b>Sun Yat-sen University</b> in Kuangzhou as a <b>Full Professor</b>!"
   },
   {
     "date": "Aug. 2018",
+    "category": "Service",
     "title": "Prof. Fang Receives IEEE Vehicular Technology Outstanding Service Award",
     "content": "Congratualtions to <b>Dr. Fang</b>, who will receive the 2018 IEEE Vehicular Technology Outstanding Service Award (\"For outstanding service as the Editor-in-Chief for the IEEE Transactions on Vehicular Technology (2013-2017)'')"
   },
   {
     "date": "May 2018",
+    "category": "Awards",
     "title": "Jianqing and Haichuan's Paper Receives IEEE TCGCC Best Journal Paper Award",
     "content": "Congratualtions to <b>Jianqing</b> and <b>Haichuan</b>, whose paper entitled \"An Energy-Efficient Strategy for Secondary Users in Cooperative Cognitive Radio Networks for Green Communications\" (J. Liu, H. Ding, Y. Cai, H. Yue, Y. Fang and S. Chen) in IEEE Journal on Selected Areas in Communications (vol. 34, no. 12, pp. 3195-3207, Dec. 2016) has been selected for the IEEE TCGCC Best Journal Paper Award by IEEE Technical Committee on Green Communications & Computing (TCGCC)!!!"
   },
   {
     "date": "May 2018",
+    "category": "Events",
     "title": "Jianqing Successfully Defends PhD Dissertation",
     "content": "Congratulations to <b>Jianqing</b>, who has successfully defended his PhD dissertation!!!"
   },
   {
     "date": "Mar. 2018",
+    "category": "Career",
     "title": "Jianqing Accepts Assistant Professor Position at UAH",
     "content": "Congratulations to <b>Jianqing</b>, who has accepted an Assistant Professor position in the Department of Electrical and Computer Engineering at <b>University of Alabama at Huntsville</b>!!!"
   },
   {
     "date": "Nov. 2017",
+    "category": "Service",
     "title": "Prof. Fang Elected to Proceedings of the IEEE Editorial Board",
     "content": "Congratulations to <b>Dr. Fang</b>, who has been elected as a member of the Editorial Board of the Proceedings of the IEEE (effective 1 January 2018 through 31 December 2020)!"
   },
   {
     "date": "Apr. 2017",
+    "category": "Awards",
     "title": "Prof. Fang Receives UF Research Foundation Professorship",
     "content": "Congratulations to <b>Dr. Fang</b>, who has been selected for the University of Florida Research Foundation Professorship for 2017-2020!"
   },
   {
     "date": "Mar. 2017",
+    "category": "Awards",
     "title": "Prof. Fang Receives UF Term Professorship",
     "content": "Congratulations to <b>Dr. Fang</b>, who has been selected to receive a University of Florida Term Professorship for a three-year period starting January 1, 2017."
   },
   {
     "date": "Aug. 2016",
+    "category": "Career",
     "title": "Jinyuan Sun Promoted to Associate Professor with Tenure at UT",
     "content": "Congratulations to <b>Dr. Jinyuan Sun</b>, our former member, who has been promoted to <b>Associate Professor with tenure</b> in the Department of Electrical Engineering and Computer Science at <b>University of Tennessee</b>!!!"
   },
   {
     "date": "Aug. 2016",
+    "category": "Career",
     "title": "Pan Li Promoted to Associate Professor with Tenure at CWRU",
     "content": "Congratulations to <b>Dr. Pan Li</b>, our former member, who has been promoted to <b>Associate Professor with tenure</b> in the Department of Electrical Engineering and Computer Science at <b>Case Western Reserve University</b>!!!"
   },
   {
     "date": "Apr. 2016",
+    "category": "Career",
     "title": "Yanmin Accepts Assistant Professor Position at Oklahoma State",
     "content": "Congratulations to <b>Yanmin</b>, who has accepted an Assistant Professor position in the Department of Electrical and Computer Engineering at <b>Oklahoma State University</b>!!!"
   },
   {
     "date": "Dec. 2015",
+    "category": "Awards",
     "title": "Prof. Fang Receives UF CoE Doctoral Dissertation Advisor/Mentoring Award",
     "content": "Congratulations to <b>Dr. Fang</b>, who has been selected for the 2015-2016 University of Florida College of Engineering (CoE) Doctoral Dissertation Advisor/Mentoring Award!"
   },
   {
     "date": "Dec. 2015",
+    "category": "Awards",
     "title": "Lab Members Win Best Paper Awards at Globecom'2015",
     "content": "Best Paper Award: The (former and current) lab members (Xuanheng Li, Linke Guo, and Dr. Fang) are congratulated on two papers winning the best paper awards at Globecom'2015 (\"Economic-robust session based spectrum trading in multi-hop cognitive radio networks\" (X. Li, M. Pan, Y. Song, Y. Sun and Y. Fang) and \"Privacy-preserving verifiable proximity test for location-based services\" (G. Zhuo, Q. Jia, L. Guo, M. Li and Y. Fang))."
   },
   {
     "date": "Nov. 2015",
+    "category": "Awards",
     "title": "Prof. Fang Elected Fellow of AAAS",
     "content": "Congratulations to <b>Dr. Fang</b>, who has been elected to the Fellow of American Association For The Advancement Of Science (AAAS) (2015 AAAS Fellows)."
   },
   {
     "date": "Oct. 2015",
+    "category": "Service",
     "title": "Prof. Fang Delivers Keynote at WCSP",
     "content": "<b>Dr. Fang</b> delivered a keynote at the 7th International Conference on Wireless Communications and Signal Processing."
   },
   {
     "date": "Aug. 2015",
+    "category": "Service",
     "title": "Prof. Fang Delivers Keynote at ChinaCom",
     "content": "<b>Dr. Fang</b> delivered a keynote at the 10th International Conference on Communications and Networking in China."
   },
   {
     "date": "Aug. 2015",
+    "category": "Career",
     "title": "Pan Li Joins Case Western Reserve University as Assistant Professor",
     "content": "Congratulations to <b>Dr. Pan Li</b>, our former member, who has accepted an Assistant Professor position in the Department of Electrical Engineering and Computer Science at <b>Case Western Reserve University</b>!!!"
   },
   {
     "date": "Jul. 2015",
+    "category": "Career",
     "title": "Yan Long Joins Southwest Jiao Tong University as Lecturer",
     "content": "Congratulations to <b>Dr. Yan Long</b>, who has accepted a lecturer position in School of Information Science and Technology at <b>Southwest Jiao Tong University</b>, Chengdu, China!!!"
   },
   {
     "date": "Jul. 2015",
+    "category": "Career",
     "title": "Kaihe Joins Tencent",
     "content": "Congratulations to <b>Kaihe</b>, who has accepted a position with <b>Tencent</b>, Shenzhen, China!!!"
   },
   {
     "date": "Jul. 2015",
+    "category": "Events",
     "title": "Kaihe Successfully Defends PhD Dissertation",
     "content": "Congratulations to <b>Kaihe</b>, who has successfully defended his PhD dissertation today!!!"
   },
   {
     "date": "May 2015",
+    "category": "Awards",
     "title": "Prof. Fang Receives IEEE CISTC Technical Recognition Award",
     "content": "Congratulations to <b>Dr. Fang</b>, who will receive 2015 IEEE Communications & Information Security Technical Committee (CISTC) Technical Recognition Award (for \"Contributions to Security and Privacy on Wireless Networks and Mobile Computing Systems\")!!!"
   },
   {
     "date": "May 2015",
+    "category": "Events",
     "title": "Hao Successfully Defends PhD Dissertation",
     "content": "Congratulations to <b>Hao</b>, who has successfully defended his PhD dissertation today!!!"
   },
   {
     "date": "May 2015",
+    "category": "Career",
     "title": "Hao Accepts Assistant Professor Position at SFSU",
     "content": "Congratulations to <b>Hao</b>, who has accepted an Assistant Professor position in the Department of Computer Science at <b>San Francisco State University</b>!!!"
   },
   {
     "date": "May 2015",
+    "category": "Career",
     "title": "Miao Joins University of Houston as Assistant Professor",
     "content": "Congratulations to <b>Miao</b>, our former member, who has accepted an Assistant Professor position and will move to the Department of Electrical and Computer Engineering at <b>University of Houston</b> in the Fall 2015!!!"
   },
   {
     "date": "Nov. 2014",
+    "category": "Awards",
     "title": "Prof. Fang Receives Wireless Communications Technical Committee Recognition Award",
     "content": "Congrtulations to <b>Dr. Fang</b>, who has been selected for 2014 Wireless Communications Technical Committee (WTC) Recognition Award. This award was established to recognize a person with a high degree of visibility and contribution in the field of \"Wireless and Mobile Communications Theory, Systems, and Networks\"."
   },
   {
     "date": "Oct. 2014",
+    "category": "Awards",
     "title": "Hao Receives UFIC Outstanding International Student Award",
     "content": "Congratulations to <b>Hao</b>, who has received the UFIC Outstanding International Student Award!!!"
   },
   {
     "date": "Aug. 2014",
+    "category": "Awards",
     "title": "Miao Receives NSF CAREER Award",
     "content": "Congratulations to <b>Miao</b>, our former member and an Assistant Professor in the Department of Computer Science at Texas Southern University, who has won the very prestigious <b>National Science Foundation Faculty CAREER Award</b>!!!"
   },
   {
     "date": "Jul. 2014",
+    "category": "Career",
     "title": "Huang Accepts Postdoc Position at EPFL",
     "content": "Congratulations to <b>Huang</b>, who has accepted a postdoc position, working with Prof. Jean-Pierre Hubaux, in the Computer Communications and Applications Laboratory at <b>Ecole Polytechnique Federale de Lausanne (EPFL)</b>, Switzerland!!!"
   },
   {
     "date": "Jul. 2014",
+    "category": "Events",
     "title": "Huang Successfully Defends PhD Dissertation",
     "content": "Congratulations to <b>Huang</b>, who has successfully defended his Ph.D dissertation!!!"
   },
   {
     "date": "May 2014",
+    "category": "Events",
     "title": "Yuanxiong Successfully Defends PhD Dissertation",
     "content": "Congratulations to <b>Yuanxiong</b>, who has successfully defended his Ph.D dissertation!!!"
   },
   {
     "date": "May 2014",
+    "category": "Events",
     "title": "Linke Successfully Defends PhD Dissertation",
     "content": "Congratulations to <b>Linke</b>, who has successfully defended his Ph.D dissertation!!!"
   },
   {
     "date": "Mar. 2014",
+    "category": "Career",
     "title": "Linke Accepts Assistant Professor Position at Binghamton University",
     "content": "Congratulations to <b>Linke</b>, who has accepted an Assistant Professor position in the Department of Electrical and Computer Engineering at <b>Binghamton University</b> (State University of New York at Binghamton)!!!"
   },
   {
     "date": "Mar. 2014",
+    "category": "Career",
     "title": "Yuanxiong Accepts Assistant Professor Position at Oklahoma State",
     "content": "Congratulations to <b>Yuanxiong</b>, who has accepted an Assistant Professor position in the Department of Electrical and Computer Engineering at <b>Oklahoma State University</b>!!!"
   },
   {
     "date": "Sep. 2013",
+    "category": "Service",
     "title": "Prof. Fang Conducts IEEE ComSoc Distinguished Lecture Tour",
     "content": "<b>Dr. Fang</b> delivered a series of lectures during his IEEE ComSoc Distinguished Lecture Tour."
   },
   {
     "date": "Aug. 2013",
+    "category": "Service",
     "title": "Prof. Fang Delivers Keynote at ICCC'2013",
     "content": "<b>Dr. Fang</b> delivered a keynote on cognitive radio networks on 13 August, 2013, at IEEE/CIC International Conference on Communications in China (ICCC'2013), 12-14 August 2013, Xian, China."
   },
   {
     "date": "Aug. 2013",
+    "category": "Service",
     "title": "Prof. Fang Delivers Keynote at WASA'2013",
     "content": "<b>Dr. Fang</b> delivered at a keynote on cognitive radio networks on 9 August, 2013, at the 8th International Conference on Wireless Algorithms, Systems, and Applications (WASA'2013), 7-10 August, 2013, Zhangjiajie, China."
   },
   {
     "date": "Apr. 2013",
+    "category": "Service",
     "title": "Prof. Fang Selected as Editor-in-Chief of IEEE TVT",
     "content": "Congratulations to <b>Dr. Fang</b>, who has been selected as the Editor-in-Chief of the IEEE Transactions on Vehicular Technology."
   },
   {
     "date": "Jan. 2012",
+    "category": "Others",
     "title": "Historical News Archive Available",
     "content": "For more historical news and achievements dating back to 2002, please visit our <a href=\"https://winet.cs.cityu.edu.hk/\">old website</a>."
   }
-  
-] 
+]
