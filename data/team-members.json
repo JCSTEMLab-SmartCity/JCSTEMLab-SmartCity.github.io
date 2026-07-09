@@ -2076,11 +2076,15 @@
               "title": "Mr. Langtian Qin",
               "role": [
                 {
-                  "text": "PhD student @ UC Irvine",
+                  "text": "PhD @ UC Irvine",
                   "highlighted": true
                 },
                 {
-                  "text": "Visiting Student @ CityUHK",
+                  "text": "MSc @ USTC",
+                  "highlighted": false
+                },
+                {
+                  "text": "BSc @ Xidian University",
                   "highlighted": false
                 }
               ],
@@ -2365,18 +2369,22 @@
           "members": [
             {
               "id": "phd23-fangzhengru",
-              "title": "Mr. FANG, Zhengru",
+              "title": "Dr. FANG, Zhengru",
               "role": [
                 {
-                  "text": "PhD Student (HKPFS)",
+                  "text": "Postdoctoral Fellow @ HKUST",
                   "highlighted": true
+                },
+                {
+                  "text": "PhD @ CityUHK",
+                  "highlighted": false
                 },
                 {
                   "text": "MSc @ Tsinghua University",
                   "highlighted": false
                 },
                 {
-                  "text": "BSc @ Huazhong University of Science and Technology",
+                  "text": "BSc @ HUST",
                   "highlighted": false
                 }
               ],
@@ -2412,12 +2420,19 @@
                 "Resource-Constrained Inference",
                 "Multimodal Data Integration"
               ],
-              "biography": "\n\nZhengru Fang received his B.S. degree (*Hons.*) in electronics and information engineering from the Huazhong University of Science and Technology, Wuhan, China, in 2019 and his M.S. degree (*Hons.*) from Tsinghua University, Beijing, China, in 2022. He is pursuing his Ph.D. in the Department of Computer Science at City University of Hong Kong, supervised by Prof. Yuguang \"Michael\" Fang, supported by the Hong Kong PhD Fellowship Scheme (HKPFS). His research focuses on theoretical analysis and resource allocation optimization, with emphasis on information bottleneck theory, resource-constrained inference, and multimodal data integration. He has been serving as a reviewer for *IEEE JSAC*, *IEEE TWC*, *IEEE TMC*, *ACM Computing Surveys*, among others.",
+              "experience": [
+                {
+                  "title": "Postdoctoral Fellow",
+                  "institution": "The Hong Kong University of Science and Technology (HKUST)",
+                  "period": "2026 - Present"
+                }
+              ],
+              "biography": "\n\nZhengru Fang is a recent PhD graduate from the Department of Computer Science at City University of Hong Kong and has accepted a postdoctoral research position at The Hong Kong University of Science and Technology (HKUST). He received his B.S. degree (*Hons.*) in electronics and information engineering from the Huazhong University of Science and Technology, Wuhan, China, in 2019 and his M.S. degree (*Hons.*) from Tsinghua University, Beijing, China, in 2022. His research focuses on theoretical analysis and resource allocation optimization, with emphasis on information bottleneck theory, resource-constrained inference, and multimodal data integration. He has been serving as a reviewer for *IEEE JSAC*, *IEEE TWC*, *IEEE TMC*, *ACM Computing Surveys*, among others.",
               "education": [
                 {
                   "degree": "PhD in Computer Science",
                   "institution": "City University of Hong Kong, Hong Kong SAR",
-                  "year": "2023 - now"
+                  "year": "2023 - 2026"
                 },
                 {
                   "degree": "MEng in Electronic Engineering",
