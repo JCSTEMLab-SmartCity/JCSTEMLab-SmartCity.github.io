@@ -1,5 +1,17 @@
 [
   {
+    "id": "yongxuzhu",
+    "title": "Intelligent-Antenna-Assisted Ultra-Dense Wireless Networks in Smart Cities",
+    "date": "Jul. 10, 2026",
+    "speaker": {
+      "name": "Prof. Yongxu Zhu",
+      "affiliation": "Professor, Southeast University, China"
+    },
+    "abstract": "This seminar presented intelligent-antenna-assisted ultra-dense wireless networks in smart cities, with a focus on key concepts and technologies of intelligent/fluid antennas. The talk discussed pinching antennas, optical fiber waveguide modes, refractive-index-guided propagation, and signal excitation through squeezing and deformation of dielectric structures.",
+    "biography": "Yongxu Zhu is a professor at Southeast University. During his visit to the JC STEM Lab of Smart City, he delivered an on-site seminar and interacted with faculty members and students.",
+    "photos": ["featured.jpg", "1.JPG", "2.jpg"]
+  },
+  {
     "id": "aibo",
     "title": "6G Empowered Intelligent High-Speed Railway",
     "date": "Jul. 29, 2025",
