@@ -1,5 +1,23 @@
 [
   {
+    "title": "NWaaS: A Non-Intrusive and Privacy-Preserving Watermarking-as-a-Service System with Adaptive Resource Scheduling",
+    "authors": "Haonan An, Qianyao Ren, Guang Hua, Tao Li, Yu Guo, Yanan Ma, Hangcheng Cao, Yuguang Fang",
+    "venue": "IEEE Transactions on Dependable and Secure Computing",
+    "type": "accepted",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "TDSC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://doi.org/10.1109/TDSC.2026.3717448"
+      }
+    ]
+  },
+  {
     "title": "Optimizing Agentic Reasoning with Retrieval via Synthetic Semantic Information Gain Reward",
     "authors": "Senkang Hu, Yong Dai, Yuzhi Zhao, Yihang Tao, Yu Guo, Zhengru Fang, Sam Tak Wu Kwong, Yuguang Fang",
     "venue": "The 43rd International Conference on Machine Learning (ICML), 2026.",
