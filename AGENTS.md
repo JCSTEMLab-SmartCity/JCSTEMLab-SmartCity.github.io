@@ -64,8 +64,6 @@
 - Individual profile pages are rendered by `js/profile-loader.js` from `data/team-members.json` through the route `data/profile/profile.html?id=<member-id>`.
 - Publications on the homepage are loaded by `script.js`.
 - News on the homepage and on `pages/all-news.html` are loaded by `script.js`.
-- The `Join Us` page is a hand-maintained page at `pages/join-us.html`, not a JSON-driven system.
-- The homepage `Join Us` teaser section and the hero slider are hand-maintained in `index.html`.
 
 ## Asset And Content Conventions
 
