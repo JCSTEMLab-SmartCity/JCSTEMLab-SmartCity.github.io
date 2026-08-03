@@ -32,3 +32,6 @@ JCLab-new
 .cursor
 .claude
 .omc
+
+# WorkBuddy internal memory
+.workbuddy/
