@@ -13,6 +13,11 @@
             margin: 40px 0;
             max-width: 900px;
         }
+
+        .research-overview-container {
+            margin: 40px 0 60px;
+            max-width: 1100px;
+        }
         
         .research-header {
             text-align: center;
@@ -87,6 +92,94 @@
             color: var(--primary-color);
             font-weight: bold;
         }
+
+        .research-area-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: grid;
+            gap: 24px;
+        }
+
+        .research-area-item {
+            display: grid;
+            grid-template-columns: 56px 1fr;
+            gap: 20px;
+            background: white;
+            border: 1px solid rgba(58, 123, 213, 0.12);
+            border-radius: 16px;
+            padding: 28px;
+            box-shadow: 0 10px 30px rgba(15, 35, 95, 0.06);
+        }
+
+        .area-index {
+            width: 56px;
+            height: 56px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.35rem;
+            font-weight: 700;
+            color: white;
+            background: linear-gradient(135deg, var(--primary-color), #3a7bd5);
+        }
+
+        .area-title {
+            color: #1f2f46;
+            font-size: 1.8rem;
+            font-weight: 700;
+            line-height: 1.35;
+            margin: 0 0 14px;
+        }
+
+        .area-summary {
+            color: #4d5b70;
+            font-size: 1.03rem;
+            line-height: 1.75;
+            margin: 0 0 16px;
+        }
+
+        .area-keywords {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin-bottom: 18px;
+        }
+
+        .area-keyword {
+            display: inline-flex;
+            align-items: center;
+            padding: 8px 14px;
+            border-radius: 999px;
+            background: rgba(58, 123, 213, 0.08);
+            color: var(--primary-color);
+            font-size: 0.92rem;
+            font-weight: 600;
+        }
+
+        .area-description-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .area-description-list li {
+            position: relative;
+            padding-left: 20px;
+            margin-bottom: 10px;
+            color: #58677b;
+            line-height: 1.7;
+        }
+
+        .area-description-list li::before {
+            content: "•";
+            position: absolute;
+            left: 0;
+            color: var(--primary-color);
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
         
         .back-to-home {
             display: inline-flex;
@@ -123,6 +216,24 @@
             
             .research-details-container {
                 margin: 20px 0;
+            }
+
+            .research-overview-container {
+                margin: 20px 0 40px;
+            }
+
+            .research-area-item {
+                grid-template-columns: 1fr;
+                gap: 16px;
+                padding: 22px;
+            }
+
+            .area-title {
+                font-size: 1.45rem;
+            }
+
+            .area-summary {
+                font-size: 0.98rem;
             }
         }
     </style>
@@ -164,11 +275,79 @@
     </footer>
 
     <script>
+        const researchAreas = [
+            {
+                title: 'Agentic AI: Agentic RL, LLM/MLLM Reasoning, Efficient LLM',
+                summary: 'We study agentic intelligence for large language and multimodal foundation models, with an emphasis on reasoning, planning, reflection, and efficient task adaptation.',
+                keywords: ['Agentic RL', 'LLM/MLLM Reasoning', 'Efficient LLM'],
+                descriptions: [
+                    'Developing agentic reinforcement learning and test-time reasoning methods that improve planning, self-correction, and multi-step decision making.',
+                    'Building single-agent and multi-agent systems that can decompose goals, use tools, collaborate, and solve complex tasks.',
+                    'Designing efficient LLM adaptation strategies such as PEFT, prompt tuning, and lightweight fine-tuning for domain-specific applications.'
+                ]
+            },
+            {
+                title: 'World Model: Image/Video Generation, 3D/4D Reconstruction & Editing',
+                summary: 'We study world models for image/video generation and 3D/4D reconstruction and editing toward spatial intelligence.',
+                keywords: ['Image/Video Generation', '3D/4D Reconstruction & Editing'],
+                descriptions: [
+                    'Studying controllable image and video generation with generative foundation models such as Stable Diffusion and FLUX.',
+                    'Developing 3D/4D reconstruction methods for dynamic scene understanding from sparse, multi-view, or partially observed inputs.',
+                    'Building editable spatial representations with 3D foundation models such as VGGT for geometry-aware scene manipulation.'
+                ]
+            },
+            {
+                title: 'Embodied AI & Low Altitude Economy: Collaborative Perception, UAV Delivery, Integrated Air-Ground Design',
+                summary: 'We connect embodied intelligence with autonomous driving and low-altitude systems through collaborative perception, navigation, and integrated air-ground design.',
+                keywords: ['Collaborative Perception', 'UAV Delivery', 'Integrated Air-Ground Design'],
+                descriptions: [
+                    'Designing collaborative perception, learning, and decision-making methods for embodied agents and autonomous vehicles in complex environments.',
+                    'Building UGV-UAV collaborative navigation, over-the-air delivery, and air-ground sensing/computing systems for smart city operations.',
+                    'Exploring integrated air-ground architecture and resource design to support the low-altitude economy and future smart mobility.'
+                ]
+            },
+            {
+                title: 'AI for Healthcare: Multimodal Health Monitoring, Wireless Sensing for Public Safety',
+                summary: 'We develop AI and sensing systems for healthcare, elderly care, and public safety using multimodal signals and privacy-preserving wireless sensing.',
+                keywords: ['Multimodal Health Monitoring', 'Wireless Sensing for Public Safety'],
+                descriptions: [
+                    'Developing multimodal health monitoring systems that integrate physiological, visual, audio, and environmental signals for smart healthcare.',
+                    'Studying privacy-preserving wireless sensing for elderly behavior understanding, abnormal event detection, and timely intervention.',
+                    'Extending these capabilities to public safety scenarios through sensing, monitoring, and robust perception in open environments.'
+                ]
+            },
+            {
+                title: 'Wireless Communication and Networking: Edge AI, Computing Power Networks, Smart Surface',
+                summary: 'We study intelligent wireless systems that tightly couple communication, computation, and sensing for next-generation smart-city infrastructure.',
+                keywords: ['Edge AI', 'Computing Power Networks', 'Smart Surface'],
+                descriptions: [
+                    'Investigating edge AI and computing power networks for task-oriented collaboration among vehicles, UAVs, and mobile devices.',
+                    'Designing smart surfaces and RIS-enabled systems for high-rate, robust, and adaptive wireless communication.',
+                    'Advancing semantic communication, low-power IoT networking, and fast V2I/V2X transmission for emerging intelligent applications.'
+                ]
+            },
+            {
+                title: 'AI Security: Adversarial Attack and Defense, Model Watermarking, AIGC Forensics',
+                summary: 'We build trustworthy AI systems by studying robustness, intellectual property protection, and forensic analysis for modern generative models.',
+                keywords: ['Adversarial Attack and Defense', 'Model Watermarking', 'AIGC Forensics'],
+                descriptions: [
+                    'Studying adversarial attacks and defenses for collaborative perception, embodied intelligence, and multimodal AI systems.',
+                    'Developing robust model watermarking and other techniques for protecting AI model intellectual property.',
+                    'Exploring AIGC forensics, data protection, and privacy-preserving mechanisms for trustworthy AI deployment.'
+                ]
+            }
+        ];
+
         // Load research data and display based on URL parameter
         async function loadResearchDetails() {
             const urlParams = new URLSearchParams(window.location.search);
             const category = urlParams.get('category');
             
+            if (!category) {
+                displayResearchOverview();
+                return;
+            }
+
             try {
                 const response = await fetch('../data/research.json');
                 const data = await response.json();
@@ -183,6 +362,72 @@
                 console.error('Error loading research data:', error);
                 window.location.href = '../index.html#research';
             }
+        }
+
+        function displayResearchOverview() {
+            const contentDiv = document.getElementById('research-content');
+
+            const header = document.createElement('div');
+            header.className = 'research-header';
+            header.innerHTML = `
+                <h1>Research Areas</h1>
+                <p>Our research spans foundation models, embodied intelligence, healthcare, wireless systems, and trustworthy AI, with a strong focus on smart-city applications.</p>
+            `;
+
+            const overviewContainer = document.createElement('div');
+            overviewContainer.className = 'research-overview-container';
+
+            const areaList = document.createElement('ol');
+            areaList.className = 'research-area-list';
+
+            researchAreas.forEach((area, index) => {
+                const areaItem = document.createElement('li');
+                areaItem.className = 'research-area-item';
+
+                const areaIndex = document.createElement('div');
+                areaIndex.className = 'area-index';
+                areaIndex.textContent = index + 1;
+
+                const areaBody = document.createElement('div');
+
+                const areaTitle = document.createElement('h2');
+                areaTitle.className = 'area-title';
+                areaTitle.textContent = area.title;
+                areaBody.appendChild(areaTitle);
+
+                const areaSummary = document.createElement('p');
+                areaSummary.className = 'area-summary';
+                areaSummary.textContent = area.summary;
+                areaBody.appendChild(areaSummary);
+
+                const keywords = document.createElement('div');
+                keywords.className = 'area-keywords';
+                area.keywords.forEach(keyword => {
+                    const keywordSpan = document.createElement('span');
+                    keywordSpan.className = 'area-keyword';
+                    keywordSpan.textContent = keyword;
+                    keywords.appendChild(keywordSpan);
+                });
+                areaBody.appendChild(keywords);
+
+                const descriptionList = document.createElement('ul');
+                descriptionList.className = 'area-description-list';
+                area.descriptions.forEach(description => {
+                    const listItem = document.createElement('li');
+                    listItem.textContent = description;
+                    descriptionList.appendChild(listItem);
+                });
+                areaBody.appendChild(descriptionList);
+
+                areaItem.appendChild(areaIndex);
+                areaItem.appendChild(areaBody);
+                areaList.appendChild(areaItem);
+            });
+
+            overviewContainer.appendChild(areaList);
+            contentDiv.appendChild(header);
+            contentDiv.appendChild(overviewContainer);
+            document.title = 'Research Areas - JC STEM Lab';
         }
         
         function displayResearchCategory(categoryName, categoryData) {
@@ -219,13 +464,18 @@
                         topicTitle.textContent = topicName;
                         topicDiv.appendChild(topicTitle);
                         
-                        if (topicData.description) {
+                        let descriptions = [];
+                        if (Array.isArray(topicData)) {
+                            descriptions = topicData;
+                        } else if (topicData && topicData.description) {
+                            descriptions = Array.isArray(topicData.description)
+                                ? topicData.description
+                                : [topicData.description];
+                        }
+
+                        if (descriptions.length > 0) {
                             const descriptionList = document.createElement('ul');
                             descriptionList.className = 'research-list';
-                            
-                            const descriptions = Array.isArray(topicData.description) 
-                                ? topicData.description 
-                                : [topicData.description];
                             
                             descriptions.forEach(desc => {
                                 const listItem = document.createElement('li');

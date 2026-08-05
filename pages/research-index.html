@@ -117,30 +117,35 @@
         }
         
         /* Color variations for different cards */
-        .card-cad { border-left-color: #3498db; }
-        .card-cad i { color: #3498db; }
-        .card-cad a { background: #3498db; }
-        .card-cad a:hover { background: #2980b9; }
-        
+        .card-agentic { border-left-color: #6c5ce7; }
+        .card-agentic i { color: #6c5ce7; }
+        .card-agentic a { background: #6c5ce7; }
+        .card-agentic a:hover { background: #5848c2; }
+
+        .card-world { border-left-color: #3498db; }
+        .card-world i { color: #3498db; }
+        .card-world a { background: #3498db; }
+        .card-world a:hover { background: #2980b9; }
+
+        .card-embodied { border-left-color: #9b59b6; }
+        .card-embodied i { color: #9b59b6; }
+        .card-embodied a { background: #9b59b6; }
+        .card-embodied a:hover { background: #8e44ad; }
+
         .card-health { border-left-color: #e74c3c; }
         .card-health i { color: #e74c3c; }
         .card-health a { background: #e74c3c; }
         .card-health a:hover { background: #c0392b; }
-        
-        .card-smart-city { border-left-color: #9b59b6; }
-        .card-smart-city i { color: #9b59b6; }
-        .card-smart-city a { background: #9b59b6; }
-        .card-smart-city a:hover { background: #8e44ad; }
-        
+
         .card-wireless { border-left-color: #27ae60; }
         .card-wireless i { color: #27ae60; }
         .card-wireless a { background: #27ae60; }
         .card-wireless a:hover { background: #229954; }
-        
-        .card-ai { border-left-color: #f39c12; }
-        .card-ai i { color: #f39c12; }
-        .card-ai a { background: #f39c12; }
-        .card-ai a:hover { background: #e67e22; }
+
+        .card-security { border-left-color: #f39c12; }
+        .card-security i { color: #f39c12; }
+        .card-security a { background: #f39c12; }
+        .card-security a:hover { background: #e67e22; }
     </style>
 </head>
 <body data-subpage="true">
@@ -168,34 +173,43 @@
                 
                 <div class="research-index-header">
                     <h1><i class="fas fa-microscope"></i> Research Areas</h1>
-                    <p>Explore our cutting-edge research initiatives across multiple domains in smart city technologies, IoT, and wireless communications.</p>
+                    <p>Explore our six core research areas spanning foundation models, embodied intelligence, healthcare AI, wireless systems, and trustworthy AI.</p>
                 </div>
                 
                 <div class="research-areas-grid">
-                    
-                    <div class="research-area-card card-cad">
-                        <i class="fas fa-car"></i>
-                        <h3>Connected and Autonomous Driving (CAD)</h3>
-                        <p>Advancing transportation through intelligent vehicular systems, collaborative perception, and maritime applications.</p>
-                        <a href="research-connected-autonomous-driving.html">
+
+                    <div class="research-area-card card-agentic">
+                        <i class="fas fa-brain"></i>
+                        <h3>Agentic AI</h3>
+                        <p>Agentic RL, LLM/MLLM reasoning, and efficient large-model adaptation for complex decision making.</p>
+                        <a href="research-detail/research-foundation-models.html">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="research-area-card card-world">
+                        <i class="fas fa-cube"></i>
+                        <h3>World Model</h3>
+                        <p>Image/Video Generation and 3D/4D Reconstruction &amp; Editing for spatial intelligence.</p>
+                        <a href="research-detail/research-connected-autonomous-driving.html">
+                            View Details <i class="fas fa-arrow-right"></i>
+                        </a>
+                    </div>
+
+                    <div class="research-area-card card-embodied">
+                        <i class="fas fa-helicopter"></i>
+                        <h3>Embodied AI &amp; Low Altitude Economy</h3>
+                        <p>Collaborative perception, UAV delivery, and integrated air-ground system design for smart mobility.</p>
+                        <a href="research-detail/research-smart-city-low-altitude-economy.html">
                             View Details <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                     
                     <div class="research-area-card card-health">
                         <i class="fas fa-heartbeat"></i>
-                        <h3>Health, Safety, and Human Sensing</h3>
-                        <p>Developing advanced sensing technologies for health monitoring, safety enhancement, and human behavior analysis.</p>
-                        <a href="research-health-safety-sensing.html">
-                            View Details <i class="fas fa-arrow-right"></i>
-                        </a>
-                    </div>
-                    
-                    <div class="research-area-card card-smart-city">
-                        <i class="fas fa-drone"></i>
-                        <h3>Smart City and Low Altitude Economy</h3>
-                        <p>Exploring the synergy between smart city infrastructure and low altitude economy operations.</p>
-                        <a href="research-smart-city-low-altitude-economy.html">
+                        <h3>AI for Healthcare</h3>
+                        <p>Multimodal Health Monitoring and Wireless Sensing for Public Safety.</p>
+                        <a href="research-detail/research-health-safety-sensing.html">
                             View Details <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
@@ -203,17 +217,17 @@
                     <div class="research-area-card card-wireless">
                         <i class="fas fa-signal"></i>
                         <h3>Wireless Communication and Networking</h3>
-                        <p>Advancing wireless communication technologies for next-generation networks and smart city ecosystems.</p>
-                        <a href="research-wireless-communication-networking.html">
+                        <p>Edge AI, computing power networks, and smart-surface-enabled wireless systems for next-generation connectivity.</p>
+                        <a href="research-detail/research-wireless-communication-networking.html">
                             View Details <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>
                     
-                    <div class="research-area-card card-ai">
+                    <div class="research-area-card card-security">
                         <i class="fas fa-user-secret"></i>
-                        <h3>AI Security and Data Privacy</h3>
-                        <p>Protecting AI models and securing data transactions through robust security mechanisms and privacy-preserving technologies.</p>
-                        <a href="research-ai-security-data-privacy.html">
+                        <h3>AI Security</h3>
+                        <p>Adversarial attack and defense, model watermarking, and AIGC forensics for trustworthy AI systems.</p>
+                        <a href="research-detail/research-ai-security-data-privacy.html">
                             View Details <i class="fas fa-arrow-right"></i>
                         </a>
                     </div>

@@ -1,125 +1,94 @@
 {
-  "Foundation Models": {
-    "Large Language Models (LLMs)": {
-      "Agentic Reasoning and Reinforcement Learning": [
-        "Designing agentic reasoning and reinforcement learning methods to improve the performance of LLMs.",
-        "Exploring how LLMs can iteratively plan, reflect, and act in complex environments through chain-of-thought and self-correction mechanisms.",
-        "Integrating reinforcement learning (RLHF, RLAIF) to align LLM outputs with human preferences and task objectives."
-      ],
-      "Agentic Systems": [
-        "Designing agentic systems (single/multi-agent) that can achieve complex tasks.",
-        "Building single-agent systems that autonomously decompose goals, use tools, and execute multi-step plans.",
-        "Developing multi-agent frameworks for collaboration, negotiation, and emergent problem-solving in open-ended environments."
-      ],
-      "PEFT and Task Adaptation": [
-        "Designing PEFT methods and task-adaptation strategies to adapt LLMs to specific tasks better and more efficiently.",
-        "Low-rank adaptation (LoRA), adapter modules, and prompt tuning for parameter-efficient fine-tuning.",
-        "Task-specific adaptation for embodied AI, robotics, and domain-specific applications with limited compute."
-      ]
-    },
-    "World Foundation Models (WFMs)": {
-      "World Understanding": [
-        "Building World Foundation Models that understand the physical world from visual observations, sparse sensor streams, and multi-agent interactions.",
-        "Focusing on collaborative perception, 3D reconstruction, and scene understanding to recover geometry, semantics, and dynamics for spatial intelligence.",
-        "Leveraging 3D foundation models such as VGGT to support scalable 3D understanding, world representation, and downstream reasoning for embodied AI and autonomous driving."
-      ],
-      "World Generation": [
-        "Designing generative World Foundation Models that synthesize plausible future worlds and enrich the predictive capacity of intelligent agents.",
-        "Studying controllable image and video generation from structured conditions, as well as generative image restoration, by leveraging generative foundation models such as Stable Diffusion and FLUX for world simulation and future prediction.",
-        "Supporting scene completion, what-if reasoning, and foresightful planning by generating realistic observations beyond what is directly seen."
-      ]
-    }
-  },
-  "Connected and Autonomous Driving (CAD)": {
-    "Vehicular Perception, Learning and Computing": {
-      "Collaborative Perception & Learning": [
-        "Multi-agent collaborative perception to overcome occlusion and limited sensing in autonomous driving.",
-        "Security challenges in collaborative perception, including adversarial attacks and defense mechanisms.",
-        "Use of large language/vision models for multi-agent reasoning and decision-making."
-      ],
-      "RIS-aided Communications and Computing": [
-        "Enhancing vehicular data transmission rates using reflecting surfaces and optimizing wireless channels for moving vehicles.",
-        "Task-oriented semantic communications for CAD.",
-        "Height-adjustable RIS-assisted V2I communications.",
-        "Multi-hop RIS communications and computing."
-      ],
-      "Vehicular Edge Computing and Computing Power Networks": [
-        "UAV-enabled dynamic computing power networks for mission critical task computation.",
-        "How to leverage mobile things to build computing power networks.",
-        "Crowdsensing-enhanced federated learning: vehicles act as both data collectors and FL clients, enabling region-specific model training and improved perception quality."
-      ]
-    },
-    "Maritime Perception, Communications, and Computing": {
-      "Maritime Perception and Control": [
-        "Maritime perception dataset construction and model building.",
-        "AI and computer vision for intelligent maritime transportation, focusing on perception in challenging waterway scenarios and generative AI for data scarcity.",
-        "Maritime navigation, collision avoidance, and control."
-      ],
-      "Smart Ports": [
-        "Vision-based smart docking.",
-        "UAV-assisted cargo inspection and docking."
-      ]
-    }
-  },
- 
-  "Health, Safety, and Human Sensing": {
-    "Health Monitoring and Behavioral Detection": {
-      "Remote and Multimodal Health Monitoring": [
-        "Multimodal outdoor health monitoring for elderly care and public health by integrating physiological, visual, and audio signals.",
-        "Outdoor wireless sensing for smart health, leveraging privacy-preserving technologies like RIS and multi-modal sensing to enhance resolution.",
-        "Non-invasive blood glucose monitoring using remote photoplethysmography (rPPG)."
-      ],
-      "Elderly Healthcare Behavioral Detection": [
-        "Indoor elderly behavior detection using RIS and millimeter-wave radar for privacy-preserving monitoring and intervention (e.g., smart aging).",
-        "Disease-related abnormal behavioral detection and optimal RIS deployment."
-      ]
-    },
-    "Wireless Sensing for Public Safety": {
-      "Crime Deterrence": [
-        "Security monitoring in public environments to deter crime progress by leveraging controllable vehicles or opportunistic vehicles.",
-        "Crime escape by guiding victims to the safe location.",
-        "UAV-assisted surveillance for public safety."
-      ]
-    }
-  },
-  "Integrated Design of Smart City and Low Altitude Economy (LAE)": {
-    "Smart City Facilitates LAE": [
-      "Ground resources can be utilized to facilitate the LAE operations.",
-      "Ground guiding and control system design for air flight.",
-      "SC design for LAE development."
+  "Agentic AI": {
+    "Agentic RL": [
+      "Designing agentic reinforcement learning and reasoning strategies that improve planning, reflection, and multi-step decision making for intelligent agents.",
+      "Studying how LLMs can iteratively think, critique, and act in complex environments through self-correction and long-horizon interaction.",
+      "Integrating reinforcement learning and feedback-driven alignment to improve robustness, usefulness, and task-level performance."
     ],
-    "LAE Offers the Over-the-Air Advantage and Opportunity for SC Operations": [
-      "OTA mobile things (UAVs) enrich the air relay opportunity.",
-      "OTA delivery of multi-dimensional resources upon request.",
-      "Help ground traffic control.",
-      "Enrich SC’s service dimension: transport people and needs for smart mobility."
+    "LLM/MLLM Reasoning": [
+      "Advancing LLM and MLLM reasoning for tool use, perception-aware planning, and complex problem solving.",
+      "Developing models that connect language, vision, and structured context for grounded reasoning in open-ended environments.",
+      "Exploring chain-of-thought, test-time scaling, and reasoning augmentation for embodied and real-world tasks."
+    ],
+    "Efficient LLM": [
+      "Designing efficient adaptation strategies for large models, including PEFT, prompt tuning, and low-rank fine-tuning.",
+      "Improving deployment efficiency through lightweight adaptation, task specialization, and compute-aware model design.",
+      "Supporting practical LLM usage in resource-constrained settings such as edge intelligence, robotics, and domain-specific applications."
+    ]
+  },
+  "World Model": {
+    "Image/Video Generation": [
+      "Designing generative models that synthesize plausible future worlds and enrich the predictive capacity of intelligent agents.",
+      "Studying controllable image and video generation from structured conditions, as well as generative image restoration, by leveraging generative foundation models such as Stable Diffusion and FLUX for world simulation and future prediction.",
+      "Supporting scene completion, what-if reasoning, and foresightful planning by generating realistic observations beyond what is directly seen."
+    ],
+    "3D/4D Reconstruction & Editing": [
+      "Studying 3D and 4D reconstruction from sparse, multi-view, or partially observed inputs for dynamic scene understanding and spatial intelligence.",
+      "Building editable world representations that support view synthesis, geometry-aware manipulation, and temporal consistency with 3D foundation models such as VGGT.",
+      "Connecting reconstruction and editing with world modeling to enable controllable spatial understanding, simulation, and interactive content creation."
+    ]
+  },
+  "Embodied AI & Low Altitude Economy": {
+    "Collaborative Perception": [
+      "Designing collaborative perception and multi-agent scene understanding methods for embodied agents and autonomous vehicles in complex environments.",
+      "Overcoming occlusion, limited sensing range, and communication constraints through cooperative visual and multimodal perception.",
+      "Studying robust and secure collaboration mechanisms for perception, reasoning, and decision making in real-world deployments."
+    ],
+    "UAV Delivery": [
+      "Developing intelligent UAV systems for delivery, inspection, and autonomous mission execution in smart-city environments.",
+      "Studying UGV-UAV collaboration, task coordination, and low-altitude autonomy for logistics and urban services.",
+      "Integrating perception, navigation, and scheduling for reliable autonomous systems under dynamic operating conditions."
+    ],
+    "Integrated Air-Ground Design": [
+      "Exploring integrated air-ground architectures for sensing, communication, computing, and control in low-altitude economy applications.",
+      "Leveraging aerial and ground resources jointly to support smart mobility, traffic management, and responsive urban services.",
+      "Designing system-level frameworks that connect embodied intelligence with smart-city infrastructure and future air-ground ecosystems."
+    ]
+  },
+  "AI for Healthcare": {
+    "Multimodal Health Monitoring": [
+      "Developing multimodal health monitoring systems that integrate physiological, visual, audio, and environmental signals for smart healthcare.",
+      "Studying remote and outdoor health sensing for elderly care, chronic disease monitoring, and public-health support.",
+      "Exploring non-invasive monitoring technologies such as camera-based sensing and wireless physiological measurement."
+    ],
+    "Wireless Sensing for Public Safety": [
+      "Using wireless sensing and AI to monitor public environments for safety, anomaly detection, and rapid risk awareness.",
+      "Designing privacy-preserving sensing systems that support public safety without relying on intrusive visual surveillance alone.",
+      "Extending intelligent sensing to applications such as hazard detection, crowd safety, and resilient security monitoring."
     ]
   },
   "Wireless Communication and Networking": {
-    "Secure and Robust Wireless Communication": {
-      "Signal Processing and Security": [
-        "Robust signal processing and secure wireless communication in challenging environments (UAV, 6G, IoT).",
-        "Enhancing reliability, secrecy, and efficiency under adversarial and fast-varying conditions."
-      ],
-      "Low-Power and Backscatter Communication": [
-      "WiFi backscatter systems for low-power IoT communication, focusing on modulation, demodulation, and protocol compatibility."
-      ],
-      "Fast V2I Communications": [
-        "RIS cluster formation for collaborative transmissions and receptions.",
-        "Layered adaptive MIMO.",
-        "Semantic and/or emergent communications."
-      ]
-    }
-    
+    "Edge AI": [
+      "Investigating edge AI systems that jointly optimize communication, sensing, and computation for intelligent applications.",
+      "Supporting distributed inference, collaborative learning, and task offloading across vehicles, UAVs, and mobile devices.",
+      "Designing resource-aware architectures for practical deployment of intelligent networking systems."
+    ],
+    "Computing Power Networks": [
+      "Studying computing power networks that flexibly coordinate heterogeneous compute resources over dynamic wireless infrastructure.",
+      "Leveraging mobile platforms and networked intelligence to provide task-oriented computing services on demand.",
+      "Connecting communications, scheduling, and resource orchestration for future smart-city and autonomous-system workloads."
+    ],
+    "Smart Surface": [
+      "Designing smart surfaces and RIS-enabled wireless systems for robust, adaptive, and high-efficiency communications.",
+      "Exploring semantic communication, fast V2I/V2X links, and intelligent signal processing in challenging environments.",
+      "Advancing low-power IoT communication, backscatter systems, and emerging smart-surface-assisted networking paradigms."
+    ]
   },
-  "Artificial Intelligence Security and Data Privacy": {
-    "Model and Data Protection": {
-      "AI Model Intellectual Property Protection": [
-        "Secure and robust watermarking for deep neural networks, especially for generative models, aiming for non-intrusive, high-fidelity watermarking."
-      ],
-      "Privacy-Preserving Data Transactions": [
-        "Secure data evaluation and fair transactions in data marketplaces, focusing on privacy-preserving mechanisms for encrypted data and trustless exchanges."
-      ]
-    }
+  "AI Security": {
+    "Adversarial Attack and Defense": [
+      "Studying adversarial attacks and defenses for collaborative perception, embodied intelligence, and multimodal AI systems.",
+      "Analyzing robustness under malicious perturbations, distribution shifts, and adversarial interaction settings.",
+      "Designing defense mechanisms that preserve reliability, safety, and trustworthy deployment in real-world AI pipelines."
+    ],
+    "Model Watermarking": [
+      "Developing secure model watermarking techniques for AI intellectual property protection, especially for generative models.",
+      "Studying robustness, fidelity, and resistance to removal attacks in practical white-box and black-box settings.",
+      "Exploring trustworthy ownership verification for modern foundation models and AIGC systems."
+    ],
+    "AIGC Forensics": [
+      "Exploring AIGC forensics for synthetic image, video, and model output analysis in security-sensitive settings.",
+      "Studying data privacy, provenance, and tamper detection for trustworthy AI-generated content.",
+      "Connecting forensic analysis with privacy-preserving data transactions and secure AI deployment."
+    ]
   }
 }
