@@ -1773,11 +1773,11 @@
                 }
               ],
               "interests": [
-                "Collaborative perception",
-                "Autonomous driving",
-                "AI security"
+                "World Model",
+                "Image/Video Generation",
+                "3D Understanding"
               ],
-              "biography": "\n\n\nYihang Tao received the B.S. degree from the School of Information Science and Engineering, Southeast University, Nanjing, China, in 2021 and received his M.S. degree from the School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China, in 2024. Currently, he is pursuing his PhD degree in the Department of Computer Science at City University of Hong Kong (Advisor: Prof. Yuguang “Michael” Fang). His current research interests include collaborative perception, autonomous driving, and AI security.",
+              "biography": "\n\n\nYihang Tao received the B.S. degree from the School of Information Science and Engineering, Southeast University, Nanjing, China, in 2021 and received his M.S. degree from the School of Electronic Information and Electrical Engineering, Shanghai Jiao Tong University, Shanghai, China, in 2024. Currently, he is pursuing his PhD degree in the Department of Computer Science at City University of Hong Kong (Advisor: Prof. Yuguang “Michael” Fang). His current research interests include world model, image/video generation, 3D understandingl, and autonomous driving. He serves as the PC member for CVPR, ECCV, ICML, ICLR, etc.",
               "education": [
                 {
                   "degree": "PhD in Computer Science",

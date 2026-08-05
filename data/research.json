@@ -17,21 +17,16 @@
         "Task-specific adaptation for embodied AI, robotics, and domain-specific applications with limited compute."
       ]
     },
-    "World Models and Embodied AI": {
-      "Spatial Intelligence for Embodied AI": [
-        "Constructing a comprehensive World Model for Spatial Intelligence, serving as the cognitive core for Embodied AI (e.g., Autonomous Vehicles).",
-        "The system mirrors the current physical world and reasons about its dynamics—enabling agents to predict outcomes and plan actions.",
-        "Unifying perception, prediction, and planning within a coherent World Model for safe and intelligent autonomous behavior."
+    "World Foundation Models (WFMs)": {
+      "World Understanding": [
+        "Building World Foundation Models that understand the physical world from visual observations, sparse sensor streams, and multi-agent interactions.",
+        "Focusing on collaborative perception, 3D reconstruction, and scene understanding to recover geometry, semantics, and dynamics for spatial intelligence.",
+        "Leveraging 3D foundation models such as VGGT to support scalable 3D understanding, world representation, and downstream reasoning for embodied AI and autonomous driving."
       ],
-      "Spatial Breadth — Collaborative Perception": [
-        "Collaborative Perception among agents to overcome individual sensing limitations (e.g., occlusions, limited range).",
-        "This collective intelligence builds a more complete and robust World Model, ensuring agents maintain accurate 3D understanding.",
-        "Addressing challenges in complex, adversarial, or bandwidth-constrained environments through efficient information sharing and fusion."
-      ],
-      "Temporal Depth — Generative Models and 3D Reconstruction": [
-        "Leveraging Generative Models and 3D Gaussian Splatting to empower agents to hallucinate plausible future scenarios.",
-        "Recovering 3D geometry from sparse observations for scene completion and understanding.",
-        "This predictive capability enables the World Model to simulate potential outcomes, facilitating foresightful planning and decision-making for Embodied AI."
+      "World Generation": [
+        "Designing generative World Foundation Models that synthesize plausible future worlds and enrich the predictive capacity of intelligent agents.",
+        "Studying controllable image and video generation from structured conditions, as well as generative image restoration, by leveraging generative foundation models such as Stable Diffusion and FLUX for world simulation and future prediction.",
+        "Supporting scene completion, what-if reasoning, and foresightful planning by generating realistic observations beyond what is directly seen."
       ]
     }
   },
