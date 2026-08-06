@@ -17,15 +17,20 @@
     ]
   },
   "World Model": {
-    "Image/Video Generation": [
-      "Designing generative models that synthesize plausible future worlds and enrich the predictive capacity of intelligent agents.",
-      "Studying controllable image and video generation from structured conditions, as well as generative image restoration, by leveraging generative foundation models such as Stable Diffusion and FLUX for world simulation and future prediction.",
-      "Supporting scene completion, what-if reasoning, and foresightful planning by generating realistic observations beyond what is directly seen."
+    "Multimodal Understanding": [
+      "Studying multimodal intelligence grounded in language, vision, and 3D structure for richer scene understanding and structured world interpretation.",
+      "Focusing on perception, chain-of-thought reasoning, and geometric reasoning to connect semantics, visual evidence, and spatial representation.",
+      "Building unified world models that can understand 3D scenes, capture their dynamics, and support downstream spatial intelligence."
     ],
-    "3D/4D Reconstruction & Editing": [
-      "Studying 3D and 4D reconstruction from sparse, multi-view, or partially observed inputs for dynamic scene understanding and spatial intelligence.",
-      "Building editable world representations that support view synthesis, geometry-aware manipulation, and temporal consistency with 3D foundation models such as VGGT.",
-      "Connecting reconstruction and editing with world modeling to enable controllable spatial understanding, simulation, and interactive content creation."
+    "Image/Video Generation": [
+      "Studying controllable and consistent image and video generation from structured conditions and interactions.",
+      "Leveraging generative foundation models such as Stable Diffusion and FLUX for visual synthesis, generative editing, and restoration.",
+      "Supporting flexible content creation and refinement for simulation, prediction, and interactive world modeling."
+    ],
+    "Unified Understanding and Generation": [
+      "Building unified world models that tightly couple multimodal understanding with controllable generation in a shared representation space.",
+      "Connecting perception, reasoning, prediction, and synthesis so that world understanding can guide generation and generated content can refine understanding.",
+      "Supporting spatial intelligence with closed-loop world modeling for simulation, interaction, and adaptive decision making."
     ]
   },
   "Embodied AI & Low Altitude Economy": {
@@ -34,9 +39,9 @@
       "Overcoming occlusion, limited sensing range, and communication constraints through cooperative visual and multimodal perception.",
       "Studying robust and secure collaboration mechanisms for perception, reasoning, and decision making in real-world deployments."
     ],
-    "UAV Delivery": [
-      "Developing intelligent UAV systems for delivery, inspection, and autonomous mission execution in smart-city environments.",
-      "Studying UGV-UAV collaboration, task coordination, and low-altitude autonomy for logistics and urban services.",
+    "UAV Navigation": [
+      "Developing intelligent UAV systems for autonomous navigation, inspection, and mission execution in smart-city environments.",
+      "Studying UGV-UAV collaboration, trajectory planning, and low-altitude autonomy for complex urban operations.",
       "Integrating perception, navigation, and scheduling for reliable autonomous systems under dynamic operating conditions."
     ],
     "Integrated Air-Ground Design": [
