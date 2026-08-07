@@ -5,6 +5,15 @@
 - This repository is a static website. Most routine content updates should modify JSON data files rather than rebuilding templates or introducing new tooling.
 - Preserve the current site structure, interaction patterns, and visual language unless the user explicitly asks for a redesign.
 
+## Homepage Visual Style
+
+- Treat the existing homepage as the visual source of truth before changing or adding any section. Inspect nearby homepage sections and reuse their established components and CSS variables instead of designing a standalone visual system.
+- The homepage uses a restrained, modern academic style built around Montserrat typography, generous whitespace, dark text, muted gray supporting text, white and `#faf8f9` surfaces, and the warm burgundy `#BD384B` as the single primary accent color.
+- Use burgundy consistently for links, section-title underlines, icons, active states, and subtle hover feedback. Do not introduce per-card rainbow palettes, unrelated accent colors, decorative gradients, or colored icon badges unless the user explicitly requests them.
+- Keep cards and content blocks simple: light `#eaeaea` borders, restrained shadows, existing rounded corners, and subtle motion. Prefer small color changes or slight horizontal movement over prominent lifts, glow effects, or oversized shadows.
+- New homepage sections must follow the existing `.section`, `.container`, and `.section-title` structure. Match the spacing, content width, typography scale, border treatment, and interaction behavior of adjacent sections.
+- Preserve the current hierarchy and readability. Do not add pills, badges, buttons, cards, or decorative containers when plain text or the site's existing list treatment is sufficient.
+
 ## Required Workflow
 
 - Before making any code or content modifications, run `git pull` to sync the latest remote changes first.

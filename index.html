@@ -222,36 +222,27 @@
                         Object.entries(data).forEach(([category, subcategories]) => {
                             // Select appropriate icon for main category
                             let icon = 'fas fa-flask';
-                            let themeClass = 'theme-default';
                             if (category === "Agentic AI") {
                                 icon = 'fas fa-brain';
-                                themeClass = 'theme-agentic';
                             } else if (category === "World Model") {
                                 icon = 'fas fa-cube';
-                                themeClass = 'theme-world';
                             } else if (category === "Embodied AI & Low Altitude Economy") {
                                 icon = 'fas fa-helicopter';
-                                themeClass = 'theme-embodied';
                             } else if (category === "AI for Healthcare") {
                                 icon = 'fas fa-heartbeat';
-                                themeClass = 'theme-health';
                             } else if (category === "Wireless Communication and Networking") {
                                 icon = 'fas fa-signal';
-                                themeClass = 'theme-wireless';
                             } else if (category === "AI Security") {
                                 icon = 'fas fa-user-secret';
-                                themeClass = 'theme-security';
                             }
 
                             const researchArea = document.createElement('div');
-                            researchArea.className = `research-area ${themeClass}`;
+                            researchArea.className = 'research-area';
                             researchArea.setAttribute('data-category', encodeURIComponent(category));
 
                             researchArea.innerHTML = `
                                 <div class="research-area-header">
-                                    <div class="research-area-icon">
-                                        <i class="${icon}"></i>
-                                    </div>
+                                    <i class="${icon}"></i>
                                     <h3>${category}</h3>
                                 </div>
                                 <div class="research-area-body">
@@ -287,190 +278,95 @@
             .research-areas {
                 display: grid;
                 grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-                grid-auto-rows: 1fr;
-                gap: 20px;
+                gap: 16px;
                 margin-top: 2rem;
             }
 
             .research-area {
-                --card-accent: var(--primary-color);
-                --card-accent-2: #d96b7a;
-                --card-accent-soft: rgba(189, 56, 75, 0.08);
-                --card-accent-border: rgba(189, 56, 75, 0.1);
-                display: flex;
-                flex-direction: column;
-                height: 100%;
                 background: var(--secondary-color);
                 border: 1px solid #eee;
                 border-radius: 20px;
-                padding: 20px 22px 16px;
+                padding: 24px;
                 cursor: pointer;
-                box-shadow: 0 8px 22px rgba(15, 23, 42, 0.04);
-                transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+                transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
             }
 
             .research-area:hover {
                 background: #fff;
-                border-color: color-mix(in srgb, var(--card-accent) 22%, white);
-                box-shadow: 0 14px 30px rgba(15, 23, 42, 0.08);
-                transform: translateY(-3px);
+                border-color: rgba(189, 56, 75, 0.35);
+                box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
             }
 
             .research-area-header {
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                justify-content: flex-start;
                 text-align: center;
-                min-height: 96px;
-                margin-bottom: 12px;
-            }
-
-            .research-area-icon {
-                width: 48px;
-                height: 48px;
-                border-radius: 50%;
-                display: inline-flex;
-                align-items: center;
-                justify-content: center;
-                background: linear-gradient(135deg, var(--card-accent) 0%, var(--card-accent-2) 100%);
-                margin-bottom: 10px;
-                box-shadow: 0 8px 18px color-mix(in srgb, var(--card-accent) 22%, white);
+                margin-bottom: 16px;
             }
 
             .research-area i {
-                font-size: 1.55rem;
-                color: #fff;
+                font-size: 2.2rem;
+                color: var(--primary-color);
+                flex-shrink: 0;
+                margin-bottom: 10px;
             }
 
             .research-area h3 {
-                font-size: 1.08rem;
+                font-size: 1.15rem;
                 font-weight: 700;
-                color: #1f2d3d;
+                color: var(--text-color);
                 margin: 0;
-                line-height: 1.32;
-                min-height: 2.7em;
-                display: flex;
-                align-items: center;
-                justify-content: center;
+                line-height: 1.4;
                 transition: color 0.2s ease;
             }
 
             .research-area:hover h3 {
-                color: var(--card-accent);
+                color: var(--primary-color);
             }
 
             .research-area-body {
-                padding: 12px 0 0;
-                border-top: 1px solid var(--card-accent-border);
+                padding: 0;
             }
 
             .research-area .research-list {
                 list-style: none;
                 padding: 0;
                 margin: 0;
-                display: grid;
-                gap: 6px;
             }
 
             .research-area .research-list li {
                 position: relative;
-                display: flex;
-                align-items: center;
-                min-height: 34px;
-                padding: 5px 0 5px 15px;
-                font-size: 0.95rem;
-                line-height: 1.35;
+                padding: 4px 0 4px 14px;
+                font-size: 1rem;
+                line-height: 1.5;
                 color: var(--light-text);
-                background: transparent;
-                border-bottom: 1px solid color-mix(in srgb, var(--card-accent) 10%, white);
             }
 
             .research-area .research-list li::before {
                 content: '';
                 position: absolute;
-                left: 2px;
-                top: 50%;
-                transform: translateY(-50%);
-                width: 5px;
-                height: 5px;
-                border-radius: 999px;
-                background: var(--card-accent);
-                opacity: 0.45;
-            }
-
-            .research-area .research-list li:last-child {
-                border-bottom: none;
+                left: 0;
+                top: 12px;
+                width: 4px;
+                height: 4px;
+                border-radius: 50%;
+                background: var(--primary-color);
+                opacity: 0.4;
             }
 
             .research-area .research-list li strong {
                 font-weight: 500;
                 color: #555;
-                font-size: 0.97rem;
+                font-size: 1rem;
             }
 
             .research-area:hover .research-list li strong {
-                color: var(--card-accent);
+                color: var(--primary-color);
             }
 
             .research-overlay {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
-                margin-top: auto;
-                padding-top: 10px;
-                font-size: 0.88rem;
-                font-weight: 600;
-                color: var(--card-accent);
-            }
-
-            .research-area.theme-agentic {
-                --card-accent: #a18cd1;
-                --card-accent-2: #fbc2eb;
-                --card-accent-soft: rgba(161, 140, 209, 0.1);
-                --card-accent-border: rgba(161, 140, 209, 0.16);
-            }
-
-            .research-area.theme-world {
-                --card-accent: #667eea;
-                --card-accent-2: #764ba2;
-                --card-accent-soft: rgba(102, 126, 234, 0.1);
-                --card-accent-border: rgba(102, 126, 234, 0.16);
-            }
-
-            .research-area.theme-embodied {
-                --card-accent: #4facfe;
-                --card-accent-2: #00f2fe;
-                --card-accent-soft: rgba(79, 172, 254, 0.1);
-                --card-accent-border: rgba(79, 172, 254, 0.16);
-            }
-
-            .research-area.theme-health {
-                --card-accent: #f5576c;
-                --card-accent-2: #f093fb;
-                --card-accent-soft: rgba(245, 87, 108, 0.1);
-                --card-accent-border: rgba(245, 87, 108, 0.16);
-            }
-
-            .research-area.theme-wireless {
-                --card-accent: #43e97b;
-                --card-accent-2: #38f9d7;
-                --card-accent-soft: rgba(67, 233, 123, 0.1);
-                --card-accent-border: rgba(67, 233, 123, 0.16);
-            }
-
-            .research-area.theme-security {
-                --card-accent: #fa709a;
-                --card-accent-2: #fee140;
-                --card-accent-soft: rgba(250, 112, 154, 0.1);
-                --card-accent-border: rgba(250, 112, 154, 0.16);
-            }
-
-            .research-overlay::after {
-                content: '\f061';
-                font-family: 'Font Awesome 6 Free';
-                font-weight: 900;
-                font-size: 0.82rem;
+                display: none;
             }
 
             @media (max-width: 576px) {
@@ -479,15 +375,7 @@
                 }
 
                 .research-area {
-                    padding: 18px;
-                }
-
-                .research-area-header {
-                    min-height: auto;
-                }
-
-                .research-area h3 {
-                    min-height: auto;
+                    padding: 20px;
                 }
             }
         </style>
