@@ -1,5 +1,23 @@
 [
   {
+    "title": "HFedMoE: Resource-aware Heterogeneous Federated Learning with Mixture-of-Experts",
+    "authors": "Zihan Fang, Zheng Lin, Senkang Hu, Yanan Ma, Yihang Tao, Yiqin Deng, Xianhao Chen, Yuguang Fang",
+    "venue": "IEEE Transactions on Mobile Computing",
+    "type": "accepted",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "TMC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2601.00583"
+      }
+    ]
+  },
+  {
     "title": "NWaaS: A Non-Intrusive and Privacy-Preserving Watermarking-as-a-Service System with Adaptive Resource Scheduling",
     "authors": "Haonan An, Qianyao Ren, Guang Hua, Tao Li, Yu Guo, Yanan Ma, Hangcheng Cao, Yuguang Fang",
     "venue": "IEEE Transactions on Dependable and Secure Computing",
