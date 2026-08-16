@@ -1,5 +1,23 @@
 [
   {
+    "title": "Fast OFDM Wi-Fi Backscatter Systems Based on Composite Channel Decoupling",
+    "authors": "Yimeng Huang, Chenhong Cao, Longzhi Yuan, Yuguang Fang, Wei Gong",
+    "venue": "IEEE Transactions on Wireless Communications",
+    "type": "accepted",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "TWC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://doi.org/10.1109/TWC.2026.3719274"
+      }
+    ]
+  },
+  {
     "title": "HFedMoE: Resource-aware Heterogeneous Federated Learning with Mixture-of-Experts",
     "authors": "Zihan Fang, Zheng Lin, Senkang Hu, Yanan Ma, Yihang Tao, Yiqin Deng, Xianhao Chen, Yuguang Fang",
     "venue": "IEEE Transactions on Mobile Computing",
