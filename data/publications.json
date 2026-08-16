@@ -1,5 +1,41 @@
 [
   {
+    "title": "Enabling Low-Power Decoding of Ambient Signals at Backscatter Tags for Personal IoT",
+    "authors": "Longzhi Yuan, Hangcheng Cao, Wei Gong, Yuguang Fang",
+    "venue": "IEEE Transactions on Mobile Computing",
+    "type": "accepted",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "TMC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://doi.org/10.1109/TMC.2026.3697863"
+      }
+    ]
+  },
+  {
+    "title": "Perspicio: Safeguarding Against Non-consensual Photo Sharing over Social Networks",
+    "authors": "Xinyuan Qian, Hongwei Li, Guowen Xu, Haoyong Wang, Hangcheng Cao, Cong Wu, Tianwei Zhang, Yuguang Fang",
+    "venue": "IEEE Transactions on Dependable and Secure Computing",
+    "type": "accepted",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "TDSC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://doi.org/10.1109/TDSC.2026.3705636"
+      }
+    ]
+  },
+  {
     "title": "Fast OFDM Wi-Fi Backscatter Systems Based on Composite Channel Decoupling",
     "authors": "Yimeng Huang, Chenhong Cao, Longzhi Yuan, Yuguang Fang, Wei Gong",
     "venue": "IEEE Transactions on Wireless Communications",
