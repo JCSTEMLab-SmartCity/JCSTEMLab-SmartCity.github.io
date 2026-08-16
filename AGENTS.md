@@ -17,7 +17,7 @@
 ## Required Workflow
 
 - Before making any code or content modifications, run `git pull` to sync the latest remote changes first.
-- Do not commit or push unless the user explicitly asks.
+- After completing a content update, commit and push the changes automatically with a concise, descriptive commit message; do not wait for the user to ask.
 - Use `python3 -m http.server <port>` for local static previews when a browser preview is requested.
 
 ## Canonical Data Sources
