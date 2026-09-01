@@ -1307,6 +1307,63 @@
           "name": "Current PhD Students",
           "members": [
             {
+              "id": "phd26-gaojunhui",
+              "title": "Mr. GAO, Junhui",
+              "role": [
+                {
+                  "text": "PhD Student @ 26 Fall",
+                  "highlighted": true
+                },
+                {
+                  "text": "BEng @ Northwestern Polytechnical University",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/avatars/PhD26_GaoJunhui.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:gaojh.cityu@gmail.com",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=kqo8nkMAAAAJ&hl=zh-CN&oi=ao",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Big Data",
+                "Robotics",
+                "Machine Learning",
+                "Crowdsensing",
+                "Crowd Intelligent Cooperation with Human and Robots"
+              ],
+              "biography": "Junhui Gao received the B.E. degree from the School of Computer Science, Northwestern Polytechnical University, Xi’an, China, in 2023. He worked as a Research Assistant at the JC STEM Lab of Smart City, City University of Hong Kong, from May 2025 to August 2026, and is currently pursuing a PhD degree at City University of Hong Kong. His research interests include Big Data, Robotics, Machine Learning, Crowdsensing, and Crowd Intelligent Cooperation with Human and Robots.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science",
+                  "institution": "City University of Hong Kong",
+                  "year": "2026 - Now"
+                },
+                {
+                  "degree": "BEng in Computer Science and Technology",
+                  "institution": "Northwestern Polytechnical University",
+                  "year": "2019-2023"
+                }
+              ],
+              "experience": [
+                {
+                  "title": "Research Assistant",
+                  "institution": "JC STEM Lab of Smart City, City University of Hong Kong",
+                  "period": "2025.5 - 2026.8"
+                }
+              ],
+              "last_name": "gaojunhui"
+            },
+            {
               "id": "phd24-fangzihan",
               "title": "Ms. FANG, Zihan",
               "role": [
@@ -1972,51 +2029,6 @@
         {
           "name": "Research Assistant",
           "members": [
-            {
-              "id": "phd26-gaojunhui",
-              "title": "Mr. GAO, Junhui",
-              "role": [
-                {
-                  "text": "Research Assistant (2025.5 - Now)",
-                  "highlighted": true
-                },
-                {
-                  "text": "BSc @ Northwestern Polytechnical University",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/avatars/PhD26_GaoJunhui.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:gaojh.cityu@gmail.com",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=kqo8nkMAAAAJ&hl=zh-CN&oi=ao",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
-                }
-              ],
-              "interests": [
-                "Big Data",
-                "Robotics",
-                "Machine Learning",
-                "Crowdsensing",
-                "Crowd Intelligent Cooperation with Human and Robots"
-              ],
-              "biography": "Junhui Gao received the B.E. degree from the School of Computer Science, Northwestern Polytechnical University, Xi’an, China, in 2023. His research interests include Big Data, Robotics, Machine Learning, Crowdsensing, and Crowd Intelligent Cooperation with Human and Robots.",
-              "education": [
-                {
-                  "degree": "BEng in Computer Science and Technology",
-                  "institution": "Northwestern Polytechnical University",
-                  "year": "2019-2023"
-                }
-              ],
-              "last_name": "gaojunhui"
-            },
             {
               "id": "ra-louhuanhuan",
               "title": "Mr. LOU, Huanhuan",
