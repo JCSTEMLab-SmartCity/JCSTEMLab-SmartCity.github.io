@@ -1307,40 +1307,33 @@
           "name": "Current PhD Students",
           "members": [
             {
-              "id": "phd24-fangzihan",
-              "title": "Ms. FANG, Zihan",
+              "id": "phd23-renqianyao",
+              "title": "Mr. REN, Qianyao",
               "role": [
                 {
-                  "text": "PhD Student @ 24 Fall",
+                  "text": "PhD Student @ 23 Summer",
                   "highlighted": true
                 },
                 {
-                  "text": "MSc @ Fudan University",
-                  "highlighted": false
-                },
-                {
-                  "text": "BSc @ Southeast University",
+                  "text": "MSc & BSc @ Harbin Institute of Technology",
                   "highlighted": false
                 }
               ],
-              "avatar": "data/avatars/PhD24_FangZihan.jpg",
+              "avatar": "data/avatars/PhD23_RenQianyao.png",
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:zihan_f@163.com",
+                  "url": "mailto:qianyaren2-c@my.cityu.edu.hk",
                   "icon": "fas fa-envelope",
                   "title": "Email"
                 }
               ],
               "interests": [
-                "Wireless Networks",
-                "Mobile/Edge Computing",
-                "Wireless AI/Machine Learning/Federated Learning",
-                "Internet of Things",
                 "5G/6G and Beyond",
-                "Connected and Autonomous Driving"
+                "Wireless Networks",
+                "Wireless AI/Machine Learning"
               ],
-              "biography": "\n\n\nFang Zihan received a BEng. degree in Electrical Engineering from Southeast University, Jiangsu in 2019, and a MSc. degree in Electrical Engineering from Fudan University, Shanghai in 2023. She is currently pursuing her PhD. degree at City University of Hong Kong. Her main research interest is Vehicle Networks, Mobile/Edge Computing and Connected and Autonomous Driving.",
+              "biography": "\n\n\nREN Qianyao received a BS degree in Communication Engineering from Harbin Insitute of Technology in 2015 and a MS degree in Information and Communication Engineering from Harbin Insititute of Technology in 2017. He then joined the institute of communication, vivo as a research engineer. Since 2023, He has studied for his PhD degree in City University of Hong Kong.",
               "education": [
                 {
                   "degree": "PhD in Computer Science",
@@ -1348,17 +1341,17 @@
                   "year": "2023 - Now"
                 },
                 {
-                  "degree": "MSc in Electrical Engineering",
-                  "institution": "Fudan University",
-                  "year": "2019 - 2022"
+                  "degree": "MSc in Information and Communication Engineering",
+                  "institution": "Harbin Institute of Technology",
+                  "year": "2015 - 2017"
                 },
                 {
-                  "degree": "BEng in Electrical Engineering",
-                  "institution": "Southeast University",
-                  "year": "2015 - 2019"
+                  "degree": "BSc in Communication Engineering",
+                  "institution": "Harbin Institute of Technology",
+                  "year": "2011 - 2015"
                 }
               ],
-              "last_name": "23fangzihan"
+              "last_name": "23renqianyao"
             },
             {
               "id": "phd23-huangyimeng",
@@ -1410,6 +1403,60 @@
                 }
               ],
               "last_name": "23huangyimeng"
+            },
+            {
+              "id": "phd23-mayanan",
+              "title": "Ms. MA, Yanan",
+              "role": [
+                {
+                  "text": "PhD Student @ 23 Fall",
+                  "highlighted": true
+                },
+                {
+                  "text": "MEng & BSc @ Dalian University of Technology",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/avatars/PhD23_MaYanan.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:yanann_m@163.com",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=ziGqWhIAAAAJ&hl=zh-CN",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                }
+              ],
+              "interests": [
+                "Wireless Communication",
+                "Signal Processing",
+                "Reconfigurable Intelligent Surface (RIS)",
+                "Vehicular Network"
+              ],
+              "biography": "\n\n\nYanan Ma received her B.S. degree in Electronic Information Engineering (English Intensive) and M.S. degree in Information and Communication Engineering from Dalian University of Technology, Liaoning, China, in 2020 and 2023, respectively. Currently, she is working toward the Ph.D. degree with the Department of Computer Science at City University of Hong Kong (Advisor: Prof. Yuguang “Michael” Fang). Her research interests include wireless communication, reconfigurable intelligent surfaces (RIS), and vehicular network.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science",
+                  "institution": "City University of Hong Kong",
+                  "year": "2023 - now"
+                },
+                {
+                  "degree": "MEng in Information and Communication Engineering",
+                  "institution": "Dalian University of Technology",
+                  "year": "2020 - 2023"
+                },
+                {
+                  "degree": "BSc in Electronic Information Engineering (English Intensive)",
+                  "institution": "Dalian University of Technology",
+                  "year": "2016 - 2020"
+                }
+              ],
+              "last_name": "23mayanan"
             },
             {
               "id": "phd23-husenkang",
@@ -1473,87 +1520,40 @@
               "last_name": "23husenkang"
             },
             {
-              "id": "phd23-mayanan",
-              "title": "Ms. MA, Yanan",
+              "id": "phd24-fangzihan",
+              "title": "Ms. FANG, Zihan",
               "role": [
                 {
-                  "text": "PhD Student @ 23 Fall",
+                  "text": "PhD Student @ 24 Fall",
                   "highlighted": true
                 },
                 {
-                  "text": "MEng & BSc @ Dalian University of Technology",
+                  "text": "MSc @ Fudan University",
+                  "highlighted": false
+                },
+                {
+                  "text": "BSc @ Southeast University",
                   "highlighted": false
                 }
               ],
-              "avatar": "data/avatars/PhD23_MaYanan.jpg",
+              "avatar": "data/avatars/PhD24_FangZihan.jpg",
               "socialLinks": [
                 {
                   "type": "envelope",
-                  "url": "mailto:yanann_m@163.com",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=ziGqWhIAAAAJ&hl=zh-CN",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
-                }
-              ],
-              "interests": [
-                "Wireless Communication",
-                "Signal Processing",
-                "Reconfigurable Intelligent Surface (RIS)",
-                "Vehicular Network"
-              ],
-              "biography": "\n\n\nYanan Ma received her B.S. degree in Electronic Information Engineering (English Intensive) and M.S. degree in Information and Communication Engineering from Dalian University of Technology, Liaoning, China, in 2020 and 2023, respectively. Currently, she is working toward the Ph.D. degree with the Department of Computer Science at City University of Hong Kong (Advisor: Prof. Yuguang “Michael” Fang). Her research interests include wireless communication, reconfigurable intelligent surfaces (RIS), and vehicular network.",
-              "education": [
-                {
-                  "degree": "PhD in Computer Science",
-                  "institution": "City University of Hong Kong",
-                  "year": "2023 - now"
-                },
-                {
-                  "degree": "MEng in Information and Communication Engineering",
-                  "institution": "Dalian University of Technology",
-                  "year": "2020 - 2023"
-                },
-                {
-                  "degree": "BSc in Electronic Information Engineering (English Intensive)",
-                  "institution": "Dalian University of Technology",
-                  "year": "2016 - 2020"
-                }
-              ],
-              "last_name": "23mayanan"
-            },
-            {
-              "id": "phd23-renqianyao",
-              "title": "Mr. REN, Qianyao",
-              "role": [
-                {
-                  "text": "PhD Student @ 23 Summer",
-                  "highlighted": true
-                },
-                {
-                  "text": "MSc & BSc @ Harbin Institute of Technology",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/avatars/PhD23_RenQianyao.png",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:qianyaren2-c@my.cityu.edu.hk",
+                  "url": "mailto:zihan_f@163.com",
                   "icon": "fas fa-envelope",
                   "title": "Email"
                 }
               ],
               "interests": [
-                "5G/6G and Beyond",
                 "Wireless Networks",
-                "Wireless AI/Machine Learning"
+                "Mobile/Edge Computing",
+                "Wireless AI/Machine Learning/Federated Learning",
+                "Internet of Things",
+                "5G/6G and Beyond",
+                "Connected and Autonomous Driving"
               ],
-              "biography": "\n\n\nREN Qianyao received a BS degree in Communication Engineering from Harbin Insitute of Technology in 2015 and a MS degree in Information and Communication Engineering from Harbin Insititute of Technology in 2017. He then joined the institute of communication, vivo as a research engineer. Since 2023, He has studied for his PhD degree in City University of Hong Kong.",
+              "biography": "\n\n\nFang Zihan received a BEng. degree in Electrical Engineering from Southeast University, Jiangsu in 2019, and a MSc. degree in Electrical Engineering from Fudan University, Shanghai in 2023. She is currently pursuing her PhD. degree at City University of Hong Kong. Her main research interest is Vehicle Networks, Mobile/Edge Computing and Connected and Autonomous Driving.",
               "education": [
                 {
                   "degree": "PhD in Computer Science",
@@ -1561,17 +1561,17 @@
                   "year": "2023 - Now"
                 },
                 {
-                  "degree": "MSc in Information and Communication Engineering",
-                  "institution": "Harbin Institute of Technology",
-                  "year": "2015 - 2017"
+                  "degree": "MSc in Electrical Engineering",
+                  "institution": "Fudan University",
+                  "year": "2019 - 2022"
                 },
                 {
-                  "degree": "BSc in Communication Engineering",
-                  "institution": "Harbin Institute of Technology",
-                  "year": "2011 - 2015"
+                  "degree": "BEng in Electrical Engineering",
+                  "institution": "Southeast University",
+                  "year": "2015 - 2019"
                 }
               ],
-              "last_name": "23renqianyao"
+              "last_name": "23fangzihan"
             },
             {
               "id": "phd24-anhaonan",
