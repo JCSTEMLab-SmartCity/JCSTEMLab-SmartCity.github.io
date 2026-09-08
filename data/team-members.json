@@ -1058,63 +1058,6 @@
           "name": "Postdoctoral Researchers",
           "members": [
             {
-              "id": "pd23-caohangcheng",
-              "title": "Dr. CAO, Hangcheng",
-              "role": [
-                {
-                  "text": "Postdoctoral Fellow @ CityUHK",
-                  "highlighted": true
-                },
-                {
-                  "text": "PhD @ Hunan University",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/avatars/PD23_Caohangcheng.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:hangchengcao1995@gmail.com",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=gzq7YKkAAAAJ&hl=en",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
-                },
-                {
-                  "type": "house-user",
-                  "url": "https://hangchengc.github.io/",
-                  "icon": "fas fa-globe",
-                  "title": "Homepage"
-                }
-              ],
-              "interests": [
-                "IoT security"
-              ],
-              "biography": "\n\n\nHangcheng Cao (曹航程) is a postdoctoral fellow at the City University of Hong Kong, supervised by Prof. Yuguang Fang. He received his Ph.D. degree from the College of Computer Science and Electronic Engineer, Hunan University. From 2021 to 2022, he studies as a joint Ph.D. student at the School of Computer Science and Engineering at Nanyang Technological University, Singapore. His research interests lie in the area of IoT security analysis and protection, particularly focusing on user authentication, wireless sensing security, side channel attack, etc. He has published papers in ACM Ubicomp/IMWUT, IEEE ICDCS, ACM MobiCom Workshop, IEEE TMC, ACM ToSN, IEEE IoT-J, IEEE Communications Magazine, etc.",
-              "education": [
-                {
-                  "degree": "PhD in Computer Science and Technology",
-                  "institution": "Hunan University, Changsha, China",
-                  "year": "2017 - 2023"
-                },
-                {
-                  "degree": "Joint-PhD in Computer Science and Technology",
-                  "institution": "Nanyang Technological University, Singapore",
-                  "year": "2021 - 2022"
-                },
-                {
-                  "degree": "BSc in Network Engineering",
-                  "institution": "Henan Normal University, Henan, China",
-                  "year": "2013 - 2017"
-                }
-              ],
-              "last_name": "aab"
-            },
-            {
               "id": "pd-yuanlongzhi",
               "title": "Dr. YUAN, Longzhi",
               "role": [
@@ -2169,6 +2112,70 @@
           "name": "Former Postdoctoral Researchers",
           "displayName": "Former Postdoctoral Researchers (@CityUHK)",
           "members": [
+            {
+              "id": "pd23-caohangcheng",
+              "title": "Dr. CAO, Hangcheng",
+              "role": [
+                {
+                  "text": "Postdoctoral Fellow @ CityUHK (2023 - 2026)",
+                  "highlighted": true
+                },
+                {
+                  "text": "PhD @ Hunan University",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/avatars/PD23_Caohangcheng.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:hangchengcao1995@gmail.com",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=gzq7YKkAAAAJ&hl=en",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                },
+                {
+                  "type": "house-user",
+                  "url": "https://hangchengc.github.io/",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
+                }
+              ],
+              "interests": [
+                "IoT security"
+              ],
+              "biography": "\n\n\nHangcheng Cao (曹航程) was a postdoctoral fellow at the City University of Hong Kong from 2023 to 2026, supervised by Prof. Yuguang Fang. He received his Ph.D. degree from the College of Computer Science and Electronic Engineer, Hunan University. From 2021 to 2022, he studied as a joint Ph.D. student at the School of Computer Science and Engineering at Nanyang Technological University, Singapore. His research interests lie in the area of IoT security analysis and protection, particularly focusing on user authentication, wireless sensing security, side channel attack, etc. He has published papers in IEEE S&P, ACM Ubicomp/IMWUT, IEEE ICDCS, ACM MobiCom Workshop, IEEE TMC, ACM ToSN, IEEE IoT-J, IEEE Communications Magazine, etc.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science and Technology",
+                  "institution": "Hunan University, Changsha, China",
+                  "year": "2017 - 2023"
+                },
+                {
+                  "degree": "Joint-PhD in Computer Science and Technology",
+                  "institution": "Nanyang Technological University, Singapore",
+                  "year": "2021 - 2022"
+                },
+                {
+                  "degree": "BSc in Network Engineering",
+                  "institution": "Henan Normal University, Henan, China",
+                  "year": "2013 - 2017"
+                }
+              ],
+              "experience": [
+                {
+                  "title": "Postdoctoral Fellow",
+                  "institution": "City University of Hong Kong",
+                  "period": "2023 - 2026"
+                }
+              ],
+              "last_name": "aab"
+            },
             {
               "id": "pd24-liuzhaofeng",
               "title": "Dr. LIU, Zhaofeng",
