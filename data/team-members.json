@@ -2194,6 +2194,10 @@
                   "highlighted": true
                 },
                 {
+                  "text": "Postdoctoral Fellow @ CityUHK (2024.10 - 2026.5)",
+                  "highlighted": false
+                },
+                {
                   "text": "PhD @ CityUHK",
                   "highlighted": false
                 },
@@ -2265,6 +2269,10 @@
                 {
                   "text": "School of Data Science, Lingnan University",
                   "highlighted": false
+                },
+                {
+                  "text": "Postdoctoral Fellow @ CityUHK (2024.8 - 2025.12)",
+                  "highlighted": false
                 }
               ],
               "avatar": "data/avatars/PD24_YiqinDeng.jpeg",
@@ -2335,6 +2343,10 @@
                 },
                 {
                   "text": "School of Computer Science and Engineering, University of Electronic Science and Technology of China",
+                  "highlighted": false
+                },
+                {
+                  "text": "Postdoctoral Fellow @ CityUHK (2023.5 - 2024.8)",
                   "highlighted": false
                 }
               ],
