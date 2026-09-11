@@ -2117,7 +2117,7 @@
               "title": "Dr. CAO, Hangcheng",
               "role": [
                 {
-                  "text": "Postdoctoral Fellow @ CityUHK (2023 - 2026)",
+                  "text": "Postdoctoral Fellow @ HKU (2026 - Now)",
                   "highlighted": true
                 },
                 {
@@ -2149,7 +2149,7 @@
               "interests": [
                 "IoT security"
               ],
-              "biography": "\n\n\nHangcheng Cao (曹航程) was a postdoctoral fellow at the City University of Hong Kong from 2023 to 2026, supervised by Prof. Yuguang Fang. He received his Ph.D. degree from the College of Computer Science and Electronic Engineer, Hunan University. From 2021 to 2022, he studied as a joint Ph.D. student at the School of Computer Science and Engineering at Nanyang Technological University, Singapore. His research interests lie in the area of IoT security analysis and protection, particularly focusing on user authentication, wireless sensing security, side channel attack, etc. He has published papers in IEEE S&P, ACM Ubicomp/IMWUT, IEEE ICDCS, ACM MobiCom Workshop, IEEE TMC, ACM ToSN, IEEE IoT-J, IEEE Communications Magazine, etc.",
+              "biography": "\n\n\nHangcheng Cao (曹航程) is a postdoctoral fellow at The University of Hong Kong. Previously, he was a postdoctoral fellow at the City University of Hong Kong from 2023 to 2026, supervised by Prof. Yuguang Fang. He received his Ph.D. degree from the College of Computer Science and Electronic Engineer, Hunan University. From 2021 to 2022, he studied as a joint Ph.D. student at the School of Computer Science and Engineering at Nanyang Technological University, Singapore. His research interests lie in the area of IoT security analysis and protection, particularly focusing on user authentication, wireless sensing security, side channel attack, etc. He has published papers in IEEE S&P, ACM Ubicomp/IMWUT, IEEE ICDCS, ACM MobiCom Workshop, IEEE TMC, ACM ToSN, IEEE IoT-J, IEEE Communications Magazine, etc.",
               "education": [
                 {
                   "degree": "PhD in Computer Science and Technology",
@@ -2168,6 +2168,11 @@
                 }
               ],
               "experience": [
+                {
+                  "title": "Postdoctoral Fellow",
+                  "institution": "The University of Hong Kong",
+                  "period": "2026 - Now"
+                },
                 {
                   "title": "Postdoctoral Fellow",
                   "institution": "City University of Hong Kong",
