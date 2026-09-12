@@ -2115,74 +2115,10 @@
             {
               "id": "pd23-caohangcheng",
               "title": "Dr. CAO, Hangcheng",
-              "role": [
-                {
-                  "text": "Postdoctoral Fellow @ HKU",
-                  "highlighted": true
-                },
-                {
-                  "text": "Postdoctoral Fellow @ CityUHK (Aug. 2023 - Sep. 2026)",
-                  "highlighted": false
-                },
-                {
-                  "text": "PhD @ Hunan University",
-                  "highlighted": false
-                }
-              ],
+              "role": [],
               "avatar": "data/avatars/PD23_Caohangcheng.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:hangchengcao1995@gmail.com",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=gzq7YKkAAAAJ&hl=en",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
-                },
-                {
-                  "type": "house-user",
-                  "url": "https://hangchengc.github.io/",
-                  "icon": "fas fa-globe",
-                  "title": "Homepage"
-                }
-              ],
-              "interests": [
-                "IoT security"
-              ],
-              "biography": "\n\n\nHangcheng Cao (曹航程) is a postdoctoral fellow at The University of Hong Kong. Previously, he was a postdoctoral fellow at the City University of Hong Kong from Aug. 2023 to Sep. 2026, supervised by Prof. Yuguang Fang. He received his Ph.D. degree from the College of Computer Science and Electronic Engineer, Hunan University. From 2021 to 2022, he studied as a joint Ph.D. student at the School of Computer Science and Engineering at Nanyang Technological University, Singapore. His research interests lie in the area of IoT security analysis and protection, particularly focusing on user authentication, wireless sensing security, side channel attack, etc. He has published papers in IEEE S&P, ACM Ubicomp/IMWUT, IEEE ICDCS, ACM MobiCom Workshop, IEEE TMC, ACM ToSN, IEEE IoT-J, IEEE Communications Magazine, etc.",
-              "education": [
-                {
-                  "degree": "PhD in Computer Science and Technology",
-                  "institution": "Hunan University, Changsha, China",
-                  "year": "2017 - 2023"
-                },
-                {
-                  "degree": "Joint-PhD in Computer Science and Technology",
-                  "institution": "Nanyang Technological University, Singapore",
-                  "year": "2021 - 2022"
-                },
-                {
-                  "degree": "BSc in Network Engineering",
-                  "institution": "Henan Normal University, Henan, China",
-                  "year": "2013 - 2017"
-                }
-              ],
-              "experience": [
-                {
-                  "title": "Postdoctoral Fellow",
-                  "institution": "The University of Hong Kong",
-                  "period": "2026 - Now"
-                },
-                {
-                  "title": "Postdoctoral Fellow",
-                  "institution": "City University of Hong Kong",
-                  "period": "Aug. 2023 - Sep. 2026"
-                }
-              ],
+              "socialLinks": [],
+              "biography": "Hangcheng Cao's research interests lie in the area of IoT security analysis and protection, particularly focusing on user authentication, wireless sensing security, and side-channel attacks.",
               "last_name": "aab"
             },
             {
