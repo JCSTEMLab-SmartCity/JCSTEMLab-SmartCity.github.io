@@ -1,5 +1,31 @@
 [
   {
+    "title": "FRUC: Feedforward Dynamic Scene Reconstruction from Uncalibrated Collaborative Driving Views",
+    "authors": "Yihang Tao, Yu Guo, Zhengru Fang, Haonan An, Yuguang Fang",
+    "venue": "The 40th Annual Conference on Neural Information Processing Systems, Sydney, Australia, December 2026.",
+    "type": "accepted",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "NeurIPS'26",
+        "class": "venue-tag"
+      }
+    ]
+  },
+  {
+    "title": "Mobility Helps Learning: Unsupervised Model Adaptation for Object Recognition via Movement",
+    "authors": "Yanan Ma, Yihang Tao, Zhengru Fang, Senkang Hu, Xianhao Chen, Yuguang Fang",
+    "venue": "The 40th Annual Conference on Neural Information Processing Systems, Sydney, Australia, December 2026.",
+    "type": "accepted",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "NeurIPS'26",
+        "class": "venue-tag"
+      }
+    ]
+  },
+  {
     "title": "Enabling Low-Power Decoding of Ambient Signals at Backscatter Tags for Personal IoT",
     "authors": "Longzhi Yuan, Hangcheng Cao, Wei Gong, Yuguang Fang",
     "venue": "IEEE Transactions on Mobile Computing",
