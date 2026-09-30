@@ -678,6 +678,48 @@ nav.scrolled .nav-links a:hover {
     background: #000;
 }
 
+.yt-facade {
+    cursor: pointer;
+}
+
+.yt-facade img,
+.film-frame iframe {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    object-fit: cover;
+}
+
+.yt-play {
+    /* sits in the film's own lower letterbox bar so it never covers the picture */
+    position: absolute;
+    left: 50%;
+    top: 93.6%;
+    height: 10%;
+    aspect-ratio: 1;
+    transform: translate(-50%, -50%);
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.14);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(0.75rem, 1.4vw, 1.2rem);
+    padding-left: 0.15em;
+    transition: background var(--transition);
+}
+
+.yt-facade:hover .yt-play,
+.yt-facade:focus-visible .yt-play {
+    background: var(--primary-color);
+}
+
+.film-caption a {
+    color: var(--primary-color);
+}
+
 .film-caption {
     margin-top: 0.9rem;
     text-align: center;

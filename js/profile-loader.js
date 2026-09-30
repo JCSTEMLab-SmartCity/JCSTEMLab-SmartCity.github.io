@@ -106,16 +106,21 @@ function renderMemberProfile(member) {
     `;
     
     // Film
-    if (member.video && member.video.src) {
+    if (member.video && (member.video.youtube || member.video.src)) {
         html += `
             <div class="profile-section" id="film">
                 <h2 class="section-title">${member.video.title || 'Film'}</h2>
+                ${member.video.youtube ? `
+                <div class="film-frame yt-facade" data-yt="${member.video.youtube}" role="button" tabindex="0" aria-label="Play ${member.video.title || 'film'}">
+                    <img src="${member.video.poster || ''}" alt="${member.video.title || 'Film'}">
+                    <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
+                </div>` : `
                 <div class="film-frame">
                     <video controls preload="none" playsinline poster="${member.video.poster || ''}">
                         <source src="${member.video.src}" type="video/mp4">
                     </video>
-                </div>
-                ${member.video.caption ? `<p class="film-caption">${member.video.caption}</p>` : ''}
+                </div>`}
+                <p class="film-caption">${member.video.caption || ''}</p>
             </div>
         `;
     }
@@ -183,6 +188,7 @@ function renderMemberProfile(member) {
     
     // 设置HTML内容
     contentContainer.innerHTML = html;
+    if (typeof initFilmEmbeds === 'function') initFilmEmbeds(contentContainer);
 }
 
 /**

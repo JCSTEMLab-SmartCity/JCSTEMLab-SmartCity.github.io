@@ -122,13 +122,18 @@ document.addEventListener('DOMContentLoaded', function () {
     document.querySelectorAll('a.film-link[href^="#"]').forEach(link => {
         link.addEventListener('click', e => {
             const target = document.querySelector(link.getAttribute('href'));
+            const frame = target && target.querySelector('.yt-facade');
             const video = target && target.querySelector('video');
-            if (!video) return;
+            if (!frame && !video) return;
             e.preventDefault();
             stopHeroAuto();
             target.scrollIntoView({ behavior: 'smooth', block: 'center' });
-            video.muted = false;
-            video.play().catch(() => {});
+            if (frame && typeof playFilm === 'function') {
+                playFilm(frame);
+            } else if (video) {
+                video.muted = false;
+                video.play().catch(() => {});
+            }
         });
     });
 
