@@ -657,8 +657,7 @@ nav.scrolled .nav-links a:hover {
 
 /* Films (lab film in About, director film, profile film) */
 .lab-film {
-    max-width: 1000px;
-    margin: 2.5rem auto 0;
+    margin: 2.5rem 0 0;
 }
 
 .film-frame {
