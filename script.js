@@ -118,6 +118,20 @@ document.addEventListener('DOMContentLoaded', function () {
     // Load profile info
     loadProfileInfo();
 
+    // Hero "Watch the film" links: scroll to the player and start it with sound
+    document.querySelectorAll('a.film-link[href^="#"]').forEach(link => {
+        link.addEventListener('click', e => {
+            const target = document.querySelector(link.getAttribute('href'));
+            const video = target && target.querySelector('video');
+            if (!video) return;
+            e.preventDefault();
+            stopHeroAuto();
+            target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+            video.muted = false;
+            video.play().catch(() => {});
+        });
+    });
+
     // Homepage sections are loaded lazily to avoid blocking first paint.
     if (document.getElementById('news-container') || document.getElementById('publications-container')) {
         setupDeferredHomepageLoading();

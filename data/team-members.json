@@ -28,6 +28,12 @@
                 }
               ],
               "avatar": "data/avatars/ProfFang.jpg",
+              "video": {
+                "title": "Connecting the Unknown",
+                "src": "/assets/films/Fang-Film-EN.mp4",
+                "poster": "/assets/films/Fang-Film-poster.jpg",
+                "caption": "A short film on Prof. Fang's path, from the Yimeng Mountains to Victoria Harbour (3:03)."
+              },
               "socialLinks": [
                 {
                   "type": "envelope",

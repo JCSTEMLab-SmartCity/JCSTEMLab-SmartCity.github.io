@@ -36,8 +36,34 @@
     <main>
         <section id="hero" class="hero">
             <div class="hero-slider">
-                <!-- Slide 1 -->
-                <div class="hero-item active">
+                <!-- Slide 1 (Video): lab film -->
+                <div class="hero-item video-slide active" data-autoplay-ms="11300">
+                    <video data-src="assets/films/JCLab-Film-teaser.mp4" autoplay muted loop playsinline preload="none"
+                        poster="assets/films/JCLab-Film-teaser-poster.jpg"
+                        class="hero-bg-video"></video>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <h1>Teaching the City to Think</h1>
+                        <p>A film about the JC STEM Lab of Smart City</p>
+                        <small><a href="#lab-film" class="film-link" style="color: rgba(255,255,255,0.8); text-decoration: underline;">Watch the film (2:40)</a></small>
+                    </div>
+                </div>
+
+                <!-- Slide 2 (Video): Prof. Fang film -->
+                <div class="hero-item video-slide" data-autoplay-ms="8600">
+                    <video data-src="assets/films/Fang-Film-teaser.mp4" autoplay muted loop playsinline preload="none"
+                        poster="assets/films/Fang-Film-teaser-poster.jpg"
+                        class="hero-bg-video"></video>
+                    <div class="hero-overlay"></div>
+                    <div class="container hero-content">
+                        <h1>Connecting the Unknown</h1>
+                        <p>A film on Prof. Yuguang "Michael" Fang, our Lab Director</p>
+                        <small><a href="#fang-film" class="film-link" style="color: rgba(255,255,255,0.8); text-decoration: underline;">Watch the film (3:03)</a></small>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="hero-item">
                     <div class="hero-bg" role="img" aria-label="Teacher's Day celebration with Prof. Fang"
                         style="background-image: url('assets/slides/Teacher-day.jpg');"></div>
                     <div class="hero-overlay"></div>
@@ -47,13 +73,13 @@
                     </div>
                 </div>
 
-                <!-- Slide 2 -->
+                <!-- Slide 4 -->
                 <div class="hero-item">
                     <div class="hero-bg" role="img" aria-label="Prof. Yuguang Fang appointed Editor-in-Chief of IEEE Transactions on Machine Learning for Communications and Networking"
                         style="background-image: url('assets/slides/ieee-tmlcn-editor-in-chief.png');"></div>
                 </div>
 
-                <!-- Slide 3 (Video) -->
+                <!-- Slide 5 (Video) -->
                 <div class="hero-item video-slide" data-autoplay-ms="12000">
                     <video data-src="assets/RGC_Visit.mp4" autoplay muted loop playsinline preload="none"
                         poster="assets/news-assets/2026-6-11-RGCVisit/Weixin Image_20260611143344_43_107.jpg"
@@ -66,7 +92,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 4 -->
+                <!-- Slide 6 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/news-assets/2026-3-12-ChinaMobile/DSC_0047.JPG');"></div>
                     <div class="hero-overlay"></div>
@@ -76,7 +102,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 5 -->
+                <!-- Slide 7 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/thanksgiving2025.jpg');"></div>
                     <div class="hero-overlay"></div>
@@ -86,7 +112,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 6 (Video) -->
+                <!-- Slide 8 (Video) -->
                 <div class="hero-item video-slide" data-autoplay-ms="12000">
                     <video data-src="assets/JCLab-OpenCeremony.mp4" autoplay muted loop playsinline preload="none"
                         class="hero-bg-video"></video>
@@ -98,7 +124,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 7 -->
+                <!-- Slide 9 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/jclab-luncheon.png');"></div>
                     <div class="hero-overlay"></div>
@@ -108,7 +134,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 8 -->
+                <!-- Slide 10 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/ACM-Fang.png');"></div>
                     <div class="hero-overlay"></div>
@@ -118,7 +144,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 9 -->
+                <!-- Slide 11 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/group4.jpg');"></div>
                     <div class="hero-overlay"></div>
@@ -128,7 +154,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 10 -->
+                <!-- Slide 12 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/group3.jpg');"></div>
                     <div class="hero-overlay"></div>
@@ -138,7 +164,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 11 -->
+                <!-- Slide 13 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/group2.jpg');"></div>
                     <div class="hero-overlay"></div>
@@ -148,7 +174,7 @@
                     </div>
                 </div>
 
-                <!-- Slide 12 -->
+                <!-- Slide 14 -->
                 <div class="hero-item">
                     <div class="hero-bg" style="background-image: url('assets/slides/group1.png');"></div>
                     <div class="hero-overlay"></div>
@@ -194,10 +220,38 @@
                         Monitoring, and more, exploring how to leverage mobile things to help things, leading to
                         cost-effective and sustainable solutions to building smarter cities.</p><br>
 
+                    <div class="lab-film" id="lab-film">
+                        <div class="film-frame">
+                            <video controls preload="none" playsinline poster="assets/films/JCLab-Film-poster.jpg">
+                                <source src="assets/films/JCLab-Film-EN.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <p class="film-caption"><i>Teaching the City to Think</i>: the lab's mission, research, and people in 2 minutes 40 seconds.</p>
+                    </div>
+
                     <div style="text-align: center; margin-top: 30px;">
                         <img src="assets/logo.png" alt="JC STEM Lab Logo" class="lab-logo" style="width: 600px; height: auto;">
                     </div>
 
+                </div>
+            </div>
+        </section>
+
+        <section id="director" class="section">
+            <div class="container">
+                <h2 class="section-title">Lab Director</h2>
+                <div class="director-feature" id="fang-film">
+                    <div class="film-frame">
+                        <video controls preload="none" playsinline poster="assets/films/Fang-Film-poster.jpg">
+                            <source src="assets/films/Fang-Film-EN.mp4" type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="director-text">
+                        <h3>Prof. Yuguang "Michael" Fang</h3>
+                        <p>Chair Professor of Internet of Things, Department of Computer Science, City University of Hong Kong. Fellow of ACM, IEEE, and AAAS.</p>
+                        <p><i>Connecting the Unknown</i> follows his path from the Yimeng Mountains to Victoria Harbour, from number theory to wireless intelligence.</p>
+                        <p><a href="data/profile/profile.html?id=proffang">Full profile</a> &middot; <a href="https://www.cs.cityu.edu.hk/~yugufang/">Personal homepage</a></p>
+                    </div>
                 </div>
             </div>
         </section>

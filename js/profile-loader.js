@@ -105,6 +105,21 @@ function renderMemberProfile(member) {
         </div>
     `;
     
+    // Film
+    if (member.video && member.video.src) {
+        html += `
+            <div class="profile-section" id="film">
+                <h2 class="section-title">${member.video.title || 'Film'}</h2>
+                <div class="film-frame">
+                    <video controls preload="none" playsinline poster="${member.video.poster || ''}">
+                        <source src="${member.video.src}" type="video/mp4">
+                    </video>
+                </div>
+                ${member.video.caption ? `<p class="film-caption">${member.video.caption}</p>` : ''}
+            </div>
+        `;
+    }
+
     // 研究兴趣
     if (member.interests && member.interests.length > 0) {
         html += `
