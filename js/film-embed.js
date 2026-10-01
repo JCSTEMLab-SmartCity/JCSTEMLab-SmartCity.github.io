@@ -3,7 +3,7 @@
 function playFilm(frame) {
     if (!frame || frame.querySelector('iframe')) return;
     const iframe = document.createElement('iframe');
-    iframe.src = `https://www.youtube-nocookie.com/embed/${frame.dataset.yt}?autoplay=1&rel=0&playsinline=1`;
+    iframe.src = `https://www.youtube.com/embed/${frame.dataset.yt}?autoplay=1&rel=0&playsinline=1`;
     iframe.title = frame.getAttribute('aria-label') || 'Video';
     iframe.allow = 'autoplay; encrypted-media; picture-in-picture; fullscreen';
     iframe.allowFullscreen = true;
