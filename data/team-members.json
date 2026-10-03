@@ -1407,67 +1407,6 @@
               "last_name": "23mayanan"
             },
             {
-              "id": "phd23-husenkang",
-              "title": "Mr. HU, Senkang",
-              "role": [
-                {
-                  "text": "PhD Student @ 24 Spring",
-                  "highlighted": true
-                },
-                {
-                  "text": "BSc @ Beijing Institute of Technology",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/avatars/PhD23_HuSenkang.jpg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:senkang.forest@my.cityu.edu.hk",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?hl=en&user=rtPVwT8AAAAJ",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
-                },
-                {
-                  "type": "house-user",
-                  "url": "https://dl-m9.github.io/",
-                  "icon": "fas fa-globe",
-                  "title": "Homepage"
-                },
-                {
-                  "type": "linkedin",
-                  "url": "https://www.linkedin.com/in/senkang-hu-3123681b5/",
-                  "icon": "fab fa-linkedin",
-                  "title": "LinkedIn"
-                }
-              ],
-              "interests": [
-                "Machine Learning",
-                "LLM Post-Training",
-                "Multi-Agent System",
-                "Embodied AI"
-              ],
-              "biography": "Senkang Hu is currently a Ph.D. candidate at the Department of Computer Science, City University of Hong Kong, under the supervision of Fellow of ACM & IEEE & AAAS, Chair Prof. Yuguang \"Michael\" Fang. Previously, he was a Visiting PhD at the Department of Computer Science, University of Oxford. He received his BSc degree from the School of Information and Electronics, Beijing Institute of Technology in 2022.\n\nHis long-term research vision is to develop intelligent, efficient, collaborative, and trustworthy LLM-based agentic systems that solve complex real-world tasks and move toward AGI. His works have been published in top-tier conferences such as ICML, NeurIPS, CVPR, AAAI (Oral), ICRA, etc., and top-tier journals such as TMC, TITS, ToN. He also serves as a reviewer or technical program committee member for ICML, ICLR, NeurIPS, ICRA, TMC, ToN, TITS, etc. He received the CYCSGS Scholarship, CityUHK's highest honor for PhD students, as the sole awardee in the Dept. of CS. He received the Best Paper Award at GLOBECOM'25.",
-              "education": [
-                {
-                  "degree": "PhD in Computer Science",
-                  "institution": "City University of Hong Kong, Hong Kong SAR",
-                  "year": "2023 - Now"
-                },
-                {
-                  "degree": "BSc in Electronic and Information Engineering",
-                  "institution": "Beijing Institute of Technology, Beijing, China",
-                  "year": "2018 - 2022"
-                }
-              ],
-              "last_name": "23husenkang"
-            },
-            {
               "id": "phd24-fangzihan",
               "title": "Ms. FANG, Zihan",
               "role": [
@@ -2354,6 +2293,67 @@
           "name": "Graduated PhD Students",
           "displayName": "Graduated PhD Students (@CityUHK)",
           "members": [
+            {
+              "id": "phd23-husenkang",
+              "title": "Mr. HU, Senkang",
+              "role": [
+                {
+                  "text": "PhD Student @ 24 Spring",
+                  "highlighted": true
+                },
+                {
+                  "text": "BSc @ Beijing Institute of Technology",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/avatars/PhD23_HuSenkang.jpg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:senkang.forest@my.cityu.edu.hk",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?hl=en&user=rtPVwT8AAAAJ",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                },
+                {
+                  "type": "house-user",
+                  "url": "https://dl-m9.github.io/",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
+                },
+                {
+                  "type": "linkedin",
+                  "url": "https://www.linkedin.com/in/senkang-hu-3123681b5/",
+                  "icon": "fab fa-linkedin",
+                  "title": "LinkedIn"
+                }
+              ],
+              "interests": [
+                "Machine Learning",
+                "LLM Post-Training",
+                "Multi-Agent System",
+                "Embodied AI"
+              ],
+              "biography": "Senkang Hu is currently a Ph.D. candidate at the Department of Computer Science, City University of Hong Kong, under the supervision of Fellow of ACM & IEEE & AAAS, Chair Prof. Yuguang \"Michael\" Fang. Previously, he was a Visiting PhD at the Department of Computer Science, University of Oxford. He received his BSc degree from the School of Information and Electronics, Beijing Institute of Technology in 2022.\n\nHis long-term research vision is to develop intelligent, efficient, collaborative, and trustworthy LLM-based agentic systems that solve complex real-world tasks and move toward AGI. His works have been published in top-tier conferences such as ICML, NeurIPS, CVPR, AAAI (Oral), ICRA, etc., and top-tier journals such as TMC, TITS, ToN. He also serves as a reviewer or technical program committee member for ICML, ICLR, NeurIPS, ICRA, TMC, ToN, TITS, etc. He received the CYCSGS Scholarship, CityUHK's highest honor for PhD students, as the sole awardee in the Dept. of CS. He received the Best Paper Award at GLOBECOM'25.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science",
+                  "institution": "City University of Hong Kong, Hong Kong SAR",
+                  "year": "2023 - Now"
+                },
+                {
+                  "degree": "BSc in Electronic and Information Engineering",
+                  "institution": "Beijing Institute of Technology, Beijing, China",
+                  "year": "2018 - 2022"
+                }
+              ],
+              "last_name": "23husenkang"
+            },
             {
               "id": "phd23-fangzhengru",
               "title": "Dr. FANG, Zhengru",
