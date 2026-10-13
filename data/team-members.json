@@ -1064,65 +1064,6 @@
           "name": "Postdoctoral Researchers",
           "members": [
             {
-              "id": "pd-yuanlongzhi",
-              "title": "Dr. YUAN, Longzhi",
-              "role": [
-                {
-                  "text": "Postdoctoral Fellow @ CityUHK",
-                  "highlighted": true
-                },
-                {
-                  "text": "PhD & BSc @ University of Science and Technology of China",
-                  "highlighted": false
-                }
-              ],
-              "avatar": "data/avatars/PD_YuanLongzhi.jpeg",
-              "socialLinks": [
-                {
-                  "type": "envelope",
-                  "url": "mailto:longzhi@mail.ustc.edu.cn",
-                  "icon": "fas fa-envelope",
-                  "title": "Email"
-                },
-                {
-                  "type": "google-scholar",
-                  "url": "https://scholar.google.com/citations?user=yD2wjKUAAAAJ&hl=zh-CN",
-                  "icon": "fas fa-graduation-cap",
-                  "title": "Google Scholar"
-                },
-                {
-                  "type": "house-user",
-                  "url": "https://yuanlongzhi.github.io/",
-                  "icon": "fas fa-globe",
-                  "title": "Homepage"
-                },
-                {
-                  "type": "cv",
-                  "url": "../data/files/cv/CV_Longzhi.pdf",
-                  "icon": "fas fa-file-pdf",
-                  "title": "CV"
-                }
-              ],
-              "interests": [
-                "Internet-of-Things",
-                "Wireless Networks"
-              ],
-              "biography": "\n\nLongzhi Yuan received his BSc degree in Electrnoic Information Engineering from University of Science and Technology of China in 2017 and the PhD degree in Computer Science and Technology from University of Science and Technology of China in 2023. Currently, he is a postdoctor in CityU, Hong Kong. His research interests include Internet of Things and wireless networks. He worked to develop low-power backscatter communication systems, improve their throughputs, and make them compatible with commercial radios. In his postdoctor career, he will focus on wireless sensing.",
-              "education": [
-                {
-                  "degree": "PhD in Computer Science and Technology",
-                  "institution": "University of Science and Technology of China",
-                  "year": "2017 - 2023"
-                },
-                {
-                  "degree": "BSc in Electronic Information Engineering",
-                  "institution": "University of Science and Technology of China",
-                  "year": "2013 - 2017"
-                }
-              ],
-              "last_name": "aac"
-            },
-            {
               "id": "pd24-wangqianru",
               "title": "Dr. WANG, Qianru",
               "role": [
@@ -2064,6 +2005,86 @@
               "socialLinks": [],
               "biography": "Hangcheng Cao's research interests lie in the area of IoT security analysis and protection, particularly focusing on user authentication, wireless sensing security, and side-channel attacks.",
               "last_name": "aab"
+            },
+            {
+              "id": "pd-yuanlongzhi",
+              "title": "Dr. YUAN, Longzhi",
+              "role": [
+                {
+                  "text": "Postdoctoral Fellow @ The University of Hong Kong",
+                  "highlighted": true
+                },
+                {
+                  "text": "AIoT Lab, Department of Computer Science",
+                  "highlighted": false
+                },
+                {
+                  "text": "Former Postdoctoral Fellow @ CityUHK",
+                  "highlighted": false
+                },
+                {
+                  "text": "PhD & BSc @ University of Science and Technology of China",
+                  "highlighted": false
+                }
+              ],
+              "avatar": "data/avatars/PD_YuanLongzhi.jpeg",
+              "socialLinks": [
+                {
+                  "type": "envelope",
+                  "url": "mailto:longzhi@mail.ustc.edu.cn",
+                  "icon": "fas fa-envelope",
+                  "title": "Email"
+                },
+                {
+                  "type": "google-scholar",
+                  "url": "https://scholar.google.com/citations?user=yD2wjKUAAAAJ&hl=zh-CN",
+                  "icon": "fas fa-graduation-cap",
+                  "title": "Google Scholar"
+                },
+                {
+                  "type": "house-user",
+                  "url": "https://yuanlongzhi.github.io/",
+                  "icon": "fas fa-globe",
+                  "title": "Homepage"
+                },
+                {
+                  "type": "cv",
+                  "url": "../data/files/cv/CV_Longzhi.pdf",
+                  "icon": "fas fa-file-pdf",
+                  "title": "CV"
+                }
+              ],
+              "interests": [
+                "Wireless Sensing",
+                "Wireless Networks",
+                "Internet of Things"
+              ],
+              "experience": [
+                {
+                  "title": "Postdoctoral Fellow",
+                  "institution": "AIoT Lab, Department of Computer Science, The University of Hong Kong",
+                  "period": "Sep. 2026 - Present"
+                },
+                {
+                  "title": "Postdoctoral Fellow",
+                  "institution": "Hong Kong JC STEM Lab of Smart City, Department of Computer Science, City University of Hong Kong",
+                  "period": "2023 - Aug. 2026"
+                }
+              ],
+              "biography": "Longzhi Yuan is currently a Postdoctoral Fellow with the AIoT Lab in the Department of Computer Science at The University of Hong Kong. He joined HKU in September 2026 after working as a Postdoctoral Fellow at City University of Hong Kong. He received his BSc degree in Electronic Information Engineering and PhD degree in Computer Science and Technology from the University of Science and Technology of China in 2017 and 2023, respectively. His research interests include wireless sensing, wireless networks, and the Internet of Things, with a focus on low-power backscatter communication systems.",
+              "education": [
+                {
+                  "degree": "PhD in Computer Science and Technology",
+                  "institution": "University of Science and Technology of China",
+                  "year": "2017 - 2023"
+                },
+                {
+                  "degree": "BSc in Electronic Information Engineering",
+                  "institution": "University of Science and Technology of China",
+                  "year": "2013 - 2017"
+                }
+              ],
+              "last_name": "aac"
             },
             {
               "id": "pd24-liuzhaofeng",
