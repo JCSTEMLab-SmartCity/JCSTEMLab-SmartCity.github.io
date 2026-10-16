@@ -17,6 +17,7 @@
 ## Required Workflow
 
 - Before making any code or content modifications, run `git pull` to sync the latest remote changes first.
+- If this repository's GitHub SSH synchronization fails because an identity file is unavailable or host-key verification fails, do not disable host-key checking or modify global SSH settings. Confirm the origin host and repository, then use a command-scoped HTTPS URL for the same repository. For a push, use an already authenticated credential helper without printing credentials. Verify the fast-forward sync and remote commit before reporting success. See [favicon update verification](docs/verification/2026-10-17-favicon.md) for the confirmed case and the remaining SSH limitation.
 - After completing a content update, commit and push the changes automatically with a concise, descriptive commit message; do not wait for the user to ask.
 - Use `python3 -m http.server <port>` for local static previews when a browser preview is requested.
 
