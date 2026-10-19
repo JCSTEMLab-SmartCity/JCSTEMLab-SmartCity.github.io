@@ -27,6 +27,11 @@
       {
         "text": "NeurIPS'26",
         "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2610.15846"
       }
     ]
   },
