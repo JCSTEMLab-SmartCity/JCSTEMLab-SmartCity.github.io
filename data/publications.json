@@ -1,5 +1,28 @@
 [
   {
+    "title": "CP-Guard+: A New Paradigm for Malicious Agent Detection and Defense in Collaborative Perception",
+    "authors": "Senkang Hu, Yihang Tao, Zihan Fang, Guowen Xu, Hangcheng Cao, Yiqin Deng, Sam Tak Wu Kwong, Yuguang Fang",
+    "venue": "IEEE Transactions on Dependable and Secure Computing",
+    "type": "accepted",
+    "year": "2026",
+    "tags": [
+      {
+        "text": "TDSC",
+        "class": "venue-tag"
+      },
+      {
+        "text": "PDF",
+        "class": "code-tag",
+        "link": "https://arxiv.org/abs/2502.07807"
+      },
+      {
+        "text": "Project",
+        "class": "code-tag",
+        "link": "https://dl-m9.github.io/paper-pages/cpguardp/index.html"
+      }
+    ]
+  },
+  {
     "title": "FRUC: Feedforward Dynamic Scene Reconstruction from Uncalibrated Collaborative Driving Views",
     "authors": "Yihang Tao, Yu Guo, Zhengru Fang, Haonan An, Yuguang Fang",
     "venue": "The 40th Annual Conference on Neural Information Processing Systems, Sydney, Australia, December 2026.",
