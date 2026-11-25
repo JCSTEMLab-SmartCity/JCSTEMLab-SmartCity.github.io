@@ -232,10 +232,13 @@ function createMemberCard(member) {
     const memberCard = document.createElement('div');
     memberCard.className = 'team-member';
 
-    // 头像
+    // 头像（使用优化后的 WebP，并按需懒加载）
     const avatar = document.createElement('img');
-    avatar.src = `../${member.avatar}`;
+    const avatarMatch = (member.avatar || '').replace(/^\//, '').match(/^data\/avatars\/(.+)\.(?:png|jpe?g)$/i);
+    avatar.src = avatarMatch ? `../data/opt/avatars/${avatarMatch[1]}.webp` : `../${member.avatar}`;
     avatar.alt = member.title;
+    avatar.loading = 'lazy';
+    avatar.decoding = 'async';
     memberCard.appendChild(avatar);
 
     // 创建内容容器

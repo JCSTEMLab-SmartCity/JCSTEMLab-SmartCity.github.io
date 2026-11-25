@@ -53,6 +53,14 @@ function ensureHeroVideoLoaded(video) {
     }
 }
 
+function ensureHeroBackground(slide) {
+    if (!slide) return;
+    const bg = slide.querySelector('.hero-bg[data-bg]');
+    if (bg && !bg.style.backgroundImage) {
+        bg.style.backgroundImage = `url('${bg.dataset.bg}')`;
+    }
+}
+
 function showHero(n) {
     const slides = document.querySelectorAll('.hero-item');
     const dots = document.querySelectorAll('.hero-dots .dot');
@@ -71,6 +79,10 @@ function showHero(n) {
     // Video handling
     const activeSlide = slides[heroIndex];
     if (activeSlide) {
+        // Load the current slide's background first, then prefetch the next one.
+        ensureHeroBackground(activeSlide);
+        ensureHeroBackground(slides[(heroIndex + 1) % slides.length]);
+
         const videos = document.querySelectorAll('.hero-bg-video');
         videos.forEach(v => v.pause());
 
@@ -588,6 +600,15 @@ function renderPublications(publications, container) {
     container.appendChild(fragment);
 }
 
+// Map a full-size news image to its generated WebP thumbnail.
+function getNewsThumbnail(src) {
+    const marker = '/assets/news-assets/';
+    if (!src || !src.startsWith(marker)) return src;
+    const rel = src.slice(marker.length);
+    const dot = rel.lastIndexOf('.');
+    return `/assets/opt/news/${dot === -1 ? rel : rel.slice(0, dot)}.webp`;
+}
+
 // Function to generate gallery HTML
 function generateGalleryHTML(images) {
     if (!images || images.length === 0) return '';
@@ -608,7 +629,7 @@ function generateGalleryHTML(images) {
         if (index === 0) {
             galleryHtml += `
                 <a href="${imgSrc}" target="_blank" class="news-gallery-item" style="z-index: ${zIndex};">
-                    <img src="${imgSrc}" alt="News Photo" class="news-gallery-img" loading="lazy" decoding="async">
+                    <img src="${getNewsThumbnail(imgSrc)}" alt="News Photo" class="news-gallery-img" loading="lazy" decoding="async">
                 </a>
             `;
         } else {
@@ -617,7 +638,7 @@ function generateGalleryHTML(images) {
             const dynamicMargin = `min(-60px, calc((100% - ${totalWidth}px) / ${gaps}))`;
             galleryHtml += `
                 <a href="${imgSrc}" target="_blank" class="news-gallery-item" style="margin-left: ${dynamicMargin}; z-index: ${zIndex};">
-                    <img src="${imgSrc}" alt="News Photo" class="news-gallery-img" loading="lazy" decoding="async">
+                    <img src="${getNewsThumbnail(imgSrc)}" alt="News Photo" class="news-gallery-img" loading="lazy" decoding="async">
                 </a>
             `;
         }

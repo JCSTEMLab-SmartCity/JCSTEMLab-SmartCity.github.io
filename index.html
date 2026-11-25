@@ -7,8 +7,11 @@
     <title>JC STEM Lab of Smart City</title>
     <link rel="icon" type="image/png" href="/assets/favicon.png?v=20261017">
     <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="assets/fonts/montserrat.css">
+    <link rel="stylesheet" href="assets/fonts/fontawesome-subset.css">
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/montserrat-400-latin.woff2" crossorigin>
+    <link rel="preload" as="font" type="font/woff2" href="assets/fonts/montserrat-700-latin.woff2" crossorigin>
+    <link rel="preload" as="image" href="assets/opt/posters/JCLab-Film-teaser-poster.webp" fetchpriority="high">
 </head>
 
 <body>
@@ -39,7 +42,7 @@
                 <!-- Slide 1 (Video): lab film -->
                 <div class="hero-item video-slide active" data-autoplay-ms="11300">
                     <video data-src="assets/films/JCLab-Film-teaser.mp4" autoplay muted loop playsinline preload="none"
-                        poster="assets/films/JCLab-Film-teaser-poster.jpg"
+                        poster="assets/opt/posters/JCLab-Film-teaser-poster.webp"
                         class="hero-bg-video"></video>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
@@ -52,7 +55,7 @@
                 <!-- Slide 2 (Video): Prof. Fang film -->
                 <div class="hero-item video-slide" data-autoplay-ms="8600">
                     <video data-src="assets/films/Fang-Film-teaser.mp4" autoplay muted loop playsinline preload="none"
-                        poster="assets/films/Fang-Film-teaser-poster.jpg"
+                        poster="assets/opt/posters/Fang-Film-teaser-poster.webp"
                         class="hero-bg-video"></video>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
@@ -65,7 +68,7 @@
                 <!-- Slide 3 -->
                 <div class="hero-item">
                     <div class="hero-bg" role="img" aria-label="Teacher's Day celebration with Prof. Fang"
-                        style="background-image: url('assets/slides/Teacher-day.jpg');"></div>
+                        data-bg="assets/opt/hero/Teacher-day.webp"></div>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <h1>Happy Teacher's Day</h1>
@@ -76,13 +79,13 @@
                 <!-- Slide 4 -->
                 <div class="hero-item">
                     <div class="hero-bg" role="img" aria-label="Prof. Yuguang Fang appointed Editor-in-Chief of IEEE Transactions on Machine Learning for Communications and Networking"
-                        style="background-image: url('assets/slides/ieee-tmlcn-editor-in-chief.png');"></div>
+                        data-bg="assets/opt/hero/ieee-tmlcn-editor-in-chief.webp"></div>
                 </div>
 
                 <!-- Slide 5 (Video) -->
                 <div class="hero-item video-slide" data-autoplay-ms="12000">
                     <video data-src="assets/RGC_Visit.mp4" autoplay muted loop playsinline preload="none"
-                        poster="assets/news-assets/2026-6-11-RGCVisit/Weixin Image_20260611143344_43_107.jpg"
+                        poster="assets/opt/posters/Weixin Image_20260611143344_43_107.webp"
                         class="hero-bg-video"></video>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
@@ -94,7 +97,7 @@
 
                 <!-- Slide 6 -->
                 <div class="hero-item">
-                    <div class="hero-bg" style="background-image: url('assets/news-assets/2026-3-12-ChinaMobile/DSC_0047.JPG');"></div>
+                    <div class="hero-bg" data-bg="assets/opt/hero/DSC_0047.webp"></div>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <h1>China Mobile Hong Kong Visit</h1>
@@ -104,7 +107,7 @@
 
                 <!-- Slide 7 -->
                 <div class="hero-item">
-                    <div class="hero-bg" style="background-image: url('assets/slides/thanksgiving2025.jpg');"></div>
+                    <div class="hero-bg" data-bg="assets/opt/hero/thanksgiving2025.webp"></div>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <h1>Thanksgiving Gathering</h1>
@@ -126,7 +129,7 @@
 
                 <!-- Slide 9 -->
                 <div class="hero-item">
-                    <div class="hero-bg" style="background-image: url('assets/slides/jclab-luncheon.png');"></div>
+                    <div class="hero-bg" data-bg="assets/opt/hero/jclab-luncheon.webp"></div>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <h1>JC STEM Circle Luncheon</h1>
@@ -136,7 +139,7 @@
 
                 <!-- Slide 10 -->
                 <div class="hero-item">
-                    <div class="hero-bg" style="background-image: url('assets/slides/ACM-Fang.png');"></div>
+                    <div class="hero-bg" data-bg="assets/opt/hero/ACM-Fang.webp"></div>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <h1>Congratulations to Prof Fang!!!</h1>
@@ -146,7 +149,7 @@
 
                 <!-- Slide 11 -->
                 <div class="hero-item">
-                    <div class="hero-bg" style="background-image: url('assets/slides/group4.jpg');"></div>
+                    <div class="hero-bg" data-bg="assets/opt/hero/group4.webp"></div>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <h1>Team Banquet</h1>
@@ -156,7 +159,7 @@
 
                 <!-- Slide 12 -->
                 <div class="hero-item">
-                    <div class="hero-bg" style="background-image: url('assets/slides/group3.jpg');"></div>
+                    <div class="hero-bg" data-bg="assets/opt/hero/group3.webp"></div>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <h1>Close to Nature</h1>
@@ -166,7 +169,7 @@
 
                 <!-- Slide 13 -->
                 <div class="hero-item">
-                    <div class="hero-bg" style="background-image: url('assets/slides/group2.jpg');"></div>
+                    <div class="hero-bg" data-bg="assets/opt/hero/group2.webp"></div>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <h1>Team Building</h1>
@@ -176,7 +179,7 @@
 
                 <!-- Slide 14 -->
                 <div class="hero-item">
-                    <div class="hero-bg" style="background-image: url('assets/slides/group1.png');"></div>
+                    <div class="hero-bg" data-bg="assets/opt/hero/group1.webp"></div>
                     <div class="hero-overlay"></div>
                     <div class="container hero-content">
                         <h1>First Meeting</h1>
@@ -222,14 +225,14 @@
 
                     <div class="lab-film" id="lab-film">
                         <div class="film-frame yt-facade" data-yt="RkY7NE8U17I" role="button" tabindex="0" aria-label="Play Teaching the City to Think">
-                            <img src="assets/films/JCLab-Film-poster.jpg" alt="Teaching the City to Think, a film about the JC STEM Lab of Smart City">
+                            <img src="assets/films/JCLab-Film-poster.jpg" alt="Teaching the City to Think, a film about the JC STEM Lab of Smart City" loading="lazy" decoding="async">
                             <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
                         </div>
                         <p class="film-caption"><i>Teaching the City to Think</i>: the lab's mission, research, and people in 2 minutes 40 seconds.</p>
                     </div>
 
                     <div style="text-align: center; margin-top: 30px;">
-                        <img src="assets/logo.png" alt="JC STEM Lab Logo" class="lab-logo" style="width: 600px; height: auto;">
+                        <img src="assets/opt/logo.webp" alt="JC STEM Lab Logo" class="lab-logo" style="width: 600px; height: auto;" loading="lazy" decoding="async">
                     </div>
 
                 </div>
@@ -241,7 +244,7 @@
                 <h2 class="section-title">Lab Director</h2>
                 <div class="director-feature" id="fang-film">
                     <div class="film-frame yt-facade" data-yt="NWEe2KA7hOA" role="button" tabindex="0" aria-label="Play Connecting the Unknown">
-                        <img src="assets/films/Fang-Film-poster.jpg" alt="Connecting the Unknown, a film on Prof. Yuguang Fang">
+                        <img src="assets/films/Fang-Film-poster.jpg" alt="Connecting the Unknown, a film on Prof. Yuguang Fang" loading="lazy" decoding="async">
                         <span class="yt-play" aria-hidden="true"><svg viewBox="0 0 24 24" width="1em" height="1em" fill="currentColor" focusable="false"><path d="M8 5v14l11-7z"/></svg></span>
                     </div>
                     <div class="director-text">
@@ -490,7 +493,7 @@
                             <p class="seminar-description">This talk introduced intelligent/fluid antenna technologies for ultra-dense wireless networks in smart cities, including pinching antennas, optical fiber waveguide modes, and dielectric excitation through squeezing and deformation.</p>
                         </div>
                         <div class="seminar-photo">
-                            <img src="data/seminar/yongxuzhu/featured.jpg" alt="Seminar by Prof. Yongxu Zhu">
+                            <img src="data/opt/seminar/yongxuzhu.webp" alt="Seminar by Prof. Yongxu Zhu" loading="lazy" decoding="async">
                         </div>
                     </a>
                     <a href="pages/seminar-detail.html?id=aibo" class="seminar-item">
@@ -501,7 +504,7 @@
                             <p class="seminar-description">This talk presents an in-depth analysis of the requirements for future intelligent HSR systems and examines how emerging 6G technologies can address these challenges.</p>
                         </div>
                         <div class="seminar-photo">
-                            <img src="data/seminar/aibo/featured.jpg" alt="Seminar by Prof. Bo Ai">
+                            <img src="data/opt/seminar/aibo.webp" alt="Seminar by Prof. Bo Ai" loading="lazy" decoding="async">
                         </div>
                     </a>
                     <a href="pages/seminar-detail.html?id=weigao" class="seminar-item">
@@ -512,7 +515,7 @@
                             <p class="seminar-description">This talk explores adaptable on-device AI for real-time inference and training in resource-limited settings, with applications in healthcare and embodied AI.</p>
                         </div>
                         <div class="seminar-photo">
-                            <img src="data/seminar/weigao/featured.jpg" alt="Seminar by Prof. Wei Gao">
+                            <img src="data/opt/seminar/weigao.webp" alt="Seminar by Prof. Wei Gao" loading="lazy" decoding="async">
                         </div>
                     </a>
                     <a href="pages/seminar-detail.html?id=Dusit" class="seminar-item">
@@ -523,7 +526,7 @@
                             <p class="seminar-description">This talk explores scalable generative AI through mixture of experts in mobile edge networks, addressing challenges in resource utilization when deployed on local user devices.</p>
                         </div>
                         <div class="seminar-photo">
-                            <img src="data/seminar/Dusit/featured.jpg" alt="Seminar by Prof. Dusit Niyato">
+                            <img src="data/opt/seminar/Dusit.webp" alt="Seminar by Prof. Dusit Niyato" loading="lazy" decoding="async">
                         </div>
                     </a>
                     <a href="pages/seminar-detail.html?id=davidAtienza" class="seminar-item">
@@ -534,7 +537,7 @@
                             <p class="seminar-description">A talk on edge AI architectures for wearable systems, focusing on integrating different families of accelerators for energy-efficient computing.</p>
                         </div>
                         <div class="seminar-photo">
-                            <img src="data/seminar/davidAtienza/featured.png" alt="Seminar by Prof. David Atienza">
+                            <img src="data/opt/seminar/davidAtienza.webp" alt="Seminar by Prof. David Atienza" loading="lazy" decoding="async">
                         </div>
                     </a>
                     <a href="pages/seminar-detail.html?id=24-05-13-LiuJianqing" class="seminar-item">
@@ -545,7 +548,7 @@
                             <p class="seminar-description">An exploration of quantum communications principles, applications such as quantum key distribution, and the technical challenges in the field.</p>
                         </div>
                         <div class="seminar-photo">
-                            <img src="data/seminar/24-05-13-LiuJianqing/featured.jpg" alt="Seminar by Prof. Jianqing Liu">
+                            <img src="data/opt/seminar/24-05-13-LiuJianqing.webp" alt="Seminar by Prof. Jianqing Liu" loading="lazy" decoding="async">
                         </div>
                     </a>
                     <a href="pages/seminar-detail.html?id=haibozhou" class="seminar-item">
@@ -556,7 +559,7 @@
                             <p class="seminar-description">This talk introduces a fully-decoupled radio access network architecture for 6G that enhances spectrum utilization and improves user experience.</p>
                         </div>
                         <div class="seminar-photo">
-                            <img src="data/seminar/haibozhou/featured.jpg" alt="Seminar by Prof. Haibo Zhou">
+                            <img src="data/opt/seminar/haibozhou.webp" alt="Seminar by Prof. Haibo Zhou" loading="lazy" decoding="async">
                         </div>
                     </a>
                     <a href="pages/seminar-detail.html?id=nancheng" class="seminar-item">
@@ -567,7 +570,7 @@
                             <p class="seminar-description">A presentation on a novel distributed learning scheme that integrates federated learning with a model split mechanism to adapt to client heterogeneity.</p>
                         </div>
                         <div class="seminar-photo">
-                            <img src="data/seminar/nancheng/featured.jpg" alt="Seminar by Prof. Nan Cheng">
+                            <img src="data/opt/seminar/nancheng.webp" alt="Seminar by Prof. Nan Cheng" loading="lazy" decoding="async">
                         </div>
                     </a>
                     <a href="pages/seminar-detail.html?id=weihuazhuang" class="seminar-item">
@@ -578,7 +581,7 @@
                             <p class="seminar-description">A discussion on when to offload DNN inference computation from IoT devices to the edge and how to incorporate multiple inference results to improve accuracy.</p>
                         </div>
                         <div class="seminar-photo">
-                            <img src="data/seminar/weihuazhuang/featured.jpg" alt="Seminar by Prof. Weihua Zhuang">
+                            <img src="data/opt/seminar/weihuazhuang.webp" alt="Seminar by Prof. Weihua Zhuang" loading="lazy" decoding="async">
                         </div>
                     </a>
                     <a href="pages/seminar-detail.html?id=PhoneLin" class="seminar-item">
@@ -589,7 +592,7 @@
                             <p class="seminar-description">This talk illustrates technologies and solutions for anomaly detection/prediction in IoT systems, along with prototypes and applications.</p>
                         </div>
                         <div class="seminar-photo">
-                            <img src="data/seminar/PhoneLin/featured.jpg" alt="Seminar by Prof. Phone Lin">
+                            <img src="data/opt/seminar/PhoneLin.webp" alt="Seminar by Prof. Phone Lin" loading="lazy" decoding="async">
                         </div>
                     </a>
                     <a href="pages/seminar-detail.html?id=chih-wei-huang" class="seminar-item">
@@ -600,7 +603,7 @@
                             <p class="seminar-description">This talk examines recent advancements in wireless networks for supporting complex applications like MIMO systems and mixed reality experiences.</p>
                         </div>
                         <div class="seminar-photo">
-                            <img src="data/seminar/chih-wei-huang/featured.jpg" alt="Seminar by Prof. Chih-Wei Huang">
+                            <img src="data/opt/seminar/chih-wei-huang.webp" alt="Seminar by Prof. Chih-Wei Huang" loading="lazy" decoding="async">
                         </div>
                     </a>
                 </div>

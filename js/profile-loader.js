@@ -92,9 +92,11 @@ function renderMemberProfile(member) {
     }
     
     // 创建档案内容
+    const avatarMatch = (member.avatar || '').replace(/^\//, '').match(/^data\/avatars\/(.+)\.(?:png|jpe?g)$/i);
+    const avatarSrc = avatarMatch ? `../../data/opt/avatars/${avatarMatch[1]}.webp` : `../../${member.avatar}`;
     let html = `
         <div class="profile-header">
-            <img src="../../${member.avatar}" alt="${member.title}" class="profile-avatar">
+            <img src="${avatarSrc}" alt="${member.title}" class="profile-avatar" decoding="async">
             <div class="profile-info">
                 <h1>${processChinese(member.title)}</h1>
                 <div class="profile-role">
